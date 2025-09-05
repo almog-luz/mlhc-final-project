@@ -6,8 +6,10 @@ import pandas as pd
 
 def aggregate_events(df: pd.DataFrame, value_col: str, time_col: str, label_col: str) -> pd.DataFrame:
     """Aggregate time-series events into subject-level wide features.
-    For each item label, compute mean/min/max/last of the numeric value over the window.
-    Returns a DataFrame indexed by subject_id with columns '<label>__{mean|min|max|last}'.
+
+    For each item label compute mean/min/max/last of the numeric value. Column naming pattern:
+    <original_label>__{mean|min|max|last}.
+    Returns DataFrame with one row per subject_id.
     """
     if df is None or df.empty:
         return pd.DataFrame(columns=['subject_id'])
@@ -34,8 +36,10 @@ def build_features(first_adm: pd.DataFrame,
                    labs: Optional[pd.DataFrame],
                    rx: Optional[pd.DataFrame],
                    proc: Optional[pd.DataFrame]) -> pd.DataFrame:
-    """Builds subject-level feature matrix from modalities.
-    Expects first_adm to include subject_id, admittime, and admissions ethnicity; demo includes subject_id, gender, dob.
+    """Create unified feature matrix.
+
+    Parameters are individual modality data frames; missing/empty frames are handled gracefully.
+    Returns a numeric feature matrix indexed by subject_id (index name subject_id).
     """
     # Demographics: age (cap 90), gender one-hot, ethnicity buckets
     feat_demo = pd.DataFrame()
@@ -103,7 +107,11 @@ def build_features(first_adm: pd.DataFrame,
         label_col = 'item_label' if 'item_label' in p.columns else 'ordercategorydescription'
         p['lbl_low'] = p[label_col].astype(str).str.lower()
         def flag_any(df: pd.DataFrame, patterns: List[str]) -> pd.Series:
-            return df.groupby('subject_id').apply(lambda g: g['lbl_low'].str.contains('|'.join(patterns), na=False).any()).astype(int)
+            pattern_re = '|'.join(patterns)
+            # Avoid deprecated groupby.apply on grouping columns: aggregate boolean then cast
+            hits = df[['subject_id','lbl_low']].assign(_hit=df['lbl_low'].str.contains(pattern_re, na=False))
+            agg = hits.groupby('subject_id', observed=False)['_hit'].any()
+            return agg.astype(int)
         vent = flag_any(p, ['vent','intubat','endotracheal','peep','tidal volume'])
         rrt = flag_any(p, ['dialysis','crrt','hemodialysis'])
         cl = flag_any(p, ['central line','cvc','subclavian','internal jugular','femoral line'])

@@ -5,40 +5,35 @@ import pandas as pd
 from google.cloud import bigquery as bq
 import joblib
 
-# Support both package and script contexts
-try:
-    from .extract import (
-        get_first_admissions,
-        get_demographics,
-        get_vitals_48h,
-        get_labs_48h,
-        get_prescriptions_48h,
-        get_procedures_48h,
-    )
-    from .features import build_features
-except ImportError:  # pragma: no cover - script mode
-    from extract import (
-        get_first_admissions,
-        get_demographics,
-        get_vitals_48h,
-        get_labs_48h,
-        get_prescriptions_48h,
-        get_procedures_48h,
-    )
-    from features import build_features
+from .extract import (
+    get_first_admissions,
+    get_demographics,
+    get_vitals_48h,
+    get_labs_48h,
+    get_prescriptions_48h,
+    get_procedures_48h,
+)
+from .features import build_features
 
 
 def run_pipeline_on_unseen_data(subject_ids: List[int], client: bq.Client) -> pd.DataFrame:
-    """
-    Run the pipeline on unseen subject_ids: extract 0-48h features from BigQuery,
-    apply saved preprocessor and models, and return calibrated probabilities.
+    """Run inference pipeline on unseen patients.
 
-    Returns a DataFrame with columns: subject_id, mortality_proba, prolonged_LOS_proba, readmission_proba
+    Steps:
+      1. Pull first admissions and filter by required LOS window (>=54h).
+      2. Extract 0-48h modalities (vitals, labs, prescriptions, procedures, demographics).
+      3. Build feature matrix aligned to training feature set.
+      4. Load fitted preprocessor + calibrated models and produce probabilities.
+
+    Returns
+    -------
+    DataFrame
+        Columns: subject_id, mortality_proba, prolonged_LOS_proba, readmission_proba
+        Includes NA rows for subjects excluded by LOS filtering to keep alignment.
     """
     # 1) First admission per subject and LOS >= 54h
     first_adm = get_first_admissions(client, subject_ids)
     if first_adm.empty:
-        # Return empty with required columns
         return pd.DataFrame({
             'subject_id': subject_ids,
             'mortality_proba': [float('nan')]*len(subject_ids),
@@ -61,16 +56,25 @@ def run_pipeline_on_unseen_data(subject_ids: List[int], client: bq.Client) -> pd
     # 3) Build features
     features = build_features(first_adm, demo, vitals, labs, rx, proc)
 
-    # 4) Load artifacts
-    models_dir = os.path.join(os.path.dirname(__file__), 'models')
+    # 4) Load artifacts strictly from MLHC_MODELS_DIR (no discovery fallback)
+    models_dir = os.environ.get('MLHC_MODELS_DIR')
+    core_files = [
+        'preprocessor.joblib',
+        'feature_columns.json',
+        'model_mortality.joblib',
+        'model_prolonged_los.joblib',
+        'model_readmission.joblib'
+    ]
+    if not models_dir or not all(os.path.exists(os.path.join(models_dir, f)) for f in core_files):
+        raise FileNotFoundError(
+            "Model artifacts missing or MLHC_MODELS_DIR unset. Set MLHC_MODELS_DIR to a run's models directory containing: "
+            + ", ".join(core_files)
+        )
     preprocessor_path = os.path.join(models_dir, 'preprocessor.joblib')
     feat_cols_path = os.path.join(models_dir, 'feature_columns.json')
     m_mort_path = os.path.join(models_dir, 'model_mortality.joblib')
     m_los_path = os.path.join(models_dir, 'model_prolonged_los.joblib')
     m_readm_path = os.path.join(models_dir, 'model_readmission.joblib')
-
-    if not (os.path.exists(preprocessor_path) and os.path.exists(feat_cols_path) and os.path.exists(m_mort_path) and os.path.exists(m_los_path) and os.path.exists(m_readm_path)):
-        raise FileNotFoundError("Model artifacts not found in project/models. Train and save models first.")
 
     preprocessor = joblib.load(preprocessor_path)
     with open(feat_cols_path, 'r', encoding='utf-8') as f:
@@ -79,10 +83,20 @@ def run_pipeline_on_unseen_data(subject_ids: List[int], client: bq.Client) -> pd
     model_los = joblib.load(m_los_path)
     model_readm = joblib.load(m_readm_path)
 
-    # 5) Align feature columns
-    for col in feature_cols:
-        if col not in features.columns:
-            features[col] = 0
+    # 5) Align feature columns (vectorized to avoid fragmentation)
+    missing_cols = [c for c in feature_cols if c not in features.columns]
+    if missing_cols:
+        zeros_df = pd.DataFrame(0, index=features.index, columns=missing_cols)
+        features = pd.concat([features, zeros_df], axis=1)
+    # Reorder exactly as training feature column order
+    features = features.reindex(columns=feature_cols, fill_value=0)
+    if not feature_cols:
+        return pd.DataFrame({
+            'subject_id': subject_ids,
+            'mortality_proba': [float('nan')]*len(subject_ids),
+            'prolonged_LOS_proba': [float('nan')]*len(subject_ids),
+            'readmission_proba': [float('nan')]*len(subject_ids),
+        })
     X = features[feature_cols].copy()
 
     # 6) Transform and predict
@@ -91,15 +105,13 @@ def run_pipeline_on_unseen_data(subject_ids: List[int], client: bq.Client) -> pd
     los_proba = model_los.predict_proba(X_t)[:, 1]
     readm_proba = model_readm.predict_proba(X_t)[:, 1]
 
-    # 7) Build output aligned to requested subject_ids (include NaN for those filtered out)
+    # 7) Build output
     out = pd.DataFrame({
         'subject_id': X.index.astype(int),
         'mortality_proba': mort_proba,
         'prolonged_LOS_proba': los_proba,
         'readmission_proba': readm_proba,
     })
-
-    # Insert missing subjects with NaN to satisfy API contract
     missing = set(subject_ids) - set(out['subject_id'].tolist())
     if missing:
         out = pd.concat([
@@ -111,5 +123,4 @@ def run_pipeline_on_unseen_data(subject_ids: List[int], client: bq.Client) -> pd
                 'readmission_proba': [float('nan')]*len(missing),
             })
         ], axis=0, ignore_index=True)
-
     return out.sort_values('subject_id').reset_index(drop=True)

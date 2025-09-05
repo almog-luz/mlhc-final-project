@@ -11,7 +11,7 @@ Contents
 - evaluate_unseen.py: CLI to produce predictions and (optionally) compute evaluation metrics when labels are provided.
 - metrics_utils.py: metrics and calibration utilities.
 - data/: initial_cohort.csv, test_example.csv, extracted_cache/ for parquet caches.
-- models/: created by training (preprocessor + 3 models + feature_columns.json + metrics.json).
+- runs/<timestamp>/models/: created by training (preprocessor + 3 models + feature_columns.json + metrics.json) plus evaluation subdirectories.
 
 Quick start
 1) Environment
@@ -23,7 +23,7 @@ Quick start
    - Inference: open mlhc_project_inference.ipynb, set GCP_PROJECT_ID and SUBJECTS_CSV (subject_id), run all; set LABELS_CSV to compute metrics.
 
 3) Train via CLI (alternative)
-   - python project/train.py --project-id YOUR_GCP_PROJECT --input path/to/labels.csv --output-dir project/models
+   - python project/train.py --project-id YOUR_GCP_PROJECT --input path/to/labels.csv --output-dir runs/$(date +%Y%m%d_%H%M%S)/models  (on Windows create the directory first or substitute a timestamp manually)
 
 4) Unseen evaluation (script)
    - Predictions only:

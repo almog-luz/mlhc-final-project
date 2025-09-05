@@ -5,16 +5,11 @@ import json
 import pandas as pd
 from google.cloud import bigquery
 
-# Support both package and script contexts
-try:
-    from .unseen_data_evaluation import run_pipeline_on_unseen_data
-    from .metrics_utils import compute_binary_metrics, metrics_to_dict
-except ImportError:  # pragma: no cover - script mode
-    from unseen_data_evaluation import run_pipeline_on_unseen_data
-    from metrics_utils import compute_binary_metrics, metrics_to_dict
+from .unseen_data_evaluation import run_pipeline_on_unseen_data
+from .metrics_utils import compute_binary_metrics, metrics_to_dict
 
 
-def parse_args():
+def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Run unseen evaluation on subject IDs.")
     p.add_argument("--project-id", required=True, help="GCP Project ID for BigQuery")
     p.add_argument("--input", required=True, help="CSV with a subject_id column")
@@ -64,7 +59,8 @@ def _compute_and_save_metrics(preds: pd.DataFrame, labels_df: pd.DataFrame, metr
             p = merged.loc[y.index, p_col].astype(float)
             if y.shape[0] == 0:
                 continue
-            m = compute_binary_metrics(y.values, p.values, threshold_objective=threshold_objective)
+            # Ensure plain numpy arrays (avoid potential pandas ExtensionArray typing noise)
+            m = compute_binary_metrics(y.to_numpy(), p.to_numpy(), threshold_objective=threshold_objective)
             results[name] = metrics_to_dict(m)
     # Write JSON
     with open(metrics_path, "w", encoding="utf-8") as f:

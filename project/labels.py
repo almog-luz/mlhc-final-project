@@ -3,21 +3,15 @@ from __future__ import annotations
 from typing import List
 import pandas as pd
 
-try:  # support package and script usage
-    from .extract import (
-        get_first_admissions,
-        get_demographics,
-        get_all_admissions,
-    )
-except ImportError:  # pragma: no cover
-    from extract import (
-        get_first_admissions,
-        get_demographics,
-        get_all_admissions,
-    )
+from .extract import (
+    get_first_admissions,
+    get_demographics,
+    get_all_admissions,
+)
+from google.cloud import bigquery as bq
 
 
-def build_labels(client, subject_ids: List[int]) -> pd.DataFrame:
+def build_labels(client: bq.Client, subject_ids: List[int]) -> pd.DataFrame:
     """Build mortality, prolonged LOS (>7d), and 30-day readmission labels.
 
     Steps:
@@ -69,18 +63,30 @@ def build_labels(client, subject_ids: List[int]) -> pd.DataFrame:
     fa = first_adm[['subject_id','hadm_id','dischtime']].rename(columns={'hadm_id':'first_hadm_id','dischtime':'first_discharge'})
     nxt = all_adm.sort_values(['subject_id','admittime']).merge(fa[['subject_id','first_hadm_id','first_discharge']], on='subject_id', how='left')
     after_first = nxt[nxt['admittime'] > nxt['first_discharge']].copy()
-    within_30 = after_first.groupby('subject_id').apply(lambda g: (g['admittime'] <= g['first_discharge'].iloc[0] + pd.Timedelta(days=30)).any())
+    # Vectorized check: admission within 30 days of first discharge
+    after_first['within_30'] = after_first['admittime'] <= (after_first['first_discharge'] + pd.Timedelta(days=30))
+    within_30 = after_first.groupby('subject_id', observed=False)['within_30'].any()
     readmit = within_30.rename('readmission_label').reset_index()
 
     labels = first_adm[['subject_id','hadm_id']].merge(mort[['subject_id','hadm_id','mortality_label']], on=['subject_id','hadm_id'], how='left')
     labels = labels.merge(pl[['subject_id','hadm_id','prolonged_los_label']], on=['subject_id','hadm_id'], how='left')
     labels = labels.merge(readmit, on='subject_id', how='left')
-    labels['readmission_label'] = labels['readmission_label'].fillna(False).astype(int)
+    # Use nullable boolean dtype before fillna to avoid FutureWarning about implicit downcasting
+    labels['readmission_label'] = (
+        labels['readmission_label']
+        .astype('boolean')  # pandas nullable boolean
+        .fillna(False)
+        .astype(int)
+    )
     labels[['mortality_label','prolonged_los_label']] = labels[['mortality_label','prolonged_los_label']].fillna(0).astype(int)
     return labels[['subject_id','hadm_id','mortality_label','prolonged_los_label','readmission_label']]
 
 
-def build_and_save_labels(client, subject_ids: List[int], output_csv: str) -> pd.DataFrame:
+def build_and_save_labels(client: bq.Client, subject_ids: List[int], output_csv: str) -> pd.DataFrame:
+    """Convenience wrapper that builds labels and writes them to CSV.
+
+    Returns the labels DataFrame for further use in a pipeline.
+    """
     df = build_labels(client, subject_ids)
     df.to_csv(output_csv, index=False)
     return df

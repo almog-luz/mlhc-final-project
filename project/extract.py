@@ -6,11 +6,16 @@ from google.cloud import bigquery as bq
 
 
 def safe_query(client: bq.Client, sql: str, job_config: Optional[bq.QueryJobConfig] = None) -> pd.DataFrame:
-    try:
-        return client.query(sql, job_config=job_config).to_dataframe()
-    except Exception as e:
-        print(f"BigQuery query failed: {e}")
-        return pd.DataFrame()
+  """Execute a BigQuery SQL string and return a DataFrame.
+
+  Returns an empty DataFrame on failure (and prints a warning) so callers can
+  choose to short‑circuit gracefully without additional try/except noise.
+  """
+  try:
+    return client.query(sql, job_config=job_config).to_dataframe()  # type: ignore[no-untyped-call]
+  except Exception as e:  # pragma: no cover - defensive
+    print(f"BigQuery query failed: {e}")
+    return pd.DataFrame()
 
 
 def get_first_admissions(client: bq.Client, subject_ids: List[int]) -> pd.DataFrame:

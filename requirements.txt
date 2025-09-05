@@ -8,3 +8,6 @@ scikit-learn
 joblib
 ipykernel
 nbformat
+matplotlib
+ipywidgets
+tqdm

@@ -54,10 +54,11 @@ def calibration_bins(y_true: np.ndarray, y_proba: np.ndarray, n_bins: int = 10) 
         if df["p"].nunique() >= n_bins:
             df["bin"] = pd.qcut(df["p"], q=n_bins, duplicates="drop")
         else:
-            df["bin"] = pd.cut(df["p"], bins=np.linspace(0, 1, n_bins + 1), include_lowest=True)
+            df["bin"] = pd.cut(df["p"], bins=list(np.linspace(0, 1, n_bins + 1)), include_lowest=True)
     except Exception:
-        df["bin"] = pd.cut(df["p"], bins=np.linspace(0, 1, n_bins + 1), include_lowest=True)
-    calib = df.groupby("bin").agg(
+        df["bin"] = pd.cut(df["p"], bins=list(np.linspace(0, 1, n_bins + 1)), include_lowest=True)
+    # Explicit observed=False to retain current behavior (silence future warning)
+    calib = df.groupby("bin", observed=False).agg(
         count=("y", "size"),
         mean_proba=("p", "mean"),
         empirical_rate=("y", "mean"),
@@ -188,5 +189,13 @@ def metrics_to_dict(m: BinaryMetrics) -> Dict:
         "cm": m.cm,
     }
     if m.calibration is not None:
-        out["calibration_bins"] = m.calibration.to_dict(orient="list")
+        calib = m.calibration.copy()
+        # Ensure any Interval / categorical bins are JSON serializable
+        if "bin" in calib.columns:
+            try:
+                # If interval dtype, convert to "(left,right]" strings
+                calib["bin"] = calib["bin"].astype(str)
+            except Exception:
+                calib["bin"] = calib["bin"].astype("string")
+        out["calibration_bins"] = {c: calib[c].tolist() for c in calib.columns}
     return out
