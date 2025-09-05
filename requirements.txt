@@ -1,0 +1,10 @@
+pandas
+google-cloud-bigquery
+google-cloud-bigquery-storage
+db-dtypes
+pyarrow
+numpy
+scikit-learn
+joblib
+ipykernel
+nbformat
