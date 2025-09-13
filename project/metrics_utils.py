@@ -77,7 +77,12 @@ def expected_calibration_error(calibration_df: pd.DataFrame) -> float:
     return float((diffs * weights).sum())
 
 
-def best_threshold(y_true: np.ndarray, y_proba: np.ndarray, objective: str = "f1") -> Tuple[Optional[float], Dict[str, float]]:
+def best_threshold(
+    y_true: np.ndarray,
+    y_proba: np.ndarray,
+    objective: str = "f1",
+    min_recall: Optional[float] = None,
+) -> Tuple[Optional[float], Dict[str, float]]:
     if len(y_true) == 0:
         return None, {}
     # Use unique probability values as candidate thresholds
@@ -97,6 +102,14 @@ def best_threshold(y_true: np.ndarray, y_proba: np.ndarray, objective: str = "f1
                 val = f1_score(y_true, y_pred, zero_division=0)
         except Exception:
             val = -np.inf
+        if min_recall is not None and min_recall > 0:
+            # Enforce recall constraint; skip thresholds that don't meet it
+            try:
+                rec_tmp = recall_score(y_true, y_pred, zero_division=0)
+            except Exception:
+                rec_tmp = 0.0
+            if rec_tmp < min_recall:
+                continue
         if val > best_val:
             best_val = val
             best_t = float(t)
@@ -118,6 +131,9 @@ def best_threshold(y_true: np.ndarray, y_proba: np.ndarray, objective: str = "f1
                 "fp": int(fp),
                 "fn": int(fn),
             }
+    # Fallback if constraint prevented any selection: run unconstrained
+    if best_t is None and min_recall is not None and min_recall > 0:
+        return best_threshold(y_true, y_proba, objective=objective, min_recall=None)
     return best_t, best_stats
 
 
@@ -126,6 +142,7 @@ def compute_binary_metrics(
     y_proba: np.ndarray,
     threshold_objective: Optional[str] = None,
     n_calib_bins: int = 10,
+    threshold_min_recall: Optional[float] = None,
 ) -> BinaryMetrics:
     y_true = np.asarray(y_true).astype(int)
     y_proba = np.asarray(y_proba).astype(float)
@@ -146,7 +163,7 @@ def compute_binary_metrics(
     t = None
     stats: Dict[str, float] = {}
     if threshold_objective:
-        t, stats = best_threshold(y_true, y_proba, objective=threshold_objective)
+        t, stats = best_threshold(y_true, y_proba, objective=threshold_objective, min_recall=threshold_min_recall)
 
     cm: Optional[Dict[str, int]] = None
     if stats:

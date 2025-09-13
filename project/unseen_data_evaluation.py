@@ -55,6 +55,9 @@ def run_pipeline_on_unseen_data(subject_ids: List[int], client: bq.Client) -> pd
 
     # 3) Build features
     features = build_features(first_adm, demo, vitals, labs, rx, proc)
+    # Defensive: remove leaky realized LOS feature if present (older artifacts may include it)
+    if 'los_hours' in features.columns:
+        features = features.drop(columns=['los_hours'])
 
     # 4) Load artifacts strictly from MLHC_MODELS_DIR (no discovery fallback)
     models_dir = os.environ.get('MLHC_MODELS_DIR')

@@ -1,0 +1,38 @@
+{
+  "start_time_utc": "1970-01-01T00:10:11.239820+00:00",
+  "end_time_utc": "2025-09-05T10:48:40.083750+00:00",
+  "duration_seconds": 226.6061621,
+  "git_commit": "318a2a0",
+  "config": {
+    "model_type": "logreg",
+    "calib_cv": 5,
+    "skip_importance_effective": true,
+    "cv_folds": 0,
+    "fast_mode": false,
+    "finalize_mode": false,
+    "feature_count": 1619,
+    "test_size": 0.2,
+    "random_state": 42
+  },
+  "timings": {
+    "load_labels": 0.008388099999933729,
+    "feature_extraction_total": 26.177930100000026,
+    "preprocessor_fit_transform": 3.195825099999979,
+    "split_mortality": 0.47968869999999697,
+    "model_fit_mortality": 48.13318609999999,
+    "metrics_mortality": 6.418370600000003,
+    "curves_mortality": 0.017365299999937633,
+    "plot_mortality": 0.653939199999968,
+    "split_prolonged_los": 0.5146516999999449,
+    "model_fit_prolonged_los": 59.11039470000003,
+    "metrics_prolonged_los": 1.723716999999965,
+    "curves_prolonged_los": 0.009846700000025521,
+    "plot_prolonged_los": 0.22646190000000388,
+    "split_readmission": 0.5252548000000843,
+    "model_fit_readmission": 74.61455820000003,
+    "metrics_readmission": 3.222553400000038,
+    "curves_readmission": 0.01585289999991346,
+    "plot_readmission": 0.23994679999998425,
+    "total": 226.6061621
+  }
+}

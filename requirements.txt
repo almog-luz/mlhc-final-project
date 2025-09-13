@@ -1,3 +1,12 @@
+scikit-learn
+pandas
+numpy
+xgboost
+pyarrow
+google-cloud-bigquery
+tqdm
+joblib
+optuna
 pandas
 google-cloud-bigquery
 google-cloud-bigquery-storage

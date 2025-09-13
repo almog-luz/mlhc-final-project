@@ -45,3 +45,22 @@ Notes
 - Uses only Labevents for labs, per instructions.
 - First 48h window with LOS >=54h, 6h gap respected by design.
 - Models are calibrated (isotonic if enough positives, else Platt/sigmoid).
+
+## Readmission Hyperparameter Tuning
+
+Use `project/hparam_tune.py` to sweep logistic regression (and optional HGB) hyperparameters for the readmission task without manual intervention.
+
+Example:
+
+```bash
+python -m project.hparam_tune \
+   --labels project/runs/20250905_143527/labels.csv \
+   --output-root project/runs/20250905_143527/tuning_readmission \
+   --project-id ml-for-healthcare-2025 \
+   --pos-weights 1 1.5 2 3 \
+   --logreg-C 0.1 0.5 1 2 5 \
+   --min-recall 0.15 0.20 \
+   --use-cache-first
+```
+
+The script produces one subdirectory per configuration plus a consolidated CSV `sweep_summary.csv` (sorted by ROC AUC then PR AUC) in the output root.

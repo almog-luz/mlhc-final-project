@@ -174,3 +174,23 @@ def get_procedures_48h(client: bq.Client, hadm_ids: List[int]) -> pd.DataFrame:
     cfg = bq.QueryJobConfig(query_parameters=[bq.ArrayQueryParameter("hadm_ids", "INT64", hadm_ids)])
     return safe_query(client, sql, cfg)
 
+
+def get_all_admission_diagnoses(client: bq.Client, subject_ids: List[int]) -> pd.DataFrame:
+  """Return all ICD9 diagnoses across ALL admissions for provided subjects.
+
+  Includes admission timestamps to enable filtering to PRIOR admissions only for
+  early prediction (since diagnoses_icd lacks per-code timestamps and discharge
+  coding could leak future information from the index stay).
+  """
+  if not subject_ids:
+    return pd.DataFrame()
+  sql = """
+  SELECT d.subject_id, d.hadm_id, a.admittime, a.dischtime, d.icd9_code
+  FROM `physionet-data.mimiciii_clinical.diagnoses_icd` d
+  JOIN `physionet-data.mimiciii_clinical.admissions` a USING (hadm_id)
+  WHERE d.subject_id IN UNNEST(@subject_ids)
+  ORDER BY d.subject_id, a.admittime
+  """
+  cfg = bq.QueryJobConfig(query_parameters=[bq.ArrayQueryParameter("subject_ids", "INT64", subject_ids)])
+  return safe_query(client, sql, cfg)
+

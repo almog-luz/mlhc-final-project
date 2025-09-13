@@ -1,0 +1,15 @@
+{
+  "model_type": "logreg",
+  "pos_weight": 3.521490637511275,
+  "C": 0.34522480160934055,
+  "min_recall": null,
+  "roc_auc": null,
+  "pr_auc": null,
+  "f1": null,
+  "precision": null,
+  "recall": null,
+  "brier": null,
+  "ece": null,
+  "threshold": null,
+  "run_dir": "project/runs/optuna_short\\trial_0\\logreg_pw3.521490637511275_C0.34522480160934055"
+}

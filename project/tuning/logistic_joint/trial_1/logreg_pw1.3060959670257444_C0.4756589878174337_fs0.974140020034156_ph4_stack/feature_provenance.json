@@ -1,0 +1,2147 @@
+{
+  "age": {
+    "group": "baseline"
+  },
+  "gender_M": {
+    "group": "baseline"
+  },
+  "eth_ASIAN": {
+    "group": "baseline"
+  },
+  "eth_BLACK": {
+    "group": "baseline"
+  },
+  "eth_HISPANIC": {
+    "group": "baseline"
+  },
+  "eth_WHITE": {
+    "group": "baseline"
+  },
+  "aprotinin ml/hr__mean": {
+    "group": "baseline"
+  },
+  "arterial bp [diastolic]__mean": {
+    "group": "baseline"
+  },
+  "arterial bp [systolic]__mean": {
+    "group": "baseline"
+  },
+  "atr sens thresh mv__mean": {
+    "group": "baseline"
+  },
+  "atr stim thresh ma__mean": {
+    "group": "baseline"
+  },
+  "atrial pacemaker threshold [value]__mean": {
+    "group": "baseline"
+  },
+  "bp cuff [diastolic]__mean": {
+    "group": "baseline"
+  },
+  "bp cuff [systolic]__mean": {
+    "group": "baseline"
+  },
+  "bp left arm [diastolic]__mean": {
+    "group": "baseline"
+  },
+  "bp pal [systolic]__mean": {
+    "group": "baseline"
+  },
+  "bp right leg [systolic]__mean": {
+    "group": "baseline"
+  },
+  "bp uac [diastolic]__mean": {
+    "group": "baseline"
+  },
+  "bp uac [systolic]__mean": {
+    "group": "baseline"
+  },
+  "cariporide cc/hr__mean": {
+    "group": "baseline"
+  },
+  "cariporide ml/hr__mean": {
+    "group": "baseline"
+  },
+  "current goal__mean": {
+    "group": "baseline"
+  },
+  "diastolic unloading__mean": {
+    "group": "baseline"
+  },
+  "gait/transferring__mean": {
+    "group": "baseline"
+  },
+  "heart rate__mean": {
+    "group": "baseline"
+  },
+  "hr alarm [high]__mean": {
+    "group": "baseline"
+  },
+  "hr alarm [low]__mean": {
+    "group": "baseline"
+  },
+  "lowest heart rate__mean": {
+    "group": "baseline"
+  },
+  "mucomyst mg/hr__mean": {
+    "group": "baseline"
+  },
+  "nbp [diastolic]__mean": {
+    "group": "baseline"
+  },
+  "nbp [systolic]__mean": {
+    "group": "baseline"
+  },
+  "nicardipine mg/hr__mean": {
+    "group": "baseline"
+  },
+  "nicardipine--mg/hr__mean": {
+    "group": "baseline"
+  },
+  "orthostat hr sitting__mean": {
+    "group": "baseline"
+  },
+  "pantoprazole   mg/hr__mean": {
+    "group": "baseline"
+  },
+  "pantoprazole  mg/hr__mean": {
+    "group": "baseline"
+  },
+  "pap [diastolic]__mean": {
+    "group": "baseline"
+  },
+  "pap [systolic]__mean": {
+    "group": "baseline"
+  },
+  "pca 1 hr limit (mg)__mean": {
+    "group": "baseline"
+  },
+  "replace rate ml/hr__mean": {
+    "group": "baseline"
+  },
+  "respiratory rate__mean": {
+    "group": "baseline"
+  },
+  "respiratory rate set__mean": {
+    "group": "baseline"
+  },
+  "solumedrol mg/kg/hr__mean": {
+    "group": "baseline"
+  },
+  "spo2 alarm [low]__mean": {
+    "group": "baseline"
+  },
+  "spo2 desat limit__mean": {
+    "group": "baseline"
+  },
+  "systolic unloading__mean": {
+    "group": "baseline"
+  },
+  "tcpcv-map__mean": {
+    "group": "baseline"
+  },
+  "temp/iso/warmer [temperature, degrees c]__mean": {
+    "group": "baseline"
+  },
+  "thrombin__mean": {
+    "group": "baseline"
+  },
+  "tpa mg/hr__mean": {
+    "group": "baseline"
+  },
+  "vent sens thresh mv__mean": {
+    "group": "baseline"
+  },
+  "vent stim thresh ma__mean": {
+    "group": "baseline"
+  },
+  "ventricular pacemaker threshold [value]__mean": {
+    "group": "baseline"
+  },
+  "xigris mcg/kg/hr__mean": {
+    "group": "baseline"
+  },
+  "aprotinin cc/hr__std": {
+    "group": "baseline"
+  },
+  "art bp systolic__std": {
+    "group": "baseline"
+  },
+  "arterial bp #2 [systolic]__std": {
+    "group": "baseline"
+  },
+  "arterial bp [diastolic]__std": {
+    "group": "baseline"
+  },
+  "arterial bp [systolic]__std": {
+    "group": "baseline"
+  },
+  "arterial o2 saturation__std": {
+    "group": "baseline"
+  },
+  "atr sens thresh mv__std": {
+    "group": "baseline"
+  },
+  "atr stim thresh ma__std": {
+    "group": "baseline"
+  },
+  "atrial pacemaker threshold [value]__std": {
+    "group": "baseline"
+  },
+  "baseline current/ma__std": {
+    "group": "baseline"
+  },
+  "bp cuff [diastolic]__std": {
+    "group": "baseline"
+  },
+  "bp cuff [systolic]__std": {
+    "group": "baseline"
+  },
+  "bp left arm [diastolic]__std": {
+    "group": "baseline"
+  },
+  "bp left leg [diastolic]__std": {
+    "group": "baseline"
+  },
+  "bp pal [systolic]__std": {
+    "group": "baseline"
+  },
+  "bp right arm [diastolic]__std": {
+    "group": "baseline"
+  },
+  "bp right arm [systolic]__std": {
+    "group": "baseline"
+  },
+  "bp right leg [diastolic]__std": {
+    "group": "baseline"
+  },
+  "bp right leg [systolic]__std": {
+    "group": "baseline"
+  },
+  "bp uac [diastolic]__std": {
+    "group": "baseline"
+  },
+  "current goal__std": {
+    "group": "baseline"
+  },
+  "dialysate flow ml/hr__std": {
+    "group": "baseline"
+  },
+  "diastolic unloading__std": {
+    "group": "baseline"
+  },
+  "epidural infusion rate (ml/hr)__std": {
+    "group": "baseline"
+  },
+  "hr alarm [high]__std": {
+    "group": "baseline"
+  },
+  "hr alarm [low]__std": {
+    "group": "baseline"
+  },
+  "lowest heart rate__std": {
+    "group": "baseline"
+  },
+  "manual bp [diastolic]__std": {
+    "group": "baseline"
+  },
+  "manual bp [systolic]__std": {
+    "group": "baseline"
+  },
+  "nbp [diastolic]__std": {
+    "group": "baseline"
+  },
+  "nbp [systolic]__std": {
+    "group": "baseline"
+  },
+  "nicardipine mg/hr__std": {
+    "group": "baseline"
+  },
+  "nicardipine--mg/hr__std": {
+    "group": "baseline"
+  },
+  "orthostathr standing__std": {
+    "group": "baseline"
+  },
+  "pap [diastolic]__std": {
+    "group": "baseline"
+  },
+  "pap [systolic]__std": {
+    "group": "baseline"
+  },
+  "pca 1 hr limit (mg)__std": {
+    "group": "baseline"
+  },
+  "respiratory rate__std": {
+    "group": "baseline"
+  },
+  "respiratory rate set__std": {
+    "group": "baseline"
+  },
+  "spo2__std": {
+    "group": "baseline"
+  },
+  "spo2 alarm [high]__std": {
+    "group": "baseline"
+  },
+  "spon rr (mech.)__std": {
+    "group": "baseline"
+  },
+  "systolic unloading__std": {
+    "group": "baseline"
+  },
+  "tcpcv-map__std": {
+    "group": "baseline"
+  },
+  "temp/iso/warmer [temperature, degrees c]__std": {
+    "group": "baseline"
+  },
+  "temperature c__std": {
+    "group": "baseline"
+  },
+  "temperature c (calc)__std": {
+    "group": "baseline"
+  },
+  "temperature f__std": {
+    "group": "baseline"
+  },
+  "temperature f (calc)__std": {
+    "group": "baseline"
+  },
+  "temporary venticular sens threshold mv__std": {
+    "group": "baseline"
+  },
+  "tpa mg/hr__std": {
+    "group": "baseline"
+  },
+  "vent sens thresh mv__std": {
+    "group": "baseline"
+  },
+  "vent stim thresh ma__std": {
+    "group": "baseline"
+  },
+  "ventricular pacemaker threshold [value]__std": {
+    "group": "baseline"
+  },
+  "aprotinin ml/hr__min": {
+    "group": "baseline"
+  },
+  "art bp diastolic__min": {
+    "group": "baseline"
+  },
+  "atr sens thresh mv__min": {
+    "group": "baseline"
+  },
+  "atr stim thresh ma__min": {
+    "group": "baseline"
+  },
+  "atrial pacemaker threshold [value]__min": {
+    "group": "baseline"
+  },
+  "baseline current/ma__min": {
+    "group": "baseline"
+  },
+  "bp left arm [systolic]__min": {
+    "group": "baseline"
+  },
+  "bp pal [diastolic]__min": {
+    "group": "baseline"
+  },
+  "bp pal [systolic]__min": {
+    "group": "baseline"
+  },
+  "bp right arm [diastolic]__min": {
+    "group": "baseline"
+  },
+  "bp uac [diastolic]__min": {
+    "group": "baseline"
+  },
+  "bp uac [systolic]__min": {
+    "group": "baseline"
+  },
+  "cariporide cc/hr__min": {
+    "group": "baseline"
+  },
+  "cariporide ml/hr__min": {
+    "group": "baseline"
+  },
+  "currently experiencing pain__min": {
+    "group": "baseline"
+  },
+  "dialysate flow ml/hr__min": {
+    "group": "baseline"
+  },
+  "epidural infusion rate (ml/hr)__min": {
+    "group": "baseline"
+  },
+  "gait/transferring__min": {
+    "group": "baseline"
+  },
+  "heart rate__min": {
+    "group": "baseline"
+  },
+  "heart rate alarm - high__min": {
+    "group": "baseline"
+  },
+  "hr alarm [low]__min": {
+    "group": "baseline"
+  },
+  "lowest heart rate__min": {
+    "group": "baseline"
+  },
+  "manual blood pressure diastolic right__min": {
+    "group": "baseline"
+  },
+  "manual bp [diastolic]__min": {
+    "group": "baseline"
+  },
+  "manual bp [systolic]__min": {
+    "group": "baseline"
+  },
+  "nbp [diastolic]__min": {
+    "group": "baseline"
+  },
+  "nicardipine mg/hr__min": {
+    "group": "baseline"
+  },
+  "nicardipine--mg/hr__min": {
+    "group": "baseline"
+  },
+  "non invasive blood pressure systolic__min": {
+    "group": "baseline"
+  },
+  "orthostat bp sitting [diastolic]__min": {
+    "group": "baseline"
+  },
+  "orthostat hr sitting__min": {
+    "group": "baseline"
+  },
+  "orthostatbp standing [diastolic]__min": {
+    "group": "baseline"
+  },
+  "orthostatic bp lying [diastolic]__min": {
+    "group": "baseline"
+  },
+  "orthostatic hr lying__min": {
+    "group": "baseline"
+  },
+  "orthostatic hr sitting__min": {
+    "group": "baseline"
+  },
+  "orthostatic hr standing__min": {
+    "group": "baseline"
+  },
+  "pantoprazole   mg/hr__min": {
+    "group": "baseline"
+  },
+  "pantoprazole  mg/hr__min": {
+    "group": "baseline"
+  },
+  "pap [diastolic]__min": {
+    "group": "baseline"
+  },
+  "pap [systolic]__min": {
+    "group": "baseline"
+  },
+  "respiratory rate__min": {
+    "group": "baseline"
+  },
+  "solumedrol mg/kg/hr__min": {
+    "group": "baseline"
+  },
+  "spo2__min": {
+    "group": "baseline"
+  },
+  "spont rr__min": {
+    "group": "baseline"
+  },
+  "systolic unloading__min": {
+    "group": "baseline"
+  },
+  "tcpcv-map__min": {
+    "group": "baseline"
+  },
+  "temperature f (calc)__min": {
+    "group": "baseline"
+  },
+  "temperature fahrenheit__min": {
+    "group": "baseline"
+  },
+  "thrombin__min": {
+    "group": "baseline"
+  },
+  "ventricular pacemaker threshold [value]__min": {
+    "group": "baseline"
+  },
+  "xigris mcg/kg/hr__min": {
+    "group": "baseline"
+  },
+  "aprotinin cc/hr__max": {
+    "group": "baseline"
+  },
+  "aprotinin ml/hr__max": {
+    "group": "baseline"
+  },
+  "arterial bp [diastolic]__max": {
+    "group": "baseline"
+  },
+  "arterial bp [systolic]__max": {
+    "group": "baseline"
+  },
+  "atrial pacemaker threshold [value]__max": {
+    "group": "baseline"
+  },
+  "bp cuff [diastolic]__max": {
+    "group": "baseline"
+  },
+  "bp cuff [systolic]__max": {
+    "group": "baseline"
+  },
+  "bp left arm [diastolic]__max": {
+    "group": "baseline"
+  },
+  "bp pal [diastolic]__max": {
+    "group": "baseline"
+  },
+  "bp pal [systolic]__max": {
+    "group": "baseline"
+  },
+  "bp right leg [diastolic]__max": {
+    "group": "baseline"
+  },
+  "bp right leg [systolic]__max": {
+    "group": "baseline"
+  },
+  "bp uac [systolic]__max": {
+    "group": "baseline"
+  },
+  "cariporide cc/hr__max": {
+    "group": "baseline"
+  },
+  "cariporide ml/hr__max": {
+    "group": "baseline"
+  },
+  "diastolic unloading__max": {
+    "group": "baseline"
+  },
+  "heart rate__max": {
+    "group": "baseline"
+  },
+  "hr alarm [high]__max": {
+    "group": "baseline"
+  },
+  "hr alarm [low]__max": {
+    "group": "baseline"
+  },
+  "mucomyst mg/hr__max": {
+    "group": "baseline"
+  },
+  "nbp [diastolic]__max": {
+    "group": "baseline"
+  },
+  "nicardipine mg/hr__max": {
+    "group": "baseline"
+  },
+  "nicardipine--mg/hr__max": {
+    "group": "baseline"
+  },
+  "non invasive blood pressure systolic__max": {
+    "group": "baseline"
+  },
+  "orthostat hr sitting__max": {
+    "group": "baseline"
+  },
+  "orthostatic bp lying [systolic]__max": {
+    "group": "baseline"
+  },
+  "pantoprazole   mg/hr__max": {
+    "group": "baseline"
+  },
+  "pantoprazole  mg/hr__max": {
+    "group": "baseline"
+  },
+  "protonix mg/hr__max": {
+    "group": "baseline"
+  },
+  "respiratory rate set__max": {
+    "group": "baseline"
+  },
+  "smoking cessation info offered through bidmc inpatient guide__max": {
+    "group": "baseline"
+  },
+  "spo2__max": {
+    "group": "baseline"
+  },
+  "spon rr (mech.)__max": {
+    "group": "baseline"
+  },
+  "tcpcv-map__max": {
+    "group": "baseline"
+  },
+  "temp/iso/warmer [temperature, degrees c]__max": {
+    "group": "baseline"
+  },
+  "temperature f (calc)__max": {
+    "group": "baseline"
+  },
+  "thrombin__max": {
+    "group": "baseline"
+  },
+  "vent sens thresh mv__max": {
+    "group": "baseline"
+  },
+  "ventricular pacemaker threshold [value]__max": {
+    "group": "baseline"
+  },
+  "xigris mcg/kg/hr__max": {
+    "group": "baseline"
+  },
+  "aprotinin cc/hr__range": {
+    "group": "baseline"
+  },
+  "arterial bp [diastolic]__range": {
+    "group": "baseline"
+  },
+  "arterial bp [systolic]__range": {
+    "group": "baseline"
+  },
+  "arterial o2 saturation__range": {
+    "group": "baseline"
+  },
+  "atr sens thresh mv__range": {
+    "group": "baseline"
+  },
+  "atr stim thresh ma__range": {
+    "group": "baseline"
+  },
+  "baseline current/ma__range": {
+    "group": "baseline"
+  },
+  "bp cuff [diastolic]__range": {
+    "group": "baseline"
+  },
+  "bp cuff [systolic]__range": {
+    "group": "baseline"
+  },
+  "bp left arm [systolic]__range": {
+    "group": "baseline"
+  },
+  "bp left leg [diastolic]__range": {
+    "group": "baseline"
+  },
+  "bp left leg [systolic]__range": {
+    "group": "baseline"
+  },
+  "bp uac [diastolic]__range": {
+    "group": "baseline"
+  },
+  "bp uac [systolic]__range": {
+    "group": "baseline"
+  },
+  "current goal__range": {
+    "group": "baseline"
+  },
+  "diastolic unloading__range": {
+    "group": "baseline"
+  },
+  "hr alarm [high]__range": {
+    "group": "baseline"
+  },
+  "lowest heart rate__range": {
+    "group": "baseline"
+  },
+  "manual blood pressure diastolic left__range": {
+    "group": "baseline"
+  },
+  "manual bp [diastolic]__range": {
+    "group": "baseline"
+  },
+  "manual bp [systolic]__range": {
+    "group": "baseline"
+  },
+  "nbp [systolic]__range": {
+    "group": "baseline"
+  },
+  "nicardipine mg/hr__range": {
+    "group": "baseline"
+  },
+  "nicardipine--mg/hr__range": {
+    "group": "baseline"
+  },
+  "pap [diastolic]__range": {
+    "group": "baseline"
+  },
+  "pap [systolic]__range": {
+    "group": "baseline"
+  },
+  "pca 1 hr limit (mg)__range": {
+    "group": "baseline"
+  },
+  "replace rate ml/hr__range": {
+    "group": "baseline"
+  },
+  "respiratory rate__range": {
+    "group": "baseline"
+  },
+  "respiratory rate set__range": {
+    "group": "baseline"
+  },
+  "spo2 alarm [high]__range": {
+    "group": "baseline"
+  },
+  "spo2 alarm [low]__range": {
+    "group": "baseline"
+  },
+  "systolic unloading__range": {
+    "group": "baseline"
+  },
+  "temp/iso/warmer [temperature, degrees c]__range": {
+    "group": "baseline"
+  },
+  "temperature c__range": {
+    "group": "baseline"
+  },
+  "temperature c (calc)__range": {
+    "group": "baseline"
+  },
+  "temperature f__range": {
+    "group": "baseline"
+  },
+  "temperature f (calc)__range": {
+    "group": "baseline"
+  },
+  "vent sens thresh mv__range": {
+    "group": "baseline"
+  },
+  "vent stim thresh ma__range": {
+    "group": "baseline"
+  },
+  "arterial blood pressure diastolic__last": {
+    "group": "baseline"
+  },
+  "arterial blood pressure systolic__last": {
+    "group": "baseline"
+  },
+  "arterial bp #2 [systolic]__last": {
+    "group": "baseline"
+  },
+  "arterial bp [diastolic]__last": {
+    "group": "baseline"
+  },
+  "arterial bp [systolic]__last": {
+    "group": "baseline"
+  },
+  "arterial o2 saturation__last": {
+    "group": "baseline"
+  },
+  "atr sens thresh mv__last": {
+    "group": "baseline"
+  },
+  "atr stim thresh ma__last": {
+    "group": "baseline"
+  },
+  "atrial pacemaker threshold [value]__last": {
+    "group": "baseline"
+  },
+  "bp cuff [diastolic]__last": {
+    "group": "baseline"
+  },
+  "bp cuff [systolic]__last": {
+    "group": "baseline"
+  },
+  "bp left leg [diastolic]__last": {
+    "group": "baseline"
+  },
+  "bp pal [diastolic]__last": {
+    "group": "baseline"
+  },
+  "bp pal [systolic]__last": {
+    "group": "baseline"
+  },
+  "bp right leg [diastolic]__last": {
+    "group": "baseline"
+  },
+  "bp uac [diastolic]__last": {
+    "group": "baseline"
+  },
+  "bp uac [systolic]__last": {
+    "group": "baseline"
+  },
+  "cariporide cc/hr__last": {
+    "group": "baseline"
+  },
+  "cariporide ml/hr__last": {
+    "group": "baseline"
+  },
+  "current goal__last": {
+    "group": "baseline"
+  },
+  "diastolic unloading__last": {
+    "group": "baseline"
+  },
+  "heart rate__last": {
+    "group": "baseline"
+  },
+  "hr alarm [high]__last": {
+    "group": "baseline"
+  },
+  "hr alarm [low]__last": {
+    "group": "baseline"
+  },
+  "manual bp [systolic]__last": {
+    "group": "baseline"
+  },
+  "mucomyst mg/hr__last": {
+    "group": "baseline"
+  },
+  "nbp [diastolic]__last": {
+    "group": "baseline"
+  },
+  "nbp [systolic]__last": {
+    "group": "baseline"
+  },
+  "nicardipine mg/hr__last": {
+    "group": "baseline"
+  },
+  "nicardipine--mg/hr__last": {
+    "group": "baseline"
+  },
+  "non invasive blood pressure diastolic__last": {
+    "group": "baseline"
+  },
+  "non invasive blood pressure systolic__last": {
+    "group": "baseline"
+  },
+  "orthostat hr sitting__last": {
+    "group": "baseline"
+  },
+  "orthostathr standing__last": {
+    "group": "baseline"
+  },
+  "orthostatic bp lying [systolic]__last": {
+    "group": "baseline"
+  },
+  "orthostatic hr lying__last": {
+    "group": "baseline"
+  },
+  "pantoprazole   mg/hr__last": {
+    "group": "baseline"
+  },
+  "pantoprazole  mg/hr__last": {
+    "group": "baseline"
+  },
+  "pap [diastolic]__last": {
+    "group": "baseline"
+  },
+  "pap [systolic]__last": {
+    "group": "baseline"
+  },
+  "prothrombin time__last": {
+    "group": "baseline"
+  },
+  "pulmonary artery pressure diastolic__last": {
+    "group": "baseline"
+  },
+  "replace rate ml/hr__last": {
+    "group": "baseline"
+  },
+  "respiratory rate__last": {
+    "group": "baseline"
+  },
+  "respiratory rate (spontaneous)__last": {
+    "group": "baseline"
+  },
+  "respiratory rate (total)__last": {
+    "group": "baseline"
+  },
+  "smoking cessation info offered through bidmc inpatient guide__last": {
+    "group": "baseline"
+  },
+  "solumedrol mg/kg/hr__last": {
+    "group": "baseline"
+  },
+  "spo2__last": {
+    "group": "baseline"
+  },
+  "spo2 alarm [high]__last": {
+    "group": "baseline"
+  },
+  "spon rr (mech.)__last": {
+    "group": "baseline"
+  },
+  "systolic unloading__last": {
+    "group": "baseline"
+  },
+  "tcpcv-map__last": {
+    "group": "baseline"
+  },
+  "temp/iso/warmer [temperature, degrees c]__last": {
+    "group": "baseline"
+  },
+  "temperature c__last": {
+    "group": "baseline"
+  },
+  "temperature f__last": {
+    "group": "baseline"
+  },
+  "thrombin__last": {
+    "group": "baseline"
+  },
+  "vent sens thresh mv__last": {
+    "group": "baseline"
+  },
+  "vent stim thresh ma__last": {
+    "group": "baseline"
+  },
+  "ventricular pacemaker threshold [value]__last": {
+    "group": "baseline"
+  },
+  "xigris mcg/kg/hr__last": {
+    "group": "baseline"
+  },
+  "24 hr creatinine__mean": {
+    "group": "baseline"
+  },
+  "bicarbonate__mean": {
+    "group": "baseline"
+  },
+  "calculated bicarbonate, whole blood__mean": {
+    "group": "baseline"
+  },
+  "chloride__mean": {
+    "group": "baseline"
+  },
+  "ck-mb index__mean": {
+    "group": "baseline"
+  },
+  "creatine kinase (ck)__mean": {
+    "group": "baseline"
+  },
+  "creatinine__mean": {
+    "group": "baseline"
+  },
+  "creatinine, ascites__mean": {
+    "group": "baseline"
+  },
+  "creatinine, pleural__mean": {
+    "group": "baseline"
+  },
+  "glucose__mean": {
+    "group": "baseline"
+  },
+  "hematocrit, ascites__mean": {
+    "group": "baseline"
+  },
+  "hematocrit, calculated__mean": {
+    "group": "baseline"
+  },
+  "hematocrit, joint fluid__mean": {
+    "group": "baseline"
+  },
+  "hematocrit, other fluid__mean": {
+    "group": "baseline"
+  },
+  "hemoglobin c__mean": {
+    "group": "baseline"
+  },
+  "lactate__mean": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase (ld)__mean": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase, csf__mean": {
+    "group": "baseline"
+  },
+  "methemoglobin__mean": {
+    "group": "baseline"
+  },
+  "platelet count__mean": {
+    "group": "baseline"
+  },
+  "potassium__mean": {
+    "group": "baseline"
+  },
+  "potassium, whole blood__mean": {
+    "group": "baseline"
+  },
+  "sodium__mean": {
+    "group": "baseline"
+  },
+  "sodium, urine__mean": {
+    "group": "baseline"
+  },
+  "sodium, whole blood__mean": {
+    "group": "baseline"
+  },
+  "urea nitrogen__mean": {
+    "group": "baseline"
+  },
+  "urea nitrogen, urine__mean": {
+    "group": "baseline"
+  },
+  "wbc casts__mean": {
+    "group": "baseline"
+  },
+  "white blood cells__mean": {
+    "group": "baseline"
+  },
+  "bicarbonate__std": {
+    "group": "baseline"
+  },
+  "carboxyhemoglobin__std": {
+    "group": "baseline"
+  },
+  "chloride__std": {
+    "group": "baseline"
+  },
+  "chloride, urine__std": {
+    "group": "baseline"
+  },
+  "chloride, whole blood__std": {
+    "group": "baseline"
+  },
+  "ck-mb index__std": {
+    "group": "baseline"
+  },
+  "creatinine__std": {
+    "group": "baseline"
+  },
+  "creatinine, body fluid__std": {
+    "group": "baseline"
+  },
+  "glucose__std": {
+    "group": "baseline"
+  },
+  "glucose, ascites__std": {
+    "group": "baseline"
+  },
+  "glucose, body fluid__std": {
+    "group": "baseline"
+  },
+  "glucose, csf__std": {
+    "group": "baseline"
+  },
+  "glucose, pleural__std": {
+    "group": "baseline"
+  },
+  "hematocrit__std": {
+    "group": "baseline"
+  },
+  "hematocrit, calculated__std": {
+    "group": "baseline"
+  },
+  "hematocrit, pleural__std": {
+    "group": "baseline"
+  },
+  "hemoglobin__std": {
+    "group": "baseline"
+  },
+  "lactate__std": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase (ld)__std": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase, ascites__std": {
+    "group": "baseline"
+  },
+  "platelet count__std": {
+    "group": "baseline"
+  },
+  "potassium__std": {
+    "group": "baseline"
+  },
+  "potassium, urine__std": {
+    "group": "baseline"
+  },
+  "potassium, whole blood__std": {
+    "group": "baseline"
+  },
+  "protein/creatinine ratio__std": {
+    "group": "baseline"
+  },
+  "sodium__std": {
+    "group": "baseline"
+  },
+  "sodium, whole blood__std": {
+    "group": "baseline"
+  },
+  "urea nitrogen__std": {
+    "group": "baseline"
+  },
+  "wbc__std": {
+    "group": "baseline"
+  },
+  "wbc count__std": {
+    "group": "baseline"
+  },
+  "wbc, ascites__std": {
+    "group": "baseline"
+  },
+  "wbc, csf__std": {
+    "group": "baseline"
+  },
+  "white blood cells__std": {
+    "group": "baseline"
+  },
+  "24 hr creatinine__min": {
+    "group": "baseline"
+  },
+  "albumin/creatinine, urine__min": {
+    "group": "baseline"
+  },
+  "bicarbonate__min": {
+    "group": "baseline"
+  },
+  "bicarbonate, urine__min": {
+    "group": "baseline"
+  },
+  "carboxyhemoglobin__min": {
+    "group": "baseline"
+  },
+  "chloride__min": {
+    "group": "baseline"
+  },
+  "ck-mb index__min": {
+    "group": "baseline"
+  },
+  "creatinine__min": {
+    "group": "baseline"
+  },
+  "creatinine, ascites__min": {
+    "group": "baseline"
+  },
+  "creatinine, pleural__min": {
+    "group": "baseline"
+  },
+  "creatinine, urine__min": {
+    "group": "baseline"
+  },
+  "glucose__min": {
+    "group": "baseline"
+  },
+  "glucose, ascites__min": {
+    "group": "baseline"
+  },
+  "glucose, body fluid__min": {
+    "group": "baseline"
+  },
+  "glucose, pleural__min": {
+    "group": "baseline"
+  },
+  "hematocrit, ascites__min": {
+    "group": "baseline"
+  },
+  "hematocrit, calculated__min": {
+    "group": "baseline"
+  },
+  "hematocrit, joint fluid__min": {
+    "group": "baseline"
+  },
+  "hematocrit, other fluid__min": {
+    "group": "baseline"
+  },
+  "hemoglobin__min": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase, ascites__min": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase, csf__min": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase, pleural__min": {
+    "group": "baseline"
+  },
+  "platelet count__min": {
+    "group": "baseline"
+  },
+  "potassium__min": {
+    "group": "baseline"
+  },
+  "potassium, urine__min": {
+    "group": "baseline"
+  },
+  "potassium, whole blood__min": {
+    "group": "baseline"
+  },
+  "protein/creatinine ratio__min": {
+    "group": "baseline"
+  },
+  "sodium, urine__min": {
+    "group": "baseline"
+  },
+  "tacrofk__min": {
+    "group": "baseline"
+  },
+  "urea nitrogen, urine__min": {
+    "group": "baseline"
+  },
+  "wbc casts__min": {
+    "group": "baseline"
+  },
+  "wbc count__min": {
+    "group": "baseline"
+  },
+  "wbc, ascites__min": {
+    "group": "baseline"
+  },
+  "wbc, other fluid__min": {
+    "group": "baseline"
+  },
+  "white blood cells__min": {
+    "group": "baseline"
+  },
+  "24 hr creatinine__max": {
+    "group": "baseline"
+  },
+  "chloride__max": {
+    "group": "baseline"
+  },
+  "ck-mb index__max": {
+    "group": "baseline"
+  },
+  "creatine kinase (ck)__max": {
+    "group": "baseline"
+  },
+  "creatinine, ascites__max": {
+    "group": "baseline"
+  },
+  "creatinine, body fluid__max": {
+    "group": "baseline"
+  },
+  "creatinine, pleural__max": {
+    "group": "baseline"
+  },
+  "creatinine, urine__max": {
+    "group": "baseline"
+  },
+  "glucose__max": {
+    "group": "baseline"
+  },
+  "glucose, csf__max": {
+    "group": "baseline"
+  },
+  "hematocrit__max": {
+    "group": "baseline"
+  },
+  "hematocrit, ascites__max": {
+    "group": "baseline"
+  },
+  "hematocrit, calculated__max": {
+    "group": "baseline"
+  },
+  "hematocrit, joint fluid__max": {
+    "group": "baseline"
+  },
+  "hematocrit, other fluid__max": {
+    "group": "baseline"
+  },
+  "hematocrit, pleural__max": {
+    "group": "baseline"
+  },
+  "hemoglobin c__max": {
+    "group": "baseline"
+  },
+  "lactate__max": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase (ld)__max": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase, csf__max": {
+    "group": "baseline"
+  },
+  "potassium__max": {
+    "group": "baseline"
+  },
+  "potassium, whole blood__max": {
+    "group": "baseline"
+  },
+  "sodium, urine__max": {
+    "group": "baseline"
+  },
+  "urea nitrogen, urine__max": {
+    "group": "baseline"
+  },
+  "wbc__max": {
+    "group": "baseline"
+  },
+  "wbc casts__max": {
+    "group": "baseline"
+  },
+  "wbc, joint fluid__max": {
+    "group": "baseline"
+  },
+  "wbc, pleural__max": {
+    "group": "baseline"
+  },
+  "% hemoglobin a1c__range": {
+    "group": "baseline"
+  },
+  "bicarbonate__range": {
+    "group": "baseline"
+  },
+  "calculated bicarbonate, whole blood__range": {
+    "group": "baseline"
+  },
+  "chloride__range": {
+    "group": "baseline"
+  },
+  "creatine kinase (ck)__range": {
+    "group": "baseline"
+  },
+  "creatinine__range": {
+    "group": "baseline"
+  },
+  "creatinine, body fluid__range": {
+    "group": "baseline"
+  },
+  "glucose, ascites__range": {
+    "group": "baseline"
+  },
+  "glucose, body fluid__range": {
+    "group": "baseline"
+  },
+  "glucose, csf__range": {
+    "group": "baseline"
+  },
+  "hematocrit__range": {
+    "group": "baseline"
+  },
+  "hematocrit, pleural__range": {
+    "group": "baseline"
+  },
+  "hemoglobin__range": {
+    "group": "baseline"
+  },
+  "lactate__range": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase (ld)__range": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase, ascites__range": {
+    "group": "baseline"
+  },
+  "platelet count__range": {
+    "group": "baseline"
+  },
+  "protein/creatinine ratio__range": {
+    "group": "baseline"
+  },
+  "sodium__range": {
+    "group": "baseline"
+  },
+  "sodium, whole blood__range": {
+    "group": "baseline"
+  },
+  "tacrofk__range": {
+    "group": "baseline"
+  },
+  "urea nitrogen__range": {
+    "group": "baseline"
+  },
+  "wbc count__range": {
+    "group": "baseline"
+  },
+  "wbc, ascites__range": {
+    "group": "baseline"
+  },
+  "white blood cells__range": {
+    "group": "baseline"
+  },
+  "% hemoglobin a1c__last": {
+    "group": "baseline"
+  },
+  "24 hr creatinine__last": {
+    "group": "baseline"
+  },
+  "bicarbonate__last": {
+    "group": "baseline"
+  },
+  "chloride__last": {
+    "group": "baseline"
+  },
+  "chloride, urine__last": {
+    "group": "baseline"
+  },
+  "chloride, whole blood__last": {
+    "group": "baseline"
+  },
+  "ck-mb index__last": {
+    "group": "baseline"
+  },
+  "creatine kinase (ck)__last": {
+    "group": "baseline"
+  },
+  "creatinine__last": {
+    "group": "baseline"
+  },
+  "creatinine, ascites__last": {
+    "group": "baseline"
+  },
+  "creatinine, body fluid__last": {
+    "group": "baseline"
+  },
+  "creatinine, pleural__last": {
+    "group": "baseline"
+  },
+  "creatinine, urine__last": {
+    "group": "baseline"
+  },
+  "glucose__last": {
+    "group": "baseline"
+  },
+  "glucose, body fluid__last": {
+    "group": "baseline"
+  },
+  "hematocrit__last": {
+    "group": "baseline"
+  },
+  "hematocrit, ascites__last": {
+    "group": "baseline"
+  },
+  "hematocrit, calculated__last": {
+    "group": "baseline"
+  },
+  "hematocrit, joint fluid__last": {
+    "group": "baseline"
+  },
+  "hematocrit, other fluid__last": {
+    "group": "baseline"
+  },
+  "hematocrit, pleural__last": {
+    "group": "baseline"
+  },
+  "hemoglobin__last": {
+    "group": "baseline"
+  },
+  "hemoglobin c__last": {
+    "group": "baseline"
+  },
+  "lactate__last": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase (ld)__last": {
+    "group": "baseline"
+  },
+  "lactate dehydrogenase, csf__last": {
+    "group": "baseline"
+  },
+  "platelet count__last": {
+    "group": "baseline"
+  },
+  "potassium__last": {
+    "group": "baseline"
+  },
+  "potassium, whole blood__last": {
+    "group": "baseline"
+  },
+  "sodium__last": {
+    "group": "baseline"
+  },
+  "sodium, urine__last": {
+    "group": "baseline"
+  },
+  "tacrofk__last": {
+    "group": "baseline"
+  },
+  "urea nitrogen__last": {
+    "group": "baseline"
+  },
+  "urea nitrogen, urine__last": {
+    "group": "baseline"
+  },
+  "wbc casts__last": {
+    "group": "baseline"
+  },
+  "wbc, csf__last": {
+    "group": "baseline"
+  },
+  "wbc, other fluid__last": {
+    "group": "baseline"
+  },
+  "wbc, pleural__last": {
+    "group": "baseline"
+  },
+  "white blood cells__last": {
+    "group": "baseline"
+  },
+  "rx_total_mentions": {
+    "group": "baseline"
+  },
+  "rx_unique_drugs": {
+    "group": "baseline"
+  },
+  "0": {
+    "group": "baseline"
+  },
+  "1": {
+    "group": "baseline"
+  },
+  "2": {
+    "group": "baseline"
+  },
+  "3": {
+    "group": "baseline"
+  },
+  "proc_vent_any": {
+    "group": "baseline"
+  },
+  "proc_rrt_any": {
+    "group": "baseline"
+  },
+  "admit_hour": {
+    "group": "baseline"
+  },
+  "admit_weekend": {
+    "group": "baseline"
+  },
+  "admit_month": {
+    "group": "baseline"
+  },
+  "var_arterial blood pressure diastolic__slope": {
+    "group": "variability"
+  },
+  "var_arterial bp [diastolic]__slope": {
+    "group": "variability"
+  },
+  "var_arterial bp [systolic]__slope": {
+    "group": "variability"
+  },
+  "var_arterial o2 saturation__slope": {
+    "group": "variability"
+  },
+  "var_atr sens thresh mv__slope": {
+    "group": "variability"
+  },
+  "var_atr stim thresh ma__slope": {
+    "group": "variability"
+  },
+  "var_atrial pacemaker threshold [value]__slope": {
+    "group": "variability"
+  },
+  "var_bp cuff [diastolic]__slope": {
+    "group": "variability"
+  },
+  "var_bp cuff [systolic]__slope": {
+    "group": "variability"
+  },
+  "var_bp uac [diastolic]__slope": {
+    "group": "variability"
+  },
+  "var_bp uac [systolic]__slope": {
+    "group": "variability"
+  },
+  "var_diastolic unloading__slope": {
+    "group": "variability"
+  },
+  "var_heart rate__slope": {
+    "group": "variability"
+  },
+  "var_heart rate alarm - high__slope": {
+    "group": "variability"
+  },
+  "var_hr alarm [high]__slope": {
+    "group": "variability"
+  },
+  "var_hr alarm [low]__slope": {
+    "group": "variability"
+  },
+  "var_nbp [diastolic]__slope": {
+    "group": "variability"
+  },
+  "var_nbp [systolic]__slope": {
+    "group": "variability"
+  },
+  "var_non invasive blood pressure systolic__slope": {
+    "group": "variability"
+  },
+  "var_pap [diastolic]__slope": {
+    "group": "variability"
+  },
+  "var_pap [systolic]__slope": {
+    "group": "variability"
+  },
+  "var_pca 1 hr limit (mg)__slope": {
+    "group": "variability"
+  },
+  "var_prothrombin time__slope": {
+    "group": "variability"
+  },
+  "var_respiratory rate__slope": {
+    "group": "variability"
+  },
+  "var_respiratory rate (spontaneous)__slope": {
+    "group": "variability"
+  },
+  "var_respiratory rate set__slope": {
+    "group": "variability"
+  },
+  "var_spo2__slope": {
+    "group": "variability"
+  },
+  "var_spo2 alarm [high]__slope": {
+    "group": "variability"
+  },
+  "var_spo2 alarm [low]__slope": {
+    "group": "variability"
+  },
+  "var_systolic unloading__slope": {
+    "group": "variability"
+  },
+  "var_temp/iso/warmer [temperature, degrees c]__slope": {
+    "group": "variability"
+  },
+  "var_temperature c__slope": {
+    "group": "variability"
+  },
+  "var_temperature c (calc)__slope": {
+    "group": "variability"
+  },
+  "var_temperature f__slope": {
+    "group": "variability"
+  },
+  "var_vent sens thresh mv__slope": {
+    "group": "variability"
+  },
+  "var_vent stim thresh ma__slope": {
+    "group": "variability"
+  },
+  "var_arterial bp #2 [systolic]__std": {
+    "group": "variability"
+  },
+  "var_arterial bp [diastolic]__std": {
+    "group": "variability"
+  },
+  "var_arterial bp [systolic]__std": {
+    "group": "variability"
+  },
+  "var_arterial o2 saturation__std": {
+    "group": "variability"
+  },
+  "var_atr stim thresh ma__std": {
+    "group": "variability"
+  },
+  "var_atrial pacemaker threshold [value]__std": {
+    "group": "variability"
+  },
+  "var_bp cuff [diastolic]__std": {
+    "group": "variability"
+  },
+  "var_bp cuff [systolic]__std": {
+    "group": "variability"
+  },
+  "var_bp uac [systolic]__std": {
+    "group": "variability"
+  },
+  "var_diastolic unloading__std": {
+    "group": "variability"
+  },
+  "var_heart rate__std": {
+    "group": "variability"
+  },
+  "var_hr alarm [low]__std": {
+    "group": "variability"
+  },
+  "var_nbp [diastolic]__std": {
+    "group": "variability"
+  },
+  "var_nbp [systolic]__std": {
+    "group": "variability"
+  },
+  "var_pap [diastolic]__std": {
+    "group": "variability"
+  },
+  "var_pap [systolic]__std": {
+    "group": "variability"
+  },
+  "var_respiratory rate__std": {
+    "group": "variability"
+  },
+  "var_respiratory rate (spontaneous)__std": {
+    "group": "variability"
+  },
+  "var_respiratory rate set__std": {
+    "group": "variability"
+  },
+  "var_spo2__std": {
+    "group": "variability"
+  },
+  "var_spo2 alarm [low]__std": {
+    "group": "variability"
+  },
+  "var_systolic unloading__std": {
+    "group": "variability"
+  },
+  "var_temp/iso/warmer [temperature, degrees c]__std": {
+    "group": "variability"
+  },
+  "var_temperature c__std": {
+    "group": "variability"
+  },
+  "var_temperature c (calc)__std": {
+    "group": "variability"
+  },
+  "var_temperature f (calc)__std": {
+    "group": "variability"
+  },
+  "var_vent sens thresh mv__std": {
+    "group": "variability"
+  },
+  "var_vent stim thresh ma__std": {
+    "group": "variability"
+  },
+  "var_art bp systolic__cv": {
+    "group": "variability"
+  },
+  "var_arterial blood pressure systolic__cv": {
+    "group": "variability"
+  },
+  "var_arterial bp [diastolic]__cv": {
+    "group": "variability"
+  },
+  "var_arterial bp [systolic]__cv": {
+    "group": "variability"
+  },
+  "var_atr sens thresh mv__cv": {
+    "group": "variability"
+  },
+  "var_atr stim thresh ma__cv": {
+    "group": "variability"
+  },
+  "var_atrial pacemaker threshold [value]__cv": {
+    "group": "variability"
+  },
+  "var_bp cuff [diastolic]__cv": {
+    "group": "variability"
+  },
+  "var_bp cuff [systolic]__cv": {
+    "group": "variability"
+  },
+  "var_bp uac [diastolic]__cv": {
+    "group": "variability"
+  },
+  "var_bp uac [systolic]__cv": {
+    "group": "variability"
+  },
+  "var_diastolic unloading__cv": {
+    "group": "variability"
+  },
+  "var_gait/transferring__cv": {
+    "group": "variability"
+  },
+  "var_heart rate__cv": {
+    "group": "variability"
+  },
+  "var_heart rate alarm - high__cv": {
+    "group": "variability"
+  },
+  "var_heart rate alarm - low__cv": {
+    "group": "variability"
+  },
+  "var_hr alarm [high]__cv": {
+    "group": "variability"
+  },
+  "var_hr alarm [low]__cv": {
+    "group": "variability"
+  },
+  "var_nbp [diastolic]__cv": {
+    "group": "variability"
+  },
+  "var_nbp [systolic]__cv": {
+    "group": "variability"
+  },
+  "var_non invasive blood pressure diastolic__cv": {
+    "group": "variability"
+  },
+  "var_non invasive blood pressure systolic__cv": {
+    "group": "variability"
+  },
+  "var_o2 saturation pulseoxymetry__cv": {
+    "group": "variability"
+  },
+  "var_o2 saturation pulseoxymetry alarm - high__cv": {
+    "group": "variability"
+  },
+  "var_o2 saturation pulseoxymetry alarm - low__cv": {
+    "group": "variability"
+  },
+  "var_pap [diastolic]__cv": {
+    "group": "variability"
+  },
+  "var_pap [systolic]__cv": {
+    "group": "variability"
+  },
+  "var_pca 1 hr limit (mg)__cv": {
+    "group": "variability"
+  },
+  "var_prothrombin time__cv": {
+    "group": "variability"
+  },
+  "var_respiratory rate__cv": {
+    "group": "variability"
+  },
+  "var_respiratory rate (set)__cv": {
+    "group": "variability"
+  },
+  "var_respiratory rate (spontaneous)__cv": {
+    "group": "variability"
+  },
+  "var_respiratory rate (total)__cv": {
+    "group": "variability"
+  },
+  "var_respiratory rate set__cv": {
+    "group": "variability"
+  },
+  "var_spo2__cv": {
+    "group": "variability"
+  },
+  "var_spo2 alarm [high]__cv": {
+    "group": "variability"
+  },
+  "var_spo2 alarm [low]__cv": {
+    "group": "variability"
+  },
+  "var_spon rr (mech.)__cv": {
+    "group": "variability"
+  },
+  "var_systolic unloading__cv": {
+    "group": "variability"
+  },
+  "var_temp/iso/warmer [temperature, degrees c]__cv": {
+    "group": "variability"
+  },
+  "var_temperature c (calc)__cv": {
+    "group": "variability"
+  },
+  "var_temperature f__cv": {
+    "group": "variability"
+  },
+  "var_vent sens thresh mv__cv": {
+    "group": "variability"
+  },
+  "var_vent stim thresh ma__cv": {
+    "group": "variability"
+  },
+  "var_heart rate__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_respiratory rate__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_spo2__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_heart rate__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_respiratory rate__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_spo2__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_bicarbonate__slope": {
+    "group": "variability"
+  },
+  "var_calculated bicarbonate, whole blood__slope": {
+    "group": "variability"
+  },
+  "var_chloride__slope": {
+    "group": "variability"
+  },
+  "var_chloride, whole blood__slope": {
+    "group": "variability"
+  },
+  "var_ck-mb index__slope": {
+    "group": "variability"
+  },
+  "var_creatine kinase (ck)__slope": {
+    "group": "variability"
+  },
+  "var_creatinine__slope": {
+    "group": "variability"
+  },
+  "var_creatinine, urine__slope": {
+    "group": "variability"
+  },
+  "var_glucose__slope": {
+    "group": "variability"
+  },
+  "var_hematocrit__slope": {
+    "group": "variability"
+  },
+  "var_hematocrit, calculated__slope": {
+    "group": "variability"
+  },
+  "var_hemoglobin__slope": {
+    "group": "variability"
+  },
+  "var_lactate__slope": {
+    "group": "variability"
+  },
+  "var_lactate dehydrogenase (ld)__slope": {
+    "group": "variability"
+  },
+  "var_platelet count__slope": {
+    "group": "variability"
+  },
+  "var_potassium__slope": {
+    "group": "variability"
+  },
+  "var_potassium, whole blood__slope": {
+    "group": "variability"
+  },
+  "var_sodium__slope": {
+    "group": "variability"
+  },
+  "var_sodium, urine__slope": {
+    "group": "variability"
+  },
+  "var_sodium, whole blood__slope": {
+    "group": "variability"
+  },
+  "var_urea nitrogen__slope": {
+    "group": "variability"
+  },
+  "var_white blood cells__slope": {
+    "group": "variability"
+  },
+  "var_bicarbonate__std": {
+    "group": "variability"
+  },
+  "var_calculated bicarbonate, whole blood__std": {
+    "group": "variability"
+  },
+  "var_chloride__std": {
+    "group": "variability"
+  },
+  "var_chloride, whole blood__std": {
+    "group": "variability"
+  },
+  "var_ck-mb index__std": {
+    "group": "variability"
+  },
+  "var_creatine kinase (ck)__std": {
+    "group": "variability"
+  },
+  "var_creatinine__std": {
+    "group": "variability"
+  },
+  "var_glucose__std": {
+    "group": "variability"
+  },
+  "var_hematocrit__std": {
+    "group": "variability"
+  },
+  "var_hematocrit, calculated__std": {
+    "group": "variability"
+  },
+  "var_hemoglobin__std": {
+    "group": "variability"
+  },
+  "var_lactate__std": {
+    "group": "variability"
+  },
+  "var_platelet count__std": {
+    "group": "variability"
+  },
+  "var_potassium__std": {
+    "group": "variability"
+  },
+  "var_sodium, whole blood__std": {
+    "group": "variability"
+  },
+  "var_tacrofk__std": {
+    "group": "variability"
+  },
+  "var_urea nitrogen__std": {
+    "group": "variability"
+  },
+  "var_urea nitrogen, urine__std": {
+    "group": "variability"
+  },
+  "var_white blood cells__std": {
+    "group": "variability"
+  },
+  "var_% hemoglobin a1c__cv": {
+    "group": "variability"
+  },
+  "var_bicarbonate__cv": {
+    "group": "variability"
+  },
+  "var_calculated bicarbonate, whole blood__cv": {
+    "group": "variability"
+  },
+  "var_chloride__cv": {
+    "group": "variability"
+  },
+  "var_ck-mb index__cv": {
+    "group": "variability"
+  },
+  "var_creatine kinase (ck)__cv": {
+    "group": "variability"
+  },
+  "var_creatinine__cv": {
+    "group": "variability"
+  },
+  "var_creatinine, urine__cv": {
+    "group": "variability"
+  },
+  "var_glucose__cv": {
+    "group": "variability"
+  },
+  "var_hematocrit__cv": {
+    "group": "variability"
+  },
+  "var_hematocrit, calculated__cv": {
+    "group": "variability"
+  },
+  "var_hemoglobin__cv": {
+    "group": "variability"
+  },
+  "var_lactate__cv": {
+    "group": "variability"
+  },
+  "var_lactate dehydrogenase (ld)__cv": {
+    "group": "variability"
+  },
+  "var_methemoglobin__cv": {
+    "group": "variability"
+  },
+  "var_platelet count__cv": {
+    "group": "variability"
+  },
+  "var_potassium__cv": {
+    "group": "variability"
+  },
+  "var_potassium, urine__cv": {
+    "group": "variability"
+  },
+  "var_potassium, whole blood__cv": {
+    "group": "variability"
+  },
+  "var_protein/creatinine ratio__cv": {
+    "group": "variability"
+  },
+  "var_sodium__cv": {
+    "group": "variability"
+  },
+  "var_sodium, urine__cv": {
+    "group": "variability"
+  },
+  "var_sodium, whole blood__cv": {
+    "group": "variability"
+  },
+  "var_tacrofk__cv": {
+    "group": "variability"
+  },
+  "var_urea nitrogen__cv": {
+    "group": "variability"
+  },
+  "var_white blood cells__cv": {
+    "group": "variability"
+  },
+  "var_bicarbonate__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_chloride__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_creatinine__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_glucose__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_hemoglobin__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_lactate__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_potassium__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_sodium__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_wbc__abn_low_ct": {
+    "group": "variability"
+  },
+  "var_bicarbonate__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_chloride__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_creatinine__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_glucose__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_hemoglobin__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_lactate__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_potassium__abn_high_ct": {
+    "group": "variability"
+  },
+  "var_sodium__abn_high_ct": {
+    "group": "variability"
+  },
+  "med_total_mentions": {
+    "group": "medication"
+  },
+  "med_unique_drugs": {
+    "group": "medication"
+  },
+  "med_cls_abx_beta_lactam_any": {
+    "group": "medication"
+  },
+  "med_cls_abx_metronidazole_any": {
+    "group": "medication"
+  },
+  "med_cls_abx_fluoroquinolone_any": {
+    "group": "medication"
+  },
+  "med_cls_insulin_any": {
+    "group": "medication"
+  },
+  "med_cls_diuretic_any": {
+    "group": "medication"
+  },
+  "med_cls_steroid_any": {
+    "group": "medication"
+  },
+  "med_cls_anticoagulant_any": {
+    "group": "medication"
+  },
+  "med_cls_opioid_any": {
+    "group": "medication"
+  },
+  "med_abx_class_count": {
+    "group": "medication"
+  },
+  "pheno_cluster": {
+    "group": "phenotype"
+  },
+  "pheno_cluster_0": {
+    "group": "phenotype"
+  },
+  "pheno_cluster_3": {
+    "group": "phenotype"
+  },
+  "stack_mortality_proba": {
+    "group": "stacking"
+  },
+  "stack_prolonged_los_proba": {
+    "group": "stacking"
+  }
+}

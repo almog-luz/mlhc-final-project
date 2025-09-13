@@ -1,0 +1,18 @@
+{
+  "model_type": "hgb",
+  "pos_weight": 3.5886340049830956,
+  "C": 0.26545174885335854,
+  "min_recall": null,
+  "feature_select_C": 0.0861428666298151,
+  "phenotype_clusters": 0,
+  "stack_readmission": 1,
+  "roc_auc": 0.6328176871418191,
+  "pr_auc": 0.06724782453779321,
+  "f1": 0.11780455153949129,
+  "precision": 0.08782435129740519,
+  "recall": 0.17886178861788618,
+  "brier": 0.04095899347789654,
+  "ece": 0.00459144378004462,
+  "threshold": 0.0680691343988666,
+  "run_dir": "project/tuning/hgb_joint\\trial_6\\hgb_pw3.5886340049830956_C0.26545174885335854_fs0.0861428666298151_ph0_stack"
+}

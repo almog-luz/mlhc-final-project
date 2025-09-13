@@ -1,0 +1,14 @@
+{
+  "trial": 5,
+  "params": {
+    "n_estimators": 550,
+    "learning_rate": 0.053860256044127766,
+    "max_depth": 7,
+    "subsample": 0.633403020529119,
+    "colsample_bytree": 0.7782928779863103,
+    "reg_lambda": 1.6816029468966678,
+    "reg_alpha": 0.3202018568319458
+  },
+  "roc_auc": NaN,
+  "duration_sec": 1.9232699871063232
+}

@@ -1,0 +1,1619 @@
+feature,importance_mean,importance_std
+eth_OTHER,0.01641839257445612,0.005355165673040228
+Urea Nitrogen__max,0.008702573904065347,0.0043336157976233206
+White Blood Cells__max,0.0068069474968928565,0.0025913957240227526
+rx_total_mentions,0.005036800964449339,0.0007189581867279044
+Hemoglobin__max,0.0044220092595493865,0.006113836256980419
+Potassium__range,0.004358224899921969,0.0016863232461530688
+BP Cuff [Systolic]__last,0.004292500898949147,0.003462145778652626
+Potassium__last,0.004044003001967988,0.0017119105630467326
+Potassium__max,0.003985366152064862,0.0017909282086062267
+Respiratory Rate__min,0.0036517478406569827,0.0018928029198363816
+Chloride__max,0.0034092180708923834,0.005457102781758937
+Respiratory Rate__max,0.0030536668919634914,0.001961132537325105
+BP Cuff [Systolic]__min,0.0029328123158273156,0.003933302271907968
+White Blood Cells__last,0.0026607403163406264,0.0015357956416639396
+White Blood Cells__min,0.002543317413354007,0.0009466157419355052
+Potassium__mean,0.0022756469076894658,0.0014108761020804816
+Temperature C (calc)__std,0.0021717268925304455,0.0015444834874708115
+Bicarbonate__mean,0.0019182306890053846,0.003939263549006061
+Respiratory Rate__last,0.0017607467320773563,0.001342385699069206
+Bicarbonate__last,0.0017323981277984845,0.0007592850606660263
+NBP [Diastolic]__min,0.0015817029155793527,0.0027324553858433347
+rx_unique_drugs,0.0015740935533781642,0.001359335184508316
+Gait/Transferring__last,0.0015233644720370697,0.0017259457992434845
+Chloride__mean,0.0013905736414677517,0.001501192787041098
+Hematocrit__mean,0.001357375933825411,0.0009058830581842319
+Glucose__range,0.0012180947649080176,0.000860180649820396
+Platelet Count__min,0.001206233112065025,0.0014207191435703795
+Temperature F__std,0.001203323650046917,0.0010662616890666978
+Respiratory Rate__std,0.0011970571164695131,0.002207849298810452
+NBP [Systolic]__min,0.0010885118027176067,0.0009880080209197929
+Hematocrit__max,0.001012865790247197,0.000853162964190219
+Creatine Kinase (CK)__min,0.000945873562240851,0.0006975639793217046
+White Blood Cells__std,0.00087074976090189,0.00048462938571062326
+"Temp/Iso/Warmer [Temperature, degrees C]__mean",0.0008547850205974817,0.0010054101066476234
+BP Cuff [Systolic]__mean,0.0008412821327699494,0.0017153484260520723
+Creatinine__max,0.0008353140055533448,0.00048387925615361936
+Respiratory Rate (spontaneous)__std,0.000822109524086656,0.0009085231773797253
+Platelet Count__std,0.0008214381097747525,0.0004232038734898304
+Sodium__mean,0.0007958497643335338,0.00043587613292175853
+Arterial BP [Diastolic]__std,0.0007866737687380221,0.0016691009087845547
+SpO2__mean,0.0007288575363272765,0.0007098664914176246
+"Chloride, Whole Blood__mean",0.0006815601281356942,0.0005205922401161603
+Creatinine__last,0.0006655953878313525,0.00044441805936617975
+Chloride__range,0.0006451545521144464,0.0005391277152833857
+Sodium__last,0.0006166567446552085,0.0007405615879088487
+Temporary Venticular Sens Threshold mV__std,0.0006045712870416109,0.00034200239624806626
+Sodium__std,0.0006012888170723763,0.0011784938610831523
+NBP [Systolic]__last,0.000583533638603062,0.00016668032145342098
+"Hematocrit, Calculated__last",0.000574581447778133,0.0003671730514249214
+WBC__min,0.0005465312498601049,0.0007950697997134426
+Prothrombin time__std,0.0005433979830714141,0.0004949820513687462
+Temporary Venticular Sens Threshold mV__min,0.0005319839397696979,0.00044509526953177256
+Arterial BP [Systolic]__last,0.0005060971879677023,0.00020732403365559572
+HR Alarm [High]__last,0.0005016210925552489,0.0002831338615773067
+"Sodium, Whole Blood__min",0.0004926689017302977,0.0001714711343575363
+Arterial Blood Pressure diastolic__std,0.00047871840436148895,0.0003664020174194862
+PAP [Diastolic]__min,0.0004750629264413719,0.00036686401308978295
+Respiratory Rate Set__last,0.0004635742815493948,0.00018255946573712053
+Non Invasive Blood Pressure systolic__std,0.0004556665129873849,2.945922245013394e-05
+Bicarbonate__range,0.00045133962075531996,0.00036852490885277143
+Creatine Kinase (CK)__last,0.0004476095412449865,0.000961110703788592
+White Blood Cells__range,0.00044470007922690067,0.0012090592381787998
+Lactate__min,0.0004335844422859836,0.0005366641884929305
+Chloride__last,0.0004285861357421039,0.0007201940305627736
+O2 saturation pulseoxymetry__std,0.0004194847417367642,0.0007400109093236559
+Temporary Venticular Stim Threshold mA__max,0.00039516462332911395,0.00176993697345345
+Temperature Fahrenheit__mean,0.0003664430110992711,0.0006580354875011614
+admit_month,0.0003597288679805688,0.00031826909487888094
+Heart Rate Alarm - Low__mean,0.0003027332530620264,0.00020105448279476921
+Arterial Blood Pressure diastolic__mean,0.000301912635569801,0.0004730484776189493
+"Creatinine, Urine__max",0.00028870815410304563,0.0002582008349705226
+Glucose__max,0.000288708154102979,0.000609647554611456
+O2 saturation pulseoxymetry__min,0.000282590823705986,0.0001439384664492027
+% Hemoglobin A1c__mean,0.00026379122297370827,0.0002471800056026403
+Pulmonary Artery Pressure diastolic__std,0.00025625646236273616,0.00033634224364642194
+NBP [Systolic]__mean,0.00024902010811260754,0.00032122491852425427
+Heart Rate__max,0.00024051552682895493,0.000474602769783358
+Arterial BP [Diastolic]__max,0.0002384266823031611,0.00020478406923952778
+Creatine Kinase (CK)__max,0.00023738226004026418,0.0006657081001033619
+BP Cuff [Diastolic]__std,0.0002172398306842682,0.0006339508468788106
+Potassium__min,0.00021709062750385755,0.00023903099232049863
+Creatinine__std,0.00019858943313237897,0.00021523891736002621
+Arterial BP [Systolic]__std,0.0001967989949674065,6.4954641114756e-05
+Non Invasive Blood Pressure systolic__min,0.00019187529001369886,4.263505355875261e-05
+Lactate Dehydrogenase (LD)__last,0.00017993903558048973,0.0002116321810308872
+Temperature Fahrenheit__last,0.0001697932193122531,0.00012022628964241464
+CK-MB Index__std,0.00016322827937400585,0.00024192705647514172
+Hemoglobin__std,0.0001629298730131845,0.0012310597544651278
+Temperature C (calc)__max,0.00014950158677580206,0.00010429035492181566
+Respiratory Rate__range,0.00014368266273963038,0.00016949481295143386
+Non Invasive Blood Pressure diastolic__last,0.0001399525832292303,0.0010873942324071187
+Temperature F__mean,0.00013920656732717694,0.0002368717851516969
+Respiratory Rate Set__min,0.00012712110971360157,0.00013824510033083492
+Hemoglobin__mean,0.00012301802225214153,0.00039344276086873583
+"Potassium, Whole Blood__range",0.00011831812206906101,0.00040889691679284906
+Arterial BP [Diastolic]__last,0.000113842026656652,9.302025585815586e-05
+Temperature C__range,0.00010571045332401497,0.00013142433222714732
+Urea Nitrogen__mean,8.676164941130437e-05,0.0010066527668083232
+White Blood Cells__mean,7.818246653750194e-05,0.0005260560954460915
+CK-MB Index__mean,6.818585344967599e-05,0.00010211930445428928
+NBP [Diastolic]__last,6.475418030014169e-05,0.00029283776431716175
+Respiratory Rate (spontaneous)__last,6.281453895473632e-05,0.000535532678985842
+Glucose__mean,5.1848105194252095e-05,0.0011896905542944103
+Respiratory Rate (spontaneous)__mean,3.8345217366653193e-05,0.0005858848793904432
+SpO2__max,3.506274739752957e-05,0.00044417313185909007
+CK-MB Index__max,3.118346470674105e-05,0.0002518832519155137
+PAP [Diastolic]__max,2.8124799508222333e-05,0.00031433188593999557
+Vent Sens Thresh mV__min,2.7453385196340997e-05,0.0001875117462433237
+Prothrombin time__mean,1.6412349845662532e-05,3.615830644081493e-05
+Respiratory Rate (Set)__std,1.37266925981816e-05,0.00023203785812724275
+Heart Rate__mean,7.087151069695707e-06,2.3591094211937185e-07
+Lactate__std,6.7141431187023315e-06,0.0001494201133384232
+HR Alarm [High]__mean,0.0,0.0
+HR Alarm [Low]__mean,0.0,0.0
+HR_ApacheIV__mean,0.0,0.0
+Heart rate Alarm - High__mean,0.0,0.0
+HrApacheIIScore__mean,0.0,0.0
+BP UAC [Diastolic]__mean,0.0,0.0
+HrScore_ApacheIV__mean,0.0,0.0
+Lowest Heart Rate__mean,0.0,0.0
+MAP_ApacheIV__mean,0.0,0.0
+METHYLPRED 450MG/HR__mean,0.0,0.0
+Manual BP [Diastolic]__mean,0.0,0.0
+Manual BP [Systolic]__mean,0.0,0.0
+Manual Blood Pressure Diastolic Left__mean,0.0,0.0
+Manual Blood Pressure Diastolic Right__mean,0.0,0.0
+Manual Blood Pressure Systolic Left__mean,0.0,0.0
+Manual Blood Pressure Systolic Right__mean,0.0,0.0
+MapApacheIIScore__mean,0.0,0.0
+MapApacheIIValue__mean,0.0,0.0
+MapScore_ApacheIV__mean,0.0,0.0
+Meperidine mg/hr__mean,0.0,0.0
+MgSO4          mg/hr__mean,0.0,0.0
+Dialysate Flow ml/hr__mean,0.0,0.0
+PotassiumApacheIIValue__mean,0.0,0.0
+Mucomyst       mg/hr__mean,0.0,0.0
+Mucomyst mg/hr__mean,0.0,0.0
+NICARDIPINE--MG/HR__mean,0.0,0.0
+NIMBEX MG/KG/HR__mean,0.0,0.0
+Non Invasive Blood Pressure systolic__mean,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - High__mean,0.0,0.0
+O2 saturation pulseoxymetry__mean,0.0,0.0
+Orthostat BP sitting [Diastolic]__mean,0.0,0.0
+Orthostat BP sitting [Systolic]__mean,0.0,0.0
+Orthostat HR sitting__mean,0.0,0.0
+OrthostatBP standing [Diastolic]__mean,0.0,0.0
+OrthostatBP standing [Systolic]__mean,0.0,0.0
+HrApacheIIValue__mean,0.0,0.0
+Replace Rate ml/hr__mean,0.0,0.0
+Replogle Irrigation__mean,0.0,0.0
+OrthostatHR standing__mean,0.0,0.0
+Orthostatic BP lying [Diastolic]__mean,0.0,0.0
+Orthostatic BP lying [Systolic]__mean,0.0,0.0
+Orthostatic HR lying__mean,0.0,0.0
+Orthostatic HR sitting__mean,0.0,0.0
+Orthostatic HR standing__mean,0.0,0.0
+PAP [Diastolic]__mean,0.0,0.0
+PAP [Systolic]__mean,0.0,0.0
+PAR-Oxygen saturation__mean,0.0,0.0
+PCA 1 Hr Limit (mg)__mean,0.0,0.0
+PROTONIX MG/HR__mean,0.0,0.0
+Pantoprazole   mg/hr__mean,0.0,0.0
+Pantoprazole  mg/hr__mean,0.0,0.0
+PotassiumApacheIIScore__mean,0.0,0.0
+Solu-medrol mg/hr__mean,0.0,0.0
+Solumedrol  mg/kg/hr__mean,0.0,0.0
+Solumedrol mg/kg/hr__mean,0.0,0.0
+Protonix       mg/hr__mean,0.0,0.0
+Protonix mg/hr__mean,0.0,0.0
+Pulmonary Artery Pressure diastolic__mean,0.0,0.0
+Pulmonary Artery Pressure systolic__mean,0.0,0.0
+R FEM MAP__mean,0.0,0.0
+RRApacheIIValue__mean,0.0,0.0
+RRScore_ApacheIV__mean,0.0,0.0
+RR_ApacheIV__mean,0.0,0.0
+RVSYSTOLIC__mean,0.0,0.0
+Recovery HR - Aerobic Activity Response__mean,0.0,0.0
+Recovery HR - Aerobic Capacity__mean,0.0,0.0
+Recovery RR - Aerobic Activity Response__mean,0.0,0.0
+Recovery RR - Aerobic Capacity__mean,0.0,0.0
+Temperature C (calc)__mean,0.0,0.0
+Temperature Celsius__mean,0.0,0.0
+Temperature F (calc)__mean,0.0,0.0
+Respiratory Rate (Set)__mean,0.0,0.0
+Respiratory Rate (Total)__mean,0.0,0.0
+Rest HR -  Aerobic Activity Response__mean,0.0,0.0
+Rest HR - Aerobic Capacity__mean,0.0,0.0
+Rest RR - Aerobic Activity Response__mean,0.0,0.0
+Rest RR - Aerobic Capacity__mean,0.0,0.0
+RrApacheIIScore__mean,0.0,0.0
+SOLUMEDROL MG/KG/HR__mean,0.0,0.0
+Smoking Cessation Info Offered through BIDMC Inpatient Guide__mean,0.0,0.0
+SodiumApacheIIScore__mean,0.0,0.0
+SodiumApacheIIValue__mean,0.0,0.0
+Xigris mcg/kg/hr__mean,0.0,0.0
+approtinin cc/hr__mean,0.0,0.0
+aprotinin cc/hr__mean,0.0,0.0
+carioride cc/hr__mean,0.0,0.0
+epidural ml/hr__mean,0.0,0.0
+SpO2 Alarm [High]__mean,0.0,0.0
+SpO2 Alarm [Low]__mean,0.0,0.0
+SpO2 Desat Limit__mean,0.0,0.0
+Spon RR (Mech.)__mean,0.0,0.0
+Spont RR__mean,0.0,0.0
+Systolic Unloading__mean,0.0,0.0
+TCPCV-MAP__mean,0.0,0.0
+TPA MG/HR__mean,0.0,0.0
+TPA mg/hr__mean,0.0,0.0
+tPA            mg/hr__mean,0.0,0.0
+total RR__mean,0.0,0.0
+xigris mg/hr__mean,0.0,0.0
+zzz Stim Thresh mA [Value]__mean,0.0,0.0
+zzzt Stim Thresh mA [Value]__mean,0.0,0.0
+10% ETOH CC/HR__std,0.0,0.0
+TemperatureF_ApacheIV__mean,0.0,0.0
+Temporary Atrial Sens Threshold mV__mean,0.0,0.0
+Temporary Atrial Stim Threshold mA__mean,0.0,0.0
+Temporary Venticular Stim Threshold mA__mean,0.0,0.0
+Thrombin__mean,0.0,0.0
+Thrombin (16-21)__mean,0.0,0.0
+Vent Sens Thresh mV__mean,0.0,0.0
+Vent Stim Thresh mA__mean,0.0,0.0
+Ventricular Pacemaker Threshold [Value]__mean,0.0,0.0
+Aortic Pressure Signal - Diastolic__std,0.0,0.0
+Aortic Pressure Signal - Systolic__std,0.0,0.0
+Aprotinin ml/hr__std,0.0,0.0
+Arterial BP #2 [Diastolic]__std,0.0,0.0
+Arterial BP #2 [Systolic]__std,0.0,0.0
+left radial MAP__mean,0.0,0.0
+map__mean,0.0,0.0
+mucomyst mg/hr__mean,0.0,0.0
+mucomyst mg/kg/hr__mean,0.0,0.0
+nicardipine mg/hr__mean,0.0,0.0
+pantoprazole mgm/hr__mean,0.0,0.0
+protonix mg/hr__mean,0.0,0.0
+solumed mg/kg/hr__mean,0.0,0.0
+solumedrol mg/hr__mean,0.0,0.0
+solumedrol mg/kg/hr__mean,0.0,0.0
+BP Left Arm [Systolic]__std,0.0,0.0
+BP Left Leg [Diastolic]__std,0.0,0.0
+BP Left Leg [Systolic]__std,0.0,0.0
+BP PAL [Diastolic]__std,0.0,0.0
+BP PAL [Systolic]__std,0.0,0.0
+BP Right Arm [Diastolic]__std,0.0,0.0
+ALCOHOL GTT ML/HR__std,0.0,0.0
+APOTININ CC/HR__std,0.0,0.0
+APPROTININ CC/HR__std,0.0,0.0
+APROTININ CC/HR__std,0.0,0.0
+APROTININ ML/HR__std,0.0,0.0
+APROTONIN CC/HR__std,0.0,0.0
+ART BP Diastolic__std,0.0,0.0
+ART BP Systolic__std,0.0,0.0
+Acetylcysteine mg/hr__std,0.0,0.0
+Amicar cc/hr__std,0.0,0.0
+Changes in Temperature__std,0.0,0.0
+Cisatracu mg/kg/hr__std,0.0,0.0
+Compliance-Corrected__std,0.0,0.0
+Current Goal__std,0.0,0.0
+Current Used/mA__std,0.0,0.0
+Currently experiencing pain__std,0.0,0.0
+Arterial Blood Pressure systolic__std,0.0,0.0
+Arterial O2 Saturation__std,0.0,0.0
+Atr Sens Thresh mV__std,0.0,0.0
+Atr Stim Thresh mA__std,0.0,0.0
+Atrial Pacemaker Threshold [Value]__std,0.0,0.0
+BP Cuff [Systolic]__std,0.0,0.0
+BP Left Arm [Diastolic]__std,0.0,0.0
+HFO-MAP__std,0.0,0.0
+HR Alarm [High]__std,0.0,0.0
+Heart Rate Alarm - Low__std,0.0,0.0
+Heart rate Alarm - High__std,0.0,0.0
+HrApacheIIScore__std,0.0,0.0
+HrApacheIIValue__std,0.0,0.0
+BP Right Arm [Systolic]__std,0.0,0.0
+BP Right Leg [Diastolic]__std,0.0,0.0
+BP Right Leg [Systolic]__std,0.0,0.0
+BP UAC [Diastolic]__std,0.0,0.0
+BP UAC [Systolic]__std,0.0,0.0
+Baseline Current/mA__std,0.0,0.0
+Blood Temperature CCO (C)__std,0.0,0.0
+CA GLUC GM/HR__std,0.0,0.0
+CARIPORIDE CC/HR__std,0.0,0.0
+CARIPORIDE ML/HR__std,0.0,0.0
+MapApacheIIScore__std,0.0,0.0
+MapApacheIIValue__std,0.0,0.0
+Meperidine mg/hr__std,0.0,0.0
+MgSO4          mg/hr__std,0.0,0.0
+Mucomyst       mg/hr__std,0.0,0.0
+Mucomyst mg/hr__std,0.0,0.0
+NBP [Diastolic]__std,0.0,0.0
+NBP [Systolic]__std,0.0,0.0
+Dialysate Flow ml/hr__std,0.0,0.0
+Diastolic Unloading__std,0.0,0.0
+Epidural Infusion Rate (mL/hr)__std,0.0,0.0
+FEM ALINE MAP__std,0.0,0.0
+FEM ART MAP__std,0.0,0.0
+Gait/Transferring__std,0.0,0.0
+Glucagon       mg/hr__std,0.0,0.0
+HFO MAP__std,0.0,0.0
+Orthostat BP sitting [Systolic]__std,0.0,0.0
+Orthostat HR sitting__std,0.0,0.0
+OrthostatBP standing [Diastolic]__std,0.0,0.0
+OrthostatBP standing [Systolic]__std,0.0,0.0
+OrthostatHR standing__std,0.0,0.0
+Orthostatic BP lying [Diastolic]__std,0.0,0.0
+Orthostatic BP lying [Systolic]__std,0.0,0.0
+Orthostatic HR lying__std,0.0,0.0
+Lowest Heart Rate__std,0.0,0.0
+METHYLPRED 450MG/HR__std,0.0,0.0
+Manual BP [Diastolic]__std,0.0,0.0
+Manual BP [Systolic]__std,0.0,0.0
+Manual Blood Pressure Diastolic Left__std,0.0,0.0
+Manual Blood Pressure Diastolic Right__std,0.0,0.0
+Manual Blood Pressure Systolic Left__std,0.0,0.0
+Manual Blood Pressure Systolic Right__std,0.0,0.0
+PROTONIX MG/HR__std,0.0,0.0
+Pantoprazole   mg/hr__std,0.0,0.0
+Pantoprazole  mg/hr__std,0.0,0.0
+PotassiumApacheIIScore__std,0.0,0.0
+PotassiumApacheIIValue__std,0.0,0.0
+Protonix       mg/hr__std,0.0,0.0
+Protonix mg/hr__std,0.0,0.0
+Pulmonary Artery Pressure systolic__std,0.0,0.0
+NICARDIPINE--MG/HR__std,0.0,0.0
+NIMBEX MG/KG/HR__std,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - High__std,0.0,0.0
+Orthostat BP sitting [Diastolic]__std,0.0,0.0
+Respiratory Rate (Total)__std,0.0,0.0
+Respiratory Rate Set__std,0.0,0.0
+RrApacheIIScore__std,0.0,0.0
+SOLUMEDROL MG/KG/HR__std,0.0,0.0
+Smoking Cessation Info Offered through BIDMC Inpatient Guide__std,0.0,0.0
+SodiumApacheIIScore__std,0.0,0.0
+SodiumApacheIIValue__std,0.0,0.0
+Solu-medrol mg/hr__std,0.0,0.0
+Solumedrol  mg/kg/hr__std,0.0,0.0
+Orthostatic HR sitting__std,0.0,0.0
+Orthostatic HR standing__std,0.0,0.0
+PAP [Diastolic]__std,0.0,0.0
+PAP [Systolic]__std,0.0,0.0
+PAR-Oxygen saturation__std,0.0,0.0
+PCA 1 Hr Limit (mg)__std,0.0,0.0
+Spont RR__std,0.0,0.0
+Systolic Unloading__std,0.0,0.0
+TCPCV-MAP__std,0.0,0.0
+TPA MG/HR__std,0.0,0.0
+TPA mg/hr__std,0.0,0.0
+"Temp/Iso/Warmer [Temperature, degrees C]__std",0.0,0.0
+Temperature C__std,0.0,0.0
+Temperature Celsius__std,0.0,0.0
+R FEM MAP__std,0.0,0.0
+RRApacheIIValue__std,0.0,0.0
+Replace Rate ml/hr__std,0.0,0.0
+Replogle Irrigation__std,0.0,0.0
+Temporary Venticular Stim Threshold mA__std,0.0,0.0
+Thrombin__std,0.0,0.0
+Vent Sens Thresh mV__std,0.0,0.0
+Ventricular Pacemaker Threshold [Value]__std,0.0,0.0
+Xigris mcg/kg/hr__std,0.0,0.0
+approtinin cc/hr__std,0.0,0.0
+aprotinin cc/hr__std,0.0,0.0
+carioride cc/hr__std,0.0,0.0
+epidural ml/hr__std,0.0,0.0
+left radial MAP__std,0.0,0.0
+Solumedrol mg/kg/hr__std,0.0,0.0
+SpO2 Alarm [High]__std,0.0,0.0
+SpO2 Alarm [Low]__std,0.0,0.0
+SpO2 Desat Limit__std,0.0,0.0
+Spon RR (Mech.)__std,0.0,0.0
+Hemoglobin C__last,0.0,0.0
+Hemoglobin F__last,0.0,0.0
+Lactate__last,0.0,0.0
+"Lactate Dehydrogenase, Ascites__last",0.0,0.0
+"Lactate Dehydrogenase, CSF__last",0.0,0.0
+"Lactate Dehydrogenase, Pleural__last",0.0,0.0
+Methemoglobin__last,0.0,0.0
+Platelet Clumps__last,0.0,0.0
+"Potassium, Body Fluid__last",0.0,0.0
+"Potassium, Stool__last",0.0,0.0
+"Potassium, Urine__last",0.0,0.0
+Temperature F (calc)__std,0.0,0.0
+Temperature Fahrenheit__std,0.0,0.0
+Temporary Atrial Stim Threshold mA__std,0.0,0.0
+mucomyst mg/hr__std,0.0,0.0
+mucomyst mg/kg/hr__std,0.0,0.0
+nicardipine mg/hr__std,0.0,0.0
+pantoprazole mgm/hr__std,0.0,0.0
+protonix mg/hr__std,0.0,0.0
+solumed mg/kg/hr__std,0.0,0.0
+solumedrol mg/hr__std,0.0,0.0
+solumedrol mg/kg/hr__std,0.0,0.0
+tPA            mg/hr__std,0.0,0.0
+zzz Stim Thresh mA [Value]__std,0.0,0.0
+10% ETOH CC/HR__min,0.0,0.0
+ALCOHOL GTT ML/HR__min,0.0,0.0
+APACHEII-Chronic health points__min,0.0,0.0
+APOTININ CC/HR__min,0.0,0.0
+APPROTININ CC/HR__min,0.0,0.0
+Hemoglobin A2__last,0.0,0.0
+APROTININ ML/HR__min,0.0,0.0
+APROTONIN CC/HR__min,0.0,0.0
+ART BP Diastolic__min,0.0,0.0
+ART BP Systolic__min,0.0,0.0
+Acetylcysteine mg/hr__min,0.0,0.0
+Activity HR - Aerobic Activity Response__min,0.0,0.0
+Activity HR - Aerobic Capacity__min,0.0,0.0
+Activity RR - Aerobic Activity Response__min,0.0,0.0
+Activity RR - Aerobic Capacity__min,0.0,0.0
+Amicar cc/hr__min,0.0,0.0
+Aortic Pressure Signal - Diastolic__min,0.0,0.0
+Aortic Pressure Signal - Systolic__min,0.0,0.0
+Aprotinin ml/hr__min,0.0,0.0
+Arterial BP #2 [Diastolic]__min,0.0,0.0
+Arterial BP #2 [Systolic]__min,0.0,0.0
+map__std,0.0,0.0
+Cisatracu mg/kg/hr__min,0.0,0.0
+Arterial BP [Diastolic]__min,0.0,0.0
+Arterial Blood Pressure diastolic__min,0.0,0.0
+Arterial Blood Pressure systolic__min,0.0,0.0
+Arterial O2 Saturation__min,0.0,0.0
+Atr Sens Thresh mV__min,0.0,0.0
+Atr Stim Thresh mA__min,0.0,0.0
+Atrial Pacemaker Threshold [Value]__min,0.0,0.0
+BP Left Arm [Diastolic]__min,0.0,0.0
+BP Left Arm [Systolic]__min,0.0,0.0
+BP Left Leg [Diastolic]__min,0.0,0.0
+BP Left Leg [Systolic]__min,0.0,0.0
+BP PAL [Diastolic]__min,0.0,0.0
+BP PAL [Systolic]__min,0.0,0.0
+APROTININ CC/HR__min,0.0,0.0
+HR_ApacheIV__min,0.0,0.0
+BP Right Arm [Diastolic]__min,0.0,0.0
+BP Right Arm [Systolic]__min,0.0,0.0
+BP Right Leg [Diastolic]__min,0.0,0.0
+BP Right Leg [Systolic]__min,0.0,0.0
+BP UAC [Diastolic]__min,0.0,0.0
+BP UAC [Systolic]__min,0.0,0.0
+Baseline Current/mA__min,0.0,0.0
+Blood Temperature CCO (C)__min,0.0,0.0
+CA GLUC GM/HR__min,0.0,0.0
+CARIPORIDE CC/HR__min,0.0,0.0
+CARIPORIDE ML/HR__min,0.0,0.0
+Changes in Temperature__min,0.0,0.0
+Chronic Dilaysis__min,0.0,0.0
+Chronic health on admission__min,0.0,0.0
+ChronicScore_ApacheIV__min,0.0,0.0
+MapApacheIIScore__min,0.0,0.0
+Compliance-Corrected__min,0.0,0.0
+Current Goal__min,0.0,0.0
+Current Used/mA__min,0.0,0.0
+Currently experiencing pain__min,0.0,0.0
+Dialysate Flow ml/hr__min,0.0,0.0
+Diastolic Unloading__min,0.0,0.0
+Epidural Infusion Rate (mL/hr)__min,0.0,0.0
+FEM ALINE MAP__min,0.0,0.0
+FEM ART MAP__min,0.0,0.0
+Gait/Transferring__min,0.0,0.0
+Glucagon       mg/hr__min,0.0,0.0
+HFO MAP__min,0.0,0.0
+HFO-MAP__min,0.0,0.0
+HR Alarm [High]__min,0.0,0.0
+HR Alarm [Low]__min,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - Low__min,0.0,0.0
+Orthostat BP sitting [Diastolic]__min,0.0,0.0
+Heart Rate Alarm - Low__min,0.0,0.0
+Heart rate Alarm - High__min,0.0,0.0
+HrApacheIIScore__min,0.0,0.0
+HrApacheIIValue__min,0.0,0.0
+HrScore_ApacheIV__min,0.0,0.0
+MAP_ApacheIV__min,0.0,0.0
+METHYLPRED 450MG/HR__min,0.0,0.0
+Manual BP [Diastolic]__min,0.0,0.0
+Manual BP [Systolic]__min,0.0,0.0
+Manual Blood Pressure Diastolic Left__min,0.0,0.0
+Manual Blood Pressure Diastolic Right__min,0.0,0.0
+Manual Blood Pressure Systolic Left__min,0.0,0.0
+Manual Blood Pressure Systolic Right__min,0.0,0.0
+PAR-Oxygen saturation__min,0.0,0.0
+PCA 1 Hr Limit (mg)__min,0.0,0.0
+PROTONIX MG/HR__min,0.0,0.0
+Pantoprazole   mg/hr__min,0.0,0.0
+MapApacheIIValue__min,0.0,0.0
+MapScore_ApacheIV__min,0.0,0.0
+Meperidine mg/hr__min,0.0,0.0
+MgSO4          mg/hr__min,0.0,0.0
+Mucomyst       mg/hr__min,0.0,0.0
+Mucomyst mg/hr__min,0.0,0.0
+NICARDIPINE--MG/HR__min,0.0,0.0
+NIMBEX MG/KG/HR__min,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - High__min,0.0,0.0
+RVSYSTOLIC__min,0.0,0.0
+Recovery HR - Aerobic Activity Response__min,0.0,0.0
+Recovery HR - Aerobic Capacity__min,0.0,0.0
+Recovery RR - Aerobic Activity Response__min,0.0,0.0
+Orthostat BP sitting [Systolic]__min,0.0,0.0
+Orthostat HR sitting__min,0.0,0.0
+OrthostatBP standing [Diastolic]__min,0.0,0.0
+OrthostatBP standing [Systolic]__min,0.0,0.0
+OrthostatHR standing__min,0.0,0.0
+Orthostatic BP lying [Diastolic]__min,0.0,0.0
+Orthostatic BP lying [Systolic]__min,0.0,0.0
+Orthostatic HR lying__min,0.0,0.0
+Orthostatic HR sitting__min,0.0,0.0
+Orthostatic HR standing__min,0.0,0.0
+PAP [Systolic]__min,0.0,0.0
+RrApacheIIScore__min,0.0,0.0
+SOLUMEDROL MG/KG/HR__min,0.0,0.0
+Smoking Cessation Info Offered through BIDMC Inpatient Guide__min,0.0,0.0
+SodiumApacheIIScore__min,0.0,0.0
+Pantoprazole  mg/hr__min,0.0,0.0
+PotassiumApacheIIScore__min,0.0,0.0
+PotassiumApacheIIValue__min,0.0,0.0
+Prothrombin time__min,0.0,0.0
+Protonix       mg/hr__min,0.0,0.0
+Protonix mg/hr__min,0.0,0.0
+Pulmonary Artery Pressure diastolic__min,0.0,0.0
+Pulmonary Artery Pressure systolic__min,0.0,0.0
+R FEM MAP__min,0.0,0.0
+RRApacheIIValue__min,0.0,0.0
+RRScore_ApacheIV__min,0.0,0.0
+RR_ApacheIV__min,0.0,0.0
+TCPCV-MAP__min,0.0,0.0
+TPA MG/HR__min,0.0,0.0
+TPA mg/hr__min,0.0,0.0
+"Temp/Iso/Warmer [Temperature, degrees C]__min",0.0,0.0
+Temperature C__min,0.0,0.0
+Recovery RR - Aerobic Capacity__min,0.0,0.0
+Replace Rate ml/hr__min,0.0,0.0
+Replogle Irrigation__min,0.0,0.0
+Respiratory Rate (Set)__min,0.0,0.0
+Respiratory Rate (Total)__min,0.0,0.0
+Rest HR -  Aerobic Activity Response__min,0.0,0.0
+Rest HR - Aerobic Capacity__min,0.0,0.0
+Rest RR - Aerobic Activity Response__min,0.0,0.0
+Rest RR - Aerobic Capacity__min,0.0,0.0
+Thrombin__min,0.0,0.0
+Thrombin (16-21)__min,0.0,0.0
+Vent Stim Thresh mA__min,0.0,0.0
+Ventricular Pacemaker Threshold [Value]__min,0.0,0.0
+Xigris mcg/kg/hr__min,0.0,0.0
+SodiumApacheIIValue__min,0.0,0.0
+Solu-medrol mg/hr__min,0.0,0.0
+Solumedrol  mg/kg/hr__min,0.0,0.0
+Solumedrol mg/kg/hr__min,0.0,0.0
+SpO2__min,0.0,0.0
+SpO2 Alarm [High]__min,0.0,0.0
+SpO2 Alarm [Low]__min,0.0,0.0
+SpO2 Desat Limit__min,0.0,0.0
+Spont RR__min,0.0,0.0
+Systolic Unloading__min,0.0,0.0
+nicardipine mg/hr__min,0.0,0.0
+pantoprazole mgm/hr__min,0.0,0.0
+protonix mg/hr__min,0.0,0.0
+solumed mg/kg/hr__min,0.0,0.0
+solumedrol mg/hr__min,0.0,0.0
+solumedrol mg/kg/hr__min,0.0,0.0
+tPA            mg/hr__min,0.0,0.0
+total RR__min,0.0,0.0
+Temperature Celsius__min,0.0,0.0
+Temperature F__min,0.0,0.0
+Temperature F (calc)__min,0.0,0.0
+TemperatureF_ApacheIV__min,0.0,0.0
+Temporary Atrial Sens Threshold mV__min,0.0,0.0
+Temporary Atrial Stim Threshold mA__min,0.0,0.0
+Temporary Venticular Stim Threshold mA__min,0.0,0.0
+APPROTININ CC/HR__max,0.0,0.0
+APROTININ CC/HR__max,0.0,0.0
+APROTININ ML/HR__max,0.0,0.0
+APROTONIN CC/HR__max,0.0,0.0
+ART BP Diastolic__max,0.0,0.0
+Acetylcysteine mg/hr__max,0.0,0.0
+Activity HR - Aerobic Activity Response__max,0.0,0.0
+Activity HR - Aerobic Capacity__max,0.0,0.0
+approtinin cc/hr__min,0.0,0.0
+aprotinin cc/hr__min,0.0,0.0
+carioride cc/hr__min,0.0,0.0
+epidural ml/hr__min,0.0,0.0
+left radial MAP__min,0.0,0.0
+map__min,0.0,0.0
+mucomyst mg/hr__min,0.0,0.0
+mucomyst mg/kg/hr__min,0.0,0.0
+Arterial BP #2 [Diastolic]__max,0.0,0.0
+Arterial BP #2 [Systolic]__max,0.0,0.0
+Arterial Blood Pressure diastolic__max,0.0,0.0
+Arterial Blood Pressure systolic__max,0.0,0.0
+Arterial O2 Saturation__max,0.0,0.0
+Atr Sens Thresh mV__max,0.0,0.0
+Atr Stim Thresh mA__max,0.0,0.0
+Atrial Pacemaker Threshold [Value]__max,0.0,0.0
+xigris mg/hr__min,0.0,0.0
+zzz Stim Thresh mA [Value]__min,0.0,0.0
+zzzt Stim Thresh mA [Value]__min,0.0,0.0
+10% ETOH CC/HR__max,0.0,0.0
+ALCOHOL GTT ML/HR__max,0.0,0.0
+APACHEII-Chronic health points__max,0.0,0.0
+APOTININ CC/HR__max,0.0,0.0
+BP PAL [Diastolic]__max,0.0,0.0
+BP PAL [Systolic]__max,0.0,0.0
+BP Right Arm [Diastolic]__max,0.0,0.0
+BP Right Arm [Systolic]__max,0.0,0.0
+BP Right Leg [Diastolic]__max,0.0,0.0
+BP Right Leg [Systolic]__max,0.0,0.0
+BP UAC [Diastolic]__max,0.0,0.0
+BP UAC [Systolic]__max,0.0,0.0
+Baseline Current/mA__max,0.0,0.0
+Blood Temperature CCO (C)__max,0.0,0.0
+Activity RR - Aerobic Activity Response__max,0.0,0.0
+Activity RR - Aerobic Capacity__max,0.0,0.0
+Amicar cc/hr__max,0.0,0.0
+Aortic Pressure Signal - Diastolic__max,0.0,0.0
+Aortic Pressure Signal - Systolic__max,0.0,0.0
+Aprotinin ml/hr__max,0.0,0.0
+ChronicScore_ApacheIV__max,0.0,0.0
+Cisatracu mg/kg/hr__max,0.0,0.0
+Compliance-Corrected__max,0.0,0.0
+Current Goal__max,0.0,0.0
+Current Used/mA__max,0.0,0.0
+Currently experiencing pain__max,0.0,0.0
+Dialysate Flow ml/hr__max,0.0,0.0
+Diastolic Unloading__max,0.0,0.0
+Epidural Infusion Rate (mL/hr)__max,0.0,0.0
+FEM ALINE MAP__max,0.0,0.0
+BP Cuff [Diastolic]__max,0.0,0.0
+BP Cuff [Systolic]__max,0.0,0.0
+BP Left Arm [Diastolic]__max,0.0,0.0
+BP Left Arm [Systolic]__max,0.0,0.0
+BP Left Leg [Diastolic]__max,0.0,0.0
+BP Left Leg [Systolic]__max,0.0,0.0
+HR Alarm [High]__max,0.0,0.0
+HR Alarm [Low]__max,0.0,0.0
+HR_ApacheIV__max,0.0,0.0
+Heart Rate Alarm - Low__max,0.0,0.0
+Heart rate Alarm - High__max,0.0,0.0
+HrApacheIIScore__max,0.0,0.0
+HrApacheIIValue__max,0.0,0.0
+HrScore_ApacheIV__max,0.0,0.0
+MAP_ApacheIV__max,0.0,0.0
+CA GLUC GM/HR__max,0.0,0.0
+CARIPORIDE CC/HR__max,0.0,0.0
+CARIPORIDE ML/HR__max,0.0,0.0
+Changes in Temperature__max,0.0,0.0
+Chronic Dilaysis__max,0.0,0.0
+Chronic health on admission__max,0.0,0.0
+Manual Blood Pressure Diastolic Left__max,0.0,0.0
+Manual Blood Pressure Diastolic Right__max,0.0,0.0
+Manual Blood Pressure Systolic Left__max,0.0,0.0
+Manual Blood Pressure Systolic Right__max,0.0,0.0
+MapApacheIIScore__max,0.0,0.0
+MapApacheIIValue__max,0.0,0.0
+MapScore_ApacheIV__max,0.0,0.0
+Meperidine mg/hr__max,0.0,0.0
+MgSO4          mg/hr__max,0.0,0.0
+Mucomyst       mg/hr__max,0.0,0.0
+Mucomyst mg/hr__max,0.0,0.0
+FEM ART MAP__max,0.0,0.0
+Gait/Transferring__max,0.0,0.0
+Glucagon       mg/hr__max,0.0,0.0
+HFO MAP__max,0.0,0.0
+HFO-MAP__max,0.0,0.0
+Fetal Hemoglobin__last,0.0,0.0
+"Glucose, Ascites__last",0.0,0.0
+"Glucose, Body Fluid__last",0.0,0.0
+"Glucose, CSF__last",0.0,0.0
+"Glucose, Joint Fluid__last",0.0,0.0
+"Glucose, Pleural__last",0.0,0.0
+"Glucose, Urine__last",0.0,0.0
+"Hematocrit, Ascites__last",0.0,0.0
+"Hematocrit, CSF__last",0.0,0.0
+"Hematocrit, Joint Fluid__last",0.0,0.0
+"Hematocrit, Other Fluid__last",0.0,0.0
+"Hematocrit, Pleural__last",0.0,0.0
+METHYLPRED 450MG/HR__max,0.0,0.0
+Manual BP [Diastolic]__max,0.0,0.0
+Manual BP [Systolic]__max,0.0,0.0
+NIMBEX MG/KG/HR__max,0.0,0.0
+Non Invasive Blood Pressure diastolic__max,0.0,0.0
+Non Invasive Blood Pressure systolic__max,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - High__max,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - Low__max,0.0,0.0
+O2 saturation pulseoxymetry__max,0.0,0.0
+Orthostat BP sitting [Diastolic]__max,0.0,0.0
+Orthostat BP sitting [Systolic]__max,0.0,0.0
+Orthostat HR sitting__max,0.0,0.0
+OrthostatBP standing [Diastolic]__max,0.0,0.0
+OrthostatBP standing [Systolic]__max,0.0,0.0
+OrthostatHR standing__max,0.0,0.0
+Orthostatic BP lying [Diastolic]__max,0.0,0.0
+Orthostatic BP lying [Systolic]__max,0.0,0.0
+Orthostatic HR lying__max,0.0,0.0
+"Creatinine, Urine__last",0.0,0.0
+Orthostatic HR standing__max,0.0,0.0
+PAP [Systolic]__max,0.0,0.0
+PAR-Oxygen saturation__max,0.0,0.0
+PCA 1 Hr Limit (mg)__max,0.0,0.0
+PROTONIX MG/HR__max,0.0,0.0
+Pantoprazole   mg/hr__max,0.0,0.0
+Pantoprazole  mg/hr__max,0.0,0.0
+PotassiumApacheIIScore__max,0.0,0.0
+PotassiumApacheIIValue__max,0.0,0.0
+Prothrombin time__max,0.0,0.0
+Protonix       mg/hr__max,0.0,0.0
+Protonix mg/hr__max,0.0,0.0
+Pulmonary Artery Pressure diastolic__max,0.0,0.0
+Pulmonary Artery Pressure systolic__max,0.0,0.0
+NICARDIPINE--MG/HR__max,0.0,0.0
+RRApacheIIValue__max,0.0,0.0
+RRScore_ApacheIV__max,0.0,0.0
+RR_ApacheIV__max,0.0,0.0
+RVSYSTOLIC__max,0.0,0.0
+Recovery HR - Aerobic Activity Response__max,0.0,0.0
+Recovery HR - Aerobic Capacity__max,0.0,0.0
+Recovery RR - Aerobic Activity Response__max,0.0,0.0
+Recovery RR - Aerobic Capacity__max,0.0,0.0
+Replace Rate ml/hr__max,0.0,0.0
+Replogle Irrigation__max,0.0,0.0
+Respiratory Rate (Set)__max,0.0,0.0
+Respiratory Rate (Total)__max,0.0,0.0
+Respiratory Rate (spontaneous)__max,0.0,0.0
+Respiratory Rate Set__max,0.0,0.0
+Orthostatic HR sitting__max,0.0,0.0
+Rest HR - Aerobic Capacity__max,0.0,0.0
+Rest RR - Aerobic Activity Response__max,0.0,0.0
+Rest RR - Aerobic Capacity__max,0.0,0.0
+RrApacheIIScore__max,0.0,0.0
+SOLUMEDROL MG/KG/HR__max,0.0,0.0
+Smoking Cessation Info Offered through BIDMC Inpatient Guide__max,0.0,0.0
+SodiumApacheIIScore__max,0.0,0.0
+SodiumApacheIIValue__max,0.0,0.0
+Solu-medrol mg/hr__max,0.0,0.0
+Solumedrol  mg/kg/hr__max,0.0,0.0
+Solumedrol mg/kg/hr__max,0.0,0.0
+SpO2 Alarm [High]__max,0.0,0.0
+SpO2 Alarm [Low]__max,0.0,0.0
+SpO2 Desat Limit__max,0.0,0.0
+R FEM MAP__max,0.0,0.0
+Spon RR (Mech.)__max,0.0,0.0
+Spont RR__max,0.0,0.0
+Systolic Unloading__max,0.0,0.0
+TCPCV-MAP__max,0.0,0.0
+TPA MG/HR__max,0.0,0.0
+TPA mg/hr__max,0.0,0.0
+"Temp/Iso/Warmer [Temperature, degrees C]__max",0.0,0.0
+Temperature C__max,0.0,0.0
+Temperature Celsius__max,0.0,0.0
+Temperature F__max,0.0,0.0
+Temperature F (calc)__max,0.0,0.0
+TemperatureF_ApacheIV__max,0.0,0.0
+Temporary Atrial Sens Threshold mV__max,0.0,0.0
+Temporary Atrial Stim Threshold mA__max,0.0,0.0
+Rest HR -  Aerobic Activity Response__max,0.0,0.0
+APPROTININ CC/HR__range,0.0,0.0
+Temporary Venticular Sens Threshold mV__max,0.0,0.0
+Thrombin__max,0.0,0.0
+Thrombin (16-21)__max,0.0,0.0
+Vent Stim Thresh mA__max,0.0,0.0
+Ventricular Pacemaker Threshold [Value]__max,0.0,0.0
+Xigris mcg/kg/hr__max,0.0,0.0
+approtinin cc/hr__max,0.0,0.0
+aprotinin cc/hr__max,0.0,0.0
+carioride cc/hr__max,0.0,0.0
+epidural ml/hr__max,0.0,0.0
+left radial MAP__max,0.0,0.0
+map__max,0.0,0.0
+mucomyst mg/hr__max,0.0,0.0
+mucomyst mg/kg/hr__max,0.0,0.0
+Arterial BP #2 [Systolic]__range,0.0,0.0
+nicardipine mg/hr__max,0.0,0.0
+pantoprazole mgm/hr__max,0.0,0.0
+protonix mg/hr__max,0.0,0.0
+solumed mg/kg/hr__max,0.0,0.0
+solumedrol mg/hr__max,0.0,0.0
+solumedrol mg/kg/hr__max,0.0,0.0
+tPA            mg/hr__max,0.0,0.0
+total RR__max,0.0,0.0
+xigris mg/hr__max,0.0,0.0
+zzz Stim Thresh mA [Value]__max,0.0,0.0
+zzzt Stim Thresh mA [Value]__max,0.0,0.0
+10% ETOH CC/HR__range,0.0,0.0
+ALCOHOL GTT ML/HR__range,0.0,0.0
+APACHEII-Chronic health points__range,0.0,0.0
+APOTININ CC/HR__range,0.0,0.0
+BP PAL [Systolic]__range,0.0,0.0
+APROTININ CC/HR__range,0.0,0.0
+APROTININ ML/HR__range,0.0,0.0
+APROTONIN CC/HR__range,0.0,0.0
+ART BP Diastolic__range,0.0,0.0
+ART BP Systolic__range,0.0,0.0
+Acetylcysteine mg/hr__range,0.0,0.0
+Activity HR - Aerobic Activity Response__range,0.0,0.0
+Activity HR - Aerobic Capacity__range,0.0,0.0
+Activity RR - Aerobic Activity Response__range,0.0,0.0
+Activity RR - Aerobic Capacity__range,0.0,0.0
+Amicar cc/hr__range,0.0,0.0
+Aortic Pressure Signal - Diastolic__range,0.0,0.0
+Aortic Pressure Signal - Systolic__range,0.0,0.0
+Aprotinin ml/hr__range,0.0,0.0
+Arterial BP #2 [Diastolic]__range,0.0,0.0
+Changes in Temperature__range,0.0,0.0
+Chronic Dilaysis__range,0.0,0.0
+Chronic health on admission__range,0.0,0.0
+ChronicScore_ApacheIV__range,0.0,0.0
+Cisatracu mg/kg/hr__range,0.0,0.0
+Arterial Blood Pressure diastolic__range,0.0,0.0
+Arterial Blood Pressure systolic__range,0.0,0.0
+Arterial O2 Saturation__range,0.0,0.0
+Atrial Pacemaker Threshold [Value]__range,0.0,0.0
+BP Cuff [Diastolic]__range,0.0,0.0
+BP Cuff [Systolic]__range,0.0,0.0
+BP Left Arm [Diastolic]__range,0.0,0.0
+BP Left Arm [Systolic]__range,0.0,0.0
+BP Left Leg [Diastolic]__range,0.0,0.0
+BP Left Leg [Systolic]__range,0.0,0.0
+BP PAL [Diastolic]__range,0.0,0.0
+HFO MAP__range,0.0,0.0
+HFO-MAP__range,0.0,0.0
+HR Alarm [High]__range,0.0,0.0
+HR Alarm [Low]__range,0.0,0.0
+HR_ApacheIV__range,0.0,0.0
+BP Right Arm [Diastolic]__range,0.0,0.0
+BP Right Arm [Systolic]__range,0.0,0.0
+BP Right Leg [Diastolic]__range,0.0,0.0
+BP Right Leg [Systolic]__range,0.0,0.0
+BP UAC [Diastolic]__range,0.0,0.0
+BP UAC [Systolic]__range,0.0,0.0
+Baseline Current/mA__range,0.0,0.0
+Blood Temperature CCO (C)__range,0.0,0.0
+CA GLUC GM/HR__range,0.0,0.0
+CARIPORIDE CC/HR__range,0.0,0.0
+CARIPORIDE ML/HR__range,0.0,0.0
+Manual Blood Pressure Diastolic Left__range,0.0,0.0
+Manual Blood Pressure Diastolic Right__range,0.0,0.0
+Manual Blood Pressure Systolic Left__range,0.0,0.0
+Manual Blood Pressure Systolic Right__range,0.0,0.0
+MapApacheIIScore__range,0.0,0.0
+Compliance-Corrected__range,0.0,0.0
+Current Goal__range,0.0,0.0
+Current Used/mA__range,0.0,0.0
+Currently experiencing pain__range,0.0,0.0
+Dialysate Flow ml/hr__range,0.0,0.0
+Diastolic Unloading__range,0.0,0.0
+Epidural Infusion Rate (mL/hr)__range,0.0,0.0
+FEM ALINE MAP__range,0.0,0.0
+FEM ART MAP__range,0.0,0.0
+Gait/Transferring__range,0.0,0.0
+Glucagon       mg/hr__range,0.0,0.0
+NIMBEX MG/KG/HR__range,0.0,0.0
+Non Invasive Blood Pressure diastolic__range,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - High__range,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - Low__range,0.0,0.0
+O2 saturation pulseoxymetry__range,0.0,0.0
+Orthostat BP sitting [Diastolic]__range,0.0,0.0
+Heart Rate Alarm - Low__range,0.0,0.0
+Heart rate Alarm - High__range,0.0,0.0
+HrApacheIIScore__range,0.0,0.0
+HrApacheIIValue__range,0.0,0.0
+HrScore_ApacheIV__range,0.0,0.0
+Lowest Heart Rate__range,0.0,0.0
+MAP_ApacheIV__range,0.0,0.0
+METHYLPRED 450MG/HR__range,0.0,0.0
+Manual BP [Diastolic]__range,0.0,0.0
+Manual BP [Systolic]__range,0.0,0.0
+Orthostatic HR lying__range,0.0,0.0
+Orthostatic HR sitting__range,0.0,0.0
+Orthostatic HR standing__range,0.0,0.0
+PAP [Diastolic]__range,0.0,0.0
+PAR-Oxygen saturation__range,0.0,0.0
+PCA 1 Hr Limit (mg)__range,0.0,0.0
+PROTONIX MG/HR__range,0.0,0.0
+Pantoprazole   mg/hr__range,0.0,0.0
+MapApacheIIValue__range,0.0,0.0
+MapScore_ApacheIV__range,0.0,0.0
+Meperidine mg/hr__range,0.0,0.0
+MgSO4          mg/hr__range,0.0,0.0
+Mucomyst       mg/hr__range,0.0,0.0
+Mucomyst mg/hr__range,0.0,0.0
+NBP [Systolic]__range,0.0,0.0
+NICARDIPINE--MG/HR__range,0.0,0.0
+Pulmonary Artery Pressure systolic__range,0.0,0.0
+R FEM MAP__range,0.0,0.0
+RRApacheIIValue__range,0.0,0.0
+RRScore_ApacheIV__range,0.0,0.0
+RR_ApacheIV__range,0.0,0.0
+RVSYSTOLIC__range,0.0,0.0
+Recovery HR - Aerobic Activity Response__range,0.0,0.0
+Recovery HR - Aerobic Capacity__range,0.0,0.0
+Recovery RR - Aerobic Activity Response__range,0.0,0.0
+Orthostat BP sitting [Systolic]__range,0.0,0.0
+Orthostat HR sitting__range,0.0,0.0
+OrthostatBP standing [Diastolic]__range,0.0,0.0
+OrthostatBP standing [Systolic]__range,0.0,0.0
+OrthostatHR standing__range,0.0,0.0
+Orthostatic BP lying [Diastolic]__range,0.0,0.0
+Orthostatic BP lying [Systolic]__range,0.0,0.0
+Respiratory Rate (Set)__range,0.0,0.0
+Respiratory Rate Set__range,0.0,0.0
+Rest HR -  Aerobic Activity Response__range,0.0,0.0
+Rest HR - Aerobic Capacity__range,0.0,0.0
+Rest RR - Aerobic Activity Response__range,0.0,0.0
+Rest RR - Aerobic Capacity__range,0.0,0.0
+RrApacheIIScore__range,0.0,0.0
+SOLUMEDROL MG/KG/HR__range,0.0,0.0
+Smoking Cessation Info Offered through BIDMC Inpatient Guide__range,0.0,0.0
+SodiumApacheIIScore__range,0.0,0.0
+Pantoprazole  mg/hr__range,0.0,0.0
+PotassiumApacheIIScore__range,0.0,0.0
+PotassiumApacheIIValue__range,0.0,0.0
+Protonix       mg/hr__range,0.0,0.0
+Protonix mg/hr__range,0.0,0.0
+Pulmonary Artery Pressure diastolic__range,0.0,0.0
+Carboxyhemoglobin__last,0.0,0.0
+"WBC, CSF__last",0.0,0.0
+"Chloride, Body Fluid__last",0.0,0.0
+"Chloride, Stool__last",0.0,0.0
+"Chloride, Urine__last",0.0,0.0
+"WBC, Ascites__last",0.0,0.0
+WBC Count__last,0.0,0.0
+Creatinine Clearance__last,0.0,0.0
+"Creatinine, Ascites__last",0.0,0.0
+"Creatinine, Body Fluid__last",0.0,0.0
+"Creatinine, Pleural__last",0.0,0.0
+"Creatinine, Serum__last",0.0,0.0
+Recovery RR - Aerobic Capacity__range,0.0,0.0
+Replace Rate ml/hr__range,0.0,0.0
+Replogle Irrigation__range,0.0,0.0
+WBC Casts__last,0.0,0.0
+Solumedrol  mg/kg/hr__range,0.0,0.0
+Solumedrol mg/kg/hr__range,0.0,0.0
+SpO2__range,0.0,0.0
+SpO2 Alarm [High]__range,0.0,0.0
+SpO2 Alarm [Low]__range,0.0,0.0
+SpO2 Desat Limit__range,0.0,0.0
+Spon RR (Mech.)__range,0.0,0.0
+Spont RR__range,0.0,0.0
+Systolic Unloading__range,0.0,0.0
+TCPCV-MAP__range,0.0,0.0
+TPA MG/HR__range,0.0,0.0
+TPA mg/hr__range,0.0,0.0
+"Temp/Iso/Warmer [Temperature, degrees C]__range",0.0,0.0
+WBC__last,0.0,0.0
+"Bicarbonate, Urine__last",0.0,0.0
+"Calculated Bicarbonate, Whole Blood__last",0.0,0.0
+Temperature Celsius__range,0.0,0.0
+Temperature F__range,0.0,0.0
+Temperature F (calc)__range,0.0,0.0
+TemperatureF_ApacheIV__range,0.0,0.0
+Temporary Atrial Sens Threshold mV__range,0.0,0.0
+Temporary Atrial Stim Threshold mA__range,0.0,0.0
+Temporary Venticular Sens Threshold mV__range,0.0,0.0
+Temporary Venticular Stim Threshold mA__range,0.0,0.0
+Thrombin__range,0.0,0.0
+Thrombin (16-21)__range,0.0,0.0
+Vent Sens Thresh mV__range,0.0,0.0
+Vent Stim Thresh mA__range,0.0,0.0
+Ventricular Pacemaker Threshold [Value]__range,0.0,0.0
+Xigris mcg/kg/hr__range,0.0,0.0
+SodiumApacheIIValue__range,0.0,0.0
+Solu-medrol mg/hr__range,0.0,0.0
+approtinin cc/hr__range,0.0,0.0
+aprotinin cc/hr__range,0.0,0.0
+carioride cc/hr__range,0.0,0.0
+epidural ml/hr__range,0.0,0.0
+left radial MAP__range,0.0,0.0
+map__range,0.0,0.0
+mucomyst mg/hr__range,0.0,0.0
+mucomyst mg/kg/hr__range,0.0,0.0
+nicardipine mg/hr__range,0.0,0.0
+pantoprazole mgm/hr__range,0.0,0.0
+protonix mg/hr__range,0.0,0.0
+solumed mg/kg/hr__range,0.0,0.0
+solumedrol mg/hr__range,0.0,0.0
+solumedrol mg/kg/hr__range,0.0,0.0
+tPA            mg/hr__range,0.0,0.0
+total RR__range,0.0,0.0
+xigris mg/hr__range,0.0,0.0
+zzz Stim Thresh mA [Value]__range,0.0,0.0
+zzzt Stim Thresh mA [Value]__range,0.0,0.0
+10% ETOH CC/HR__last,0.0,0.0
+ALCOHOL GTT ML/HR__last,0.0,0.0
+APACHEII-Chronic health points__last,0.0,0.0
+APOTININ CC/HR__last,0.0,0.0
+APPROTININ CC/HR__last,0.0,0.0
+APROTININ CC/HR__last,0.0,0.0
+APROTININ ML/HR__last,0.0,0.0
+APROTONIN CC/HR__last,0.0,0.0
+ART BP Diastolic__last,0.0,0.0
+ART BP Systolic__last,0.0,0.0
+Acetylcysteine mg/hr__last,0.0,0.0
+Activity HR - Aerobic Activity Response__last,0.0,0.0
+Activity HR - Aerobic Capacity__last,0.0,0.0
+Activity RR - Aerobic Activity Response__last,0.0,0.0
+Activity RR - Aerobic Capacity__last,0.0,0.0
+Amicar cc/hr__last,0.0,0.0
+Aortic Pressure Signal - Diastolic__last,0.0,0.0
+Aortic Pressure Signal - Systolic__last,0.0,0.0
+Aprotinin ml/hr__last,0.0,0.0
+Arterial BP #2 [Diastolic]__last,0.0,0.0
+Arterial BP #2 [Systolic]__last,0.0,0.0
+Urine Creatinine__last,0.0,0.0
+"Urea Nitrogen, Urine__last",0.0,0.0
+Arterial Blood Pressure diastolic__last,0.0,0.0
+Arterial Blood Pressure systolic__last,0.0,0.0
+Arterial O2 Saturation__last,0.0,0.0
+Atr Sens Thresh mV__last,0.0,0.0
+Atr Stim Thresh mA__last,0.0,0.0
+Atrial Pacemaker Threshold [Value]__last,0.0,0.0
+FEM ALINE MAP__last,0.0,0.0
+"Urea Nitrogen, Body Fluid__last",0.0,0.0
+BP Left Arm [Diastolic]__last,0.0,0.0
+BP Left Arm [Systolic]__last,0.0,0.0
+BP Left Leg [Diastolic]__last,0.0,0.0
+BP Left Leg [Systolic]__last,0.0,0.0
+BP PAL [Diastolic]__last,0.0,0.0
+BP PAL [Systolic]__last,0.0,0.0
+BP Right Arm [Diastolic]__last,0.0,0.0
+BP Right Arm [Systolic]__last,0.0,0.0
+BP Right Leg [Diastolic]__last,0.0,0.0
+BP Right Leg [Systolic]__last,0.0,0.0
+BP UAC [Diastolic]__last,0.0,0.0
+BP UAC [Systolic]__last,0.0,0.0
+Baseline Current/mA__last,0.0,0.0
+Blood Temperature CCO (C)__last,0.0,0.0
+MAP_ApacheIV__last,0.0,0.0
+CA GLUC GM/HR__last,0.0,0.0
+CARIPORIDE CC/HR__last,0.0,0.0
+CARIPORIDE ML/HR__last,0.0,0.0
+Changes in Temperature__last,0.0,0.0
+Chronic Dilaysis__last,0.0,0.0
+Chronic health on admission__last,0.0,0.0
+ChronicScore_ApacheIV__last,0.0,0.0
+Cisatracu mg/kg/hr__last,0.0,0.0
+Compliance-Corrected__last,0.0,0.0
+Current Goal__last,0.0,0.0
+Current Used/mA__last,0.0,0.0
+Currently experiencing pain__last,0.0,0.0
+Dialysate Flow ml/hr__last,0.0,0.0
+Diastolic Unloading__last,0.0,0.0
+Epidural Infusion Rate (mL/hr)__last,0.0,0.0
+Mucomyst mg/hr__last,0.0,0.0
+"Sodium, Urine__last",0.0,0.0
+"Sodium, Stool__last",0.0,0.0
+FEM ART MAP__last,0.0,0.0
+"Sodium, Body Fluid__last",0.0,0.0
+Glucagon       mg/hr__last,0.0,0.0
+HFO MAP__last,0.0,0.0
+HFO-MAP__last,0.0,0.0
+Protein/Creatinine Ratio__last,0.0,0.0
+HR Alarm [Low]__last,0.0,0.0
+HR_ApacheIV__last,0.0,0.0
+Heart Rate Alarm - Low__last,0.0,0.0
+Heart rate Alarm - High__last,0.0,0.0
+HrApacheIIScore__last,0.0,0.0
+HrApacheIIValue__last,0.0,0.0
+HrScore_ApacheIV__last,0.0,0.0
+Orthostatic BP lying [Diastolic]__last,0.0,0.0
+Orthostatic BP lying [Systolic]__last,0.0,0.0
+Orthostatic HR lying__last,0.0,0.0
+METHYLPRED 450MG/HR__last,0.0,0.0
+Manual BP [Diastolic]__last,0.0,0.0
+Manual BP [Systolic]__last,0.0,0.0
+Manual Blood Pressure Diastolic Left__last,0.0,0.0
+Manual Blood Pressure Diastolic Right__last,0.0,0.0
+Manual Blood Pressure Systolic Left__last,0.0,0.0
+Manual Blood Pressure Systolic Right__last,0.0,0.0
+MapApacheIIScore__last,0.0,0.0
+MapApacheIIValue__last,0.0,0.0
+MapScore_ApacheIV__last,0.0,0.0
+Meperidine mg/hr__last,0.0,0.0
+MgSO4          mg/hr__last,0.0,0.0
+Mucomyst       mg/hr__last,0.0,0.0
+Protonix mg/hr__last,0.0,0.0
+Pulmonary Artery Pressure diastolic__last,0.0,0.0
+Pulmonary Artery Pressure systolic__last,0.0,0.0
+NICARDIPINE--MG/HR__last,0.0,0.0
+NIMBEX MG/KG/HR__last,0.0,0.0
+"WBC, Pleural__last",0.0,0.0
+Non Invasive Blood Pressure systolic__last,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - High__last,0.0,0.0
+O2 Saturation Pulseoxymetry Alarm - Low__last,0.0,0.0
+O2 saturation pulseoxymetry__last,0.0,0.0
+Orthostat BP sitting [Diastolic]__last,0.0,0.0
+Orthostat BP sitting [Systolic]__last,0.0,0.0
+Orthostat HR sitting__last,0.0,0.0
+OrthostatBP standing [Diastolic]__last,0.0,0.0
+OrthostatBP standing [Systolic]__last,0.0,0.0
+OrthostatHR standing__last,0.0,0.0
+tacroFK__last,0.0,0.0
+Respiratory Rate (Set)__last,0.0,0.0
+0,0.0,0.0
+1,0.0,0.0
+Orthostatic HR sitting__last,0.0,0.0
+Orthostatic HR standing__last,0.0,0.0
+PAP [Diastolic]__last,0.0,0.0
+PAP [Systolic]__last,0.0,0.0
+PAR-Oxygen saturation__last,0.0,0.0
+PCA 1 Hr Limit (mg)__last,0.0,0.0
+PROTONIX MG/HR__last,0.0,0.0
+Pantoprazole   mg/hr__last,0.0,0.0
+Pantoprazole  mg/hr__last,0.0,0.0
+PotassiumApacheIIScore__last,0.0,0.0
+PotassiumApacheIIValue__last,0.0,0.0
+Protonix       mg/hr__last,0.0,0.0
+Solumedrol  mg/kg/hr__last,0.0,0.0
+Solumedrol mg/kg/hr__last,0.0,0.0
+SpO2 Alarm [High]__last,0.0,0.0
+SpO2 Alarm [Low]__last,0.0,0.0
+SpO2 Desat Limit__last,0.0,0.0
+R FEM MAP__last,0.0,0.0
+RRApacheIIValue__last,0.0,0.0
+RRScore_ApacheIV__last,0.0,0.0
+RR_ApacheIV__last,0.0,0.0
+RVSYSTOLIC__last,0.0,0.0
+Recovery HR - Aerobic Activity Response__last,0.0,0.0
+Recovery HR - Aerobic Capacity__last,0.0,0.0
+Recovery RR - Aerobic Activity Response__last,0.0,0.0
+Recovery RR - Aerobic Capacity__last,0.0,0.0
+Replace Rate ml/hr__last,0.0,0.0
+Replogle Irrigation__last,0.0,0.0
+Temperature F__last,0.0,0.0
+Temperature F (calc)__last,0.0,0.0
+2,0.0,0.0
+TemperatureF_ApacheIV__last,0.0,0.0
+Temporary Atrial Sens Threshold mV__last,0.0,0.0
+Temporary Atrial Stim Threshold mA__last,0.0,0.0
+Rest HR -  Aerobic Activity Response__last,0.0,0.0
+Rest HR - Aerobic Capacity__last,0.0,0.0
+Rest RR - Aerobic Activity Response__last,0.0,0.0
+Rest RR - Aerobic Capacity__last,0.0,0.0
+RrApacheIIScore__last,0.0,0.0
+SOLUMEDROL MG/KG/HR__last,0.0,0.0
+Smoking Cessation Info Offered through BIDMC Inpatient Guide__last,0.0,0.0
+SodiumApacheIIScore__last,0.0,0.0
+SodiumApacheIIValue__last,0.0,0.0
+Solu-medrol mg/hr__last,0.0,0.0
+aprotinin cc/hr__last,0.0,0.0
+carioride cc/hr__last,0.0,0.0
+epidural ml/hr__last,0.0,0.0
+left radial MAP__last,0.0,0.0
+map__last,0.0,0.0
+mucomyst mg/hr__last,0.0,0.0
+mucomyst mg/kg/hr__last,0.0,0.0
+Spon RR (Mech.)__last,0.0,0.0
+Spont RR__last,0.0,0.0
+Systolic Unloading__last,0.0,0.0
+TCPCV-MAP__last,0.0,0.0
+TPA MG/HR__last,0.0,0.0
+TPA mg/hr__last,0.0,0.0
+"Temp/Iso/Warmer [Temperature, degrees C]__last",0.0,0.0
+Temperature C__last,0.0,0.0
+Temperature Celsius__last,0.0,0.0
+zzz Stim Thresh mA [Value]__last,0.0,0.0
+zzzt Stim Thresh mA [Value]__last,0.0,0.0
+3,0.0,0.0
+24 hr Creatinine__mean,0.0,0.0
+"Albumin/Creatinine, Urine__mean",0.0,0.0
+"Amylase/Creatinine Ratio, Urine__mean",0.0,0.0
+proc_vent_any,0.0,0.0
+Temporary Venticular Sens Threshold mV__last,0.0,0.0
+Temporary Venticular Stim Threshold mA__last,0.0,0.0
+Thrombin__last,0.0,0.0
+Thrombin (16-21)__last,0.0,0.0
+Vent Sens Thresh mV__last,0.0,0.0
+Vent Stim Thresh mA__last,0.0,0.0
+Ventricular Pacemaker Threshold [Value]__last,0.0,0.0
+Xigris mcg/kg/hr__last,0.0,0.0
+approtinin cc/hr__last,0.0,0.0
+"Chloride, Urine__mean",0.0,0.0
+proc_central_line_any,0.0,0.0
+Creatine Kinase (CK)__mean,0.0,0.0
+Creatinine Clearance__mean,0.0,0.0
+"Creatinine, Ascites__mean",0.0,0.0
+"Creatinine, Body Fluid__mean",0.0,0.0
+"Creatinine, Pleural__mean",0.0,0.0
+nicardipine mg/hr__last,0.0,0.0
+pantoprazole mgm/hr__last,0.0,0.0
+protonix mg/hr__last,0.0,0.0
+solumed mg/kg/hr__last,0.0,0.0
+solumedrol mg/hr__last,0.0,0.0
+solumedrol mg/kg/hr__last,0.0,0.0
+tPA            mg/hr__last,0.0,0.0
+total RR__last,0.0,0.0
+xigris mg/hr__last,0.0,0.0
+"Glucose, Joint Fluid__mean",0.0,0.0
+"Glucose, Pleural__mean",0.0,0.0
+"Glucose, Urine__mean",0.0,0.0
+"Hematocrit, CSF__range",0.0,0.0
+"Hematocrit, Ascites__mean",0.0,0.0
+"Hematocrit, CSF__mean",0.0,0.0
+"Hematocrit, Joint Fluid__mean",0.0,0.0
+"Hematocrit, Other Fluid__mean",0.0,0.0
+"Bicarbonate, Other Fluid__mean",0.0,0.0
+"Bicarbonate, Urine__mean",0.0,0.0
+"Hematocrit, Calculated__range",0.0,0.0
+"Calculated Bicarbonate, Whole Blood__mean",0.0,0.0
+Carboxyhemoglobin__mean,0.0,0.0
+"Hematocrit, Joint Fluid__range",0.0,0.0
+"Chloride, Body Fluid__mean",0.0,0.0
+"Chloride, Stool__mean",0.0,0.0
+Lactate Dehydrogenase (LD)__mean,0.0,0.0
+"Lactate Dehydrogenase, Ascites__mean",0.0,0.0
+"Lactate Dehydrogenase, CSF__mean",0.0,0.0
+"Lactate Dehydrogenase, Pleural__mean",0.0,0.0
+Methemoglobin__mean,0.0,0.0
+Platelet Clumps__mean,0.0,0.0
+Activity HR - Aerobic Activity Response__mean,0.0,0.0
+"Potassium, Body Fluid__mean",0.0,0.0
+"Potassium, Stool__mean",0.0,0.0
+"Creatinine, Serum__mean",0.0,0.0
+"Creatinine, Urine__mean",0.0,0.0
+Fetal Hemoglobin__mean,0.0,0.0
+Atr Sens Thresh mV__mean,0.0,0.0
+"Glucose, Ascites__mean",0.0,0.0
+"Glucose, Body Fluid__mean",0.0,0.0
+"Glucose, CSF__mean",0.0,0.0
+"Sodium, Urine__mean",0.0,0.0
+"Sodium, Whole Blood__mean",0.0,0.0
+Atr Stim Thresh mA__mean,0.0,0.0
+"Urea Nitrogen, Body Fluid__mean",0.0,0.0
+"Urea Nitrogen, Urine__mean",0.0,0.0
+Urine Creatinine__mean,0.0,0.0
+WBC__mean,0.0,0.0
+WBC Casts__mean,0.0,0.0
+WBC Count__mean,0.0,0.0
+"WBC, Ascites__mean",0.0,0.0
+"Hematocrit, Pleural__mean",0.0,0.0
+Atrial Pacemaker Threshold [Value]__mean,0.0,0.0
+Hemoglobin A2__mean,0.0,0.0
+Hemoglobin C__mean,0.0,0.0
+Hemoglobin F__mean,0.0,0.0
+Lactate__mean,0.0,0.0
+"WBC, Other Fluid__mean",0.0,0.0
+"WBC, Pleural__mean",0.0,0.0
+BP Left Arm [Diastolic]__mean,0.0,0.0
+tacroFK__mean,0.0,0.0
+% Hemoglobin A1c__std,0.0,0.0
+"Albumin/Creatinine, Urine__std",0.0,0.0
+"Bicarbonate, Urine__std",0.0,0.0
+BP Left Arm [Systolic]__mean,0.0,0.0
+"Calculated Bicarbonate, Whole Blood__std",0.0,0.0
+Carboxyhemoglobin__std,0.0,0.0
+"Chloride, Urine__std",0.0,0.0
+"Potassium, Urine__mean",0.0,0.0
+Protein/Creatinine Ratio__mean,0.0,0.0
+BP Left Leg [Diastolic]__mean,0.0,0.0
+"Sodium, Body Fluid__mean",0.0,0.0
+"Sodium, Stool__mean",0.0,0.0
+WBC Count__range,0.0,0.0
+"WBC, Ascites__range",0.0,0.0
+"WBC, CSF__range",0.0,0.0
+"WBC, Joint Fluid__range",0.0,0.0
+"WBC, Other Fluid__range",0.0,0.0
+"WBC, Pleural__range",0.0,0.0
+BP Left Leg [Systolic]__mean,0.0,0.0
+tacroFK__range,0.0,0.0
+% Hemoglobin A1c__last,0.0,0.0
+24 hr Creatinine__last,0.0,0.0
+"Albumin/Creatinine, Urine__last",0.0,0.0
+"Amylase/Creatinine Ratio, Urine__last",0.0,0.0
+BP PAL [Diastolic]__mean,0.0,0.0
+"Bicarbonate, Other Fluid__last",0.0,0.0
+"WBC, CSF__mean",0.0,0.0
+"WBC, Joint Fluid__mean",0.0,0.0
+"Urea Nitrogen, Urine__std",0.0,0.0
+Creatine Kinase (CK)__std,0.0,0.0
+BP PAL [Systolic]__mean,0.0,0.0
+"Creatinine, Ascites__std",0.0,0.0
+"Creatinine, Body Fluid__std",0.0,0.0
+"Creatinine, Urine__std",0.0,0.0
+Fetal Hemoglobin__std,0.0,0.0
+"Glucose, Ascites__std",0.0,0.0
+"Glucose, Body Fluid__std",0.0,0.0
+"Glucose, CSF__std",0.0,0.0
+"Glucose, Pleural__std",0.0,0.0
+"Hematocrit, Other Fluid__std",0.0,0.0
+"Hematocrit, Pleural__std",0.0,0.0
+BP Right Arm [Diastolic]__mean,0.0,0.0
+WBC__range,0.0,0.0
+WBC Casts__range,0.0,0.0
+"Albumin/Creatinine, Urine__min",0.0,0.0
+"Amylase/Creatinine Ratio, Urine__min",0.0,0.0
+"Bicarbonate, Other Fluid__min",0.0,0.0
+"Bicarbonate, Urine__min",0.0,0.0
+BP Right Arm [Systolic]__mean,0.0,0.0
+Lactate Dehydrogenase (LD)__std,0.0,0.0
+"Lactate Dehydrogenase, Ascites__std",0.0,0.0
+"Lactate Dehydrogenase, CSF__std",0.0,0.0
+"Lactate Dehydrogenase, Pleural__std",0.0,0.0
+Methemoglobin__std,0.0,0.0
+BP Right Leg [Diastolic]__mean,0.0,0.0
+"Potassium, Urine__std",0.0,0.0
+Protein/Creatinine Ratio__std,0.0,0.0
+BP Right Leg [Systolic]__mean,0.0,0.0
+"Sodium, Urine__std",0.0,0.0
+"Sodium, Whole Blood__std",0.0,0.0
+Creatinine Clearance__min,0.0,0.0
+"Creatinine, Ascites__min",0.0,0.0
+"Creatinine, Body Fluid__min",0.0,0.0
+"Creatinine, Pleural__min",0.0,0.0
+"Creatinine, Serum__min",0.0,0.0
+WBC__std,0.0,0.0
+WBC Count__std,0.0,0.0
+"WBC, Ascites__std",0.0,0.0
+"WBC, CSF__std",0.0,0.0
+"WBC, Joint Fluid__std",0.0,0.0
+"WBC, Other Fluid__std",0.0,0.0
+"WBC, Pleural__std",0.0,0.0
+ART BP Systolic__mean,0.0,0.0
+tacroFK__std,0.0,0.0
+% Hemoglobin A1c__min,0.0,0.0
+24 hr Creatinine__min,0.0,0.0
+"Glucose, CSF__min",0.0,0.0
+"Glucose, Joint Fluid__min",0.0,0.0
+"Glucose, Pleural__min",0.0,0.0
+"Glucose, Urine__min",0.0,0.0
+"Hematocrit, Ascites__min",0.0,0.0
+"Hematocrit, CSF__min",0.0,0.0
+"Hematocrit, Calculated__min",0.0,0.0
+"Hematocrit, Joint Fluid__min",0.0,0.0
+"Hematocrit, Other Fluid__min",0.0,0.0
+"Hematocrit, Pleural__min",0.0,0.0
+"Calculated Bicarbonate, Whole Blood__min",0.0,0.0
+Carboxyhemoglobin__min,0.0,0.0
+"Chloride, Body Fluid__min",0.0,0.0
+"Chloride, Stool__min",0.0,0.0
+"Chloride, Urine__min",0.0,0.0
+Acetylcysteine mg/hr__mean,0.0,0.0
+"Potassium, Body Fluid__range",0.0,0.0
+"Potassium, Stool__range",0.0,0.0
+"Potassium, Urine__range",0.0,0.0
+BP UAC [Systolic]__mean,0.0,0.0
+Protein/Creatinine Ratio__range,0.0,0.0
+Sodium__range,0.0,0.0
+"Sodium, Body Fluid__range",0.0,0.0
+"Sodium, Stool__range",0.0,0.0
+"Sodium, Urine__range",0.0,0.0
+"Sodium, Whole Blood__range",0.0,0.0
+"Urea Nitrogen, Body Fluid__range",0.0,0.0
+"Urea Nitrogen, Urine__range",0.0,0.0
+Urine Creatinine__range,0.0,0.0
+Fetal Hemoglobin__min,0.0,0.0
+"Glucose, Ascites__min",0.0,0.0
+"Glucose, Body Fluid__min",0.0,0.0
+Hemoglobin A2__min,0.0,0.0
+Hemoglobin C__min,0.0,0.0
+Hemoglobin F__min,0.0,0.0
+Baseline Current/mA__mean,0.0,0.0
+Lactate Dehydrogenase (LD)__min,0.0,0.0
+"Lactate Dehydrogenase, Ascites__min",0.0,0.0
+"Lactate Dehydrogenase, CSF__min",0.0,0.0
+"Lactate Dehydrogenase, Pleural__min",0.0,0.0
+Methemoglobin__min,0.0,0.0
+Platelet Clumps__min,0.0,0.0
+Blood Temperature CCO (C)__mean,0.0,0.0
+CA GLUC GM/HR__mean,0.0,0.0
+"Potassium, Body Fluid__min",0.0,0.0
+"Potassium, Stool__min",0.0,0.0
+"Potassium, Urine__min",0.0,0.0
+CARIPORIDE CC/HR__mean,0.0,0.0
+CARIPORIDE ML/HR__mean,0.0,0.0
+"Chloride, Body Fluid__max",0.0,0.0
+Protein/Creatinine Ratio__min,0.0,0.0
+"Sodium, Body Fluid__min",0.0,0.0
+"Sodium, Stool__min",0.0,0.0
+"Sodium, Urine__min",0.0,0.0
+Changes in Temperature__mean,0.0,0.0
+"Urea Nitrogen, Body Fluid__min",0.0,0.0
+"Urea Nitrogen, Urine__min",0.0,0.0
+Urine Creatinine__min,0.0,0.0
+Chronic Dilaysis__mean,0.0,0.0
+WBC Casts__min,0.0,0.0
+WBC Count__min,0.0,0.0
+"WBC, Ascites__min",0.0,0.0
+"WBC, CSF__min",0.0,0.0
+"WBC, Joint Fluid__min",0.0,0.0
+"Glucose, Ascites__max",0.0,0.0
+"Glucose, Body Fluid__max",0.0,0.0
+"Glucose, CSF__max",0.0,0.0
+"WBC, Other Fluid__min",0.0,0.0
+"WBC, Pleural__min",0.0,0.0
+Chronic health on admission__mean,0.0,0.0
+tacroFK__min,0.0,0.0
+% Hemoglobin A1c__max,0.0,0.0
+24 hr Creatinine__max,0.0,0.0
+"Albumin/Creatinine, Urine__max",0.0,0.0
+"Amylase/Creatinine Ratio, Urine__max",0.0,0.0
+"Bicarbonate, Other Fluid__max",0.0,0.0
+"Bicarbonate, Urine__max",0.0,0.0
+ChronicScore_ApacheIV__mean,0.0,0.0
+"Calculated Bicarbonate, Whole Blood__max",0.0,0.0
+Carboxyhemoglobin__max,0.0,0.0
+Hemoglobin C__max,0.0,0.0
+Hemoglobin F__max,0.0,0.0
+Lactate Dehydrogenase (LD)__max,0.0,0.0
+"Chloride, Stool__max",0.0,0.0
+"Chloride, Urine__max",0.0,0.0
+"Chloride, Whole Blood__max",0.0,0.0
+Cisatracu mg/kg/hr__mean,0.0,0.0
+Compliance-Corrected__mean,0.0,0.0
+Creatinine Clearance__max,0.0,0.0
+"Creatinine, Ascites__max",0.0,0.0
+"Creatinine, Body Fluid__max",0.0,0.0
+"Creatinine, Pleural__max",0.0,0.0
+"Creatinine, Serum__max",0.0,0.0
+Current Goal__mean,0.0,0.0
+Fetal Hemoglobin__max,0.0,0.0
+Current Used/mA__mean,0.0,0.0
+Protein/Creatinine Ratio__max,0.0,0.0
+"Sodium, Body Fluid__max",0.0,0.0
+"Sodium, Stool__max",0.0,0.0
+"Sodium, Urine__max",0.0,0.0
+"Glucose, Joint Fluid__max",0.0,0.0
+"Glucose, Pleural__max",0.0,0.0
+"Glucose, Urine__max",0.0,0.0
+Currently experiencing pain__mean,0.0,0.0
+"Hematocrit, Ascites__max",0.0,0.0
+"Hematocrit, CSF__max",0.0,0.0
+"Hematocrit, Calculated__max",0.0,0.0
+"Hematocrit, Joint Fluid__max",0.0,0.0
+"Hematocrit, Other Fluid__max",0.0,0.0
+"Hematocrit, Pleural__max",0.0,0.0
+Arterial O2 Saturation__mean,0.0,0.0
+Hemoglobin A2__max,0.0,0.0
+"WBC, Joint Fluid__max",0.0,0.0
+"WBC, Other Fluid__max",0.0,0.0
+"WBC, Pleural__max",0.0,0.0
+Diastolic Unloading__mean,0.0,0.0
+tacroFK__max,0.0,0.0
+% Hemoglobin A1c__range,0.0,0.0
+"Lactate Dehydrogenase, Ascites__max",0.0,0.0
+"Lactate Dehydrogenase, CSF__max",0.0,0.0
+"Lactate Dehydrogenase, Pleural__max",0.0,0.0
+Methemoglobin__max,0.0,0.0
+Platelet Clumps__max,0.0,0.0
+Epidural Infusion Rate (mL/hr)__mean,0.0,0.0
+"Potassium, Body Fluid__max",0.0,0.0
+"Potassium, Stool__max",0.0,0.0
+"Potassium, Urine__max",0.0,0.0
+"Potassium, Whole Blood__max",0.0,0.0
+"Calculated Bicarbonate, Whole Blood__range",0.0,0.0
+Carboxyhemoglobin__range,0.0,0.0
+FEM ALINE MAP__mean,0.0,0.0
+"Chloride, Body Fluid__range",0.0,0.0
+"Chloride, Stool__range",0.0,0.0
+"Chloride, Urine__range",0.0,0.0
+"Chloride, Whole Blood__range",0.0,0.0
+Creatinine__range,0.0,0.0
+FEM ART MAP__mean,0.0,0.0
+"Urea Nitrogen, Body Fluid__max",0.0,0.0
+"Urea Nitrogen, Urine__max",0.0,0.0
+Urine Creatinine__max,0.0,0.0
+WBC Casts__max,0.0,0.0
+WBC Count__max,0.0,0.0
+"WBC, Ascites__max",0.0,0.0
+"WBC, CSF__max",0.0,0.0
+Fetal Hemoglobin__range,0.0,0.0
+Gait/Transferring__mean,0.0,0.0
+"Glucose, Ascites__range",0.0,0.0
+"Glucose, Body Fluid__range",0.0,0.0
+"Glucose, CSF__range",0.0,0.0
+"Glucose, Joint Fluid__range",0.0,0.0
+"Glucose, Pleural__range",0.0,0.0
+"Glucose, Urine__range",0.0,0.0
+"Hematocrit, Ascites__range",0.0,0.0
+24 hr Creatinine__range,0.0,0.0
+"Albumin/Creatinine, Urine__range",0.0,0.0
+"Amylase/Creatinine Ratio, Urine__range",0.0,0.0
+Glucagon       mg/hr__mean,0.0,0.0
+"Bicarbonate, Other Fluid__range",0.0,0.0
+"Bicarbonate, Urine__range",0.0,0.0
+CK-MB Index__range,0.0,0.0
+"Hematocrit, Pleural__range",0.0,0.0
+Hemoglobin__range,0.0,0.0
+Hemoglobin A2__range,0.0,0.0
+Hemoglobin C__range,0.0,0.0
+Hemoglobin F__range,0.0,0.0
+"Lactate Dehydrogenase, Ascites__range",0.0,0.0
+"Lactate Dehydrogenase, CSF__range",0.0,0.0
+"Lactate Dehydrogenase, Pleural__range",0.0,0.0
+Methemoglobin__range,0.0,0.0
+Platelet Clumps__range,0.0,0.0
+Creatinine Clearance__range,0.0,0.0
+"Creatinine, Ascites__range",0.0,0.0
+"Creatinine, Body Fluid__range",0.0,0.0
+"Creatinine, Pleural__range",0.0,0.0
+"Creatinine, Serum__range",0.0,0.0
+"Creatinine, Urine__range",0.0,0.0
+"Hematocrit, Other Fluid__range",0.0,0.0
+gender_F,0.0,0.0
+eth_ASIAN,0.0,0.0
+eth_HISPANIC,0.0,0.0
+HFO MAP__mean,0.0,0.0
+eth_WHITE,0.0,0.0
+10% ETOH CC/HR__mean,0.0,0.0
+ALCOHOL GTT ML/HR__mean,0.0,0.0
+APACHEII-Chronic health points__mean,0.0,0.0
+APOTININ CC/HR__mean,0.0,0.0
+APPROTININ CC/HR__mean,0.0,0.0
+APROTININ CC/HR__mean,0.0,0.0
+APROTININ ML/HR__mean,0.0,0.0
+APROTONIN CC/HR__mean,0.0,0.0
+ART BP Diastolic__mean,0.0,0.0
+"WBC, Other Fluid__last",0.0,0.0
+"WBC, Joint Fluid__last",0.0,0.0
+Activity HR - Aerobic Capacity__mean,0.0,0.0
+Activity RR - Aerobic Activity Response__mean,0.0,0.0
+Activity RR - Aerobic Capacity__mean,0.0,0.0
+Amicar cc/hr__mean,0.0,0.0
+Aortic Pressure Signal - Diastolic__mean,0.0,0.0
+Aortic Pressure Signal - Systolic__mean,0.0,0.0
+Aprotinin ml/hr__mean,0.0,0.0
+Arterial BP #2 [Diastolic]__mean,0.0,0.0
+Arterial BP #2 [Systolic]__mean,0.0,0.0
+Arterial BP [Diastolic]__mean,0.0,0.0
+Arterial BP [Systolic]__mean,0.0,0.0
+HFO-MAP__mean,0.0,0.0
+Arterial Blood Pressure systolic__mean,0.0,0.0
+"Potassium, Whole Blood__last",0.0,0.0
+gender_M,0.0,0.0
+"Creatinine, Urine__min",-1.492031804128935e-06,0.00036921471851827594
+PAP [Systolic]__range,-2.2380477062489134e-06,0.00013248872768176307
+Creatine Kinase (CK)__range,-1.1488644891910482e-05,6.992616811739038e-05
+"Potassium, Whole Blood__min",-2.6707369294243223e-05,0.00040970617389727096
+Bicarbonate__min,-3.118346470671884e-05,0.00021231691211268314
+"Chloride, Whole Blood__min",-3.521195057791804e-05,0.0005683801892916624
+Vent Stim Thresh mA__std,-4.6402189109051586e-05,0.00017537969143426531
+Arterial BP [Systolic]__min,-6.564939938256132e-05,0.0006802791346942325
+Respiratory Rate Set__mean,-6.997629161462627e-05,0.00012136319131774212
+Non Invasive Blood Pressure systolic__range,-7.020009638525337e-05,0.0006538986796382337
+Prothrombin time__range,-7.415398066625833e-05,0.00018609940498043158
+Temperature C (calc)__range,-8.012210788284068e-05,0.0005724392694774113
+Hematocrit__std,-8.34045778519643e-05,0.0002883860116501066
+Atr Stim Thresh mA__range,-9.079013528250357e-05,0.0005156701083675349
+O2 Saturation Pulseoxymetry Alarm - Low__mean,-0.00010653107081632917,0.00018153766235712534
+eth_BLACK,-0.00011742290298655256,0.00017902056415919156
+"Chloride, Whole Blood__std",-0.00012339103020317932,0.00014118405641353864
+Temperature Fahrenheit__min,-0.00012831473515688695,0.00018951916951697638
+Hemoglobin__last,-0.0001435334595592197,0.000551332018035807
+"Hematocrit, Calculated__std",-0.0001540522837784497,0.0004887176309463717
+Lactate__max,-0.000163526685734805,0.0002912251163236221
+Bicarbonate__std,-0.00016457110799774632,0.0008105726743963152
+Lowest Heart Rate__min,-0.00017978983240003467,2.225579376863117e-06
+Heart Rate__last,-0.00019791801882051985,0.0003414032862959478
+Platelet Count__range,-0.0002085860462200939,0.00043440534803777835
+Temperature Fahrenheit__max,-0.00021455417343674288,0.00023831038656881384
+age,-0.00022746024854265469,0.001109667180795768
+Lowest Heart Rate__max,-0.00023693465049900997,1.25552503771962e-05
+Temperature C (calc)__last,-0.0002396203077464687,0.0003015168513101177
+Lowest Heart Rate__last,-0.00024178375386247898,7.168743147321861e-06
+Glucose__std,-0.000244320207929527,0.0017600379280365986
+Respiratory Rate (Total)__range,-0.0002458868413239168,0.0002340195403803225
+Lactate__range,-0.00026961014700987995,0.0007026081136265347
+Atr Sens Thresh mV__range,-0.0002763242901285379,0.0004129330034406597
+BP Cuff [Diastolic]__last,-0.00028811134138135853,6.383934914318094e-05
+"Potassium, Whole Blood__std",-0.00030616492621153845,0.0005918387943722541
+SpO2__last,-0.00032093604107261695,0.00016688587493874813
+Sodium__min,-0.0003304850446191887,0.0003888224575932295
+Sodium__max,-0.0003322754827841612,0.0002873664874954923
+Creatinine__min,-0.00033242468596454965,0.000759594637049577
+Respiratory Rate (spontaneous)__range,-0.000337049984557436,0.00024074079958424834
+Temporary Atrial Sens Threshold mV__std,-0.0003619669156867511,0.0002622516591147584
+Urea Nitrogen__std,-0.00036756203495234006,0.0007229631446721685
+admit_weekend,-0.0003749475923828571,0.00028830878829226716
+SpO2__std,-0.0003862124325042071,0.0006108381486180339
+HR Alarm [Low]__std,-0.0003900171136048014,0.000389511584237648
+Non Invasive Blood Pressure diastolic__mean,-0.0003916583485893188,0.0002564329152724924
+"Sodium, Whole Blood__max",-0.0004401493822241864,0.0003712914474396536
+BP Cuff [Diastolic]__mean,-0.0004488031666882497,0.0005793282734871131
+Arterial BP [Diastolic]__range,-0.0004507428080336995,0.0005198454640451193
+Vent Sens Thresh mV__max,-0.00046864718968346873,0.00035601553122464115
+NBP [Diastolic]__range,-0.00047670416142588936,0.0006872389433283432
+NBP [Systolic]__max,-0.00048058344411670004,0.0007896045170152037
+Temperature C__mean,-0.00048147866319911967,0.0004527785803116664
+Respiratory Rate__mean,-0.000492967308091119,0.0002578671276580337
+Spon RR (Mech.)__min,-0.0004937133239932168,0.000192469442505228
+WBC__max,-0.0005141541597100563,0.00023106385110405626
+NBP [Diastolic]__mean,-0.0005166906137771266,3.9117420475589105e-05
+Lactate Dehydrogenase (LD)__range,-0.0005196746773853845,0.0002820179298449325
+Non Invasive Blood Pressure diastolic__min,-0.0005500375245998778,0.0005874483545593182
+Non Invasive Blood Pressure diastolic__std,-0.0005510819468628192,0.00023531529353061444
+Temperature Fahrenheit__range,-0.0005592135201953896,0.00031918134968082084
+Hematocrit__min,-0.0005608547551799292,0.0007120458818637101
+Urea Nitrogen__min,-0.000588308140376359,0.00020574225937503292
+"Hematocrit, Calculated__mean",-0.0006227740750521793,0.0005604829735414977
+ART BP Systolic__max,-0.0006348595326657769,0.0009222182078256205
+O2 Saturation Pulseoxymetry Alarm - Low__std,-0.0006611192924187437,0.0004543256198359374
+Respiratory Rate (spontaneous)__min,-0.0006726079373107652,0.0002156549138353334
+Urea Nitrogen__range,-0.0007195323375513319,0.0013936736162702696
+proc_rrt_any,-0.0007287083331467992,0.0005299489037532234
+"Potassium, Whole Blood__mean",-0.0007353478746753072,0.0005824168937872993
+"Chloride, Whole Blood__last",-0.0007761549445187921,5.087937837473535e-05
+Potassium__std,-0.0008376266548498102,0.0006639049307370107
+admit_hour,-0.0008525469728912993,0.0011216788476750823
+"Sodium, Whole Blood__last",-0.0008674672909327663,0.0008442721522233707
+CK-MB Index__min,-0.0009052156955777324,0.00030610609727847824
+BP Cuff [Diastolic]__min,-0.000905737906709203,0.0013034447269463447
+Arterial BP [Systolic]__max,-0.0009253581249337728,0.0015092152532293179
+Respiratory Rate (Total)__last,-0.0009769824253573977,0.0009309282042952571
+NBP [Diastolic]__max,-0.0010266670844355729,0.0011445212877784106
+Creatinine__mean,-0.0010506141948921632,0.0005411859023483714
+Heart Rate__std,-0.001264273149246442,0.0006944765210881767
+Chloride__min,-0.001265093766738734,0.0010359311663377232
+Hematocrit__last,-0.0012668842049036399,0.0014065113763228648
+Temporary Venticular Sens Threshold mV__mean,-0.0014137001344320498,0.00024175335657992554
+Prothrombin time__last,-0.0014896445532632807,0.0013560070988469762
+Glucose__min,-0.001534256304207382,0.0008666898747566117
+Arterial BP [Systolic]__range,-0.0015454465427384933,0.0007596892933954933
+Urea Nitrogen__last,-0.0016497395658485736,0.0016685925969546797
+Heart Rate__range,-0.001727026813303545,0.0010447655070342794
+Chloride__std,-0.0018736935396514553,0.0046549027418776
+CK-MB Index__last,-0.001921513158974464,0.0006374258912802145
+Heart Rate__min,-0.001964185268573182,0.001145739018678754
+Bicarbonate__max,-0.002109732971068001,0.0012030784526973761
+Temperature C (calc)__min,-0.002124504085929102,0.0006170505651157556
+Hemoglobin__min,-0.002545853867421055,0.0023570963765222656
+Platelet Count__max,-0.0025958369328600963,0.006982048123423055
+Glucose__last,-0.0026069525698009686,0.001249032237546828
+Hematocrit__range,-0.0027750299525384882,0.0008775947483211422
+Platelet Count__last,-0.00399760081285887,0.0005713459793585671
+Platelet Count__mean,-0.010669743236246854,0.0024074170187024105

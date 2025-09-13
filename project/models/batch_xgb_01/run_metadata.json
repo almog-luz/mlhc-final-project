@@ -1,0 +1,23 @@
+{
+  "start_time_utc": "1970-01-01T00:21:17.276303+00:00",
+  "end_time_utc": "2025-09-13T07:59:11.374684+00:00",
+  "duration_seconds": 1.8524366999999984,
+  "git_commit": "318a2a0",
+  "config": {
+    "model_type": "xgb",
+    "calib_cv": 3,
+    "skip_importance_effective": false,
+    "cv_folds": 0,
+    "finalize_mode": false,
+    "feature_count": 1572,
+    "test_size": 0.3,
+    "random_state": 42,
+    "allow_history": false
+  },
+  "timings": {
+    "load_labels": 0.004813800000192714,
+    "feature_load_reuse": 0.20758150000006026,
+    "preprocessor_transform_only": 0.6031616999998732,
+    "total": 1.8524366999999984
+  }
+}
