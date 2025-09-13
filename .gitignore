@@ -1,0 +1,87 @@
+# Core Python ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments / packaging
+.env
+.venv
+venv/
+.env*/
+build/
+dist/
+*.egg-info/
+
+# Jupyter & IPython
+.ipynb_checkpoints/
+*.ipynb_out.json
+# Optionally ignore notebook outputs by clearing; keep notebooks tracked
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs & temp
+logs/
+*.log
+nohup.out
+/tmp/
+.temp/
+.cache/
+.cache/**
+
+# Data (keep raw cohort minimal; ignore large derived / cache)
+project/data/extracted_cache/
+project/data/tmp/
+project/data/**/cache/
+# Allow essential small CSVs
+!project/data/initial_cohort.csv
+!project/data/labels.csv
+!project/data/splits.json
+
+# Artifacts / runs (keep promoted canonical artifacts, ignore transient runs)
+project/runs/
+!project/artifacts/feature_columns.json
+!project/artifacts/feature_provenance.json
+!project/artifacts/features_full.parquet
+!project/artifacts/model_readmission.joblib
+!project/artifacts/preprocessor.joblib
+!project/artifacts/metrics.json
+!project/artifacts/threshold.txt
+!project/artifacts/METADATA.json
+# If large feature parquet should not be versioned, comment it out above
+
+# Model training intermediates
+*.joblib.tmp
+
+# SHAP plot caches (if saved)
+shap_cache/
+
+# Python tooling
+.mypy_cache/
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+
+# Environment / credentials placeholders
+.env.local
+.env.prod
+*.secret
+*.key
+
+# Backup / temp artifacts
+*.bak
+project/final_artifacts/
+
+# BigQuery credentials (if used)
+credentials.json
+service_account.json
+
+# Misc
+*.orig
+*.retry
