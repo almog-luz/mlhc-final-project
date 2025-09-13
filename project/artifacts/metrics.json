@@ -2,9 +2,9 @@
   "auc": 0.5965766076269682,
   "pr_auc": 0.05461967161773474,
   "brier": 0.04165366901400125,
-  "threshold_f1": 0.4703030303030303,
-  "f1_at_threshold": 0.10853530031612224,
-  "precision_at_threshold": 0.06234866828083393,
-  "recall_at_threshold": 0.4186991869901679,
-  "cost_at_threshold": 2264.0
+  "threshold": 0.06953177257525082,
+  "f1_at_threshold": 0.07373271889400922,
+  "precision_at_threshold": 0.05925925925911294,
+  "recall_at_threshold": 0.09756097560935952,
+  "cost_at_threshold": 1491.0
 }
