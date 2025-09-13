@@ -1,10 +1,10 @@
 {
-  "auc": 0.5965766076269682,
-  "pr_auc": 0.05461967161773474,
-  "brier": 0.04165366901400125,
-  "threshold": 0.06953177257525082,
-  "f1_at_threshold": 0.07373271889400922,
-  "precision_at_threshold": 0.05925925925911294,
-  "recall_at_threshold": 0.09756097560935952,
-  "cost_at_threshold": 1491.0
+  "auc": 0.6049995001693457,
+  "pr_auc": 0.05755169256503535,
+  "brier": 0.04140597358729218,
+  "threshold": 0.0665551839464883,
+  "f1_at_threshold": 0.08743169398907104,
+  "precision_at_threshold": 0.06584362139904147,
+  "recall_at_threshold": 0.13008130081247934,
+  "cost_at_threshold": 1524.0
 }
