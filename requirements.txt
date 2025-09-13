@@ -20,3 +20,4 @@ nbformat
 matplotlib
 ipywidgets
 tqdm
+shap

@@ -11,7 +11,8 @@ Contents
 - evaluate_unseen.py: CLI to produce predictions and (optionally) compute evaluation metrics when labels are provided.
 - metrics_utils.py: metrics and calibration utilities.
 - data/: initial_cohort.csv, test_example.csv, extracted_cache/ for parquet caches.
-- runs/<timestamp>/models/: created by training (preprocessor + 3 models + feature_columns.json + metrics.json) plus evaluation subdirectories.
+ - data/: initial_cohort.csv, labels.csv (canonical), test_example.csv, extracted_cache/ for parquet caches.
+- runs/<timestamp>/artifacts/: created by training (preprocessor + 3 models + feature_columns.json + metrics.json) plus evaluation subdirectories.
 
 Quick start
 1) Environment
@@ -23,7 +24,7 @@ Quick start
    - Inference: open mlhc_project_inference.ipynb, set GCP_PROJECT_ID and SUBJECTS_CSV (subject_id), run all; set LABELS_CSV to compute metrics.
 
 3) Train via CLI (alternative)
-   - python project/train.py --project-id YOUR_GCP_PROJECT --input path/to/labels.csv --output-dir runs/$(date +%Y%m%d_%H%M%S)/models  (on Windows create the directory first or substitute a timestamp manually)
+   - python project/train.py --project-id YOUR_GCP_PROJECT --input path/to/labels.csv --output-dir runs/$(date +%Y%m%d_%H%M%S)/artifacts  (on Windows create the directory first or substitute a timestamp manually)
 
 4) Unseen evaluation (script)
    - Predictions only:
@@ -46,6 +47,12 @@ Notes
 - First 48h window with LOS >=54h, 6h gap respected by design.
 - Models are calibrated (isotonic if enough positives, else Platt/sigmoid).
 
+## Structure & Compatibility Notes
+- 2025-09-13: `models/` renamed to `artifacts/` (update any external scripts referencing `project/models`).
+- Canonical labels file relocated to `project/data/labels.csv` (legacy root `labels.csv` and `project/labels.csv` are deprecated fallbacks).
+- Only one promoted model set should reside directly under `project/artifacts/`; historical experiment outputs belong under `project/runs/<timestamp>/`.
+- Deprecated scripts and legacy artifacts retained under `project/deprecated/` for reference and can be removed later.
+
 ## Readmission Hyperparameter Tuning
 
 Use `project/hparam_tune.py` to sweep logistic regression (and optional HGB) hyperparameters for the readmission task without manual intervention.
@@ -64,3 +71,21 @@ python -m project.hparam_tune \
 ```
 
 The script produces one subdirectory per configuration plus a consolidated CSV `sweep_summary.csv` (sorted by ROC AUC then PR AUC) in the output root.
+
+## Promoting a Run's Artifacts
+
+After training, choose a run under `project/runs/<timestamp>/` and promote its artifacts to the canonical `project/artifacts/` directory:
+
+```bash
+python -m project.promote_artifacts --run 20250913_153045
+```
+
+If you omit `--run`, the latest run directory (by modification time) is used. A `METADATA.json` is written capturing the source run, UTC promotion time, git commit, and file hashes. Existing promoted files are backed up automatically to a timestamped `artifacts_backup_<epoch>` directory before overwrite. Use `--force` to allow overwriting without aborting, and `--include-extra` to copy supported auxiliary directories (e.g., `shap_readmission`). Add `--dry-run` to preview actions without copying.
+
+Examples:
+```bash
+# Promote latest run (dry run first)
+python -m project.promote_artifacts --dry-run
+# Force overwrite with extras
+python -m project.promote_artifacts --run 20250913_153045 --force --include-extra
+```

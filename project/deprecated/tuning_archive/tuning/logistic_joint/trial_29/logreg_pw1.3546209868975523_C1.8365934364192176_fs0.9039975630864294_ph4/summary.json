@@ -1,0 +1,18 @@
+{
+  "model_type": "logreg",
+  "pos_weight": 1.3546209868975523,
+  "C": 1.8365934364192176,
+  "min_recall": null,
+  "feature_select_C": 0.9039975630864294,
+  "phenotype_clusters": 4,
+  "stack_readmission": 0,
+  "roc_auc": 0.6086408037873736,
+  "pr_auc": 0.061182636769388773,
+  "f1": 0.11597258829731154,
+  "precision": 0.06662628709872805,
+  "recall": 0.44715447154471544,
+  "brier": 0.041098549276508085,
+  "ece": 0.00813094920799833,
+  "threshold": 0.0535301654012167,
+  "run_dir": "project/tuning/logistic_joint\\trial_29\\logreg_pw1.3546209868975523_C1.8365934364192176_fs0.9039975630864294_ph4"
+}

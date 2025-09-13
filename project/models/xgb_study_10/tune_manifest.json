@@ -1,9 +1,0 @@
-{
-  "input": "project/data/initial_cohort.csv",
-  "features": "project/models/xgb_build/features_full.parquet",
-  "preprocessor": "project/models/xgb_build/preprocessor.joblib",
-  "trials": 10,
-  "seed": 42,
-  "calibration": false,
-  "calib_cv": 3
-}

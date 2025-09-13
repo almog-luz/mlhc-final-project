@@ -1,0 +1,18 @@
+name: mlhc_project
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  - pip
+  - pip:
+      - google-cloud-bigquery
+      - google-cloud-bigquery-storage
+      - db-dtypes
+      - pyarrow
+      - joblib
+      - ipykernel
+      - nbformat

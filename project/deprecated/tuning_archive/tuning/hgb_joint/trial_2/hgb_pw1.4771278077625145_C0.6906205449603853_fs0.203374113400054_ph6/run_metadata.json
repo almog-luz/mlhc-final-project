@@ -1,0 +1,18 @@
+{
+  "start_time_utc": "1970-01-01T23:06:13.740526+00:00",
+  "end_time_utc": "2025-09-13T05:43:29.293162+00:00",
+  "duration_seconds": 1757659035.5526388,
+  "git_commit": "318a2a0",
+  "config": {
+    "model_type": "hgb",
+    "calib_cv": 5,
+    "skip_importance_effective": true,
+    "cv_folds": 0,
+    "finalize_mode": false,
+    "feature_count": 620,
+    "test_size": 0.2,
+    "random_state": 42,
+    "allow_history": false
+  },
+  "timings": null
+}
