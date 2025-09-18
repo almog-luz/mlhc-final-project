@@ -1,0 +1,21 @@
+feature,mean_abs_shap
+respiratory rate set__count,0.52881473
+temporary atrial sens threshold mv__std,0.41098127
+bp uac [systolic]__std,0.3970518
+"potassium, whole blood__count",0.35449803
+bp cuff [systolic]__mean,0.34636834
+"wbc, ascites__mean",0.33060956
+age,0.32270318
+respiratory rate (spontaneous)__count,0.30606437
+temporary venticular stim threshold ma__last,0.3036212
+o2 saturation pulseoxymetry__std,0.27083337
+non invasive blood pressure diastolic__max,0.26860785
+tacrofk__mean,0.26576108
+orthostatic hr lying__min,0.25293422
+% hemoglobin a1c__range,0.25247204
+pca 1 hr limit (mg)__count,0.24012206
+orthostatic hr lying__mean,0.23317894
+lactate__last,0.2323985
+atrial pacemaker threshold [value]__mean,0.23018155
+atr sens thresh mv__mean,0.22858076
+"calculated bicarbonate, whole blood__count",0.22746228

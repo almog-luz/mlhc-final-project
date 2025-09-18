@@ -1,0 +1,21 @@
+feature,mean_abs_shap
+"temp/iso/warmer [temperature, degrees c]__count",0.34949115
+heart rate__count,0.33019873
+lactate__last,0.2694834
+epidural infusion rate (ml/hr)__count,0.20274498
+arterial bp [diastolic]__range,0.16928388
+temperature c__min,0.16231443
+lowest heart rate__std,0.14799047
+lactate__max,0.12930307
+respiratory rate set__count,0.11593479
+ck-mb index__mean,0.10639414
+temperature fahrenheit__last,0.10033474
+"wbc, pleural__last",0.10013828
+atr stim thresh ma__range,0.096430406
+temperature celsius__std,0.092495896
+heart rate__min,0.0903194
+atr sens thresh mv__min,0.08718183
+lactate__count,0.086463235
+heart rate__last,0.08127178
+ck-mb index__max,0.07682144
+temperature celsius__last,0.07144775

@@ -1,0 +1,29 @@
+{
+  "total_subjects": 28473,
+  "checked_admissions": 28473,
+  "violations": {
+    "discharge_leq_54h": 1,
+    "in_hosp_death_leq_54h": 4,
+    "dod_leq_54h": 130,
+    "readmission_leq_54h": 197
+  },
+  "any_violation": true,
+  "violation_subject_ids_sample": {
+    "discharge_leq_54h": [
+      12187
+    ],
+    "in_hosp_death_leq_54h": [
+      6800,
+      10339,
+      10518,
+      11347
+    ],
+    "dod_leq_54h": [
+      491,
+      561,
+      1892,
+      2177,
+      3248
+    ]
+  }
+}

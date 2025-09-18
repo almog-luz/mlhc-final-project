@@ -1,0 +1,21 @@
+feature,mean_abs_shap
+pap [diastolic]__std,0.16848521
+bp cuff [systolic]__mean,0.1683611
+respiratory rate (spontaneous)__min,0.14887537
+respiratory rate (spontaneous)__mean,0.13659285
+bp cuff [systolic]__last,0.13574757
+vent stim thresh ma__std,0.13056357
+arterial bp [systolic]__last,0.11032794
+arterial bp [diastolic]__mean,0.108994216
+temporary venticular sens threshold mv__range,0.10821864
+arterial blood pressure diastolic__mean,0.100791074
+par-oxygen saturation__count,0.10032088
+heart rate__last,0.09645492
+ck-mb index__mean,0.08807145
+vent sens thresh mv__mean,0.07990891
+epidural infusion rate (ml/hr)__last,0.07976758
+epidural infusion rate (ml/hr)__mean,0.079253875
+ck-mb index__min,0.07214097
+pap [diastolic]__range,0.07193272
+chloride__std,0.06771347
+temporary venticular stim threshold ma__mean,0.06766932

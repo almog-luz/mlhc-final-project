@@ -1,0 +1,81 @@
+{
+  "window_hours": 48.0,
+  "modality_time_checks": {
+    "vitals": {
+      "rows": 7361886,
+      "usable_events": 7361886,
+      "events_missing_admission_time": 0,
+      "max_hour_offset": 48.983333333333334,
+      "violations_gt_48h": 13559,
+      "pct_violations": 0.001841783477766431
+    },
+    "labs": {
+      "rows": 1159403,
+      "usable_events": 1159403,
+      "events_missing_admission_time": 0,
+      "max_hour_offset": 48.983333333333334,
+      "violations_gt_48h": 6477,
+      "pct_violations": 0.005586495808618746
+    },
+    "prescriptions": {
+      "rows": 586688,
+      "usable_events": 586688,
+      "events_missing_admission_time": 0,
+      "max_hour_offset": 48.0,
+      "violations_gt_48h": 0,
+      "pct_violations": 0.0
+    },
+    "procedures": {
+      "rows": 65698,
+      "usable_events": 65698,
+      "events_missing_admission_time": 0,
+      "max_hour_offset": 48.983333333333334,
+      "violations_gt_48h": 305,
+      "pct_violations": 0.0046424548692502055
+    }
+  },
+  "violations_examples": [
+    {
+      "modality": "vitals",
+      "example_offsets": [
+        48.233333333333334,
+        48.233333333333334,
+        48.233333333333334,
+        48.233333333333334,
+        48.233333333333334
+      ]
+    },
+    {
+      "modality": "labs",
+      "example_offsets": [
+        48.2,
+        48.2,
+        48.2,
+        48.2,
+        48.2
+      ]
+    },
+    {
+      "modality": "procedures",
+      "example_offsets": [
+        48.25,
+        48.46666666666667,
+        48.13333333333333,
+        48.45,
+        48.13333333333333
+      ]
+    }
+  ],
+  "suspicious_feature_name_tokens": [
+    "after48",
+    "post48",
+    "future",
+    "discharge",
+    "deathtime",
+    "dod",
+    "los_hours",
+    "realized_los"
+  ],
+  "suspicious_features_found": [],
+  "prolonged_los_identity_features": []
+}
