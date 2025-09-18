@@ -1,20 +1,20 @@
 {
-  "saved_utc": "2025-09-13T13:27:41Z",
-  "git_commit": "4a6c4ad28de5f25e19277bbbe93901ede529d0b8",
+  "saved_utc": "2025-09-18T08:11:22Z",
+  "git_commit": "ca14b1be4d4b40b19348f00b02d90daebde94aad",
   "n_features": 1429,
   "feature_sig_sha256_16": "f7b383b014364676",
   "prevalence_train": 0.04325938067084236,
   "prevalence_valid": 0.043371378402107114,
   "prevalence_test": 0.04319578577699736,
-  "optuna_best_value": 0.6274018529118605,
+  "optuna_best_value": 0.6305098896210198,
   "threshold_info": {
-    "f1": 0.1557377049180328,
-    "precision": 0.11752577319563397,
-    "recall": 0.2307692307682965,
-    "cost": 1378.0,
-    "fbeta": 0.19348268811432212,
+    "f1": 0.13878080415045396,
+    "precision": 0.08262548262541883,
+    "recall": 0.4331983805650478,
+    "cost": 1888.0,
+    "fbeta": 0.23434077936850273,
     "threshold": 0.0665551839464883
   },
   "calibration": "isotonic_on_validation",
-  "cv_folds_best_mean_auc": 0.6274018529118605
+  "cv_folds_best_mean_auc": 0.6305098896210198
 }

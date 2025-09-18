@@ -1,9 +1,13 @@
-from typing import List
+from typing import List, Union, Any
 import os
 import json
 import pandas as pd
-from google.cloud import bigquery as bq
 import joblib
+
+try:  # BigQuery optional
+    from google.cloud import bigquery as bq  # type: ignore
+except Exception:  # pragma: no cover
+    bq = None  # type: ignore
 
 from .extract import (
     get_first_admissions,
@@ -16,23 +20,57 @@ from .extract import (
 from .features import build_features
 
 
-def run_pipeline_on_unseen_data(subject_ids: List[int], client: bq.Client) -> pd.DataFrame:
-    """Run inference pipeline on unseen patients.
+def run_pipeline_on_unseen_data(subject_ids: List[int], client: Union[Any, None]) -> pd.DataFrame:
+    """Run inference pipeline on unseen patients (DuckDB or BigQuery backend).
 
-    Steps:
-      1. Pull first admissions and filter by required LOS window (>=54h).
-      2. Extract 0-48h modalities (vitals, labs, prescriptions, procedures, demographics).
-      3. Build feature matrix aligned to training feature set.
-      4. Load fitted preprocessor + calibrated models and produce probabilities.
+    Parameters
+    ----------
+    subject_ids : list[int]
+        Subject IDs to score.
+    client : duckdb.Connection or bigquery.Client
+        Connection handle. If a DuckDB connection is passed, expects MIMIC-III
+        tables to be available with canonical names (admissions, patients,
+        chartevents, labevents, prescriptions, procedureevents_mv, d_items,
+        d_labitems). If a BigQuery client is passed, uses the pre-existing
+        BigQuery extraction helpers.
 
     Returns
     -------
-    DataFrame
+    pandas.DataFrame
         Columns: subject_id, mortality_proba, prolonged_LOS_proba, readmission_proba
-        Includes NA rows for subjects excluded by LOS filtering to keep alignment.
     """
     # 1) First admission per subject and LOS >= 54h
-    first_adm = get_first_admissions(client, subject_ids)
+    # Detect duckdb vs BigQuery by attribute presence
+    is_duckdb = hasattr(client, 'execute') and not hasattr(client, 'query')
+    if is_duckdb:
+        # DuckDB SQL pulls first admissions; mimic logic of get_first_admissions
+        if not subject_ids:
+            return pd.DataFrame(columns=['subject_id','mortality_proba','prolonged_LOS_proba','readmission_proba'])
+        sid_list = ','.join(str(int(s)) for s in subject_ids)
+        sql = f"""
+            SELECT subject_id, hadm_id, admittime, dischtime, deathtime, admission_type,
+                   admission_location, discharge_location, diagnosis, insurance, language,
+                   marital_status, ethnicity
+            FROM admissions
+            WHERE subject_id IN ({sid_list})
+            ORDER BY subject_id, admittime
+        """
+        df_all = client.execute(sql).fetchdf()
+        if df_all.empty:
+            return pd.DataFrame({
+                'subject_id': subject_ids,
+                'mortality_proba': [float('nan')]*len(subject_ids),
+                'prolonged_LOS_proba': [float('nan')]*len(subject_ids),
+                'readmission_proba': [float('nan')]*len(subject_ids),
+            })
+        first_adm = (
+            df_all.sort_values(['subject_id','admittime']).groupby('subject_id', as_index=False).first()
+        )
+    else:
+        if bq is None:
+            raise RuntimeError("BigQuery client not available and provided client is not DuckDB.")
+        # type: ignore[arg-type]
+    first_adm = get_first_admissions(client, subject_ids)  # type: ignore
     if first_adm.empty:
         return pd.DataFrame({
             'subject_id': subject_ids,
@@ -47,11 +85,23 @@ def run_pipeline_on_unseen_data(subject_ids: List[int], client: bq.Client) -> pd
     hadm_ids = first_adm['hadm_id'].dropna().astype(int).tolist()
 
     # 2) Extract modalities within 0-48h
-    demo = get_demographics(client, first_adm['subject_id'].dropna().astype(int).tolist())
-    vitals = get_vitals_48h(client, hadm_ids)
-    labs = get_labs_48h(client, hadm_ids)
-    rx = get_prescriptions_48h(client, hadm_ids)
-    proc = get_procedures_48h(client, hadm_ids)
+    if is_duckdb:
+        sid_list = ','.join(str(int(s)) for s in first_adm['subject_id'].tolist()) if not first_adm.empty else 'NULL'
+        demo = client.execute(f"SELECT subject_id, gender, dob, dod, expire_flag FROM patients WHERE subject_id IN ({sid_list})").fetchdf()
+        if hadm_ids:
+            hadm_list = ','.join(str(int(h)) for h in hadm_ids)
+            vitals = client.execute(f"SELECT subject_id, hadm_id, charttime, itemid, valuenum, valueuom FROM chartevents WHERE hadm_id IN ({hadm_list})").fetchdf()
+            labs = client.execute(f"SELECT subject_id, hadm_id, charttime, itemid, valuenum, value, valueuom, flag FROM labevents WHERE hadm_id IN ({hadm_list})").fetchdf()
+            rx = client.execute(f"SELECT subject_id, hadm_id, startdate, enddate, drug, drug_type, formulary_drug_cd, route FROM prescriptions WHERE hadm_id IN ({hadm_list})").fetchdf()
+            proc = client.execute(f"SELECT subject_id, hadm_id, starttime, endtime, itemid, ordercategoryname, ordercategorydescription, location FROM procedureevents_mv WHERE hadm_id IN ({hadm_list})").fetchdf()
+        else:
+            vitals = labs = rx = proc = pd.DataFrame()
+    else:
+    demo = get_demographics(client, first_adm['subject_id'].dropna().astype(int).tolist())  # type: ignore
+    vitals = get_vitals_48h(client, hadm_ids)  # type: ignore
+    labs = get_labs_48h(client, hadm_ids)  # type: ignore
+    rx = get_prescriptions_48h(client, hadm_ids)  # type: ignore
+    proc = get_procedures_48h(client, hadm_ids)  # type: ignore
 
     # 3) Build features
     features = build_features(first_adm, demo, vitals, labs, rx, proc)
