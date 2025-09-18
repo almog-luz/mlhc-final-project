@@ -1,0 +1,21 @@
+{
+  "pred_rows": 50,
+  "label_rows": 28473,
+  "merged_rows": 0,
+  "label_cols_before": [
+    "subject_id",
+    "hadm_id",
+    "mortality_label",
+    "prolonged_los_label",
+    "readmission_label"
+  ],
+  "label_cols_after": [
+    "mortality_label",
+    "prolonged_los_label",
+    "readmission_label"
+  ],
+  "empty_labels_mortality": true,
+  "empty_labels_prolonged_los": true,
+  "empty_labels_readmission": true,
+  "tasks_attempted": []
+}

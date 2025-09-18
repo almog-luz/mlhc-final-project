@@ -1,0 +1,18 @@
+{
+  "start_time_utc": "1970-01-01T06:25:07.649114+00:00",
+  "end_time_utc": "2025-09-12T13:01:11.594822+00:00",
+  "duration_seconds": 1757658963.9457104,
+  "git_commit": "318a2a0",
+  "config": {
+    "model_type": "logreg",
+    "calib_cv": 5,
+    "skip_importance_effective": true,
+    "cv_folds": 0,
+    "finalize_mode": false,
+    "feature_count": 503,
+    "test_size": 0.2,
+    "random_state": 42,
+    "allow_history": false
+  },
+  "timings": null
+}
