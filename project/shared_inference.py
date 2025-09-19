@@ -51,7 +51,7 @@ def _assert_aligned_matrix_health(df: pd.DataFrame,
 
 
 def _resolve_models_dir() -> Path:
-    """Resolve canonical artifacts directory (legacy models/ removed).
+    """Resolve canonical artifacts directory.
 
     Returns
     -------
@@ -200,13 +200,6 @@ def score_features(features: pd.DataFrame,
         'readmission_proba': readm,
     }, index=X.index)
     return out
-
-
-# Convenience end-to-end helper (optional reuse in notebooks)
-def score_raw_features_df(features: pd.DataFrame, models_dir: Optional[str] = None) -> pd.DataFrame:
-    """Alias for score_features for external clarity."""
-    return score_features(features, models_dir=models_dir)
-
 
 
 def get_model_and_calibrator(target: str, models_dir: Optional[Union[str, Path]] = None) -> Tuple[Any, Optional[Any]]:

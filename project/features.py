@@ -3,11 +3,11 @@ from __future__ import annotations
 from typing import List, Optional, Set
 import pandas as pd
 
-# Feature schema version (increment when adding/removing engineered blocks)
-FEATURE_SCHEMA_VERSION = "2025-Block1-missingness-v1"
+# Feature schema version (increment if feature set changes)
+FEATURE_SCHEMA_VERSION = "2025-missingness-v1"
 
 
-# (Retained for potential future auditing, but not used for filtering.)
+# Reserved for potential future auditing; currently unused.
 VALID_MEASUREMENT_LABELS: Set[str] = set()
 
 # Hard limits to cap long‑tail label proliferation.
@@ -62,7 +62,7 @@ def aggregate_events(df: pd.DataFrame, value_col: str, time_col: str, label_col:
         pivot = wide.pivot_table(index='subject_id', columns=label_col, values=stat)
         pivot.columns = [f"{str(c)}__{stat}" for c in pivot.columns]
         mats.append(pivot)
-    # Block1 additions: measurement counts & presence indicators (missingness)
+    # Add measurement counts & presence indicators (missingness)
     try:
         counts = d.groupby(['subject_id', label_col])[value_col].size().reset_index(name='__tmp_count')
         pivot_count = counts.pivot_table(index='subject_id', columns=label_col, values='__tmp_count')
@@ -81,7 +81,7 @@ def aggregate_events(df: pd.DataFrame, value_col: str, time_col: str, label_col:
             mc.columns = [f"{str(c)}__measured" for c in mc.columns]
             mats.append(mc)
             measured_cols = list(mc.columns)
-        # (Optional) Could log counts here; kept silent to avoid verbose output within library function.
+    # Silent by design to keep library function non-verbose.
     except Exception:  # pragma: no cover
         pass
     out = pd.concat(mats, axis=1).reset_index()
@@ -271,15 +271,11 @@ def build_features(first_adm: pd.DataFrame,
     # Ensure string column names
     if not features.empty:
         features.columns = features.columns.map(str)
-    # --- Leakage Mitigation ---
-    # 'los_hours' encodes the FULL realized length of stay for the index admission.
-    # This is future information at prediction time when predicting prolonged LOS (>7d) and
-    # yields near-perfect discrimination (confirmed by leakage audit). It must be excluded
-    # from modeling features to prevent target leakage (and indirect leakage into other tasks).
+    # Remove 'los_hours' (post-discharge information) to prevent leakage.
     leaky_cols = [c for c in ['los_hours'] if c in features.columns]
     if leaky_cols:
         features = features.drop(columns=leaky_cols)
-        # (Optional) Could log or return removed columns; kept silent for now.
+    # Silent removal to avoid noisy logs.
     # Drop any purely numeric column names (post-pivot safety)
     if not features.empty:
         numeric_only_cols = [c for c in features.columns if str(c).isdigit()]
@@ -289,13 +285,11 @@ def build_features(first_adm: pd.DataFrame,
 
 
 def build_feature_provenance(features: pd.DataFrame, default_group: str = "baseline") -> dict:
-    """Construct a simple provenance mapping for an existing feature matrix.
+    """Return provenance mapping: feature_name -> { 'group': <group_name> }.
 
-    Initially all features are assigned to a single baseline group. As new feature
-    groups (comorbidity, utilization, variability, etc.) are added, this function
-    can be extended or replaced with richer metadata (e.g., source tables, window,
-    aggregation). Keeping it separate avoids changing the signature of build_features.
-    Returns a dict: feature_name -> { 'group': <group_name> }
+    Current behavior: assign all features to 'baseline' except
+    '__measured' or '__count' suffix -> 'missingness'. Also records
+    schema version under '__feature_schema_version__'.
     """
     prov = {}
     if features is None or features.empty:

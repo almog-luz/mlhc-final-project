@@ -1,4 +1,4 @@
-# Label construction utilities extracted from exploration notebook
+"""Label construction utilities (DuckDB implementation)."""
 from __future__ import annotations
 from typing import List
 import pandas as pd
@@ -8,16 +8,14 @@ from .extract import (
     get_all_admissions_duckdb,
     get_demographics_duckdb,
 )
-from google.cloud import bigquery as bq
 
 # ----------------------------------------------------------------------------
 # DuckDB variant (mirrors BigQuery logic)
 # ----------------------------------------------------------------------------
 def build_labels_duckdb(con, subject_ids: List[int]) -> pd.DataFrame:
-    """DuckDB version of label builder with early-event (>54h horizon) enforcement.
+    """Build labels with early-event (>54h) horizon enforcement.
 
-    Applies same logic as build_labels (BigQuery) using DuckDB extraction helpers.
-    Drops subjects whose first admission LOS <54h or any outcome/readmission event occurs ≤54h.
+    Drops subjects with first LOS <54h or with any outcome/readmission event within 54h.
     """
     if not subject_ids:
         return pd.DataFrame(columns=["subject_id","hadm_id","mortality_label","prolonged_los_label","readmission_label"])  # pragma: no cover

@@ -24,10 +24,7 @@ def _ensure_dir(p: Path) -> Path:
     return p
 
 def extract_first_admissions_duckdb(con, subject_ids: Iterable[int]) -> pd.DataFrame:
-    """Thin wrapper around extract.get_first_admissions_duckdb adding LOS filter.
-
-    Maintains historical >=54h LOS inclusion logic used in training notebook.
-    """
+    """Return first admissions with computed LOS; keep stays >=54h."""
     subject_ids_list = list(subject_ids)
     df = get_first_admissions_duckdb(con, subject_ids_list)
     if df.empty:
@@ -63,11 +60,7 @@ def extract_modalities_duckdb(con, first_adm: pd.DataFrame) -> Dict[str, pd.Data
 
 
 def build_feature_matrix(first_adm: pd.DataFrame, modalities: Dict[str, pd.DataFrame]) -> pd.DataFrame:
-    """Construct (and prune) the feature matrix.
-
-    Includes a fail-fast guard to prevent silently training / scoring on an
-    almost-all-constant feature slice (root cause of earlier 0.5 AUC collapse).
-    """
+    """Construct and prune feature matrix with variance guard."""
     if first_adm.empty:
         return pd.DataFrame()
     feats_raw = build_features(
@@ -98,25 +91,19 @@ def build_feature_matrix(first_adm: pd.DataFrame, modalities: Dict[str, pd.DataF
 
 
 def prune_features(features: pd.DataFrame, min_support: int | None = None, target_max: int | None = None) -> pd.DataFrame:
-    """Variance-first pruning with composite ranking.
+    """Variance-first pruning with optional composite ranking.
 
-    Order of operations:
-      1. Read env overrides: MLHC_MIN_SUPPORT (int), MLHC_TARGET_MAX (int)
-      2. Compute per-column support (# non-null) & variance (mean-imputed for calc only)
-      3. Drop zero-variance columns immediately (prevents them from crowding ranking)
-      4. Apply support threshold (default 10) on remaining columns
-      5. If column count still > target_max (default 1500):
-            - Normalize variance & support (z-score denominators guarded)
-            - Composite score = 0.7 * var_norm + 0.3 * support_norm
-            - Keep top target_max by score
-      6. Print concise diagnostics (removed counts, constant dropped, top retained preview)
-
-    Returns pruned DataFrame.
+    Steps:
+      1. Read env overrides (MLHC_MIN_SUPPORT, MLHC_TARGET_MAX)
+      2. Compute support & variance (mean-imputed for calculation only)
+      3. Drop zero-variance columns
+      4. Apply support threshold (default 10)
+      5. If still above cap, rank by 0.7*variance + 0.3*support and keep top target_max
+      6. Print concise diagnostics
     """
     if features.empty:
         return features
 
-    # Resolve dynamic thresholds
     import os
     if min_support is None:
         try:
@@ -131,29 +118,23 @@ def prune_features(features: pd.DataFrame, min_support: int | None = None, targe
     if min_support < 1:
         min_support = 1
     if target_max is not None and target_max < 1:
-        target_max = None  # disable cap if invalid
+        target_max = None
 
     orig_cols = list(features.columns)
     support = features.notna().sum(axis=0)
-    # Variance (fill NaN with column mean for stability)
-    # Compute variance per column; result should be a Series indexed by column name
     var_series = features.apply(lambda s: s.fillna(s.mean()).var(ddof=0))
     zero_var_cols = var_series[var_series == 0].index.tolist()
     kept = [c for c in features.columns if c not in zero_var_cols]
     work = features[kept]
     support = support[kept]
     var_series = var_series[kept]
-    # Support filter
     keep_support = support[support >= min_support].index.tolist()
     work = work[keep_support]
     support = support[keep_support]
     var_series = var_series[keep_support]
-    # Ranking if needed
     if target_max and work.shape[1] > target_max:
-        # Simple composite: variance primary, support secondary.
         var_sub = var_series[work.columns].astype(float)
         sup_sub = support[work.columns].astype(float)
-        # Avoid division by zero in normalization
         var_norm = (var_sub - var_sub.mean()) / (var_sub.std() + 1e-12)
         sup_norm = (sup_sub - sup_sub.mean()) / (sup_sub.std() + 1e-12)
         score = 0.7 * var_norm + 0.3 * sup_norm
@@ -169,7 +150,6 @@ def prune_features(features: pd.DataFrame, min_support: int | None = None, targe
         keep_n = int(target_max)
         keep_cols = rank_df.iloc[:keep_n]['col'].tolist()
         work = work[keep_cols]
-    # Diagnostics
     removed = set(orig_cols) - set(work.columns)
     const_dropped = len(zero_var_cols)
     low_support_removed = [c for c in removed if c in support.index and support[c] < min_support]
@@ -177,7 +157,6 @@ def prune_features(features: pd.DataFrame, min_support: int | None = None, targe
         f"Prune summary: original={len(orig_cols)} kept={work.shape[1]} removed={len(removed)} | "
         f"zero_var_dropped={const_dropped} low_support_removed={len(low_support_removed)}"
     )
-    # Preview a few high-variance columns retained
     try:
         if work.shape[1] > 0:
             subset_var = var_series[work.columns]
@@ -258,12 +237,7 @@ def persist_feature_artifacts(features: pd.DataFrame, artifacts_dir: Path, raw_f
     (artifacts_dir / "feature_columns.json").write_text(json.dumps(list(features.columns), indent=2))
 
 def run_training_side_pipeline(con, cohort_subject_ids: Iterable[int], debug: bool = False) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
-    """End-to-end feature build (training side) matching notebook extraction logic.
-
-    Persistence side-effects have been removed; this function now ONLY returns
-    in-memory DataFrames (features, labels) plus optional debug info. Use
-    external helpers/notebook cells to persist artifacts explicitly.
-    """
+    """Build training-side features and labels; returns DataFrames + optional debug info."""
     cohort_subject_ids_list = list(cohort_subject_ids)
     first_adm = extract_first_admissions_duckdb(con, cohort_subject_ids_list)
     labels_df, first_adm_filtered = extract_labels_and_filter(con, first_adm)

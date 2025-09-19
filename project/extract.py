@@ -1,33 +1,8 @@
-"""Unified extraction utilities supporting both BigQuery and DuckDB.
+"""Extraction utilities for DuckDB (mirroring original BigQuery logic).
 
-Refactor: Original inline SQL strings have been lifted into module-level
-constants so the exact query text is centralized. Functions for BigQuery
-reuse those constants with parameter binding; parallel DuckDB functions
-generate equivalent queries (minimal syntactic adjustments: UNNEST arrays
-replaced with IN lists, TIMESTAMP_DIFF -> date_diff, removal of dataset
-prefix/backticks, REGEXP_CONTAINS -> lower(col) REGEXP 'pattern').
-
-Public API (BigQuery – unchanged names):
-  - get_first_admissions
-  - get_all_admissions
-  - get_demographics
-  - get_vitals_48h
-  - get_labs_48h
-  - get_prescriptions_48h
-  - get_procedures_48h
-  - get_all_admission_diagnoses
-
-Added parallel DuckDB variants (suffix _duckdb):
-  - get_first_admissions_duckdb
-  - get_all_admissions_duckdb
-  - get_demographics_duckdb
-  - get_vitals_48h_duckdb
-  - get_labs_48h_duckdb
-  - get_prescriptions_48h_duckdb
-  - get_procedures_48h_duckdb
-  - get_all_admission_diagnoses_duckdb
-
-Centralizing queries reduces divergence risk between engines.
+Provides helper functions to retrieve admissions, demographics, and 48h
+windows of vitals, labs, prescriptions, and procedures using shared SQL
+templates. Centralized queries keep engine parity.
 """
 
 from __future__ import annotations
@@ -132,14 +107,6 @@ WHERE pe.hadm_id IN ({hadm_ids_csv})
 ORDER BY subject_id, starttime
 """
 
-SQL_ALL_ADMISSION_DIAGNOSES_DUCKDB = """
-SELECT d.subject_id, d.hadm_id, a.admittime, a.dischtime, d.icd9_code
-FROM diagnoses_icd d
-JOIN admissions a USING (hadm_id)
-WHERE d.subject_id IN ({subject_ids_csv})
-ORDER BY d.subject_id, a.admittime
-"""
-
 
 # ---------------------------------------------------------------------------
 # Helper utilities
@@ -229,17 +196,6 @@ def get_procedures_48h_duckdb(con, hadm_ids: List[int]) -> pd.DataFrame:
   if not hadm_ids:
     return pd.DataFrame()
   sql = SQL_PROCEDURES_48H_DUCKDB.format(hadm_ids_csv=_csv_int_list(hadm_ids))
-  df = _duckdb_safe(con, sql)
-  if df.empty:
-    return df
-  df.columns = [c.lower() for c in df.columns]
-  return df
-
-
-def get_all_admission_diagnoses_duckdb(con, subject_ids: List[int]) -> pd.DataFrame:
-  if not subject_ids:
-    return pd.DataFrame()
-  sql = SQL_ALL_ADMISSION_DIAGNOSES_DUCKDB.format(subject_ids_csv=_csv_int_list(subject_ids))
   df = _duckdb_safe(con, sql)
   if df.empty:
     return df
