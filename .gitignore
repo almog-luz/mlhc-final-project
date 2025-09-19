@@ -23,7 +23,8 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
-
+.idea/
+.vscode/
 # Logs & temp
 logs/
 *.log
