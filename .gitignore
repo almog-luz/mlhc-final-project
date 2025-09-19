@@ -43,9 +43,6 @@ project/data/**/cache/
 !project/data/labels.csv
 !project/data/splits.json
 
-# Artifacts / runs (keep promoted canonical artifacts, ignore transient runs)
-project/runs/
-# If large feature parquet should not be versioned, comment it out above
 
 # Model training intermediates
 *.joblib.tmp
@@ -69,7 +66,7 @@ htmlcov/
 
 # Backup / temp artifacts
 *.bak
-project/final_artifacts/
+
 
 # BigQuery credentials (if used)
 credentials.json
@@ -81,4 +78,4 @@ service_account.json
 project/__pycache__
 *.duckdb
 data/extracted_cache
-project/artifacts
+

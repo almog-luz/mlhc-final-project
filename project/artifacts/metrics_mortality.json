@@ -1,0 +1,30 @@
+{
+  "auc": 0.861057802986565,
+  "pr_auc": 0.40082378929727874,
+  "brier": 0.07499164910501352,
+  "threshold": 0.20645484949832776,
+  "f1_at_threshold": 0.44975404027082827,
+  "precision_at_threshold": 0.3883495145626355,
+  "recall_at_threshold": 0.5342237061760697,
+  "validation_threshold_info": {
+    "precision": 0.40312876052899743,
+    "recall": 0.5537190082635476,
+    "f1": 0.46657381566772355,
+    "threshold": 0.20645484949832776
+  },
+  "optuna_best_value_cv_mean_auc": 0.856844026800133,
+  "optuna_best_params": {
+    "learning_rate": 0.030710573677773714,
+    "max_depth": 7,
+    "min_child_weight": 6.123957592679836,
+    "subsample": 0.8394633936788146,
+    "colsample_bytree": 0.6624074561769746,
+    "lambda": 0.003775887545682684,
+    "alpha": 0.0015550191654264875,
+    "gamma": 3.4647045830997407,
+    "n_estimators": 288
+  },
+  "train_rows": 17004,
+  "val_rows": 5668,
+  "test_rows": 5668
+}
