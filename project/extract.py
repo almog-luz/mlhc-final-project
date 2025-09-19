@@ -67,6 +67,7 @@ WHERE subject_id IN UNNEST(@subject_ids)
 """
 
 SQL_VITALS_48H_BQ = """
+-- Wide extraction (no label regex filtering) to mirror original legacy feature space.
 WITH first_adm AS (
   SELECT hadm_id, admittime
   FROM `physionet-data.mimiciii_clinical.admissions`
@@ -80,19 +81,11 @@ JOIN `physionet-data.mimiciii_clinical.d_items` di ON di.itemid = ce.itemid
 WHERE ce.hadm_id IN UNNEST(@hadm_ids)
   AND ce.valuenum IS NOT NULL
   AND TIMESTAMP_DIFF(ce.charttime, fa.admittime, HOUR) BETWEEN 0 AND 48
-  AND (
-    REGEXP_CONTAINS(LOWER(di.label), r"heart rate|hr") OR
-    REGEXP_CONTAINS(LOWER(di.label), r"respiratory rate|rr") OR
-    REGEXP_CONTAINS(LOWER(di.label), r"temperature") OR
-    REGEXP_CONTAINS(LOWER(di.label), r"(non?invasive )?systolic|sysbp|sbp") OR
-    REGEXP_CONTAINS(LOWER(di.label), r"(non?invasive )?diastolic|diasbp|dbp") OR
-    REGEXP_CONTAINS(LOWER(di.label), r"mean arterial|map") OR
-    REGEXP_CONTAINS(LOWER(di.label), r"spo2|o2 saturation|oxygen saturation")
-  )
 ORDER BY subject_id, charttime
 """
 
 SQL_LABS_48H_BQ = """
+-- Wide extraction (no label regex filtering) to mirror original legacy feature space.
 WITH first_adm AS (
   SELECT hadm_id, admittime
   FROM `physionet-data.mimiciii_clinical.admissions`
@@ -107,20 +100,6 @@ JOIN `physionet-data.mimiciii_clinical.d_labitems` dl ON dl.itemid = le.itemid
 WHERE le.hadm_id IN UNNEST(@hadm_ids)
   AND le.charttime IS NOT NULL
   AND TIMESTAMP_DIFF(le.charttime, fa.admittime, HOUR) BETWEEN 0 AND 48
-  AND (
-    REGEXP_CONTAINS(LOWER(dl.label), r"wbc|white blood") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"hemoglobin|hgb") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"hematocrit|hct") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"platelet") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"sodium|na\\b") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"potassium|k\\b") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"chloride|cl\\b") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"bicarbonate|hco3") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"bun|urea") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"creatinine") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"glucose") OR
-    REGEXP_CONTAINS(LOWER(dl.label), r"lactate")
-  )
 ORDER BY subject_id, charttime
 """
 
@@ -195,6 +174,7 @@ WHERE subject_id IN ({subject_ids_csv})
 """
 
 SQL_VITALS_48H_DUCKDB = """
+-- Wide extraction (no label regex filtering) to mirror original legacy feature space.
 WITH first_adm AS (
   SELECT hadm_id, admittime
   FROM admissions
@@ -207,20 +187,12 @@ JOIN first_adm fa USING (hadm_id)
 JOIN d_items di ON di.itemid = ce.itemid
 WHERE ce.hadm_id IN ({hadm_ids_csv})
   AND ce.valuenum IS NOT NULL
-  AND date_diff('hour', fa.admittime, ce.charttime) BETWEEN 0 AND 48
-  AND (
-    lower(di.label) REGEXP '(heart rate|hr)' OR
-    lower(di.label) REGEXP '(respiratory rate|rr)' OR
-    lower(di.label) REGEXP 'temperature' OR
-    lower(di.label) REGEXP '((non)?invasive )?systolic|sysbp|sbp' OR
-    lower(di.label) REGEXP '((non)?invasive )?diastolic|diasbp|dbp' OR
-    lower(di.label) REGEXP 'mean arterial|map' OR
-    lower(di.label) REGEXP 'spo2|o2 saturation|oxygen saturation'
-  )
+  AND datediff('hour', CAST(fa.admittime AS TIMESTAMP), CAST(ce.charttime AS TIMESTAMP)) BETWEEN 0 AND 48
 ORDER BY subject_id, charttime
 """
 
 SQL_LABS_48H_DUCKDB = """
+-- Wide extraction (no label regex filtering) to mirror original legacy feature space.
 WITH first_adm AS (
   SELECT hadm_id, admittime
   FROM admissions
@@ -234,21 +206,7 @@ JOIN first_adm fa USING (hadm_id)
 JOIN d_labitems dl ON dl.itemid = le.itemid
 WHERE le.hadm_id IN ({hadm_ids_csv})
   AND le.charttime IS NOT NULL
-  AND date_diff('hour', fa.admittime, le.charttime) BETWEEN 0 AND 48
-  AND (
-    lower(dl.label) REGEXP 'wbc|white blood' OR
-    lower(dl.label) REGEXP 'hemoglobin|hgb' OR
-    lower(dl.label) REGEXP 'hematocrit|hct' OR
-    lower(dl.label) REGEXP 'platelet' OR
-    lower(dl.label) REGEXP 'sodium|na\\b' OR
-    lower(dl.label) REGEXP 'potassium|k\\b' OR
-    lower(dl.label) REGEXP 'chloride|cl\\b' OR
-    lower(dl.label) REGEXP 'bicarbonate|hco3' OR
-    lower(dl.label) REGEXP 'bun|urea' OR
-    lower(dl.label) REGEXP 'creatinine' OR
-    lower(dl.label) REGEXP 'glucose' OR
-    lower(dl.label) REGEXP 'lactate'
-  )
+  AND datediff('hour', CAST(fa.admittime AS TIMESTAMP), CAST(le.charttime AS TIMESTAMP)) BETWEEN 0 AND 48
 ORDER BY subject_id, charttime
 """
 
@@ -264,7 +222,7 @@ FROM prescriptions pr
 JOIN first_adm fa USING (hadm_id)
 WHERE pr.hadm_id IN ({hadm_ids_csv})
   AND pr.startdate IS NOT NULL
-  AND date_diff('hour', fa.admittime, pr.startdate) BETWEEN 0 AND 48
+  AND datediff('hour', CAST(fa.admittime AS TIMESTAMP), CAST(pr.startdate AS TIMESTAMP)) BETWEEN 0 AND 48
 ORDER BY subject_id, startdate
 """
 
@@ -283,7 +241,7 @@ JOIN first_adm fa USING (hadm_id)
 LEFT JOIN d_items di ON di.itemid = pe.itemid
 WHERE pe.hadm_id IN ({hadm_ids_csv})
   AND pe.starttime IS NOT NULL
-  AND date_diff('hour', fa.admittime, pe.starttime) BETWEEN 0 AND 48
+  AND datediff('hour', CAST(fa.admittime AS TIMESTAMP), CAST(pe.starttime AS TIMESTAMP)) BETWEEN 0 AND 48
 ORDER BY subject_id, starttime
 """
 

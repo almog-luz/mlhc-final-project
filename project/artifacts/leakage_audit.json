@@ -1,11 +1,17 @@
 {
-  "n_total_features": 1429,
-  "n_suspicious_matched": 0,
+  "n_total_features": 1500,
+  "n_suspicious_matched": 5,
   "top_single_feature_auc_per_target": {
     "readmission": [],
     "mortality": [],
     "prolonged_los": []
   },
   "los_flags": [],
-  "suspicious_sample": []
+  "suspicious_sample": [
+    "cyclosporin__measured_y",
+    "unintentional weight loss >10 lbs.__measured",
+    "emotional / physical / sexual harm by partner or close relation__measured",
+    "discharge needs__measured",
+    "cyclosporin__measured_x"
+  ]
 }

@@ -8,6 +8,49 @@ from typing import Optional, Tuple, Dict, Any, Callable, Union
 # Global store for last aligned feature matrix (for parity/debug assertions)
 _LAST_ALIGNED_FEATURES: Optional[pd.DataFrame] = None
 
+# Default guard thresholds (env override capable)
+_MIN_VARIABLE_FRAC = float(os.getenv("MLHC_MIN_SCORING_VARIABLE_FRAC", "0.10"))
+_RAISE_ON_LOW_VARIANCE = os.getenv("MLHC_SCORING_STRICT", "0").lower() in {"1", "true", "yes"}
+
+
+def _assert_aligned_matrix_health(df: pd.DataFrame,
+                                  min_variable_frac: float = _MIN_VARIABLE_FRAC,
+                                  strict: Optional[bool] = None) -> float:
+    """Validate that the aligned feature matrix retains sufficient variability.
+
+    Parameters
+    ----------
+    df : DataFrame
+        Aligned feature matrix (post reindex) used for scoring.
+    min_variable_frac : float
+        Minimum acceptable fraction of columns with >1 unique value.
+    strict : bool, optional
+        If True raise on failure; if False just warn. Defaults to env flag.
+
+    Returns
+    -------
+    float
+        Observed variable fraction.
+    """
+    if strict is None:
+        strict = _RAISE_ON_LOW_VARIANCE
+    if df is None or df.empty:
+        msg = "Aligned matrix empty or None at scoring time."
+        if strict:
+            raise ValueError(msg)
+        print("WARNING:", msg)
+        return 0.0
+    # Compute population variance; avoid memory blow-up by using nunique
+    nunq = df.nunique(dropna=False)
+    variable_frac = (nunq > 1).mean() if len(nunq) else 0.0
+    if variable_frac < min_variable_frac:
+        msg = (f"Aligned feature matrix variable fraction {variable_frac:.2%} < threshold "
+               f"{min_variable_frac:.2%}. Possible schema mismatch / zero fill collapse.")
+        if strict:
+            raise ValueError(msg)
+        print("WARNING:", msg)
+    return float(variable_frac)
+
 
 def _resolve_models_dir() -> Path:
     """Resolve canonical artifacts directory (legacy models/ removed).
@@ -80,7 +123,11 @@ def _load_artifacts(models_dir: Optional[Union[str, Path]] = None) -> Tuple[Dict
     return ({'feature_cols': feature_cols, 'models_dir': md, 'calibrators': calibrators}, model_mort, model_los, model_readm, preprocessor)
 
 
-def score_features(features: pd.DataFrame, models_dir: Optional[str] = None) -> pd.DataFrame:
+def score_features(features: pd.DataFrame,
+                   models_dir: Optional[str] = None,
+                   enforce_variance_guard: bool = True,
+                   min_variable_frac: Optional[float] = None,
+                   strict: Optional[bool] = None) -> pd.DataFrame:
     """Score a feature matrix using saved models.
 
     Parameters
@@ -113,6 +160,12 @@ def score_features(features: pd.DataFrame, models_dir: Optional[str] = None) -> 
     # Store a copy (lightweight; mostly numeric) for downstream parity checks
     global _LAST_ALIGNED_FEATURES
     _LAST_ALIGNED_FEATURES = X.copy()
+    if enforce_variance_guard:
+        _assert_aligned_matrix_health(
+            X,
+            min_variable_frac=(min_variable_frac if min_variable_frac is not None else _MIN_VARIABLE_FRAC),
+            strict=strict,
+        )
     if preprocessor is not None:
         X_t = preprocessor.transform(X)
     else:

@@ -1,5 +1,65 @@
 {
+  "hematocrit (serum)__range": {
+    "group": "baseline"
+  },
+  "hematocrit (serum)__max": {
+    "group": "baseline"
+  },
+  "rbc, other fluid__min": {
+    "group": "baseline"
+  },
+  "rbc, other fluid__last": {
+    "group": "baseline"
+  },
+  "rbc, other fluid__mean": {
+    "group": "baseline"
+  },
+  "rbc, other fluid__max": {
+    "group": "baseline"
+  },
+  "hematocrit (serum)__std": {
+    "group": "baseline"
+  },
+  "rbc, pleural__max": {
+    "group": "baseline"
+  },
+  "rbc, pleural__mean": {
+    "group": "baseline"
+  },
+  "rbc, pleural__last": {
+    "group": "baseline"
+  },
+  "rbc, pleural__min": {
+    "group": "baseline"
+  },
+  "peak insp. pressure__range": {
+    "group": "baseline"
+  },
+  "peak insp. pressure__max": {
+    "group": "baseline"
+  },
+  "rbc, joint fluid__min": {
+    "group": "baseline"
+  },
+  "rbc, joint fluid__last": {
+    "group": "baseline"
+  },
+  "rbc, joint fluid__mean": {
+    "group": "baseline"
+  },
+  "rbc, joint fluid__max": {
+    "group": "baseline"
+  },
+  "peak insp. pressure__std": {
+    "group": "baseline"
+  },
   "age": {
+    "group": "baseline"
+  },
+  "admit_hour": {
+    "group": "baseline"
+  },
+  "admit_month": {
     "group": "baseline"
   },
   "gender_M": {
@@ -8,7 +68,13 @@
   "gender_F": {
     "group": "baseline"
   },
-  "eth_ASIAN": {
+  "eth_WHITE": {
+    "group": "baseline"
+  },
+  "admit_weekend": {
+    "group": "baseline"
+  },
+  "eth_OTHER": {
     "group": "baseline"
   },
   "eth_BLACK": {
@@ -17,2665 +83,1342 @@
   "eth_HISPANIC": {
     "group": "baseline"
   },
-  "eth_OTHER": {
+  "eth_ASIAN": {
     "group": "baseline"
   },
-  "eth_WHITE": {
-    "group": "baseline"
-  },
-  "aprotinin cc/hr__mean": {
-    "group": "baseline"
-  },
-  "aprotinin ml/hr__mean": {
-    "group": "baseline"
-  },
-  "art bp diastolic__mean": {
-    "group": "baseline"
-  },
-  "art bp systolic__mean": {
-    "group": "baseline"
-  },
-  "arterial blood pressure diastolic__mean": {
-    "group": "baseline"
-  },
-  "arterial blood pressure systolic__mean": {
-    "group": "baseline"
-  },
-  "arterial bp #2 [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "arterial bp #2 [systolic]__mean": {
-    "group": "baseline"
-  },
-  "arterial bp [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "arterial bp [systolic]__mean": {
-    "group": "baseline"
-  },
-  "arterial o2 saturation__mean": {
-    "group": "baseline"
-  },
-  "atr sens thresh mv__mean": {
-    "group": "baseline"
-  },
-  "atr stim thresh ma__mean": {
-    "group": "baseline"
-  },
-  "atrial pacemaker threshold [value]__mean": {
-    "group": "baseline"
-  },
-  "baseline current/ma__mean": {
-    "group": "baseline"
-  },
-  "blood temperature cco (c)__mean": {
-    "group": "baseline"
-  },
-  "bp cuff [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "bp cuff [systolic]__mean": {
-    "group": "baseline"
-  },
-  "bp left arm [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "bp left arm [systolic]__mean": {
-    "group": "baseline"
-  },
-  "bp left leg [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "bp left leg [systolic]__mean": {
-    "group": "baseline"
-  },
-  "bp pal [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "bp pal [systolic]__mean": {
-    "group": "baseline"
-  },
-  "bp right arm [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "bp right arm [systolic]__mean": {
-    "group": "baseline"
-  },
-  "bp right leg [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "bp right leg [systolic]__mean": {
-    "group": "baseline"
-  },
-  "bp uac [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "bp uac [systolic]__mean": {
-    "group": "baseline"
-  },
-  "ca gluc gm/hr__mean": {
-    "group": "baseline"
-  },
-  "cariporide cc/hr__mean": {
-    "group": "baseline"
-  },
-  "cariporide ml/hr__mean": {
-    "group": "baseline"
-  },
-  "changes in temperature__mean": {
-    "group": "baseline"
-  },
-  "cisatracu mg/kg/hr__mean": {
-    "group": "baseline"
-  },
-  "current goal__mean": {
-    "group": "baseline"
-  },
-  "current used/ma__mean": {
-    "group": "baseline"
-  },
-  "currently experiencing pain__mean": {
-    "group": "baseline"
-  },
-  "dialysate flow ml/hr__mean": {
-    "group": "baseline"
-  },
-  "diastolic unloading__mean": {
-    "group": "baseline"
-  },
-  "epidural infusion rate (ml/hr)__mean": {
-    "group": "baseline"
-  },
-  "gait/transferring__mean": {
-    "group": "baseline"
-  },
-  "heart rate__mean": {
-    "group": "baseline"
-  },
-  "heart rate alarm - high__mean": {
-    "group": "baseline"
-  },
-  "heart rate alarm - low__mean": {
-    "group": "baseline"
-  },
-  "hr alarm [high]__mean": {
-    "group": "baseline"
-  },
-  "hr alarm [low]__mean": {
-    "group": "baseline"
-  },
-  "lowest heart rate__mean": {
-    "group": "baseline"
-  },
-  "manual blood pressure diastolic left__mean": {
-    "group": "baseline"
-  },
-  "manual blood pressure diastolic right__mean": {
-    "group": "baseline"
-  },
-  "manual blood pressure systolic left__mean": {
-    "group": "baseline"
-  },
-  "manual blood pressure systolic right__mean": {
-    "group": "baseline"
-  },
-  "manual bp [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "manual bp [systolic]__mean": {
-    "group": "baseline"
-  },
-  "mucomyst       mg/hr__mean": {
-    "group": "baseline"
-  },
-  "mucomyst mg/hr__mean": {
-    "group": "baseline"
-  },
-  "nbp [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "nbp [systolic]__mean": {
-    "group": "baseline"
-  },
-  "nicardipine mg/hr__mean": {
-    "group": "baseline"
-  },
-  "nicardipine--mg/hr__mean": {
-    "group": "baseline"
-  },
-  "non invasive blood pressure diastolic__mean": {
-    "group": "baseline"
-  },
-  "non invasive blood pressure systolic__mean": {
-    "group": "baseline"
-  },
-  "o2 saturation pulseoxymetry__mean": {
-    "group": "baseline"
-  },
-  "o2 saturation pulseoxymetry alarm - high__mean": {
-    "group": "baseline"
-  },
-  "o2 saturation pulseoxymetry alarm - low__mean": {
-    "group": "baseline"
-  },
-  "orthostat bp sitting [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "orthostat bp sitting [systolic]__mean": {
-    "group": "baseline"
-  },
-  "orthostat hr sitting__mean": {
-    "group": "baseline"
-  },
-  "orthostatbp standing [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "orthostatbp standing [systolic]__mean": {
-    "group": "baseline"
-  },
-  "orthostathr standing__mean": {
-    "group": "baseline"
-  },
-  "orthostatic bp lying [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "orthostatic bp lying [systolic]__mean": {
-    "group": "baseline"
-  },
-  "orthostatic hr lying__mean": {
-    "group": "baseline"
-  },
-  "orthostatic hr sitting__mean": {
-    "group": "baseline"
-  },
-  "orthostatic hr standing__mean": {
-    "group": "baseline"
-  },
-  "pantoprazole   mg/hr__mean": {
-    "group": "baseline"
-  },
-  "pantoprazole  mg/hr__mean": {
-    "group": "baseline"
-  },
-  "pap [diastolic]__mean": {
-    "group": "baseline"
-  },
-  "pap [systolic]__mean": {
-    "group": "baseline"
-  },
-  "par-oxygen saturation__mean": {
-    "group": "baseline"
-  },
-  "pca 1 hr limit (mg)__mean": {
-    "group": "baseline"
+  "bilirubin, total__measured": {
+    "group": "missingness"
   },
-  "prothrombin time__mean": {
+  "pco2__measured_y": {
     "group": "baseline"
   },
-  "protonix mg/hr__mean": {
-    "group": "baseline"
-  },
-  "pulmonary artery pressure diastolic__mean": {
-    "group": "baseline"
-  },
-  "pulmonary artery pressure systolic__mean": {
-    "group": "baseline"
-  },
-  "replace rate ml/hr__mean": {
-    "group": "baseline"
-  },
-  "respiratory rate__mean": {
-    "group": "baseline"
-  },
-  "respiratory rate (set)__mean": {
-    "group": "baseline"
-  },
-  "respiratory rate (spontaneous)__mean": {
-    "group": "baseline"
-  },
-  "respiratory rate (total)__mean": {
-    "group": "baseline"
-  },
-  "respiratory rate set__mean": {
-    "group": "baseline"
-  },
-  "smoking cessation info offered through bidmc inpatient guide__mean": {
-    "group": "baseline"
-  },
-  "solumedrol mg/hr__mean": {
-    "group": "baseline"
-  },
-  "solumedrol mg/kg/hr__mean": {
-    "group": "baseline"
-  },
-  "spo2__mean": {
-    "group": "baseline"
-  },
-  "spo2 alarm [high]__mean": {
-    "group": "baseline"
-  },
-  "spo2 alarm [low]__mean": {
-    "group": "baseline"
-  },
-  "spo2 desat limit__mean": {
-    "group": "baseline"
-  },
-  "spon rr (mech.)__mean": {
-    "group": "baseline"
-  },
-  "spont rr__mean": {
-    "group": "baseline"
-  },
-  "systolic unloading__mean": {
-    "group": "baseline"
-  },
-  "tcpcv-map__mean": {
-    "group": "baseline"
-  },
-  "temp/iso/warmer [temperature, degrees c]__mean": {
-    "group": "baseline"
-  },
-  "temperature c__mean": {
-    "group": "baseline"
-  },
-  "temperature c (calc)__mean": {
-    "group": "baseline"
-  },
-  "temperature celsius__mean": {
-    "group": "baseline"
-  },
-  "temperature f__mean": {
-    "group": "baseline"
-  },
-  "temperature f (calc)__mean": {
-    "group": "baseline"
-  },
-  "temperature fahrenheit__mean": {
-    "group": "baseline"
-  },
-  "temporary atrial sens threshold mv__mean": {
-    "group": "baseline"
-  },
-  "temporary atrial stim threshold ma__mean": {
-    "group": "baseline"
-  },
-  "temporary venticular sens threshold mv__mean": {
-    "group": "baseline"
-  },
-  "temporary venticular stim threshold ma__mean": {
-    "group": "baseline"
-  },
-  "thrombin__mean": {
-    "group": "baseline"
-  },
-  "tpa mg/hr__mean": {
-    "group": "baseline"
-  },
-  "vent sens thresh mv__mean": {
-    "group": "baseline"
-  },
-  "vent stim thresh ma__mean": {
-    "group": "baseline"
-  },
-  "ventricular pacemaker threshold [value]__mean": {
-    "group": "baseline"
-  },
-  "xigris mcg/kg/hr__mean": {
-    "group": "baseline"
-  },
-  "aprotinin cc/hr__std": {
-    "group": "baseline"
-  },
-  "aprotinin ml/hr__std": {
-    "group": "baseline"
-  },
-  "art bp diastolic__std": {
-    "group": "baseline"
-  },
-  "art bp systolic__std": {
-    "group": "baseline"
-  },
-  "arterial blood pressure diastolic__std": {
-    "group": "baseline"
+  "calculated total co2__measured": {
+    "group": "missingness"
   },
-  "arterial blood pressure systolic__std": {
+  "po2__measured_y": {
     "group": "baseline"
   },
-  "arterial bp #2 [diastolic]__std": {
+  "base excess__measured_y": {
     "group": "baseline"
   },
-  "arterial bp #2 [systolic]__std": {
-    "group": "baseline"
-  },
-  "arterial bp [diastolic]__std": {
-    "group": "baseline"
-  },
-  "arterial bp [systolic]__std": {
-    "group": "baseline"
-  },
-  "arterial o2 saturation__std": {
-    "group": "baseline"
-  },
-  "atr sens thresh mv__std": {
-    "group": "baseline"
-  },
-  "atr stim thresh ma__std": {
-    "group": "baseline"
-  },
-  "atrial pacemaker threshold [value]__std": {
-    "group": "baseline"
-  },
-  "baseline current/ma__std": {
-    "group": "baseline"
-  },
-  "blood temperature cco (c)__std": {
-    "group": "baseline"
-  },
-  "bp cuff [diastolic]__std": {
-    "group": "baseline"
-  },
-  "bp cuff [systolic]__std": {
-    "group": "baseline"
-  },
-  "bp left arm [diastolic]__std": {
-    "group": "baseline"
-  },
-  "bp left arm [systolic]__std": {
-    "group": "baseline"
-  },
-  "bp left leg [diastolic]__std": {
-    "group": "baseline"
-  },
-  "bp left leg [systolic]__std": {
-    "group": "baseline"
-  },
-  "bp pal [diastolic]__std": {
-    "group": "baseline"
-  },
-  "bp pal [systolic]__std": {
-    "group": "baseline"
-  },
-  "bp right arm [diastolic]__std": {
-    "group": "baseline"
-  },
-  "bp right arm [systolic]__std": {
-    "group": "baseline"
-  },
-  "bp right leg [diastolic]__std": {
-    "group": "baseline"
-  },
-  "bp right leg [systolic]__std": {
-    "group": "baseline"
+  "lymphocytes__measured": {
+    "group": "missingness"
   },
-  "bp uac [diastolic]__std": {
-    "group": "baseline"
-  },
-  "bp uac [systolic]__std": {
-    "group": "baseline"
-  },
-  "ca gluc gm/hr__std": {
-    "group": "baseline"
+  "monocytes__measured": {
+    "group": "missingness"
   },
-  "cariporide cc/hr__std": {
+  "eosinophils__measured_y": {
     "group": "baseline"
   },
-  "cariporide ml/hr__std": {
-    "group": "baseline"
-  },
-  "changes in temperature__std": {
-    "group": "baseline"
-  },
-  "cisatracu mg/kg/hr__std": {
-    "group": "baseline"
+  "basophils__measured": {
+    "group": "missingness"
   },
-  "current goal__std": {
-    "group": "baseline"
+  "neutrophils__measured": {
+    "group": "missingness"
   },
-  "current used/ma__std": {
-    "group": "baseline"
+  "alanine aminotransferase (alt)__measured": {
+    "group": "missingness"
   },
-  "currently experiencing pain__std": {
-    "group": "baseline"
+  "asparate aminotransferase (ast)__measured": {
+    "group": "missingness"
   },
-  "dialysate flow ml/hr__std": {
-    "group": "baseline"
+  "lactate__measured": {
+    "group": "missingness"
   },
-  "diastolic unloading__std": {
-    "group": "baseline"
+  "free calcium__measured": {
+    "group": "missingness"
   },
-  "epidural infusion rate (ml/hr)__std": {
+  "alkaline phosphatase__measured_y": {
     "group": "baseline"
   },
-  "gait/transferring__std": {
-    "group": "baseline"
+  "creatine kinase (ck)__measured": {
+    "group": "missingness"
   },
-  "heart rate__std": {
-    "group": "baseline"
+  "specific gravity__measured": {
+    "group": "missingness"
   },
-  "heart rate alarm - high__std": {
+  "albumin__measured_y": {
     "group": "baseline"
   },
-  "heart rate alarm - low__std": {
-    "group": "baseline"
+  "potassium, whole blood__measured": {
+    "group": "missingness"
   },
-  "hr alarm [high]__std": {
+  "ph__measured_y": {
     "group": "baseline"
   },
-  "hr alarm [low]__std": {
-    "group": "baseline"
+  "hematocrit, calculated__measured": {
+    "group": "missingness"
   },
-  "lowest heart rate__std": {
-    "group": "baseline"
+  "oxygen saturation__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure diastolic left__std": {
-    "group": "baseline"
+  "creatine kinase, mb isoenzyme__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure diastolic right__std": {
-    "group": "baseline"
+  "lactate dehydrogenase (ld)__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure systolic left__std": {
-    "group": "baseline"
+  "sodium, whole blood__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure systolic right__std": {
-    "group": "baseline"
+  "oxygen__measured": {
+    "group": "missingness"
   },
-  "manual bp [diastolic]__std": {
+  "ptt__measured_y": {
     "group": "baseline"
   },
-  "manual bp [systolic]__std": {
+  "bands__measured_y": {
     "group": "baseline"
   },
-  "mucomyst       mg/hr__std": {
+  "pt__measured_y": {
     "group": "baseline"
   },
-  "mucomyst mg/hr__std": {
-    "group": "baseline"
+  "inr(pt)__measured": {
+    "group": "missingness"
   },
-  "nbp [diastolic]__std": {
-    "group": "baseline"
+  "phosphate__measured": {
+    "group": "missingness"
   },
-  "nbp [systolic]__std": {
-    "group": "baseline"
+  "temperature__measured": {
+    "group": "missingness"
   },
-  "nicardipine mg/hr__std": {
-    "group": "baseline"
+  "calcium, total__measured": {
+    "group": "missingness"
   },
-  "nicardipine--mg/hr__std": {
-    "group": "baseline"
+  "atypical lymphocytes__measured": {
+    "group": "missingness"
   },
-  "non invasive blood pressure diastolic__std": {
-    "group": "baseline"
+  "metamyelocytes__measured": {
+    "group": "missingness"
   },
-  "non invasive blood pressure systolic__std": {
-    "group": "baseline"
+  "myelocytes__measured": {
+    "group": "missingness"
   },
-  "o2 saturation pulseoxymetry__std": {
-    "group": "baseline"
+  "chloride, whole blood__measured": {
+    "group": "missingness"
   },
-  "o2 saturation pulseoxymetry alarm - high__std": {
+  "tidal volume__measured_y": {
     "group": "baseline"
   },
-  "o2 saturation pulseoxymetry alarm - low__std": {
-    "group": "baseline"
+  "troponin t__measured": {
+    "group": "missingness"
   },
-  "orthostat bp sitting [diastolic]__std": {
+  "peep__measured_y": {
     "group": "baseline"
   },
-  "orthostat bp sitting [systolic]__std": {
-    "group": "baseline"
+  "fibrinogen, functional__measured": {
+    "group": "missingness"
   },
-  "orthostat hr sitting__std": {
+  "magnesium__measured_y": {
     "group": "baseline"
   },
-  "orthostatbp standing [diastolic]__std": {
+  "amylase__measured_y": {
     "group": "baseline"
   },
-  "orthostatbp standing [systolic]__std": {
+  "lipase__measured_y": {
     "group": "baseline"
   },
-  "orthostathr standing__std": {
-    "group": "baseline"
+  "epithelial cells__measured": {
+    "group": "missingness"
   },
-  "orthostatic bp lying [diastolic]__std": {
+  "wbc__measured_y": {
     "group": "baseline"
   },
-  "orthostatic bp lying [systolic]__std": {
+  "rbc__measured_y": {
     "group": "baseline"
   },
-  "orthostatic hr lying__std": {
+  "glucose__measured_y": {
     "group": "baseline"
   },
-  "orthostatic hr sitting__std": {
-    "group": "baseline"
+  "urea nitrogen__measured": {
+    "group": "missingness"
   },
-  "orthostatic hr standing__std": {
+  "creatinine__measured_y": {
     "group": "baseline"
   },
-  "pantoprazole   mg/hr__std": {
-    "group": "baseline"
+  "bilirubin, direct__measured": {
+    "group": "missingness"
   },
-  "pantoprazole  mg/hr__std": {
-    "group": "baseline"
+  "bilirubin, indirect__measured": {
+    "group": "missingness"
   },
-  "pap [diastolic]__std": {
-    "group": "baseline"
+  "creatinine, urine__measured": {
+    "group": "missingness"
   },
-  "pap [systolic]__std": {
-    "group": "baseline"
+  "nucleated red cells__measured": {
+    "group": "missingness"
   },
-  "par-oxygen saturation__std": {
-    "group": "baseline"
+  "protein__measured": {
+    "group": "missingness"
   },
-  "pca 1 hr limit (mg)__std": {
-    "group": "baseline"
+  "ck-mb index__measured": {
+    "group": "missingness"
   },
-  "prothrombin time__std": {
-    "group": "baseline"
+  "sodium, urine__measured": {
+    "group": "missingness"
   },
-  "protonix mg/hr__std": {
-    "group": "baseline"
+  "required o2__measured": {
+    "group": "missingness"
   },
-  "pulmonary artery pressure diastolic__std": {
-    "group": "baseline"
+  "alveolar-arterial gradient__measured": {
+    "group": "missingness"
   },
-  "pulmonary artery pressure systolic__std": {
-    "group": "baseline"
+  "triglycerides__measured": {
+    "group": "missingness"
   },
-  "replace rate ml/hr__std": {
-    "group": "baseline"
+  "thyroid stimulating hormone__measured": {
+    "group": "missingness"
   },
-  "respiratory rate__std": {
-    "group": "baseline"
+  "% hemoglobin a1c__measured": {
+    "group": "missingness"
   },
-  "respiratory rate (set)__std": {
-    "group": "baseline"
+  "urobilinogen__measured": {
+    "group": "missingness"
   },
-  "respiratory rate (spontaneous)__std": {
-    "group": "baseline"
+  "cholesterol, total__measured": {
+    "group": "missingness"
   },
-  "respiratory rate (total)__std": {
-    "group": "baseline"
+  "cholesterol, hdl__measured": {
+    "group": "missingness"
   },
-  "respiratory rate set__std": {
+  "anion gap__measured_y": {
     "group": "baseline"
   },
-  "smoking cessation info offered through bidmc inpatient guide__std": {
-    "group": "baseline"
+  "cholesterol ratio (total/hdl)__measured": {
+    "group": "missingness"
   },
-  "solumedrol mg/hr__std": {
-    "group": "baseline"
+  "osmolality, urine__measured": {
+    "group": "missingness"
   },
-  "solumedrol mg/kg/hr__std": {
-    "group": "baseline"
+  "bicarbonate__measured": {
+    "group": "missingness"
   },
-  "spo2__std": {
+  "sodium__measured_y": {
     "group": "baseline"
   },
-  "spo2 alarm [high]__std": {
+  "chloride__measured_y": {
     "group": "baseline"
   },
-  "spo2 alarm [low]__std": {
-    "group": "baseline"
+  "cholesterol, ldl, calculated__measured": {
+    "group": "missingness"
   },
-  "spo2 desat limit__std": {
+  "potassium__measured_y": {
     "group": "baseline"
   },
-  "spon rr (mech.)__std": {
-    "group": "baseline"
+  "iron__measured": {
+    "group": "missingness"
   },
-  "spont rr__std": {
-    "group": "baseline"
+  "transferrin__measured": {
+    "group": "missingness"
   },
-  "systolic unloading__std": {
-    "group": "baseline"
+  "iron binding capacity, total__measured": {
+    "group": "missingness"
   },
-  "tcpcv-map__std": {
-    "group": "baseline"
+  "urea nitrogen, urine__measured": {
+    "group": "missingness"
   },
-  "temp/iso/warmer [temperature, degrees c]__std": {
-    "group": "baseline"
+  "ferritin__measured": {
+    "group": "missingness"
   },
-  "temperature c__std": {
-    "group": "baseline"
+  "phenytoin__measured": {
+    "group": "missingness"
   },
-  "temperature c (calc)__std": {
+  "o2 flow__measured_y": {
     "group": "baseline"
   },
-  "temperature celsius__std": {
-    "group": "baseline"
+  "ketone__measured": {
+    "group": "missingness"
   },
-  "temperature f__std": {
-    "group": "baseline"
+  "potassium, urine__measured": {
+    "group": "missingness"
   },
-  "temperature f (calc)__std": {
-    "group": "baseline"
+  "vancomycin__measured": {
+    "group": "missingness"
   },
-  "temperature fahrenheit__std": {
-    "group": "baseline"
+  "chloride, urine__measured": {
+    "group": "missingness"
   },
-  "temporary atrial sens threshold mv__std": {
-    "group": "baseline"
+  "osmolality, measured__measured": {
+    "group": "missingness"
   },
-  "temporary atrial stim threshold ma__std": {
+  "polys__measured_y": {
     "group": "baseline"
   },
-  "temporary venticular sens threshold mv__std": {
-    "group": "baseline"
+  "vitamin b12__measured": {
+    "group": "missingness"
   },
-  "temporary venticular stim threshold ma__std": {
+  "cortisol__measured_y": {
     "group": "baseline"
   },
-  "thrombin__std": {
-    "group": "baseline"
+  "haptoglobin__measured": {
+    "group": "missingness"
   },
-  "tpa mg/hr__std": {
-    "group": "baseline"
+  "hyaline casts__measured": {
+    "group": "missingness"
   },
-  "vent sens thresh mv__std": {
-    "group": "baseline"
+  "reticulocyte count, automated__measured": {
+    "group": "missingness"
   },
-  "vent stim thresh ma__std": {
-    "group": "baseline"
+  "calculated bicarbonate, whole blood__measured": {
+    "group": "missingness"
   },
-  "ventricular pacemaker threshold [value]__std": {
-    "group": "baseline"
+  "folate__measured": {
+    "group": "missingness"
   },
-  "xigris mcg/kg/hr__std": {
+  "uric acid__measured_y": {
     "group": "baseline"
   },
-  "aprotinin cc/hr__min": {
-    "group": "baseline"
+  "rdw__measured": {
+    "group": "missingness"
   },
-  "aprotinin ml/hr__min": {
-    "group": "baseline"
+  "red blood cells__measured": {
+    "group": "missingness"
   },
-  "art bp diastolic__min": {
-    "group": "baseline"
+  "mch__measured": {
+    "group": "missingness"
   },
-  "art bp systolic__min": {
-    "group": "baseline"
+  "mcv__measured": {
+    "group": "missingness"
   },
-  "arterial blood pressure diastolic__min": {
-    "group": "baseline"
+  "mchc__measured": {
+    "group": "missingness"
   },
-  "arterial blood pressure systolic__min": {
-    "group": "baseline"
+  "white blood cells__measured": {
+    "group": "missingness"
   },
-  "arterial bp #2 [diastolic]__min": {
-    "group": "baseline"
+  "troponin i__measured": {
+    "group": "missingness"
   },
-  "arterial bp #2 [systolic]__min": {
-    "group": "baseline"
+  "sedimentation rate__measured": {
+    "group": "missingness"
   },
-  "arterial bp [diastolic]__min": {
+  "hemoglobin__measured_y": {
     "group": "baseline"
   },
-  "arterial bp [systolic]__min": {
+  "platelet count__measured_y": {
     "group": "baseline"
   },
-  "arterial o2 saturation__min": {
-    "group": "baseline"
+  "protein, total__measured": {
+    "group": "missingness"
   },
-  "atr sens thresh mv__min": {
-    "group": "baseline"
+  "total protein, urine__measured": {
+    "group": "missingness"
   },
-  "atr stim thresh ma__min": {
-    "group": "baseline"
+  "thyroxine (t4), free__measured": {
+    "group": "missingness"
   },
-  "atrial pacemaker threshold [value]__min": {
+  "digoxin__measured_y": {
     "group": "baseline"
   },
-  "baseline current/ma__min": {
-    "group": "baseline"
+  "protein/creatinine ratio__measured": {
+    "group": "missingness"
   },
-  "blood temperature cco (c)__min": {
+  "hematocrit__measured_y": {
     "group": "baseline"
   },
-  "bp cuff [diastolic]__min": {
-    "group": "baseline"
+  "ntprobnp__measured": {
+    "group": "missingness"
   },
-  "bp cuff [systolic]__min": {
+  "monos__measured_y": {
     "group": "baseline"
   },
-  "bp left arm [diastolic]__min": {
-    "group": "baseline"
+  "c-reactive protein__measured": {
+    "group": "missingness"
   },
-  "bp left arm [systolic]__min": {
-    "group": "baseline"
+  "macrophage__measured": {
+    "group": "missingness"
   },
-  "bp left leg [diastolic]__min": {
-    "group": "baseline"
+  "wbc, csf__measured": {
+    "group": "missingness"
   },
-  "bp left leg [systolic]__min": {
+  "lymphs__measured_y": {
     "group": "baseline"
   },
-  "bp pal [diastolic]__min": {
-    "group": "baseline"
+  "rbc, csf__measured": {
+    "group": "missingness"
   },
-  "bp pal [systolic]__min": {
-    "group": "baseline"
+  "total protein, csf__measured": {
+    "group": "missingness"
   },
-  "bp right arm [diastolic]__min": {
-    "group": "baseline"
+  "glucose, csf__measured": {
+    "group": "missingness"
   },
-  "bp right arm [systolic]__min": {
+  "d-dimer__measured_y": {
     "group": "baseline"
   },
-  "bp right leg [diastolic]__min": {
-    "group": "baseline"
+  "granular casts__measured": {
+    "group": "missingness"
   },
-  "bp right leg [systolic]__min": {
-    "group": "baseline"
+  "gentamicin__measured": {
+    "group": "missingness"
   },
-  "bp uac [diastolic]__min": {
-    "group": "baseline"
+  "immunoglobulin g__measured": {
+    "group": "missingness"
   },
-  "bp uac [systolic]__min": {
+  "ammonia__measured_y": {
     "group": "baseline"
   },
-  "ca gluc gm/hr__min": {
-    "group": "baseline"
+  "granulocyte count__measured": {
+    "group": "missingness"
   },
-  "cariporide cc/hr__min": {
-    "group": "baseline"
+  "thyroxine (t4)__measured": {
+    "group": "missingness"
   },
-  "cariporide ml/hr__min": {
-    "group": "baseline"
+  "wbc, ascites__measured": {
+    "group": "missingness"
   },
-  "changes in temperature__min": {
-    "group": "baseline"
+  "rbc, ascites__measured": {
+    "group": "missingness"
   },
-  "cisatracu mg/kg/hr__min": {
-    "group": "baseline"
+  "globulin__measured": {
+    "group": "missingness"
   },
-  "current goal__min": {
-    "group": "baseline"
+  "carboxyhemoglobin__measured": {
+    "group": "missingness"
   },
-  "current used/ma__min": {
-    "group": "baseline"
+  "alpha-fetoprotein__measured": {
+    "group": "missingness"
   },
-  "currently experiencing pain__min": {
-    "group": "baseline"
+  "immunoglobulin a__measured": {
+    "group": "missingness"
   },
-  "dialysate flow ml/hr__min": {
-    "group": "baseline"
+  "wbc, other fluid__measured": {
+    "group": "missingness"
   },
-  "diastolic unloading__min": {
-    "group": "baseline"
+  "immunoglobulin m__measured": {
+    "group": "missingness"
   },
-  "epidural infusion rate (ml/hr)__min": {
-    "group": "baseline"
+  "methemoglobin__measured": {
+    "group": "missingness"
   },
-  "gait/transferring__min": {
-    "group": "baseline"
+  "wbc, pleural__measured": {
+    "group": "missingness"
   },
-  "heart rate__min": {
-    "group": "baseline"
+  "total protein, pleural__measured": {
+    "group": "missingness"
   },
-  "heart rate alarm - high__min": {
-    "group": "baseline"
+  "lactate dehydrogenase, pleural__measured": {
+    "group": "missingness"
   },
-  "heart rate alarm - low__min": {
-    "group": "baseline"
+  "parathyroid hormone__measured": {
+    "group": "missingness"
   },
-  "hr alarm [high]__min": {
-    "group": "baseline"
+  "rbc, pleural__measured": {
+    "group": "missingness"
   },
-  "hr alarm [low]__min": {
-    "group": "baseline"
+  "glucose, pleural__measured": {
+    "group": "missingness"
   },
-  "lowest heart rate__min": {
-    "group": "baseline"
+  "rbc, other fluid__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure diastolic left__min": {
-    "group": "baseline"
+  "mesothelial cells__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure diastolic right__min": {
-    "group": "baseline"
+  "total protein, ascites__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure systolic left__min": {
-    "group": "baseline"
+  "triiodothyronine (t3)__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure systolic right__min": {
-    "group": "baseline"
+  "mesothelial cell__measured": {
+    "group": "missingness"
   },
-  "manual bp [diastolic]__min": {
-    "group": "baseline"
+  "c4__measured": {
+    "group": "missingness"
   },
-  "manual bp [systolic]__min": {
-    "group": "baseline"
+  "cholesterol, ldl, measured__measured": {
+    "group": "missingness"
   },
-  "mucomyst       mg/hr__min": {
-    "group": "baseline"
+  "c3__measured": {
+    "group": "missingness"
   },
-  "mucomyst mg/hr__min": {
-    "group": "baseline"
+  "carcinoembyronic antigen (cea)__measured": {
+    "group": "missingness"
   },
-  "nbp [diastolic]__min": {
-    "group": "baseline"
+  "tacrofk__measured": {
+    "group": "missingness"
   },
-  "nbp [systolic]__min": {
-    "group": "baseline"
+  "promyelocytes__measured": {
+    "group": "missingness"
   },
-  "nicardipine mg/hr__min": {
-    "group": "baseline"
+  "reticulocyte count, manual__measured": {
+    "group": "missingness"
   },
-  "nicardipine--mg/hr__min": {
-    "group": "baseline"
+  "gamma glutamyltransferase__measured": {
+    "group": "missingness"
   },
-  "non invasive blood pressure diastolic__min": {
-    "group": "baseline"
+  "lactate dehydrogenase, ascites__measured": {
+    "group": "missingness"
   },
-  "non invasive blood pressure systolic__min": {
-    "group": "baseline"
+  "acetaminophen__measured": {
+    "group": "missingness"
   },
-  "o2 saturation pulseoxymetry__min": {
-    "group": "baseline"
+  "glucose, ascites__measured": {
+    "group": "missingness"
   },
-  "o2 saturation pulseoxymetry alarm - high__min": {
-    "group": "baseline"
+  "phosphate, urine__measured": {
+    "group": "missingness"
   },
-  "o2 saturation pulseoxymetry alarm - low__min": {
-    "group": "baseline"
+  "total protein, body fluid__measured": {
+    "group": "missingness"
   },
-  "orthostat bp sitting [diastolic]__min": {
-    "group": "baseline"
+  "other cells__measured": {
+    "group": "missingness"
   },
-  "orthostat bp sitting [systolic]__min": {
+  "valproic acid__measured_y": {
     "group": "baseline"
   },
-  "orthostat hr sitting__min": {
-    "group": "baseline"
+  "other__measured": {
+    "group": "missingness"
   },
-  "orthostatbp standing [diastolic]__min": {
-    "group": "baseline"
+  "prostate specific antigen__measured": {
+    "group": "missingness"
   },
-  "orthostatbp standing [systolic]__min": {
-    "group": "baseline"
+  "lymphocytes, percent__measured": {
+    "group": "missingness"
   },
-  "orthostathr standing__min": {
-    "group": "baseline"
+  "wbc count__measured": {
+    "group": "missingness"
   },
-  "orthostatic bp lying [diastolic]__min": {
-    "group": "baseline"
+  "absolute lymphocyte count__measured": {
+    "group": "missingness"
   },
-  "orthostatic bp lying [systolic]__min": {
-    "group": "baseline"
+  "cd4 cells, percent__measured": {
+    "group": "missingness"
   },
-  "orthostatic hr lying__min": {
-    "group": "baseline"
+  "absolute cd4 count__measured": {
+    "group": "missingness"
   },
-  "orthostatic hr sitting__min": {
-    "group": "baseline"
+  "ld, body fluid__measured": {
+    "group": "missingness"
   },
-  "orthostatic hr standing__min": {
-    "group": "baseline"
+  "amylase, body fluid__measured": {
+    "group": "missingness"
   },
-  "pantoprazole   mg/hr__min": {
-    "group": "baseline"
+  "glucose, body fluid__measured": {
+    "group": "missingness"
   },
-  "pantoprazole  mg/hr__min": {
-    "group": "baseline"
+  "albumin, body fluid__measured": {
+    "group": "missingness"
   },
-  "pap [diastolic]__min": {
-    "group": "baseline"
+  "macrophages__measured": {
+    "group": "missingness"
   },
-  "pap [systolic]__min": {
-    "group": "baseline"
+  "bacteria__measured": {
+    "group": "missingness"
   },
-  "par-oxygen saturation__min": {
-    "group": "baseline"
+  "blasts__measured": {
+    "group": "missingness"
   },
-  "pca 1 hr limit (mg)__min": {
-    "group": "baseline"
+  "homocysteine__measured": {
+    "group": "missingness"
   },
-  "prothrombin time__min": {
-    "group": "baseline"
+  "rheumatoid factor__measured": {
+    "group": "missingness"
   },
-  "protonix mg/hr__min": {
-    "group": "baseline"
+  "albumin, urine__measured": {
+    "group": "missingness"
   },
-  "pulmonary artery pressure diastolic__min": {
-    "group": "baseline"
+  "albumin/creatinine, urine__measured": {
+    "group": "missingness"
   },
-  "pulmonary artery pressure systolic__min": {
-    "group": "baseline"
+  "cd3 cells, percent__measured": {
+    "group": "missingness"
   },
-  "replace rate ml/hr__min": {
-    "group": "baseline"
+  "cd4/cd8 ratio__measured": {
+    "group": "missingness"
   },
-  "respiratory rate__min": {
-    "group": "baseline"
+  "absolute cd8 count__measured": {
+    "group": "missingness"
   },
-  "respiratory rate (set)__min": {
-    "group": "baseline"
+  "absolute cd3 count__measured": {
+    "group": "missingness"
   },
-  "respiratory rate (spontaneous)__min": {
-    "group": "baseline"
+  "cd8 cells, percent__measured": {
+    "group": "missingness"
   },
-  "respiratory rate (total)__min": {
-    "group": "baseline"
+  "calcium, urine__measured": {
+    "group": "missingness"
   },
-  "respiratory rate set__min": {
-    "group": "baseline"
+  "transitional epithelial cells__measured": {
+    "group": "missingness"
   },
-  "smoking cessation info offered through bidmc inpatient guide__min": {
+  "cyclosporin__measured_y": {
     "group": "baseline"
   },
-  "solumedrol mg/hr__min": {
-    "group": "baseline"
+  "anticardiolipin antibody igm__measured": {
+    "group": "missingness"
   },
-  "solumedrol mg/kg/hr__min": {
-    "group": "baseline"
+  "anticardiolipin antibody igg__measured": {
+    "group": "missingness"
   },
-  "spo2__min": {
-    "group": "baseline"
+  "other cell__measured": {
+    "group": "missingness"
   },
-  "spo2 alarm [high]__min": {
-    "group": "baseline"
+  "albumin, pleural__measured": {
+    "group": "missingness"
   },
-  "spo2 alarm [low]__min": {
-    "group": "baseline"
+  "amylase, ascites__measured": {
+    "group": "missingness"
   },
-  "spo2 desat limit__min": {
+  "ethanol__measured_y": {
     "group": "baseline"
   },
-  "spon rr (mech.)__min": {
-    "group": "baseline"
+  "protein c, functional__measured": {
+    "group": "missingness"
   },
-  "spont rr__min": {
-    "group": "baseline"
+  "amylase, pleural__measured": {
+    "group": "missingness"
   },
-  "systolic unloading__min": {
-    "group": "baseline"
+  "lactate dehydrogenase, csf__measured": {
+    "group": "missingness"
   },
-  "tcpcv-map__min": {
-    "group": "baseline"
+  "uric acid, urine__measured": {
+    "group": "missingness"
   },
-  "temp/iso/warmer [temperature, degrees c]__min": {
-    "group": "baseline"
+  "lithium__measured": {
+    "group": "missingness"
   },
-  "temperature c__min": {
-    "group": "baseline"
+  "urine volume__measured": {
+    "group": "missingness"
   },
-  "temperature c (calc)__min": {
-    "group": "baseline"
+  "magnesium, urine__measured": {
+    "group": "missingness"
   },
-  "temperature celsius__min": {
-    "group": "baseline"
+  "length of urine collection__measured": {
+    "group": "missingness"
   },
-  "temperature f__min": {
-    "group": "baseline"
+  "albumin, ascites__measured": {
+    "group": "missingness"
   },
-  "temperature f (calc)__min": {
-    "group": "baseline"
+  "bilirubin, total, ascites__measured": {
+    "group": "missingness"
   },
-  "temperature fahrenheit__min": {
-    "group": "baseline"
+  "antithrombin__measured": {
+    "group": "missingness"
   },
-  "temporary atrial sens threshold mv__min": {
+  "phenobarbital__measured_y": {
     "group": "baseline"
   },
-  "temporary atrial stim threshold ma__min": {
-    "group": "baseline"
+  "hematocrit, other fluid__measured": {
+    "group": "missingness"
   },
-  "temporary venticular sens threshold mv__min": {
-    "group": "baseline"
+  "carbamazepine__measured": {
+    "group": "missingness"
   },
-  "temporary venticular stim threshold ma__min": {
+  "thrombin__measured_y": {
     "group": "baseline"
   },
-  "thrombin__min": {
-    "group": "baseline"
+  "wbc, joint fluid__measured": {
+    "group": "missingness"
   },
-  "tpa mg/hr__min": {
-    "group": "baseline"
+  "ca-125__measured": {
+    "group": "missingness"
   },
-  "vent sens thresh mv__min": {
-    "group": "baseline"
+  "creatinine, ascites__measured": {
+    "group": "missingness"
   },
-  "vent stim thresh ma__min": {
-    "group": "baseline"
+  "factor viii__measured": {
+    "group": "missingness"
   },
-  "ventricular pacemaker threshold [value]__min": {
-    "group": "baseline"
+  "phenytoin, percent free__measured": {
+    "group": "missingness"
   },
-  "xigris mcg/kg/hr__min": {
-    "group": "baseline"
+  "phenytoin, free__measured": {
+    "group": "missingness"
   },
-  "aprotinin cc/hr__max": {
-    "group": "baseline"
+  "uptake ratio__measured": {
+    "group": "missingness"
   },
-  "aprotinin ml/hr__max": {
-    "group": "baseline"
+  "calculated tbg__measured": {
+    "group": "missingness"
   },
-  "art bp diastolic__max": {
-    "group": "baseline"
+  "plasma cells__measured": {
+    "group": "missingness"
   },
-  "art bp systolic__max": {
-    "group": "baseline"
+  "nrbc__measured": {
+    "group": "missingness"
   },
-  "arterial blood pressure diastolic__max": {
-    "group": "baseline"
+  "calculated thyroxine (t4) index__measured": {
+    "group": "missingness"
   },
-  "arterial blood pressure systolic__max": {
-    "group": "baseline"
+  "rbc, joint fluid__measured": {
+    "group": "missingness"
   },
-  "arterial bp #2 [diastolic]__max": {
-    "group": "baseline"
+  "protein s, functional__measured": {
+    "group": "missingness"
   },
-  "arterial bp #2 [systolic]__max": {
-    "group": "baseline"
+  "24 hr creatinine__measured": {
+    "group": "missingness"
   },
-  "arterial bp [diastolic]__max": {
-    "group": "baseline"
+  "tissue transglutaminase ab, iga__measured": {
+    "group": "missingness"
   },
-  "arterial bp [systolic]__max": {
-    "group": "baseline"
+  "beta-2 microglobulin__measured": {
+    "group": "missingness"
   },
-  "arterial o2 saturation__max": {
-    "group": "baseline"
+  "creatinine, pleural__measured": {
+    "group": "missingness"
   },
-  "atr sens thresh mv__max": {
+  "salicylate__measured_y": {
     "group": "baseline"
   },
-  "atr stim thresh ma__max": {
-    "group": "baseline"
+  "cholesterol, pleural__measured": {
+    "group": "missingness"
   },
-  "atrial pacemaker threshold [value]__max": {
-    "group": "baseline"
+  "prolactin__measured": {
+    "group": "missingness"
   },
-  "baseline current/ma__max": {
-    "group": "baseline"
+  "quantitative g6pd__measured": {
+    "group": "missingness"
   },
-  "blood temperature cco (c)__max": {
-    "group": "baseline"
+  "rapamycin__measured": {
+    "group": "missingness"
   },
-  "bp cuff [diastolic]__max": {
-    "group": "baseline"
+  "hypersegmented neutrophils__measured": {
+    "group": "missingness"
   },
-  "bp cuff [systolic]__max": {
-    "group": "baseline"
+  "cellular cast__measured": {
+    "group": "missingness"
   },
-  "bp left arm [diastolic]__max": {
-    "group": "baseline"
+  "hematocrit, ascites__measured": {
+    "group": "missingness"
   },
-  "bp left arm [systolic]__max": {
-    "group": "baseline"
+  "hematocrit, pleural__measured": {
+    "group": "missingness"
   },
-  "bp left leg [diastolic]__max": {
+  "theophylline__measured_y": {
     "group": "baseline"
   },
-  "bp left leg [systolic]__max": {
-    "group": "baseline"
+  "renal epithelial cells__measured": {
+    "group": "missingness"
   },
-  "bp pal [diastolic]__max": {
-    "group": "baseline"
+  "bilirubin, total, body fluid__measured": {
+    "group": "missingness"
   },
-  "bp pal [systolic]__max": {
-    "group": "baseline"
+  "triglycerides, pleural__measured": {
+    "group": "missingness"
   },
-  "bp right arm [diastolic]__max": {
-    "group": "baseline"
+  "24 hr protein__measured": {
+    "group": "missingness"
   },
-  "bp right arm [systolic]__max": {
-    "group": "baseline"
+  "hemogloblin a__measured": {
+    "group": "missingness"
   },
-  "bp right leg [diastolic]__max": {
-    "group": "baseline"
+  "hemogloblin s__measured": {
+    "group": "missingness"
   },
-  "bp right leg [systolic]__max": {
-    "group": "baseline"
+  "hemoglobin c__measured": {
+    "group": "missingness"
   },
-  "bp uac [diastolic]__max": {
-    "group": "baseline"
+  "creatinine, body fluid__measured": {
+    "group": "missingness"
   },
-  "bp uac [systolic]__max": {
-    "group": "baseline"
+  "follicle stimulating hormone__measured": {
+    "group": "missingness"
   },
-  "ca gluc gm/hr__max": {
-    "group": "baseline"
+  "gastrin__measured": {
+    "group": "missingness"
   },
-  "cariporide cc/hr__max": {
-    "group": "baseline"
+  "heparin, lmw__measured": {
+    "group": "missingness"
   },
-  "cariporide ml/hr__max": {
-    "group": "baseline"
+  "yeast__measured": {
+    "group": "missingness"
   },
-  "changes in temperature__max": {
-    "group": "baseline"
+  "human chorionic gonadotropin__measured": {
+    "group": "missingness"
   },
-  "cisatracu mg/kg/hr__max": {
-    "group": "baseline"
+  "bicarbonate, urine__measured": {
+    "group": "missingness"
   },
-  "current goal__max": {
-    "group": "baseline"
+  "eosinophil count__measured": {
+    "group": "missingness"
   },
-  "current used/ma__max": {
-    "group": "baseline"
+  "triglycerides, ascites__measured": {
+    "group": "missingness"
   },
-  "currently experiencing pain__max": {
-    "group": "baseline"
+  "von willebrand factor activity__measured": {
+    "group": "missingness"
   },
-  "dialysate flow ml/hr__max": {
-    "group": "baseline"
+  "hematocrit, joint fluid__measured": {
+    "group": "missingness"
   },
-  "diastolic unloading__max": {
-    "group": "baseline"
+  "wbc casts__measured": {
+    "group": "missingness"
   },
-  "epidural infusion rate (ml/hr)__max": {
-    "group": "baseline"
+  "protein s, antigen__measured": {
+    "group": "missingness"
   },
-  "gait/transferring__max": {
-    "group": "baseline"
+  "urine casts, other__measured": {
+    "group": "missingness"
   },
-  "heart rate__max": {
-    "group": "baseline"
+  "25-oh vitamin d__measured": {
+    "group": "missingness"
   },
-  "heart rate alarm - high__max": {
-    "group": "baseline"
+  "luteinizing hormone__measured": {
+    "group": "missingness"
   },
-  "heart rate alarm - low__max": {
-    "group": "baseline"
+  "glucose, urine__measured": {
+    "group": "missingness"
   },
-  "hr alarm [high]__max": {
-    "group": "baseline"
+  "serum viscosity__measured": {
+    "group": "missingness"
   },
-  "hr alarm [low]__max": {
-    "group": "baseline"
+  "tobramycin__measured": {
+    "group": "missingness"
   },
-  "lowest heart rate__max": {
-    "group": "baseline"
+  "von willebrand factor antigen__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure diastolic left__max": {
-    "group": "baseline"
+  "amylase/creatinine ratio, urine__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure diastolic right__max": {
-    "group": "baseline"
+  "amylase, urine__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure systolic left__max": {
-    "group": "baseline"
+  "hemoglobin a2__measured": {
+    "group": "missingness"
   },
-  "manual blood pressure systolic right__max": {
-    "group": "baseline"
+  "protein c, antigen__measured": {
+    "group": "missingness"
   },
-  "manual bp [diastolic]__max": {
-    "group": "baseline"
+  "factor xi__measured": {
+    "group": "missingness"
   },
-  "manual bp [systolic]__max": {
-    "group": "baseline"
+  "bilirubin, total, pleural__measured": {
+    "group": "missingness"
   },
-  "mucomyst       mg/hr__max": {
+  "bleeding time__measured_y": {
     "group": "baseline"
   },
-  "mucomyst mg/hr__max": {
+  "heparin__measured_y": {
     "group": "baseline"
   },
-  "nbp [diastolic]__max": {
-    "group": "baseline"
+  "rbc casts__measured": {
+    "group": "missingness"
   },
-  "nbp [systolic]__max": {
-    "group": "baseline"
+  "testosterone__measured": {
+    "group": "missingness"
   },
-  "nicardipine mg/hr__max": {
-    "group": "baseline"
+  "thyroid peroxidase antibodies__measured": {
+    "group": "missingness"
   },
-  "nicardipine--mg/hr__max": {
-    "group": "baseline"
+  "factor v__measured": {
+    "group": "missingness"
   },
-  "non invasive blood pressure diastolic__max": {
-    "group": "baseline"
+  "factor ix__measured": {
+    "group": "missingness"
   },
-  "non invasive blood pressure systolic__max": {
-    "group": "baseline"
+  "cancer antigen 27.29__measured": {
+    "group": "missingness"
   },
-  "o2 saturation pulseoxymetry__max": {
-    "group": "baseline"
+  "urea nitrogen, body fluid__measured": {
+    "group": "missingness"
   },
-  "o2 saturation pulseoxymetry alarm - high__max": {
-    "group": "baseline"
+  "nucleated rbc__measured": {
+    "group": "missingness"
   },
-  "o2 saturation pulseoxymetry alarm - low__max": {
-    "group": "baseline"
+  "<albumin>__measured": {
+    "group": "missingness"
   },
-  "orthostat bp sitting [diastolic]__max": {
-    "group": "baseline"
+  "factor x__measured": {
+    "group": "missingness"
   },
-  "orthostat bp sitting [systolic]__max": {
-    "group": "baseline"
+  "plasma__measured": {
+    "group": "missingness"
   },
-  "orthostat hr sitting__max": {
-    "group": "baseline"
+  "creatinine, serum__measured": {
+    "group": "missingness"
   },
-  "orthostatbp standing [diastolic]__max": {
-    "group": "baseline"
+  "nonsquamous epithelial cell__measured": {
+    "group": "missingness"
   },
-  "orthostatbp standing [systolic]__max": {
-    "group": "baseline"
+  "young cells__measured": {
+    "group": "missingness"
   },
-  "orthostathr standing__max": {
-    "group": "baseline"
+  "fetal hemoglobin__measured": {
+    "group": "missingness"
   },
-  "orthostatic bp lying [diastolic]__max": {
-    "group": "baseline"
+  "total collection time__measured": {
+    "group": "missingness"
   },
-  "orthostatic bp lying [systolic]__max": {
-    "group": "baseline"
+  "creatinine clearance__measured": {
+    "group": "missingness"
   },
-  "orthostatic hr lying__max": {
-    "group": "baseline"
+  "urine volume, total__measured": {
+    "group": "missingness"
   },
-  "orthostatic hr sitting__max": {
-    "group": "baseline"
+  "urine creatinine__measured": {
+    "group": "missingness"
   },
-  "orthostatic hr standing__max": {
-    "group": "baseline"
+  "leukocyte alkaline phosphatase__measured": {
+    "group": "missingness"
   },
-  "pantoprazole   mg/hr__max": {
-    "group": "baseline"
+  "sodium, stool__measured": {
+    "group": "missingness"
   },
-  "pantoprazole  mg/hr__max": {
-    "group": "baseline"
+  "thyroglobulin__measured": {
+    "group": "missingness"
   },
-  "pap [diastolic]__max": {
-    "group": "baseline"
+  "pco2, body fluid__measured": {
+    "group": "missingness"
   },
-  "pap [systolic]__max": {
-    "group": "baseline"
+  "factor ii__measured": {
+    "group": "missingness"
   },
-  "par-oxygen saturation__max": {
-    "group": "baseline"
+  "glucose, joint fluid__measured": {
+    "group": "missingness"
   },
-  "pca 1 hr limit (mg)__max": {
-    "group": "baseline"
+  "cd19__measured": {
+    "group": "missingness"
   },
-  "prothrombin time__max": {
-    "group": "baseline"
+  "procainamide__measured": {
+    "group": "missingness"
   },
-  "protonix mg/hr__max": {
-    "group": "baseline"
+  "broad casts__measured": {
+    "group": "missingness"
   },
-  "pulmonary artery pressure diastolic__max": {
-    "group": "baseline"
+  "potassium, body fluid__measured": {
+    "group": "missingness"
   },
-  "pulmonary artery pressure systolic__max": {
-    "group": "baseline"
+  "potassium, stool__measured": {
+    "group": "missingness"
   },
-  "replace rate ml/hr__max": {
-    "group": "baseline"
+  "hematocrit, csf__measured": {
+    "group": "missingness"
   },
-  "respiratory rate__max": {
-    "group": "baseline"
+  "cd3__measured": {
+    "group": "missingness"
   },
-  "respiratory rate (set)__max": {
-    "group": "baseline"
+  "anti-dgp (iga/igg)__measured": {
+    "group": "missingness"
   },
-  "respiratory rate (spontaneous)__max": {
-    "group": "baseline"
+  "n-acetylprocainamide (napa)__measured": {
+    "group": "missingness"
   },
-  "respiratory rate (total)__max": {
-    "group": "baseline"
+  "osmolality, stool__measured": {
+    "group": "missingness"
   },
-  "respiratory rate set__max": {
-    "group": "baseline"
+  "hemoglobin f__measured": {
+    "group": "missingness"
   },
-  "smoking cessation info offered through bidmc inpatient guide__max": {
-    "group": "baseline"
+  "triglycer__measured": {
+    "group": "missingness"
   },
-  "solumedrol mg/hr__max": {
-    "group": "baseline"
+  "waxy casts__measured": {
+    "group": "missingness"
   },
-  "solumedrol mg/kg/hr__max": {
-    "group": "baseline"
+  "cholesterol, body fluid__measured": {
+    "group": "missingness"
   },
-  "spo2__max": {
-    "group": "baseline"
+  "lipase, ascites__measured": {
+    "group": "missingness"
   },
-  "spo2 alarm [high]__max": {
-    "group": "baseline"
+  "anti-thyroglobulin antibodies__measured": {
+    "group": "missingness"
   },
-  "spo2 alarm [low]__max": {
-    "group": "baseline"
+  "cd5__measured": {
+    "group": "missingness"
   },
-  "spo2 desat limit__max": {
-    "group": "baseline"
+  "total protein, joint fluid__measured": {
+    "group": "missingness"
   },
-  "spon rr (mech.)__max": {
-    "group": "baseline"
+  "urine mucous__measured": {
+    "group": "missingness"
   },
-  "spont rr__max": {
-    "group": "baseline"
+  "cd34__measured": {
+    "group": "missingness"
   },
-  "systolic unloading__max": {
-    "group": "baseline"
+  "chloride, body fluid__measured": {
+    "group": "missingness"
   },
-  "tcpcv-map__max": {
-    "group": "baseline"
+  "quinidine__measured": {
+    "group": "missingness"
   },
-  "temp/iso/warmer [temperature, degrees c]__max": {
-    "group": "baseline"
+  "bicarbonate, other fluid__measured": {
+    "group": "missingness"
   },
-  "temperature c__max": {
-    "group": "baseline"
+  "estradiol__measured": {
+    "group": "missingness"
   },
-  "temperature c (calc)__max": {
-    "group": "baseline"
+  "chloride, stool__measured": {
+    "group": "missingness"
   },
-  "temperature celsius__max": {
-    "group": "baseline"
+  "h__measured": {
+    "group": "missingness"
   },
-  "temperature f__max": {
-    "group": "baseline"
+  "factor vii__measured": {
+    "group": "missingness"
   },
-  "temperature f (calc)__max": {
-    "group": "baseline"
+  "testosterone, free__measured": {
+    "group": "missingness"
   },
-  "temperature fahrenheit__max": {
-    "group": "baseline"
+  "bilirubin, total, csf__measured": {
+    "group": "missingness"
   },
-  "temporary atrial sens threshold mv__max": {
-    "group": "baseline"
+  "platelet clumps__measured": {
+    "group": "missingness"
   },
-  "temporary atrial stim threshold ma__max": {
-    "group": "baseline"
+  "lipase, body fluid__measured": {
+    "group": "missingness"
   },
-  "temporary venticular sens threshold mv__max": {
-    "group": "baseline"
+  "hypochromia__measured": {
+    "group": "missingness"
   },
-  "temporary venticular stim threshold ma__max": {
-    "group": "baseline"
+  "reducing substances, urine__measured": {
+    "group": "missingness"
   },
-  "thrombin__max": {
-    "group": "baseline"
+  "non-squamous epithelial cells__measured": {
+    "group": "missingness"
   },
-  "tpa mg/hr__max": {
-    "group": "baseline"
+  "sodium, body fluid__measured": {
+    "group": "missingness"
   },
-  "vent sens thresh mv__max": {
-    "group": "baseline"
+  "urine crystals, other__measured": {
+    "group": "missingness"
   },
-  "vent stim thresh ma__max": {
+  "hematocrit__min_y": {
     "group": "baseline"
   },
-  "ventricular pacemaker threshold [value]__max": {
+  "hematocrit__last_y": {
     "group": "baseline"
   },
-  "xigris mcg/kg/hr__max": {
+  "hematocrit__mean_y": {
     "group": "baseline"
   },
-  "aprotinin cc/hr__range": {
+  "hematocrit__max_y": {
     "group": "baseline"
   },
-  "aprotinin ml/hr__range": {
+  "hematocrit__range_y": {
     "group": "baseline"
   },
-  "art bp diastolic__range": {
+  "hematocrit__count_y": {
     "group": "baseline"
   },
-  "art bp systolic__range": {
+  "platelet count__max_y": {
     "group": "baseline"
   },
-  "arterial blood pressure diastolic__range": {
+  "platelet count__last_y": {
     "group": "baseline"
   },
-  "arterial blood pressure systolic__range": {
+  "platelet count__mean_y": {
     "group": "baseline"
   },
-  "arterial bp #2 [diastolic]__range": {
+  "platelet count__min_y": {
     "group": "baseline"
   },
-  "arterial bp #2 [systolic]__range": {
+  "platelet count__range_y": {
     "group": "baseline"
   },
-  "arterial bp [diastolic]__range": {
+  "platelet count__count_y": {
     "group": "baseline"
   },
-  "arterial bp [systolic]__range": {
+  "hemoglobin__min_y": {
     "group": "baseline"
   },
-  "arterial o2 saturation__range": {
+  "hemoglobin__count_y": {
     "group": "baseline"
   },
-  "atr sens thresh mv__range": {
+  "hemoglobin__last_y": {
     "group": "baseline"
   },
-  "atr stim thresh ma__range": {
+  "hemoglobin__max_y": {
     "group": "baseline"
   },
-  "atrial pacemaker threshold [value]__range": {
+  "hemoglobin__mean_y": {
     "group": "baseline"
   },
-  "baseline current/ma__range": {
+  "hemoglobin__range_y": {
     "group": "baseline"
   },
-  "blood temperature cco (c)__range": {
+  "white blood cells__max": {
     "group": "baseline"
   },
-  "bp cuff [diastolic]__range": {
+  "white blood cells__mean": {
     "group": "baseline"
   },
-  "bp cuff [systolic]__range": {
+  "white blood cells__last": {
     "group": "baseline"
   },
-  "bp left arm [diastolic]__range": {
+  "white blood cells__min": {
     "group": "baseline"
   },
-  "bp left arm [systolic]__range": {
+  "white blood cells__range": {
     "group": "baseline"
   },
-  "bp left leg [diastolic]__range": {
-    "group": "baseline"
+  "white blood cells__count": {
+    "group": "missingness"
   },
-  "bp left leg [systolic]__range": {
-    "group": "baseline"
+  "mchc__count": {
+    "group": "missingness"
   },
-  "bp pal [diastolic]__range": {
+  "mchc__max": {
     "group": "baseline"
   },
-  "bp pal [systolic]__range": {
+  "mchc__last": {
     "group": "baseline"
   },
-  "bp right arm [diastolic]__range": {
+  "mchc__min": {
     "group": "baseline"
   },
-  "bp right arm [systolic]__range": {
+  "mchc__mean": {
     "group": "baseline"
   },
-  "bp right leg [diastolic]__range": {
+  "mchc__range": {
     "group": "baseline"
   },
-  "bp right leg [systolic]__range": {
+  "mcv__min": {
     "group": "baseline"
   },
-  "bp uac [diastolic]__range": {
+  "mcv__mean": {
     "group": "baseline"
   },
-  "bp uac [systolic]__range": {
+  "mcv__last": {
     "group": "baseline"
   },
-  "ca gluc gm/hr__range": {
+  "mcv__max": {
     "group": "baseline"
   },
-  "cariporide cc/hr__range": {
+  "mch__min": {
     "group": "baseline"
   },
-  "cariporide ml/hr__range": {
+  "mch__mean": {
     "group": "baseline"
   },
-  "changes in temperature__range": {
+  "mch__last": {
     "group": "baseline"
   },
-  "cisatracu mg/kg/hr__range": {
+  "mch__max": {
     "group": "baseline"
   },
-  "current goal__range": {
+  "mcv__range": {
     "group": "baseline"
   },
-  "current used/ma__range": {
-    "group": "baseline"
+  "mcv__count": {
+    "group": "missingness"
   },
-  "currently experiencing pain__range": {
-    "group": "baseline"
+  "red blood cells__count": {
+    "group": "missingness"
   },
-  "dialysate flow ml/hr__range": {
-    "group": "baseline"
+  "mch__count": {
+    "group": "missingness"
   },
-  "diastolic unloading__range": {
+  "red blood cells__min": {
     "group": "baseline"
   },
-  "epidural infusion rate (ml/hr)__range": {
+  "mch__range": {
     "group": "baseline"
   },
-  "gait/transferring__range": {
+  "red blood cells__last": {
     "group": "baseline"
   },
-  "heart rate__range": {
+  "red blood cells__mean": {
     "group": "baseline"
   },
-  "heart rate alarm - high__range": {
+  "red blood cells__max": {
     "group": "baseline"
   },
-  "heart rate alarm - low__range": {
+  "red blood cells__range": {
     "group": "baseline"
   },
-  "hr alarm [high]__range": {
+  "rdw__max": {
     "group": "baseline"
   },
-  "hr alarm [low]__range": {
+  "rdw__last": {
     "group": "baseline"
   },
-  "lowest heart rate__range": {
+  "rdw__mean": {
     "group": "baseline"
   },
-  "manual blood pressure diastolic left__range": {
+  "rdw__min": {
     "group": "baseline"
   },
-  "manual blood pressure diastolic right__range": {
-    "group": "baseline"
+  "rdw__count": {
+    "group": "missingness"
   },
-  "manual blood pressure systolic left__range": {
+  "rdw__range": {
     "group": "baseline"
   },
-  "manual blood pressure systolic right__range": {
+  "peak insp. pressure__mean": {
     "group": "baseline"
   },
-  "manual bp [diastolic]__range": {
+  "potassium__count_y": {
     "group": "baseline"
   },
-  "manual bp [systolic]__range": {
+  "potassium__max_y": {
     "group": "baseline"
   },
-  "mucomyst       mg/hr__range": {
+  "potassium__range_y": {
     "group": "baseline"
   },
-  "mucomyst mg/hr__range": {
+  "potassium__mean_y": {
     "group": "baseline"
   },
-  "nbp [diastolic]__range": {
+  "potassium__min_y": {
     "group": "baseline"
   },
-  "nbp [systolic]__range": {
+  "potassium__last_y": {
     "group": "baseline"
   },
-  "nicardipine mg/hr__range": {
+  "chloride__max_y": {
     "group": "baseline"
   },
-  "nicardipine--mg/hr__range": {
+  "chloride__min_y": {
     "group": "baseline"
   },
-  "non invasive blood pressure diastolic__range": {
+  "chloride__last_y": {
     "group": "baseline"
   },
-  "non invasive blood pressure systolic__range": {
+  "chloride__mean_y": {
     "group": "baseline"
   },
-  "o2 saturation pulseoxymetry__range": {
+  "chloride__range_y": {
     "group": "baseline"
   },
-  "o2 saturation pulseoxymetry alarm - high__range": {
+  "chloride__count_y": {
     "group": "baseline"
   },
-  "o2 saturation pulseoxymetry alarm - low__range": {
+  "sodium__min_y": {
     "group": "baseline"
   },
-  "orthostat bp sitting [diastolic]__range": {
+  "sodium__max_y": {
     "group": "baseline"
   },
-  "orthostat bp sitting [systolic]__range": {
+  "sodium__last_y": {
     "group": "baseline"
   },
-  "orthostat hr sitting__range": {
+  "sodium__mean_y": {
     "group": "baseline"
   },
-  "orthostatbp standing [diastolic]__range": {
+  "sodium__range_y": {
     "group": "baseline"
   },
-  "orthostatbp standing [systolic]__range": {
+  "sodium__count_y": {
     "group": "baseline"
   },
-  "orthostathr standing__range": {
+  "bicarbonate__min": {
     "group": "baseline"
   },
-  "orthostatic bp lying [diastolic]__range": {
+  "bicarbonate__last": {
     "group": "baseline"
   },
-  "orthostatic bp lying [systolic]__range": {
+  "bicarbonate__max": {
     "group": "baseline"
   },
-  "orthostatic hr lying__range": {
+  "bicarbonate__mean": {
     "group": "baseline"
   },
-  "orthostatic hr sitting__range": {
+  "bicarbonate__range": {
     "group": "baseline"
   },
-  "orthostatic hr standing__range": {
-    "group": "baseline"
+  "bicarbonate__count": {
+    "group": "missingness"
   },
-  "pantoprazole   mg/hr__range": {
+  "anion gap__max_y": {
     "group": "baseline"
   },
-  "pantoprazole  mg/hr__range": {
+  "anion gap__last_y": {
     "group": "baseline"
   },
-  "pap [diastolic]__range": {
+  "anion gap__min_y": {
     "group": "baseline"
   },
-  "pap [systolic]__range": {
+  "anion gap__mean_y": {
     "group": "baseline"
   },
-  "par-oxygen saturation__range": {
+  "anion gap__range_y": {
     "group": "baseline"
   },
-  "pca 1 hr limit (mg)__range": {
+  "anion gap__count_y": {
     "group": "baseline"
   },
   "prothrombin time__range": {
     "group": "baseline"
   },
-  "protonix mg/hr__range": {
+  "prothrombin time__max": {
     "group": "baseline"
   },
-  "pulmonary artery pressure diastolic__range": {
-    "group": "baseline"
-  },
-  "pulmonary artery pressure systolic__range": {
-    "group": "baseline"
-  },
-  "replace rate ml/hr__range": {
-    "group": "baseline"
-  },
-  "respiratory rate__range": {
-    "group": "baseline"
-  },
-  "respiratory rate (set)__range": {
-    "group": "baseline"
-  },
-  "respiratory rate (spontaneous)__range": {
-    "group": "baseline"
-  },
-  "respiratory rate (total)__range": {
-    "group": "baseline"
-  },
-  "respiratory rate set__range": {
-    "group": "baseline"
-  },
-  "smoking cessation info offered through bidmc inpatient guide__range": {
-    "group": "baseline"
-  },
-  "solumedrol mg/hr__range": {
-    "group": "baseline"
-  },
-  "solumedrol mg/kg/hr__range": {
-    "group": "baseline"
-  },
-  "spo2__range": {
-    "group": "baseline"
-  },
-  "spo2 alarm [high]__range": {
-    "group": "baseline"
-  },
-  "spo2 alarm [low]__range": {
-    "group": "baseline"
-  },
-  "spo2 desat limit__range": {
-    "group": "baseline"
-  },
-  "spon rr (mech.)__range": {
-    "group": "baseline"
-  },
-  "spont rr__range": {
-    "group": "baseline"
-  },
-  "systolic unloading__range": {
-    "group": "baseline"
-  },
-  "tcpcv-map__range": {
-    "group": "baseline"
-  },
-  "temp/iso/warmer [temperature, degrees c]__range": {
-    "group": "baseline"
-  },
-  "temperature c__range": {
-    "group": "baseline"
-  },
-  "temperature c (calc)__range": {
-    "group": "baseline"
-  },
-  "temperature celsius__range": {
-    "group": "baseline"
-  },
-  "temperature f__range": {
-    "group": "baseline"
-  },
-  "temperature f (calc)__range": {
-    "group": "baseline"
-  },
-  "temperature fahrenheit__range": {
-    "group": "baseline"
-  },
-  "temporary atrial sens threshold mv__range": {
-    "group": "baseline"
-  },
-  "temporary atrial stim threshold ma__range": {
-    "group": "baseline"
-  },
-  "temporary venticular sens threshold mv__range": {
-    "group": "baseline"
-  },
-  "temporary venticular stim threshold ma__range": {
-    "group": "baseline"
-  },
-  "thrombin__range": {
-    "group": "baseline"
-  },
-  "tpa mg/hr__range": {
-    "group": "baseline"
-  },
-  "vent sens thresh mv__range": {
-    "group": "baseline"
-  },
-  "vent stim thresh ma__range": {
-    "group": "baseline"
-  },
-  "ventricular pacemaker threshold [value]__range": {
-    "group": "baseline"
-  },
-  "xigris mcg/kg/hr__range": {
-    "group": "baseline"
-  },
-  "aprotinin cc/hr__last": {
-    "group": "baseline"
-  },
-  "aprotinin ml/hr__last": {
-    "group": "baseline"
-  },
-  "art bp diastolic__last": {
-    "group": "baseline"
-  },
-  "art bp systolic__last": {
-    "group": "baseline"
-  },
-  "arterial blood pressure diastolic__last": {
-    "group": "baseline"
-  },
-  "arterial blood pressure systolic__last": {
-    "group": "baseline"
-  },
-  "arterial bp #2 [diastolic]__last": {
-    "group": "baseline"
-  },
-  "arterial bp #2 [systolic]__last": {
-    "group": "baseline"
-  },
-  "arterial bp [diastolic]__last": {
-    "group": "baseline"
-  },
-  "arterial bp [systolic]__last": {
-    "group": "baseline"
-  },
-  "arterial o2 saturation__last": {
-    "group": "baseline"
-  },
-  "atr sens thresh mv__last": {
-    "group": "baseline"
-  },
-  "atr stim thresh ma__last": {
-    "group": "baseline"
-  },
-  "atrial pacemaker threshold [value]__last": {
-    "group": "baseline"
-  },
-  "baseline current/ma__last": {
-    "group": "baseline"
-  },
-  "blood temperature cco (c)__last": {
-    "group": "baseline"
-  },
-  "bp cuff [diastolic]__last": {
-    "group": "baseline"
-  },
-  "bp cuff [systolic]__last": {
-    "group": "baseline"
-  },
-  "bp left arm [diastolic]__last": {
-    "group": "baseline"
-  },
-  "bp left arm [systolic]__last": {
-    "group": "baseline"
-  },
-  "bp left leg [diastolic]__last": {
-    "group": "baseline"
-  },
-  "bp left leg [systolic]__last": {
-    "group": "baseline"
-  },
-  "bp pal [diastolic]__last": {
-    "group": "baseline"
-  },
-  "bp pal [systolic]__last": {
-    "group": "baseline"
-  },
-  "bp right arm [diastolic]__last": {
-    "group": "baseline"
-  },
-  "bp right arm [systolic]__last": {
-    "group": "baseline"
-  },
-  "bp right leg [diastolic]__last": {
-    "group": "baseline"
-  },
-  "bp right leg [systolic]__last": {
-    "group": "baseline"
-  },
-  "bp uac [diastolic]__last": {
-    "group": "baseline"
-  },
-  "bp uac [systolic]__last": {
-    "group": "baseline"
-  },
-  "ca gluc gm/hr__last": {
-    "group": "baseline"
-  },
-  "cariporide cc/hr__last": {
-    "group": "baseline"
-  },
-  "cariporide ml/hr__last": {
-    "group": "baseline"
-  },
-  "changes in temperature__last": {
-    "group": "baseline"
-  },
-  "cisatracu mg/kg/hr__last": {
-    "group": "baseline"
-  },
-  "current goal__last": {
-    "group": "baseline"
-  },
-  "current used/ma__last": {
-    "group": "baseline"
-  },
-  "currently experiencing pain__last": {
-    "group": "baseline"
-  },
-  "dialysate flow ml/hr__last": {
-    "group": "baseline"
-  },
-  "diastolic unloading__last": {
-    "group": "baseline"
-  },
-  "epidural infusion rate (ml/hr)__last": {
-    "group": "baseline"
-  },
-  "gait/transferring__last": {
-    "group": "baseline"
-  },
-  "heart rate__last": {
-    "group": "baseline"
-  },
-  "heart rate alarm - high__last": {
-    "group": "baseline"
-  },
-  "heart rate alarm - low__last": {
-    "group": "baseline"
-  },
-  "hr alarm [high]__last": {
-    "group": "baseline"
-  },
-  "hr alarm [low]__last": {
-    "group": "baseline"
-  },
-  "lowest heart rate__last": {
-    "group": "baseline"
-  },
-  "manual blood pressure diastolic left__last": {
-    "group": "baseline"
-  },
-  "manual blood pressure diastolic right__last": {
-    "group": "baseline"
-  },
-  "manual blood pressure systolic left__last": {
-    "group": "baseline"
-  },
-  "manual blood pressure systolic right__last": {
-    "group": "baseline"
-  },
-  "manual bp [diastolic]__last": {
-    "group": "baseline"
-  },
-  "manual bp [systolic]__last": {
-    "group": "baseline"
-  },
-  "mucomyst       mg/hr__last": {
-    "group": "baseline"
-  },
-  "mucomyst mg/hr__last": {
-    "group": "baseline"
-  },
-  "nbp [diastolic]__last": {
-    "group": "baseline"
-  },
-  "nbp [systolic]__last": {
-    "group": "baseline"
-  },
-  "nicardipine mg/hr__last": {
-    "group": "baseline"
-  },
-  "nicardipine--mg/hr__last": {
-    "group": "baseline"
-  },
-  "non invasive blood pressure diastolic__last": {
-    "group": "baseline"
-  },
-  "non invasive blood pressure systolic__last": {
-    "group": "baseline"
-  },
-  "o2 saturation pulseoxymetry__last": {
-    "group": "baseline"
-  },
-  "o2 saturation pulseoxymetry alarm - high__last": {
-    "group": "baseline"
-  },
-  "o2 saturation pulseoxymetry alarm - low__last": {
-    "group": "baseline"
-  },
-  "orthostat bp sitting [diastolic]__last": {
-    "group": "baseline"
-  },
-  "orthostat bp sitting [systolic]__last": {
-    "group": "baseline"
-  },
-  "orthostat hr sitting__last": {
-    "group": "baseline"
-  },
-  "orthostatbp standing [diastolic]__last": {
-    "group": "baseline"
-  },
-  "orthostatbp standing [systolic]__last": {
-    "group": "baseline"
-  },
-  "orthostathr standing__last": {
-    "group": "baseline"
-  },
-  "orthostatic bp lying [diastolic]__last": {
-    "group": "baseline"
-  },
-  "orthostatic bp lying [systolic]__last": {
-    "group": "baseline"
-  },
-  "orthostatic hr lying__last": {
-    "group": "baseline"
-  },
-  "orthostatic hr sitting__last": {
-    "group": "baseline"
-  },
-  "orthostatic hr standing__last": {
-    "group": "baseline"
-  },
-  "pantoprazole   mg/hr__last": {
-    "group": "baseline"
-  },
-  "pantoprazole  mg/hr__last": {
-    "group": "baseline"
-  },
-  "pap [diastolic]__last": {
-    "group": "baseline"
-  },
-  "pap [systolic]__last": {
-    "group": "baseline"
-  },
-  "par-oxygen saturation__last": {
-    "group": "baseline"
-  },
-  "pca 1 hr limit (mg)__last": {
-    "group": "baseline"
-  },
-  "prothrombin time__last": {
-    "group": "baseline"
-  },
-  "protonix mg/hr__last": {
-    "group": "baseline"
-  },
-  "pulmonary artery pressure diastolic__last": {
-    "group": "baseline"
-  },
-  "pulmonary artery pressure systolic__last": {
-    "group": "baseline"
-  },
-  "replace rate ml/hr__last": {
-    "group": "baseline"
-  },
-  "respiratory rate__last": {
-    "group": "baseline"
-  },
-  "respiratory rate (set)__last": {
-    "group": "baseline"
-  },
-  "respiratory rate (spontaneous)__last": {
-    "group": "baseline"
-  },
-  "respiratory rate (total)__last": {
-    "group": "baseline"
-  },
-  "respiratory rate set__last": {
-    "group": "baseline"
-  },
-  "smoking cessation info offered through bidmc inpatient guide__last": {
-    "group": "baseline"
-  },
-  "solumedrol mg/hr__last": {
-    "group": "baseline"
-  },
-  "solumedrol mg/kg/hr__last": {
-    "group": "baseline"
-  },
-  "spo2__last": {
-    "group": "baseline"
-  },
-  "spo2 alarm [high]__last": {
-    "group": "baseline"
-  },
-  "spo2 alarm [low]__last": {
-    "group": "baseline"
-  },
-  "spo2 desat limit__last": {
-    "group": "baseline"
-  },
-  "spon rr (mech.)__last": {
-    "group": "baseline"
-  },
-  "spont rr__last": {
-    "group": "baseline"
-  },
-  "systolic unloading__last": {
-    "group": "baseline"
-  },
-  "tcpcv-map__last": {
-    "group": "baseline"
-  },
-  "temp/iso/warmer [temperature, degrees c]__last": {
-    "group": "baseline"
-  },
-  "temperature c__last": {
-    "group": "baseline"
-  },
-  "temperature c (calc)__last": {
-    "group": "baseline"
-  },
-  "temperature celsius__last": {
-    "group": "baseline"
-  },
-  "temperature f__last": {
-    "group": "baseline"
-  },
-  "temperature f (calc)__last": {
-    "group": "baseline"
-  },
-  "temperature fahrenheit__last": {
-    "group": "baseline"
-  },
-  "temporary atrial sens threshold mv__last": {
-    "group": "baseline"
-  },
-  "temporary atrial stim threshold ma__last": {
-    "group": "baseline"
-  },
-  "temporary venticular sens threshold mv__last": {
-    "group": "baseline"
-  },
-  "temporary venticular stim threshold ma__last": {
-    "group": "baseline"
-  },
-  "thrombin__last": {
-    "group": "baseline"
-  },
-  "tpa mg/hr__last": {
-    "group": "baseline"
-  },
-  "vent sens thresh mv__last": {
-    "group": "baseline"
-  },
-  "vent stim thresh ma__last": {
-    "group": "baseline"
-  },
-  "ventricular pacemaker threshold [value]__last": {
-    "group": "baseline"
-  },
-  "xigris mcg/kg/hr__last": {
-    "group": "baseline"
-  },
-  "aprotinin cc/hr__count": {
-    "group": "missingness"
-  },
-  "aprotinin ml/hr__count": {
-    "group": "missingness"
-  },
-  "art bp diastolic__count": {
-    "group": "missingness"
-  },
-  "art bp systolic__count": {
-    "group": "missingness"
-  },
-  "arterial blood pressure diastolic__count": {
-    "group": "missingness"
-  },
-  "arterial blood pressure systolic__count": {
-    "group": "missingness"
-  },
-  "arterial bp #2 [diastolic]__count": {
-    "group": "missingness"
-  },
-  "arterial bp #2 [systolic]__count": {
-    "group": "missingness"
-  },
-  "arterial bp [diastolic]__count": {
-    "group": "missingness"
-  },
-  "arterial bp [systolic]__count": {
-    "group": "missingness"
-  },
-  "arterial o2 saturation__count": {
-    "group": "missingness"
-  },
-  "atr sens thresh mv__count": {
-    "group": "missingness"
-  },
-  "atr stim thresh ma__count": {
-    "group": "missingness"
-  },
-  "atrial pacemaker threshold [value]__count": {
-    "group": "missingness"
-  },
-  "baseline current/ma__count": {
-    "group": "missingness"
-  },
-  "blood temperature cco (c)__count": {
-    "group": "missingness"
-  },
-  "bp cuff [diastolic]__count": {
-    "group": "missingness"
-  },
-  "bp cuff [systolic]__count": {
-    "group": "missingness"
-  },
-  "bp left arm [diastolic]__count": {
-    "group": "missingness"
-  },
-  "bp left arm [systolic]__count": {
-    "group": "missingness"
-  },
-  "bp left leg [diastolic]__count": {
-    "group": "missingness"
-  },
-  "bp left leg [systolic]__count": {
-    "group": "missingness"
-  },
-  "bp pal [diastolic]__count": {
-    "group": "missingness"
-  },
-  "bp pal [systolic]__count": {
-    "group": "missingness"
-  },
-  "bp right arm [diastolic]__count": {
-    "group": "missingness"
-  },
-  "bp right arm [systolic]__count": {
-    "group": "missingness"
-  },
-  "bp right leg [diastolic]__count": {
-    "group": "missingness"
-  },
-  "bp right leg [systolic]__count": {
-    "group": "missingness"
-  },
-  "bp uac [diastolic]__count": {
-    "group": "missingness"
-  },
-  "bp uac [systolic]__count": {
-    "group": "missingness"
-  },
-  "ca gluc gm/hr__count": {
-    "group": "missingness"
-  },
-  "cariporide cc/hr__count": {
-    "group": "missingness"
-  },
-  "cariporide ml/hr__count": {
-    "group": "missingness"
-  },
-  "changes in temperature__count": {
-    "group": "missingness"
-  },
-  "cisatracu mg/kg/hr__count": {
-    "group": "missingness"
-  },
-  "current goal__count": {
-    "group": "missingness"
-  },
-  "current used/ma__count": {
-    "group": "missingness"
-  },
-  "currently experiencing pain__count": {
-    "group": "missingness"
-  },
-  "dialysate flow ml/hr__count": {
-    "group": "missingness"
-  },
-  "diastolic unloading__count": {
-    "group": "missingness"
-  },
-  "epidural infusion rate (ml/hr)__count": {
-    "group": "missingness"
-  },
-  "gait/transferring__count": {
-    "group": "missingness"
-  },
-  "heart rate__count": {
-    "group": "missingness"
-  },
-  "heart rate alarm - high__count": {
-    "group": "missingness"
-  },
-  "heart rate alarm - low__count": {
-    "group": "missingness"
-  },
-  "hr alarm [high]__count": {
-    "group": "missingness"
-  },
-  "hr alarm [low]__count": {
-    "group": "missingness"
-  },
-  "lowest heart rate__count": {
-    "group": "missingness"
-  },
-  "manual blood pressure diastolic left__count": {
-    "group": "missingness"
-  },
-  "manual blood pressure diastolic right__count": {
-    "group": "missingness"
-  },
-  "manual blood pressure systolic left__count": {
-    "group": "missingness"
-  },
-  "manual blood pressure systolic right__count": {
-    "group": "missingness"
-  },
-  "manual bp [diastolic]__count": {
-    "group": "missingness"
-  },
-  "manual bp [systolic]__count": {
-    "group": "missingness"
-  },
-  "mucomyst       mg/hr__count": {
-    "group": "missingness"
-  },
-  "mucomyst mg/hr__count": {
-    "group": "missingness"
-  },
-  "nbp [diastolic]__count": {
-    "group": "missingness"
-  },
-  "nbp [systolic]__count": {
-    "group": "missingness"
-  },
-  "nicardipine mg/hr__count": {
-    "group": "missingness"
-  },
-  "nicardipine--mg/hr__count": {
-    "group": "missingness"
-  },
-  "non invasive blood pressure diastolic__count": {
-    "group": "missingness"
-  },
-  "non invasive blood pressure systolic__count": {
-    "group": "missingness"
-  },
-  "o2 saturation pulseoxymetry__count": {
-    "group": "missingness"
-  },
-  "o2 saturation pulseoxymetry alarm - high__count": {
-    "group": "missingness"
-  },
-  "o2 saturation pulseoxymetry alarm - low__count": {
-    "group": "missingness"
-  },
-  "orthostat bp sitting [diastolic]__count": {
-    "group": "missingness"
-  },
-  "orthostat bp sitting [systolic]__count": {
-    "group": "missingness"
-  },
-  "orthostat hr sitting__count": {
-    "group": "missingness"
-  },
-  "orthostatbp standing [diastolic]__count": {
-    "group": "missingness"
-  },
-  "orthostatbp standing [systolic]__count": {
-    "group": "missingness"
-  },
-  "orthostathr standing__count": {
-    "group": "missingness"
-  },
-  "orthostatic bp lying [diastolic]__count": {
-    "group": "missingness"
-  },
-  "orthostatic bp lying [systolic]__count": {
-    "group": "missingness"
-  },
-  "orthostatic hr lying__count": {
-    "group": "missingness"
-  },
-  "orthostatic hr sitting__count": {
-    "group": "missingness"
-  },
-  "orthostatic hr standing__count": {
-    "group": "missingness"
-  },
-  "pantoprazole   mg/hr__count": {
-    "group": "missingness"
-  },
-  "pantoprazole  mg/hr__count": {
-    "group": "missingness"
-  },
-  "pap [diastolic]__count": {
-    "group": "missingness"
-  },
-  "pap [systolic]__count": {
-    "group": "missingness"
-  },
-  "par-oxygen saturation__count": {
-    "group": "missingness"
-  },
-  "pca 1 hr limit (mg)__count": {
-    "group": "missingness"
-  },
-  "prothrombin time__count": {
-    "group": "missingness"
-  },
-  "protonix mg/hr__count": {
-    "group": "missingness"
-  },
-  "pulmonary artery pressure diastolic__count": {
-    "group": "missingness"
-  },
-  "pulmonary artery pressure systolic__count": {
-    "group": "missingness"
-  },
-  "replace rate ml/hr__count": {
-    "group": "missingness"
-  },
-  "respiratory rate__count": {
-    "group": "missingness"
-  },
-  "respiratory rate (set)__count": {
-    "group": "missingness"
-  },
-  "respiratory rate (spontaneous)__count": {
-    "group": "missingness"
-  },
-  "respiratory rate (total)__count": {
-    "group": "missingness"
-  },
-  "respiratory rate set__count": {
-    "group": "missingness"
-  },
-  "smoking cessation info offered through bidmc inpatient guide__count": {
-    "group": "missingness"
-  },
-  "solumedrol mg/hr__count": {
-    "group": "missingness"
-  },
-  "solumedrol mg/kg/hr__count": {
-    "group": "missingness"
-  },
-  "spo2__count": {
-    "group": "missingness"
-  },
-  "spo2 alarm [high]__count": {
-    "group": "missingness"
-  },
-  "spo2 alarm [low]__count": {
-    "group": "missingness"
-  },
-  "spo2 desat limit__count": {
-    "group": "missingness"
-  },
-  "spon rr (mech.)__count": {
-    "group": "missingness"
-  },
-  "spont rr__count": {
-    "group": "missingness"
-  },
-  "systolic unloading__count": {
-    "group": "missingness"
-  },
-  "tcpcv-map__count": {
-    "group": "missingness"
-  },
-  "temp/iso/warmer [temperature, degrees c]__count": {
-    "group": "missingness"
-  },
-  "temperature c__count": {
-    "group": "missingness"
-  },
-  "temperature c (calc)__count": {
-    "group": "missingness"
-  },
-  "temperature celsius__count": {
-    "group": "missingness"
-  },
-  "temperature f__count": {
-    "group": "missingness"
-  },
-  "temperature f (calc)__count": {
-    "group": "missingness"
-  },
-  "temperature fahrenheit__count": {
-    "group": "missingness"
-  },
-  "temporary atrial sens threshold mv__count": {
-    "group": "missingness"
-  },
-  "temporary atrial stim threshold ma__count": {
-    "group": "missingness"
-  },
-  "temporary venticular sens threshold mv__count": {
-    "group": "missingness"
-  },
-  "temporary venticular stim threshold ma__count": {
-    "group": "missingness"
-  },
-  "thrombin__count": {
-    "group": "missingness"
-  },
-  "tpa mg/hr__count": {
-    "group": "missingness"
-  },
-  "vent sens thresh mv__count": {
-    "group": "missingness"
-  },
-  "vent stim thresh ma__count": {
-    "group": "missingness"
-  },
-  "ventricular pacemaker threshold [value]__count": {
-    "group": "missingness"
-  },
-  "xigris mcg/kg/hr__count": {
-    "group": "missingness"
-  },
-  "aprotinin cc/hr__measured": {
-    "group": "missingness"
-  },
-  "aprotinin ml/hr__measured": {
-    "group": "missingness"
-  },
-  "art bp diastolic__measured": {
-    "group": "missingness"
-  },
-  "art bp systolic__measured": {
-    "group": "missingness"
-  },
-  "arterial blood pressure diastolic__measured": {
-    "group": "missingness"
-  },
-  "arterial blood pressure systolic__measured": {
-    "group": "missingness"
-  },
-  "arterial bp #2 [diastolic]__measured": {
-    "group": "missingness"
-  },
-  "arterial bp #2 [systolic]__measured": {
-    "group": "missingness"
-  },
-  "arterial bp [diastolic]__measured": {
-    "group": "missingness"
-  },
-  "arterial bp [systolic]__measured": {
-    "group": "missingness"
-  },
-  "arterial o2 saturation__measured": {
-    "group": "missingness"
-  },
-  "atr sens thresh mv__measured": {
-    "group": "missingness"
-  },
-  "atr stim thresh ma__measured": {
-    "group": "missingness"
-  },
-  "atrial pacemaker threshold [value]__measured": {
-    "group": "missingness"
-  },
-  "baseline current/ma__measured": {
-    "group": "missingness"
-  },
-  "blood temperature cco (c)__measured": {
-    "group": "missingness"
-  },
-  "bp cuff [diastolic]__measured": {
-    "group": "missingness"
-  },
-  "bp cuff [systolic]__measured": {
-    "group": "missingness"
-  },
-  "bp left arm [diastolic]__measured": {
+  "potassium (3.5-5.3)__measured": {
     "group": "missingness"
   },
-  "bp left arm [systolic]__measured": {
-    "group": "missingness"
+  "hematocrit__measured_x": {
+    "group": "baseline"
   },
-  "bp left leg [diastolic]__measured": {
+  "glucose (70-105)__measured": {
     "group": "missingness"
   },
-  "bp left leg [systolic]__measured": {
+  "sodium (135-148)__measured": {
     "group": "missingness"
   },
-  "bp pal [diastolic]__measured": {
+  "spo2__measured": {
     "group": "missingness"
   },
-  "bp pal [systolic]__measured": {
+  "creatinine (0-1.3)__measured": {
     "group": "missingness"
   },
-  "bp right arm [diastolic]__measured": {
+  "calprevflg__measured": {
     "group": "missingness"
   },
-  "bp right arm [systolic]__measured": {
+  "bun (6-20)__measured": {
     "group": "missingness"
   },
-  "bp right leg [diastolic]__measured": {
+  "platelets__measured": {
     "group": "missingness"
   },
-  "bp right leg [systolic]__measured": {
+  "eye opening__measured": {
     "group": "missingness"
   },
-  "bp uac [diastolic]__measured": {
+  "verbal response__measured": {
     "group": "missingness"
   },
-  "bp uac [systolic]__measured": {
+  "motor response__measured": {
     "group": "missingness"
   },
-  "ca gluc gm/hr__measured": {
+  "gcs total__measured": {
     "group": "missingness"
   },
-  "cariporide cc/hr__measured": {
+  "chloride (100-112)__measured": {
     "group": "missingness"
   },
-  "cariporide ml/hr__measured": {
+  "carbon dioxide__measured": {
     "group": "missingness"
   },
-  "changes in temperature__measured": {
+  "wbc (4-11,000)__measured": {
     "group": "missingness"
   },
-  "cisatracu mg/kg/hr__measured": {
-    "group": "missingness"
+  "rbc__measured_x": {
+    "group": "baseline"
   },
-  "current goal__measured": {
+  "arterial base excess__measured": {
     "group": "missingness"
   },
-  "current used/ma__measured": {
+  "braden score__measured": {
     "group": "missingness"
   },
-  "currently experiencing pain__measured": {
+  "magnesium (1.6-2.6)__measured": {
     "group": "missingness"
   },
-  "dialysate flow ml/hr__measured": {
+  "wbc   (4-11,000)__measured": {
     "group": "missingness"
   },
-  "diastolic unloading__measured": {
+  "temperature f__measured": {
     "group": "missingness"
   },
-  "epidural infusion rate (ml/hr)__measured": {
+  "temperature c (calc)__measured": {
     "group": "missingness"
   },
-  "gait/transferring__measured": {
+  "daily weight__measured": {
     "group": "missingness"
   },
-  "heart rate__measured": {
+  "nbp [systolic]__measured": {
     "group": "missingness"
   },
-  "heart rate alarm - high__measured": {
+  "nbp [diastolic]__measured": {
     "group": "missingness"
   },
-  "heart rate alarm - low__measured": {
+  "nbp mean__measured": {
     "group": "missingness"
   },
   "hr alarm [high]__measured": {
@@ -2684,13 +1427,1963 @@
   "hr alarm [low]__measured": {
     "group": "missingness"
   },
+  "inr (2-4 ref. range)__measured": {
+    "group": "missingness"
+  },
+  "pt(11-13.5)__measured": {
+    "group": "missingness"
+  },
+  "ptt(22-35)__measured": {
+    "group": "missingness"
+  },
+  "phosphorous(2.7-4.5)__measured": {
+    "group": "missingness"
+  },
+  "calcium (8.4-10.2)__measured": {
+    "group": "missingness"
+  },
+  "ptt__measured_x": {
+    "group": "baseline"
+  },
+  "inr__measured": {
+    "group": "missingness"
+  },
+  "peep set__measured": {
+    "group": "missingness"
+  },
+  "mean airway pressure__measured": {
+    "group": "missingness"
+  },
+  "religion__measured": {
+    "group": "missingness"
+  },
+  "ionized calcium__measured": {
+    "group": "missingness"
+  },
+  "peak insp. pressure__measured": {
+    "group": "missingness"
+  },
+  "chloride (serum)__measured": {
+    "group": "missingness"
+  },
+  "hematocrit (serum)__measured": {
+    "group": "missingness"
+  },
+  "hco3 (serum)__measured": {
+    "group": "missingness"
+  },
+  "platelet count__measured_x": {
+    "group": "baseline"
+  },
+  "sodium (serum)__measured": {
+    "group": "missingness"
+  },
+  "potassium (serum)__measured": {
+    "group": "missingness"
+  },
+  "anion gap__measured_x": {
+    "group": "baseline"
+  },
+  "glucose (serum)__measured": {
+    "group": "missingness"
+  },
+  "phosphorous__measured": {
+    "group": "missingness"
+  },
+  "tidal volume (set)__measured": {
+    "group": "missingness"
+  },
+  "language__measured": {
+    "group": "missingness"
+  },
+  "potassium__measured_x": {
+    "group": "baseline"
+  },
+  "glucose__measured_x": {
+    "group": "baseline"
+  },
+  "sodium__measured_x": {
+    "group": "baseline"
+  },
+  "chloride__measured_x": {
+    "group": "baseline"
+  },
+  "plateau pressure__measured": {
+    "group": "missingness"
+  },
+  "lactic acid__measured": {
+    "group": "missingness"
+  },
+  "marital status__measured": {
+    "group": "missingness"
+  },
+  "o2 flow (lpm)__measured": {
+    "group": "missingness"
+  },
+  "calcium non-ionized__measured": {
+    "group": "missingness"
+  },
+  "o2 saturation pulseoxymetry__measured": {
+    "group": "missingness"
+  },
+  "heart rate alarm - high__measured": {
+    "group": "missingness"
+  },
+  "heart rate alarm - low__measured": {
+    "group": "missingness"
+  },
+  "alarms on__measured": {
+    "group": "missingness"
+  },
+  "o2 saturation pulseoxymetry alarm - low__measured": {
+    "group": "missingness"
+  },
+  "o2 saturation pulseoxymetry alarm - high__measured": {
+    "group": "missingness"
+  },
+  "resp alarm - high__measured": {
+    "group": "missingness"
+  },
+  "resp alarm - low__measured": {
+    "group": "missingness"
+  },
+  "parameters checked__measured": {
+    "group": "missingness"
+  },
+  "gcs - eye opening__measured": {
+    "group": "missingness"
+  },
+  "gcs - motor response__measured": {
+    "group": "missingness"
+  },
+  "gcs - verbal response__measured": {
+    "group": "missingness"
+  },
+  "braden mobility__measured": {
+    "group": "missingness"
+  },
+  "braden moisture__measured": {
+    "group": "missingness"
+  },
+  "braden sensory perception__measured": {
+    "group": "missingness"
+  },
+  "braden activity__measured": {
+    "group": "missingness"
+  },
+  "spo2 desat limit__measured": {
+    "group": "missingness"
+  },
+  "braden nutrition__measured": {
+    "group": "missingness"
+  },
+  "braden friction/shear__measured": {
+    "group": "missingness"
+  },
+  "ambulatory aid__measured": {
+    "group": "missingness"
+  },
+  "gait/transferring__measured": {
+    "group": "missingness"
+  },
+  "iv/saline lock__measured": {
+    "group": "missingness"
+  },
+  "secondary diagnosis__measured": {
+    "group": "missingness"
+  },
+  "mental status__measured": {
+    "group": "missingness"
+  },
+  "history of falling (within 3 mnths)__measured": {
+    "group": "missingness"
+  },
+  "magnesium__measured_x": {
+    "group": "baseline"
+  },
+  "admit wt__measured": {
+    "group": "missingness"
+  },
+  "temperature fahrenheit__measured": {
+    "group": "missingness"
+  },
+  "prothrombin time__measured": {
+    "group": "missingness"
+  },
+  "non invasive blood pressure systolic__measured": {
+    "group": "missingness"
+  },
+  "non invasive blood pressure diastolic__measured": {
+    "group": "missingness"
+  },
+  "non invasive blood pressure mean__measured": {
+    "group": "missingness"
+  },
+  "alt__measured": {
+    "group": "missingness"
+  },
+  "ast__measured": {
+    "group": "missingness"
+  },
+  "calcium__measured": {
+    "group": "missingness"
+  },
+  "smoking cessation info offered through bidmc inpatient guide__measured": {
+    "group": "missingness"
+  },
+  "pt__measured_x": {
+    "group": "baseline"
+  },
+  "wbc__measured_x": {
+    "group": "baseline"
+  },
+  "non-invasive blood pressure alarm - low__measured": {
+    "group": "missingness"
+  },
+  "non-invasive blood pressure alarm - high__measured": {
+    "group": "missingness"
+  },
+  "pain level__measured": {
+    "group": "missingness"
+  },
+  "bun__measured": {
+    "group": "missingness"
+  },
+  "creatinine__measured_x": {
+    "group": "baseline"
+  },
+  "admission weight (kg)__measured": {
+    "group": "missingness"
+  },
+  "arterial ph__measured": {
+    "group": "missingness"
+  },
+  "sao2__measured": {
+    "group": "missingness"
+  },
+  "arterial co2(calc)__measured": {
+    "group": "missingness"
+  },
+  "arterial paco2__measured": {
+    "group": "missingness"
+  },
+  "arterial pao2__measured": {
+    "group": "missingness"
+  },
+  "previous weightf__measured": {
+    "group": "missingness"
+  },
+  "spo2 alarm [low]__measured": {
+    "group": "missingness"
+  },
+  "fingerstick glucose__measured": {
+    "group": "missingness"
+  },
+  "spo2 alarm [high]__measured": {
+    "group": "missingness"
+  },
+  "resp alarm [low]__measured": {
+    "group": "missingness"
+  },
+  "resp alarm [high]__measured": {
+    "group": "missingness"
+  },
+  "art.ph__measured": {
+    "group": "missingness"
+  },
+  "arterial bp [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "arterial bp [systolic]__measured": {
+    "group": "missingness"
+  },
+  "arterial bp mean__measured": {
+    "group": "missingness"
+  },
+  "intravenous  / iv access prior to admission__measured": {
+    "group": "missingness"
+  },
+  "admission weight (lbs.)__measured": {
+    "group": "missingness"
+  },
+  "back care__measured": {
+    "group": "missingness"
+  },
+  "skin care__measured": {
+    "group": "missingness"
+  },
+  "fio2 set__measured": {
+    "group": "missingness"
+  },
+  "pain level response__measured": {
+    "group": "missingness"
+  },
+  "glucose finger stick__measured": {
+    "group": "missingness"
+  },
+  "previous weight__measured": {
+    "group": "missingness"
+  },
+  "nbp alarm [high]__measured": {
+    "group": "missingness"
+  },
+  "nbp alarm [low]__measured": {
+    "group": "missingness"
+  },
+  "differential-monos__measured": {
+    "group": "missingness"
+  },
+  "differential-basos__measured": {
+    "group": "missingness"
+  },
+  "differential-eos__measured": {
+    "group": "missingness"
+  },
+  "differential-lymphs__measured": {
+    "group": "missingness"
+  },
+  "resp rate (total)__measured": {
+    "group": "missingness"
+  },
+  "o2 flow__measured_x": {
+    "group": "baseline"
+  },
+  "minute volume(obser)__measured": {
+    "group": "missingness"
+  },
+  "low exhaled min vol__measured": {
+    "group": "missingness"
+  },
+  "high insp. pressure__measured": {
+    "group": "missingness"
+  },
+  "sensitivity-vent__measured": {
+    "group": "missingness"
+  },
+  "albumin__measured_x": {
+    "group": "baseline"
+  },
+  "self adl__measured": {
+    "group": "missingness"
+  },
+  "respiratory rate set__measured": {
+    "group": "missingness"
+  },
+  "tidal volume (obser)__measured": {
+    "group": "missingness"
+  },
+  "resp rate (spont)__measured": {
+    "group": "missingness"
+  },
+  "compliance (40-60ml)__measured": {
+    "group": "missingness"
+  },
+  "history of slips / falls__measured": {
+    "group": "missingness"
+  },
+  "eye care__measured": {
+    "group": "missingness"
+  },
+  "high resp. rate__measured": {
+    "group": "missingness"
+  },
+  "pressure support__measured": {
+    "group": "missingness"
+  },
+  "ldh__measured": {
+    "group": "missingness"
+  },
+  "20 gauge dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "20 gauge placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "bed bath__measured": {
+    "group": "missingness"
+  },
+  "18 gauge dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "richmond-ras scale__measured": {
+    "group": "missingness"
+  },
+  "etoh__measured": {
+    "group": "missingness"
+  },
+  "18 gauge placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "ph (arterial)__measured": {
+    "group": "missingness"
+  },
+  "cpk__measured": {
+    "group": "missingness"
+  },
+  "arterial co2 pressure__measured": {
+    "group": "missingness"
+  },
+  "arterial o2 pressure__measured": {
+    "group": "missingness"
+  },
+  "tco2 (calc) arterial__measured": {
+    "group": "missingness"
+  },
+  "admit ht__measured": {
+    "group": "missingness"
+  },
+  "bsa__measured": {
+    "group": "missingness"
+  },
+  "difficulty swallowing__measured": {
+    "group": "missingness"
+  },
+  "lactic acid(0.5-2.0)__measured": {
+    "group": "missingness"
+  },
+  "visual / hearing deficit__measured": {
+    "group": "missingness"
+  },
+  "total bili__measured": {
+    "group": "missingness"
+  },
+  "hemoglobin__measured_x": {
+    "group": "baseline"
+  },
+  "no wallet / money__measured": {
+    "group": "missingness"
+  },
+  "dialysis patient__measured": {
+    "group": "missingness"
+  },
+  "currently experiencing pain__measured": {
+    "group": "missingness"
+  },
+  "cvp__measured": {
+    "group": "missingness"
+  },
+  "weight change__measured": {
+    "group": "missingness"
+  },
+  "inspired o2 fraction__measured": {
+    "group": "missingness"
+  },
+  "recreational drug use__measured": {
+    "group": "missingness"
+  },
+  "respiratory rate__measured": {
+    "group": "missingness"
+  },
+  "is the spokesperson the health care proxy__measured": {
+    "group": "missingness"
+  },
+  "inspiratory time__measured": {
+    "group": "missingness"
+  },
+  "tidal volume (spont)__measured": {
+    "group": "missingness"
+  },
+  "special diet__measured": {
+    "group": "missingness"
+  },
+  "unintentional weight loss >10 lbs.__measured": {
+    "group": "missingness"
+  },
+  "alk. phosphate__measured": {
+    "group": "missingness"
+  },
+  "high risk (>51) interventions__measured": {
+    "group": "missingness"
+  },
+  "any fear in relationships__measured": {
+    "group": "missingness"
+  },
+  "social work consult__measured": {
+    "group": "missingness"
+  },
+  "resp rate__measured": {
+    "group": "missingness"
+  },
+  "albumin (>3.2)__measured": {
+    "group": "missingness"
+  },
+  "total bilirubin__measured": {
+    "group": "missingness"
+  },
+  "alkaline phosphate__measured": {
+    "group": "missingness"
+  },
+  "bp cuff [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "bp cuff [systolic]__measured": {
+    "group": "missingness"
+  },
+  "bp cuff [mean]__measured": {
+    "group": "missingness"
+  },
+  "fibrinogen__measured": {
+    "group": "missingness"
+  },
+  "apnea time interval__measured": {
+    "group": "missingness"
+  },
+  "total bili (0-1.5)__measured": {
+    "group": "missingness"
+  },
+  "ventilator mode__measured": {
+    "group": "missingness"
+  },
+  "minute volume__measured": {
+    "group": "missingness"
+  },
+  "minute volume alarm - low__measured": {
+    "group": "missingness"
+  },
+  "minute volume alarm - high__measured": {
+    "group": "missingness"
+  },
+  "tidal volume (observed)__measured": {
+    "group": "missingness"
+  },
+  "apnea interval__measured": {
+    "group": "missingness"
+  },
+  "paw high__measured": {
+    "group": "missingness"
+  },
+  "arterial blood pressure alarm - low__measured": {
+    "group": "missingness"
+  },
+  "arterial blood pressure alarm - high__measured": {
+    "group": "missingness"
+  },
+  "abp alarm [low]__measured": {
+    "group": "missingness"
+  },
+  "abp alarm [high]__measured": {
+    "group": "missingness"
+  },
+  "ventilator type__measured": {
+    "group": "missingness"
+  },
+  "vti high__measured": {
+    "group": "missingness"
+  },
+  "height (cm)__measured": {
+    "group": "missingness"
+  },
+  "height__measured": {
+    "group": "missingness"
+  },
+  "arterial blood pressure mean__measured": {
+    "group": "missingness"
+  },
+  "gender__measured": {
+    "group": "missingness"
+  },
+  "fspn high__measured": {
+    "group": "missingness"
+  },
+  "respiratory rate (spontaneous)__measured": {
+    "group": "missingness"
+  },
+  "ck (cpk)__measured": {
+    "group": "missingness"
+  },
+  "arterial blood pressure diastolic__measured": {
+    "group": "missingness"
+  },
+  "arterial blood pressure systolic__measured": {
+    "group": "missingness"
+  },
+  "cpk/mb__measured": {
+    "group": "missingness"
+  },
+  "sexuality / reproductive problems__measured": {
+    "group": "missingness"
+  },
+  "respiratory rate (total)__measured": {
+    "group": "missingness"
+  },
+  "arterial line dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "emotional / physical / sexual harm by partner or close relation__measured": {
+    "group": "missingness"
+  },
+  "arterial line placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "arterial line zero/calibrate__measured": {
+    "group": "missingness"
+  },
+  "respiratory rate (set)__measured": {
+    "group": "missingness"
+  },
+  "troponin-t__measured": {
+    "group": "missingness"
+  },
+  "expiratory ratio__measured": {
+    "group": "missingness"
+  },
+  "inspiratory ratio__measured": {
+    "group": "missingness"
+  },
+  "cao2__measured": {
+    "group": "missingness"
+  },
+  "ve high__measured": {
+    "group": "missingness"
+  },
+  "amylase__measured_x": {
+    "group": "baseline"
+  },
+  "hematocrit (35-51)__measured": {
+    "group": "missingness"
+  },
+  "differential-neuts__measured": {
+    "group": "missingness"
+  },
+  "hgb  (10.8-15.8)__measured": {
+    "group": "missingness"
+  },
+  "red blood c(3.6-6.2)__measured": {
+    "group": "missingness"
+  },
+  "20 gauge placed in the field__measured": {
+    "group": "missingness"
+  },
+  "platelet  (150-440)__measured": {
+    "group": "missingness"
+  },
+  "glucometer__measured": {
+    "group": "missingness"
+  },
+  "temp/iso/warmer [temperature, degrees c]__measured": {
+    "group": "missingness"
+  },
+  "rbc(3.6-6.2)__measured": {
+    "group": "missingness"
+  },
+  "ph (dipstick)__measured": {
+    "group": "missingness"
+  },
+  "glucose (whole blood)__measured": {
+    "group": "missingness"
+  },
+  "differential-polys__measured": {
+    "group": "missingness"
+  },
+  "subglottal suctioning__measured": {
+    "group": "missingness"
+  },
+  "temp axillary [f]__measured": {
+    "group": "missingness"
+  },
+  "18 gauge placed in the field__measured": {
+    "group": "missingness"
+  },
+  "riker-sas scale__measured": {
+    "group": "missingness"
+  },
+  "specific gravity (urine)__measured": {
+    "group": "missingness"
+  },
+  "whitebloodc 4.0-11.0__measured": {
+    "group": "missingness"
+  },
+  "ventilator tank #2__measured": {
+    "group": "missingness"
+  },
+  "ventilator tank #1__measured": {
+    "group": "missingness"
+  },
+  "insulin pump__measured": {
+    "group": "missingness"
+  },
+  "tank a psi.__measured": {
+    "group": "missingness"
+  },
+  "ck-mb__measured": {
+    "group": "missingness"
+  },
+  "tank b psi.__measured": {
+    "group": "missingness"
+  },
+  "tidal volume (spontaneous)__measured": {
+    "group": "missingness"
+  },
+  "psv level__measured": {
+    "group": "missingness"
+  },
+  "wbc 4.0-11.0__measured": {
+    "group": "missingness"
+  },
+  "potassium (whole blood)__measured": {
+    "group": "missingness"
+  },
+  "temp rectal [f]__measured": {
+    "group": "missingness"
+  },
+  "sao2 alarm [high]__measured": {
+    "group": "missingness"
+  },
+  "sao2 alarm [low]__measured": {
+    "group": "missingness"
+  },
+  "differential-bands__measured": {
+    "group": "missingness"
+  },
+  "temp skin [c]__measured": {
+    "group": "missingness"
+  },
+  "eosinophils__measured_x": {
+    "group": "baseline"
+  },
+  "basos__measured": {
+    "group": "missingness"
+  },
+  "monos__measured_x": {
+    "group": "baseline"
+  },
+  "neuts__measured": {
+    "group": "missingness"
+  },
+  "lymphs__measured_x": {
+    "group": "baseline"
+  },
+  "birth weight    (kg)__measured": {
+    "group": "missingness"
+  },
+  "bands__measured_x": {
+    "group": "baseline"
+  },
+  "polys__measured_x": {
+    "group": "baseline"
+  },
+  "unable to assess psychological__measured": {
+    "group": "missingness"
+  },
+  "goal richmond-ras scale__measured": {
+    "group": "missingness"
+  },
+  "present weight  (lb)__measured": {
+    "group": "missingness"
+  },
+  "present weight  (kg)__measured": {
+    "group": "missingness"
+  },
+  "present weight  (oz)__measured": {
+    "group": "missingness"
+  },
+  "pap [systolic]__measured": {
+    "group": "missingness"
+  },
+  "pap [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "day of life__measured": {
+    "group": "missingness"
+  },
+  "mixed venous o2% sat__measured": {
+    "group": "missingness"
+  },
+  "bsa - english__measured": {
+    "group": "missingness"
+  },
+  "bsa - metric__measured": {
+    "group": "missingness"
+  },
+  "unable to assess nutrition / education__measured": {
+    "group": "missingness"
+  },
+  "st segment monitoring on__measured": {
+    "group": "missingness"
+  },
+  "cardiac index__measured": {
+    "group": "missingness"
+  },
+  "cvp alarm [high]__measured": {
+    "group": "missingness"
+  },
+  "fibrinogen (150-400)__measured": {
+    "group": "missingness"
+  },
+  "sodium (whole blood)__measured": {
+    "group": "missingness"
+  },
+  "previous weight (kg)__measured": {
+    "group": "missingness"
+  },
+  "central venous pressure__measured": {
+    "group": "missingness"
+  },
+  "cough/deep breath__measured": {
+    "group": "missingness"
+  },
+  "weight change  (gms)__measured": {
+    "group": "missingness"
+  },
+  "cvp alarm [low]__measured": {
+    "group": "missingness"
+  },
+  "total peep level__measured": {
+    "group": "missingness"
+  },
+  "arterial o2 saturation__measured": {
+    "group": "missingness"
+  },
+  "head circ       (cm)__measured": {
+    "group": "missingness"
+  },
+  "svr__measured": {
+    "group": "missingness"
+  },
+  "discharge needs__measured": {
+    "group": "missingness"
+  },
+  "hematocrit (whole blood - calc)__measured": {
+    "group": "missingness"
+  },
+  "direct bili (0-0.3)__measured": {
+    "group": "missingness"
+  },
+  "temperature f (calc)__measured": {
+    "group": "missingness"
+  },
+  "temperature c__measured": {
+    "group": "missingness"
+  },
+  "svri__measured": {
+    "group": "missingness"
+  },
+  "cuff pressure__measured": {
+    "group": "missingness"
+  },
+  "c.o.(thermodilution)__measured": {
+    "group": "missingness"
+  },
+  "stroke volume__measured": {
+    "group": "missingness"
+  },
+  "svi__measured": {
+    "group": "missingness"
+  },
+  "unable to assess teaching / learning needs__measured": {
+    "group": "missingness"
+  },
+  "lcw__measured": {
+    "group": "missingness"
+  },
+  "lvsw__measured": {
+    "group": "missingness"
+  },
+  "lcwi__measured": {
+    "group": "missingness"
+  },
+  "lvswi__measured": {
+    "group": "missingness"
+  },
+  "unable to assess activity / mobility__measured": {
+    "group": "missingness"
+  },
+  "chloride (whole blood)__measured": {
+    "group": "missingness"
+  },
+  "total fluids cc/kg/d__measured": {
+    "group": "missingness"
+  },
+  "pa line cm mark__measured": {
+    "group": "missingness"
+  },
+  "central venous pressure  alarm - low__measured": {
+    "group": "missingness"
+  },
+  "central venous pressure alarm - high__measured": {
+    "group": "missingness"
+  },
+  "length in cm__measured": {
+    "group": "missingness"
+  },
+  "length calc inches__measured": {
+    "group": "missingness"
+  },
+  "spon. vt (l) (mech.)__measured": {
+    "group": "missingness"
+  },
+  "spon rr (mech.)__measured": {
+    "group": "missingness"
+  },
+  "abdominal girth (cm)__measured": {
+    "group": "missingness"
+  },
+  "rsbi (<200)__measured": {
+    "group": "missingness"
+  },
+  "impaired skin odor #1__measured": {
+    "group": "missingness"
+  },
+  "baseline pain level__measured": {
+    "group": "missingness"
+  },
+  "rsbi (<100)__measured": {
+    "group": "missingness"
+  },
+  "16 gauge dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "unable to assess cognitive / perceptual__measured": {
+    "group": "missingness"
+  },
+  "16 gauge placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "pacer wires atrial__measured": {
+    "group": "missingness"
+  },
+  "multi lumen dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "cam-icu ms change__measured": {
+    "group": "missingness"
+  },
+  "pacer rate__measured": {
+    "group": "missingness"
+  },
+  "pacer wires vent__measured": {
+    "group": "missingness"
+  },
+  "indirect bili(0-1.0)__measured": {
+    "group": "missingness"
+  },
+  "multi lumen placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "unable to assess pain__measured": {
+    "group": "missingness"
+  },
+  "sodium  (135-148)__measured": {
+    "group": "missingness"
+  },
+  "total co2__measured": {
+    "group": "missingness"
+  },
+  "chloride  (100-112)__measured": {
+    "group": "missingness"
+  },
+  "potassium  (3.5-5.3)__measured": {
+    "group": "missingness"
+  },
+  "see chart for initial patient assessment__measured": {
+    "group": "missingness"
+  },
+  "chg bath__measured": {
+    "group": "missingness"
+  },
+  "anion gap   (8-20)__measured": {
+    "group": "missingness"
+  },
+  "triglyceride__measured": {
+    "group": "missingness"
+  },
+  "atrial pacemaker [ma]__measured": {
+    "group": "missingness"
+  },
+  "unable to assess habits__measured": {
+    "group": "missingness"
+  },
+  "atrial pacemaker [sensitivity]__measured": {
+    "group": "missingness"
+  },
+  "fio2__measured": {
+    "group": "missingness"
+  },
+  "spont vt__measured": {
+    "group": "missingness"
+  },
+  "spont rr__measured": {
+    "group": "missingness"
+  },
+  "incentive spirometry__measured": {
+    "group": "missingness"
+  },
+  "icu consent signed__measured": {
+    "group": "missingness"
+  },
+  "pap alarm [high]__measured": {
+    "group": "missingness"
+  },
+  "cholesterol__measured": {
+    "group": "missingness"
+  },
+  "called out__measured": {
+    "group": "missingness"
+  },
+  "c.o. (fick)__measured": {
+    "group": "missingness"
+  },
+  "lipase__measured_x": {
+    "group": "baseline"
+  },
+  "pap alarm [low]__measured": {
+    "group": "missingness"
+  },
+  "o2av__measured": {
+    "group": "missingness"
+  },
+  "o2avi__measured": {
+    "group": "missingness"
+  },
+  "multi lumen zero/calibrate__measured": {
+    "group": "missingness"
+  },
+  "do2i__measured": {
+    "group": "missingness"
+  },
+  "16 gauge placed in the field__measured": {
+    "group": "missingness"
+  },
+  "humidity temp [meas]__measured": {
+    "group": "missingness"
+  },
+  "triglyceride (0-200)__measured": {
+    "group": "missingness"
+  },
+  "peep__measured_x": {
+    "group": "baseline"
+  },
+  "22 gauge dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "low insp. pressure__measured": {
+    "group": "missingness"
+  },
+  "22 gauge placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "mean paw [meas]__measured": {
+    "group": "missingness"
+  },
+  "flowrate (l/m)__measured": {
+    "group": "missingness"
+  },
+  "fio2 [meas]__measured": {
+    "group": "missingness"
+  },
+  "peep alarm__measured": {
+    "group": "missingness"
+  },
+  "ng tube taped at:__measured": {
+    "group": "missingness"
+  },
+  "feeding tube size__measured": {
+    "group": "missingness"
+  },
+  "og/ng residual__measured": {
+    "group": "missingness"
+  },
+  "zzo2av__measured": {
+    "group": "missingness"
+  },
+  "peak flow__measured": {
+    "group": "missingness"
+  },
+  "ph (venous)__measured": {
+    "group": "missingness"
+  },
+  "do2__measured": {
+    "group": "missingness"
+  },
+  "cholesterol (<200)__measured": {
+    "group": "missingness"
+  },
+  "zzo2avi__measured": {
+    "group": "missingness"
+  },
+  "high pressure relief__measured": {
+    "group": "missingness"
+  },
+  "fio2 alarm [low]__measured": {
+    "group": "missingness"
+  },
+  "pulmonary artery pressure mean__measured": {
+    "group": "missingness"
+  },
+  "venous ph__measured": {
+    "group": "missingness"
+  },
+  "mdi #1 [puff]__measured": {
+    "group": "missingness"
+  },
+  "post menopausal__measured": {
+    "group": "missingness"
+  },
+  "serum osmolality__measured": {
+    "group": "missingness"
+  },
+  "pca lockout (min)__measured": {
+    "group": "missingness"
+  },
+  "pulmonary artery pressure systolic__measured": {
+    "group": "missingness"
+  },
+  "pulmonary artery pressure diastolic__measured": {
+    "group": "missingness"
+  },
+  "temporary pacemaker wires venticular__measured": {
+    "group": "missingness"
+  },
+  "pregnant__measured": {
+    "group": "missingness"
+  },
+  "cordis/introducer dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "ck-mb fraction (%)__measured": {
+    "group": "missingness"
+  },
+  "pulmonary artery pressure alarm - low__measured": {
+    "group": "missingness"
+  },
+  "pulmonary artery pressure alarm - high__measured": {
+    "group": "missingness"
+  },
+  "temporary pacemaker rate__measured": {
+    "group": "missingness"
+  },
+  "atr sens thresh mv__measured": {
+    "group": "missingness"
+  },
+  "atrial pacemaker sense [mv]__measured": {
+    "group": "missingness"
+  },
+  "atrial pacemaker sense [ma]__measured": {
+    "group": "missingness"
+  },
+  "pap mean__measured": {
+    "group": "missingness"
+  },
+  "pca total dose__measured": {
+    "group": "missingness"
+  },
+  "atr stim thresh ma__measured": {
+    "group": "missingness"
+  },
+  "pca dose__measured": {
+    "group": "missingness"
+  },
+  "temporary pacemaker wires atrial__measured": {
+    "group": "missingness"
+  },
+  "bloodglucose__measured": {
+    "group": "missingness"
+  },
+  "inspired gas temp__measured": {
+    "group": "missingness"
+  },
+  "swan svo2__measured": {
+    "group": "missingness"
+  },
+  "cordis/introducer placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "temporary venticular sens threshold mv__measured": {
+    "group": "missingness"
+  },
+  "vent sens thresh mv__measured": {
+    "group": "missingness"
+  },
+  "o2 flow (lpm) #2__measured": {
+    "group": "missingness"
+  },
+  "temporary atrial sens threshold mv__measured": {
+    "group": "missingness"
+  },
+  "strength r arm__measured": {
+    "group": "missingness"
+  },
+  "strength r leg__measured": {
+    "group": "missingness"
+  },
+  "strength l arm__measured": {
+    "group": "missingness"
+  },
+  "strength l leg__measured": {
+    "group": "missingness"
+  },
+  "mixed venous o2__measured": {
+    "group": "missingness"
+  },
+  "temporary atrial sens setting mv__measured": {
+    "group": "missingness"
+  },
+  "vent stim thresh ma__measured": {
+    "group": "missingness"
+  },
+  "differential-atyps__measured": {
+    "group": "missingness"
+  },
+  "temporary venticular stim threshold ma__measured": {
+    "group": "missingness"
+  },
+  "orientation to person__measured": {
+    "group": "missingness"
+  },
+  "fio2 alarm [high]__measured": {
+    "group": "missingness"
+  },
+  "temporary atrial stim setting ma__measured": {
+    "group": "missingness"
+  },
+  "temporary atrial stim threshold ma__measured": {
+    "group": "missingness"
+  },
+  "orientation to place__measured": {
+    "group": "missingness"
+  },
+  "orientation to time__measured": {
+    "group": "missingness"
+  },
+  "o2 flow (additional cannula)__measured": {
+    "group": "missingness"
+  },
+  "i:e ratio__measured": {
+    "group": "missingness"
+  },
+  "cuff pressure-airway__measured": {
+    "group": "missingness"
+  },
+  "impaired skin odor #2__measured": {
+    "group": "missingness"
+  },
+  "ph (other)__measured": {
+    "group": "missingness"
+  },
+  "pressure ulcer stage #1__measured": {
+    "group": "missingness"
+  },
+  "pco2 (other)__measured": {
+    "group": "missingness"
+  },
+  "po2 (other)__measured": {
+    "group": "missingness"
+  },
+  "base excess (other)__measured": {
+    "group": "missingness"
+  },
+  "tco2 (other)__measured": {
+    "group": "missingness"
+  },
+  "ett size__measured": {
+    "group": "missingness"
+  },
+  "ph (cap)__measured": {
+    "group": "missingness"
+  },
+  "pco2__measured_x": {
+    "group": "baseline"
+  },
+  "tco2 (cap)__measured": {
+    "group": "missingness"
+  },
+  "po2 (cap)__measured": {
+    "group": "missingness"
+  },
+  "base excess (cap)__measured": {
+    "group": "missingness"
+  },
+  "pco2 (cap)__measured": {
+    "group": "missingness"
+  },
+  "po2__measured_x": {
+    "group": "baseline"
+  },
+  "ett taped at (cm)__measured": {
+    "group": "missingness"
+  },
+  "dilantin__measured": {
+    "group": "missingness"
+  },
+  "temperature celsius__measured": {
+    "group": "missingness"
+  },
+  "ventricular pacemaker [ma]__measured": {
+    "group": "missingness"
+  },
+  "lowest sao2__measured": {
+    "group": "missingness"
+  },
+  "inspired gas temp.__measured": {
+    "group": "missingness"
+  },
+  "blood transfusion consent__measured": {
+    "group": "missingness"
+  },
+  "act (102-142)__measured": {
+    "group": "missingness"
+  },
+  "ocat - lips tongue gums palate__measured": {
+    "group": "missingness"
+  },
+  "ocat - teeth__measured": {
+    "group": "missingness"
+  },
+  "ocat - swallow__measured": {
+    "group": "missingness"
+  },
+  "breath rate__measured": {
+    "group": "missingness"
+  },
+  "pip__measured": {
+    "group": "missingness"
+  },
+  "ett re-taped__measured": {
+    "group": "missingness"
+  },
+  "ocat - saliva secretions, voice quality__measured": {
+    "group": "missingness"
+  },
+  "impaired skin length #1__measured": {
+    "group": "missingness"
+  },
+  "22 gauge placed in the field__measured": {
+    "group": "missingness"
+  },
+  "svo2__measured": {
+    "group": "missingness"
+  },
+  "base excess__measured_x": {
+    "group": "baseline"
+  },
+  "tco2        (21-30)__measured": {
+    "group": "missingness"
+  },
+  "pcwp__measured": {
+    "group": "missingness"
+  },
+  "rcw__measured": {
+    "group": "missingness"
+  },
+  "rvsw__measured": {
+    "group": "missingness"
+  },
+  "ventricular pacemaker [sensitivity]__measured": {
+    "group": "missingness"
+  },
+  "phenytoin (dilantin)__measured": {
+    "group": "missingness"
+  },
+  "survanta__measured": {
+    "group": "missingness"
+  },
+  "current used/ma__measured": {
+    "group": "missingness"
+  },
+  "legal guardian__measured": {
+    "group": "missingness"
+  },
+  "impaired skin width #1__measured": {
+    "group": "missingness"
+  },
+  "pa catheter dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "rcwi__measured": {
+    "group": "missingness"
+  },
+  "temporary ventricular sens setting mv__measured": {
+    "group": "missingness"
+  },
+  "rvswi__measured": {
+    "group": "missingness"
+  },
+  "pip alarm__measured": {
+    "group": "missingness"
+  },
+  "hdl__measured": {
+    "group": "missingness"
+  },
+  "ph (art)__measured": {
+    "group": "missingness"
+  },
+  "ventilator no.__measured": {
+    "group": "missingness"
+  },
+  "pa catheter zero/calibrate__measured": {
+    "group": "missingness"
+  },
+  "mdi #1 puff__measured": {
+    "group": "missingness"
+  },
+  "nausea and vomiting (ciwa)__measured": {
+    "group": "missingness"
+  },
+  "paroxysmal sweats__measured": {
+    "group": "missingness"
+  },
+  "ldl calculated__measured": {
+    "group": "missingness"
+  },
+  "anxiety__measured": {
+    "group": "missingness"
+  },
+  "pa catheter placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "tremor (ciwa)__measured": {
+    "group": "missingness"
+  },
+  "agitation__measured": {
+    "group": "missingness"
+  },
+  "tactile disturbances__measured": {
+    "group": "missingness"
+  },
+  "visual disturbances__measured": {
+    "group": "missingness"
+  },
+  "auditory disturbance__measured": {
+    "group": "missingness"
+  },
+  "headache__measured": {
+    "group": "missingness"
+  },
+  "orient/clouding sensory__measured": {
+    "group": "missingness"
+  },
+  "patient controlled analgesia (pca) [attempt]__measured": {
+    "group": "missingness"
+  },
+  "patient controlled analgesia (pca) [inject]__measured": {
+    "group": "missingness"
+  },
+  "temporary ventricular stim setting ma__measured": {
+    "group": "missingness"
+  },
+  "fio2 alarm-low__measured": {
+    "group": "missingness"
+  },
   "lowest heart rate__measured": {
     "group": "missingness"
   },
-  "manual blood pressure diastolic left__measured": {
+  "art bp mean__measured": {
     "group": "missingness"
   },
-  "manual blood pressure diastolic right__measured": {
+  "feeding weight__measured": {
+    "group": "missingness"
+  },
+  "art bp systolic__measured": {
+    "group": "missingness"
+  },
+  "venous co2 pressure__measured": {
+    "group": "missingness"
+  },
+  "venous o2 pressure__measured": {
+    "group": "missingness"
+  },
+  "tco2 (calc) venous__measured": {
+    "group": "missingness"
+  },
+  "art bp diastolic__measured": {
+    "group": "missingness"
+  },
+  "ett position change__measured": {
+    "group": "missingness"
+  },
+  "collar care__measured": {
+    "group": "missingness"
+  },
+  "cardiac output (thermodilution)__measured": {
+    "group": "missingness"
+  },
+  "vancomycin/random__measured": {
+    "group": "missingness"
+  },
+  "pca 1 hr limit (mg)__measured": {
+    "group": "missingness"
+  },
+  "cash amount__measured": {
+    "group": "missingness"
+  },
+  "stool guaiac qc__measured": {
+    "group": "missingness"
+  },
+  "flowrate (cc/min)__measured": {
+    "group": "missingness"
+  },
+  "mdi #2 [puff]__measured": {
+    "group": "missingness"
+  },
+  "pca 1 hour limit__measured": {
+    "group": "missingness"
+  },
+  "cam-icu inattention__measured": {
+    "group": "missingness"
+  },
+  "atrial pacemaker threshold [value]__measured": {
+    "group": "missingness"
+  },
+  "act__measured": {
+    "group": "missingness"
+  },
+  "minute volume (set)__measured": {
+    "group": "missingness"
+  },
+  "pca inject__measured": {
+    "group": "missingness"
+  },
+  "ventricular pacemaker sense [mv]__measured": {
+    "group": "missingness"
+  },
+  "baedp__measured": {
+    "group": "missingness"
+  },
+  "augmented diastole__measured": {
+    "group": "missingness"
+  },
+  "pca attempt__measured": {
+    "group": "missingness"
+  },
+  "assisted systole__measured": {
+    "group": "missingness"
+  },
+  "iabp mean__measured": {
+    "group": "missingness"
+  },
+  "working pressure__measured": {
+    "group": "missingness"
+  },
+  "troponin__measured": {
+    "group": "missingness"
+  },
+  "cardiac output (cco)__measured": {
+    "group": "missingness"
+  },
+  "fio2 (analyzed)__measured": {
+    "group": "missingness"
+  },
+  "peak flow (calc)__measured": {
+    "group": "missingness"
+  },
+  "blood temperature cco (c)__measured": {
+    "group": "missingness"
+  },
+  "picc line dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "vt [ventilator]__measured": {
+    "group": "missingness"
+  },
+  "ventricular pacemaker sense [ma]__measured": {
+    "group": "missingness"
+  },
+  "art blood pressure alarm - high__measured": {
+    "group": "missingness"
+  },
+  "art blood pressure alarm - low__measured": {
+    "group": "missingness"
+  },
+  "fio2 alarm-high__measured": {
+    "group": "missingness"
+  },
+  "ciwa sum total__measured": {
+    "group": "missingness"
+  },
+  "pca bolus__measured": {
+    "group": "missingness"
+  },
+  "picc line placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "arterial line tip cultured__measured": {
+    "group": "missingness"
+  },
+  "direct bilirubin__measured": {
+    "group": "missingness"
+  },
+  "vt [spontaneous]__measured": {
+    "group": "missingness"
+  },
+  "pvri__measured": {
+    "group": "missingness"
+  },
+  "fluid in for calc.__measured": {
+    "group": "missingness"
+  },
+  "digoxin__measured_x": {
+    "group": "baseline"
+  },
+  "total fluids/kg/day__measured": {
+    "group": "missingness"
+  },
+  "systolic unloading__measured": {
+    "group": "missingness"
+  },
+  "diastolic unloading__measured": {
+    "group": "missingness"
+  },
+  "heart rate__measured": {
+    "group": "missingness"
+  },
+  "impaired skin length #2__measured": {
+    "group": "missingness"
+  },
+  "po2 (mixed venous)__measured": {
+    "group": "missingness"
+  },
+  "impaired skin odor #3__measured": {
+    "group": "missingness"
+  },
+  "weight kg__measured": {
+    "group": "missingness"
+  },
+  "be__measured": {
+    "group": "missingness"
+  },
+  "sensitivity__measured": {
+    "group": "missingness"
+  },
+  "impaired skin width #2__measured": {
+    "group": "missingness"
+  },
+  "venous pvco2__measured": {
+    "group": "missingness"
+  },
+  "venous co2(calc)__measured": {
+    "group": "missingness"
+  },
+  "bladder pressure__measured": {
+    "group": "missingness"
+  },
+  "pvr__measured": {
+    "group": "missingness"
+  },
+  "cortisol__measured_x": {
+    "group": "baseline"
+  },
+  "baseline current/ma__measured": {
+    "group": "missingness"
+  },
+  "cco pac dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "sed rate__measured": {
+    "group": "missingness"
+  },
+  "hob measurement__measured": {
+    "group": "missingness"
+  },
+  "vancomycin (random)__measured": {
+    "group": "missingness"
+  },
+  "d-dimer__measured_x": {
+    "group": "baseline"
+  },
+  "venous pvo2__measured": {
+    "group": "missingness"
+  },
+  "cam-icu altered loc__measured": {
+    "group": "missingness"
+  },
+  "direct bili__measured": {
+    "group": "missingness"
+  },
+  "bp left arm [systolic]__measured": {
+    "group": "missingness"
+  },
+  "pressure ulcer stage #2__measured": {
+    "group": "missingness"
+  },
+  "bp left arm [mean]__measured": {
+    "group": "missingness"
+  },
+  "bp left arm [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "uric acid (2.7-7.0)__measured": {
+    "group": "missingness"
+  },
+  "cco pac zero/calibrate__measured": {
+    "group": "missingness"
+  },
+  "cco pac placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "uric acid__measured_x": {
+    "group": "baseline"
+  },
+  "ventricular pacemaker threshold [value]__measured": {
+    "group": "missingness"
+  },
+  "total protein__measured": {
+    "group": "missingness"
+  },
+  "parent ed/support__measured": {
+    "group": "missingness"
+  },
+  "vancomycin (trough)__measured": {
+    "group": "missingness"
+  },
+  "pca basal rate (ml/hour)__measured": {
+    "group": "missingness"
+  },
+  "pca basal rate__measured": {
+    "group": "missingness"
+  },
+  "icp__measured": {
+    "group": "missingness"
+  },
+  "cpp__measured": {
+    "group": "missingness"
+  },
+  "mdi #2 puff__measured": {
+    "group": "missingness"
+  },
+  "glucose monitor #__measured": {
+    "group": "missingness"
+  },
+  "multi lumen line tip cultured__measured": {
+    "group": "missingness"
+  },
+  "brain natiuretic peptide (bnp)__measured": {
+    "group": "missingness"
+  },
+  "impaired skin depth #1__measured": {
+    "group": "missingness"
+  },
+  "par-respiration__measured": {
+    "group": "missingness"
+  },
+  "par-activity__measured": {
+    "group": "missingness"
+  },
+  "par-consciousness__measured": {
+    "group": "missingness"
+  },
+  "enteral in for calc.__measured": {
+    "group": "missingness"
+  },
+  "par-circulation__measured": {
+    "group": "missingness"
+  },
+  "par-oxygen saturation__measured": {
+    "group": "missingness"
+  },
+  "total enteral/kg/day__measured": {
+    "group": "missingness"
+  },
+  "bp alarm [low]__measured": {
+    "group": "missingness"
+  },
+  "family meeting__measured": {
+    "group": "missingness"
+  },
+  "bp alarm [high]__measured": {
+    "group": "missingness"
+  },
+  "epi infusion rate__measured": {
+    "group": "missingness"
+  },
+  "d-dimer (0-500)__measured": {
+    "group": "missingness"
+  },
+  "presep catheter svo2__measured": {
+    "group": "missingness"
+  },
+  "high mv__measured": {
+    "group": "missingness"
+  },
+  "pao2__measured": {
+    "group": "missingness"
+  },
+  "bp right leg [systolic]__measured": {
+    "group": "missingness"
+  },
+  "bp right leg [mean]__measured": {
+    "group": "missingness"
+  },
+  "bp right leg [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "bp left leg [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "bp left leg [mean]__measured": {
+    "group": "missingness"
+  },
+  "bp left leg [systolic]__measured": {
+    "group": "missingness"
+  },
+  "cordis/introducer line tip cultured__measured": {
+    "group": "missingness"
+  },
+  "total protein(6.5-8)__measured": {
+    "group": "missingness"
+  },
+  "bp right arm [mean]__measured": {
+    "group": "missingness"
+  },
+  "bp right arm [systolic]__measured": {
+    "group": "missingness"
+  },
+  "gi [ph]__measured": {
+    "group": "missingness"
+  },
+  "bp right arm [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "sheath line dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "aado2__measured": {
+    "group": "missingness"
+  },
+  "14 gauge dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "epidural infusion rate (ml/hr)__measured": {
+    "group": "missingness"
+  },
+  "creatinine   (0-0.7)__measured": {
+    "group": "missingness"
+  },
+  "auto-peep level__measured": {
+    "group": "missingness"
+  },
+  "bun    (6-20)__measured": {
+    "group": "missingness"
+  },
+  "14 gauge placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "sheath placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "mix venous co2(calc)__measured": {
+    "group": "missingness"
+  },
+  "mix venous po2__measured": {
+    "group": "missingness"
+  },
+  "mix venous pco2__measured": {
+    "group": "missingness"
+  },
+  "mix venous ph__measured": {
+    "group": "missingness"
+  },
+  "bp uac [mean]__measured": {
+    "group": "missingness"
+  },
+  "impaired skin odor #4__measured": {
+    "group": "missingness"
+  },
+  "bp uac [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "bp uac [systolic]__measured": {
+    "group": "missingness"
+  },
+  "intra cranial pressure__measured": {
+    "group": "missingness"
+  },
+  "venous co2__measured": {
+    "group": "missingness"
+  },
+  "venous base excess__measured": {
+    "group": "missingness"
+  },
+  "venous o2__measured": {
+    "group": "missingness"
+  },
+  "venous tco2__measured": {
+    "group": "missingness"
+  },
+  "flow-by (lpm)__measured": {
+    "group": "missingness"
+  },
+  "kangaroo care [time]__measured": {
+    "group": "missingness"
+  },
+  "flow-by sensitivity__measured": {
+    "group": "missingness"
+  },
+  "impaired skin length #3__measured": {
+    "group": "missingness"
+  },
+  "par-remain sedated__measured": {
+    "group": "missingness"
+  },
+  "impaired skin width #3__measured": {
+    "group": "missingness"
+  },
+  "cerebral perfusion pressure__measured": {
+    "group": "missingness"
+  },
+  "c reactive protein (crp)__measured": {
+    "group": "missingness"
+  },
+  "pressure ulcer stage #3__measured": {
+    "group": "missingness"
+  },
+  "gi guaiac qc__measured": {
+    "group": "missingness"
+  },
+  "cuff volume (ml)__measured": {
+    "group": "missingness"
+  },
+  "epidural bolus__measured": {
+    "group": "missingness"
+  },
+  "arterial bp #2 [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "arterial bp #2 [systolic]__measured": {
+    "group": "missingness"
+  },
+  "ventilator number__measured": {
+    "group": "missingness"
+  },
+  "arterial bp mean #2__measured": {
+    "group": "missingness"
+  },
+  "intra cranial pressure alarm - high__measured": {
+    "group": "missingness"
+  },
+  "intra cranial pressure alarm - low__measured": {
+    "group": "missingness"
+  },
+  "dialysis catheter dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "dialysis catheter placed in outside facility__measured": {
+    "group": "missingness"
+  },
+  "bipap - epap__measured": {
+    "group": "missingness"
+  },
+  "activated clotting time__measured": {
+    "group": "missingness"
+  },
+  "manual bp [systolic]__measured": {
+    "group": "missingness"
+  },
+  "qtc__measured": {
+    "group": "missingness"
+  },
+  "manual bp mean(calc)__measured": {
+    "group": "missingness"
+  },
+  "manual bp [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "indwelling port (portacath) dressing occlusive__measured": {
+    "group": "missingness"
+  },
+  "epidural total dose__measured": {
+    "group": "missingness"
+  },
+  "central venous o2% sat__measured": {
     "group": "missingness"
   },
   "manual blood pressure systolic left__measured": {
@@ -2699,1592 +3392,1112 @@
   "manual blood pressure systolic right__measured": {
     "group": "missingness"
   },
-  "manual bp [diastolic]__measured": {
+  "co (arterial)__measured": {
     "group": "missingness"
   },
-  "manual bp [systolic]__measured": {
+  "epidural bolus (ml)__measured": {
     "group": "missingness"
   },
-  "mucomyst       mg/hr__measured": {
+  "manual blood pressure diastolic left__measured": {
     "group": "missingness"
   },
-  "mucomyst mg/hr__measured": {
+  "manual blood pressure diastolic right__measured": {
     "group": "missingness"
   },
-  "nbp [diastolic]__measured": {
+  "bipap - o2 lpm__measured": {
     "group": "missingness"
   },
-  "nbp [systolic]__measured": {
+  "icp alarm [high]__measured": {
     "group": "missingness"
   },
-  "nicardipine mg/hr__measured": {
+  "med wasted [amount]__measured": {
     "group": "missingness"
   },
-  "nicardipine--mg/hr__measured": {
+  "icp alarm [low]__measured": {
     "group": "missingness"
   },
-  "non invasive blood pressure diastolic__measured": {
+  "tobacco use__measured": {
     "group": "missingness"
   },
-  "non invasive blood pressure systolic__measured": {
+  "svv (arterial)__measured": {
     "group": "missingness"
   },
-  "o2 saturation pulseoxymetry__measured": {
+  "trach care__measured": {
     "group": "missingness"
   },
-  "o2 saturation pulseoxymetry alarm - high__measured": {
+  "icp line placed in outside facility__measured": {
     "group": "missingness"
   },
-  "o2 saturation pulseoxymetry alarm - low__measured": {
+  "icp line dressing occlusive__measured": {
     "group": "missingness"
   },
-  "orthostat bp sitting [diastolic]__measured": {
+  "ndwelling port (portacath) placed in outside facility__measured": {
     "group": "missingness"
   },
-  "orthostat bp sitting [systolic]__measured": {
+  "impaired skin depth #2__measured": {
     "group": "missingness"
   },
-  "orthostat hr sitting__measured": {
+  "temporary pacemaker wires ground__measured": {
     "group": "missingness"
   },
-  "orthostatbp standing [diastolic]__measured": {
+  "bipap - ipap__measured": {
     "group": "missingness"
   },
-  "orthostatbp standing [systolic]__measured": {
+  "pa catheter line tip cultured__measured": {
     "group": "missingness"
   },
-  "orthostathr standing__measured": {
+  "icp line zero/calibrate__measured": {
     "group": "missingness"
   },
-  "orthostatic bp lying [diastolic]__measured": {
+  "high minute volume__measured": {
     "group": "missingness"
   },
-  "orthostatic bp lying [systolic]__measured": {
+  "cerebral perfusion pressure alarm - low__measured": {
+    "group": "missingness"
+  },
+  "ph__measured_x": {
+    "group": "baseline"
+  },
+  "current goal__measured": {
+    "group": "missingness"
+  },
+  "cerebral perfusion pressure alarm - high__measured": {
+    "group": "missingness"
+  },
+  "av interval__measured": {
+    "group": "missingness"
+  },
+  "bp pal [systolic]__measured": {
+    "group": "missingness"
+  },
+  "fk506__measured": {
+    "group": "missingness"
+  },
+  "bp pal [diastolic]__measured": {
+    "group": "missingness"
+  },
+  "bp pal [mean]__measured": {
+    "group": "missingness"
+  },
+  "urine ph__measured": {
+    "group": "missingness"
+  },
+  "pinsp (draeger only)__measured": {
+    "group": "missingness"
+  },
+  "paedp__measured": {
+    "group": "missingness"
+  },
+  "unassisted systole__measured": {
+    "group": "missingness"
+  },
+  "sheath zero/calibrate__measured": {
     "group": "missingness"
   },
   "orthostatic hr lying__measured": {
     "group": "missingness"
   },
-  "orthostatic hr sitting__measured": {
+  "estimated energy needs/kg__measured": {
     "group": "missingness"
   },
-  "orthostatic hr standing__measured": {
+  "ava dressing occlusive__measured": {
     "group": "missingness"
   },
-  "pantoprazole   mg/hr__measured": {
+  "ammonia__measured_x": {
+    "group": "baseline"
+  },
+  "blood glucose__measured": {
     "group": "missingness"
   },
-  "pantoprazole  mg/hr__measured": {
+  "tcpcv insp. time__measured": {
     "group": "missingness"
   },
-  "pap [diastolic]__measured": {
+  "iabp zero/calibrate__measured": {
     "group": "missingness"
   },
-  "pap [systolic]__measured": {
+  "iabp dressing occlusive__measured": {
     "group": "missingness"
   },
-  "par-oxygen saturation__measured": {
+  "trauma line dressing occlusive__measured": {
     "group": "missingness"
   },
-  "pca 1 hr limit (mg)__measured": {
+  "iabp placed in outside facility__measured": {
     "group": "missingness"
   },
-  "prothrombin time__measured": {
+  "tcpcv insp. pressure__measured": {
     "group": "missingness"
   },
-  "protonix mg/hr__measured": {
+  "iabp volume__measured": {
     "group": "missingness"
   },
-  "pulmonary artery pressure diastolic__measured": {
+  "14 gauge placed in the field__measured": {
     "group": "missingness"
   },
-  "pulmonary artery pressure systolic__measured": {
+  "trauma line placed in outside facility__measured": {
     "group": "missingness"
   },
-  "replace rate ml/hr__measured": {
+  "iabp alarms activated__measured": {
     "group": "missingness"
   },
-  "respiratory rate__measured": {
+  "impaired skin odor #5__measured": {
     "group": "missingness"
   },
-  "respiratory rate (set)__measured": {
+  "pressure ulcer stage #4__measured": {
     "group": "missingness"
   },
-  "respiratory rate (spontaneous)__measured": {
-    "group": "missingness"
-  },
-  "respiratory rate (total)__measured": {
-    "group": "missingness"
-  },
-  "respiratory rate set__measured": {
-    "group": "missingness"
-  },
-  "smoking cessation info offered through bidmc inpatient guide__measured": {
-    "group": "missingness"
-  },
-  "solumedrol mg/hr__measured": {
-    "group": "missingness"
-  },
-  "solumedrol mg/kg/hr__measured": {
-    "group": "missingness"
-  },
-  "spo2__measured": {
-    "group": "missingness"
-  },
-  "spo2 alarm [high]__measured": {
-    "group": "missingness"
-  },
-  "spo2 alarm [low]__measured": {
-    "group": "missingness"
-  },
-  "spo2 desat limit__measured": {
-    "group": "missingness"
-  },
-  "spon rr (mech.)__measured": {
-    "group": "missingness"
-  },
-  "spont rr__measured": {
-    "group": "missingness"
-  },
-  "systolic unloading__measured": {
+  "neg insp force(>-25)__measured": {
     "group": "missingness"
   },
   "tcpcv-map__measured": {
     "group": "missingness"
   },
-  "temp/iso/warmer [temperature, degrees c]__measured": {
+  "rec.breath time(sec)__measured": {
     "group": "missingness"
   },
-  "temperature c__measured": {
+  "estimated protein needs/kg__measured": {
     "group": "missingness"
   },
-  "temperature c (calc)__measured": {
+  "epidural total dose (ml)__measured": {
     "group": "missingness"
   },
-  "temperature celsius__measured": {
+  "gentamycin/random__measured": {
     "group": "missingness"
   },
-  "temperature f__measured": {
+  "gi ph__measured": {
     "group": "missingness"
   },
-  "temperature f (calc)__measured": {
+  "rec. breath pressure__measured": {
     "group": "missingness"
   },
-  "temperature fahrenheit__measured": {
+  "mean paw__measured": {
     "group": "missingness"
   },
-  "temporary atrial sens threshold mv__measured": {
+  "impaired skin length #4__measured": {
     "group": "missingness"
   },
-  "temporary atrial stim threshold ma__measured": {
+  "ava line placed in outside facility__measured": {
     "group": "missingness"
   },
-  "temporary venticular sens threshold mv__measured": {
+  "sv (arterial)__measured": {
     "group": "missingness"
   },
-  "temporary venticular stim threshold ma__measured": {
+  "delta p__measured": {
     "group": "missingness"
   },
-  "thrombin__measured": {
+  "hertz__measured": {
     "group": "missingness"
   },
-  "tpa mg/hr__measured": {
+  "insp time %__measured": {
     "group": "missingness"
   },
-  "vent sens thresh mv__measured": {
+  "mdi #3 [puff]__measured": {
     "group": "missingness"
   },
-  "vent stim thresh ma__measured": {
+  "impaired skin width #4__measured": {
     "group": "missingness"
   },
-  "ventricular pacemaker threshold [value]__measured": {
+  "remote alarm [d]__measured": {
     "group": "missingness"
   },
-  "xigris mcg/kg/hr__measured": {
+  "hemodialysis output__measured": {
     "group": "missingness"
   },
-  "% hemoglobin a1c__mean": {
-    "group": "baseline"
-  },
-  "24 hr creatinine__mean": {
-    "group": "baseline"
-  },
-  "albumin/creatinine, urine__mean": {
-    "group": "baseline"
-  },
-  "bicarbonate__mean": {
-    "group": "baseline"
-  },
-  "bicarbonate, urine__mean": {
-    "group": "baseline"
-  },
-  "calculated bicarbonate, whole blood__mean": {
-    "group": "baseline"
-  },
-  "carboxyhemoglobin__mean": {
-    "group": "baseline"
-  },
-  "chloride__mean": {
-    "group": "baseline"
-  },
-  "chloride, urine__mean": {
-    "group": "baseline"
-  },
-  "chloride, whole blood__mean": {
-    "group": "baseline"
-  },
-  "ck-mb index__mean": {
-    "group": "baseline"
-  },
-  "creatine kinase (ck)__mean": {
-    "group": "baseline"
-  },
-  "creatinine__mean": {
-    "group": "baseline"
-  },
-  "creatinine, ascites__mean": {
-    "group": "baseline"
-  },
-  "creatinine, body fluid__mean": {
-    "group": "baseline"
-  },
-  "creatinine, pleural__mean": {
-    "group": "baseline"
-  },
-  "creatinine, urine__mean": {
-    "group": "baseline"
-  },
-  "glucose__mean": {
-    "group": "baseline"
-  },
-  "glucose, ascites__mean": {
-    "group": "baseline"
-  },
-  "glucose, body fluid__mean": {
-    "group": "baseline"
-  },
-  "glucose, csf__mean": {
-    "group": "baseline"
-  },
-  "glucose, pleural__mean": {
-    "group": "baseline"
-  },
-  "glucose, urine__mean": {
-    "group": "baseline"
-  },
-  "hematocrit__mean": {
-    "group": "baseline"
-  },
-  "hematocrit, ascites__mean": {
-    "group": "baseline"
-  },
-  "hematocrit, calculated__mean": {
-    "group": "baseline"
-  },
-  "hematocrit, joint fluid__mean": {
-    "group": "baseline"
-  },
-  "hematocrit, other fluid__mean": {
-    "group": "baseline"
-  },
-  "hematocrit, pleural__mean": {
-    "group": "baseline"
-  },
-  "hemoglobin__mean": {
-    "group": "baseline"
-  },
-  "hemoglobin c__mean": {
-    "group": "baseline"
-  },
-  "lactate__mean": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase (ld)__mean": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase, ascites__mean": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase, csf__mean": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase, pleural__mean": {
-    "group": "baseline"
-  },
-  "methemoglobin__mean": {
-    "group": "baseline"
-  },
-  "platelet count__mean": {
-    "group": "baseline"
-  },
-  "potassium__mean": {
-    "group": "baseline"
-  },
-  "potassium, urine__mean": {
-    "group": "baseline"
-  },
-  "potassium, whole blood__mean": {
-    "group": "baseline"
-  },
-  "protein/creatinine ratio__mean": {
-    "group": "baseline"
-  },
-  "sodium__mean": {
-    "group": "baseline"
-  },
-  "sodium, urine__mean": {
-    "group": "baseline"
-  },
-  "sodium, whole blood__mean": {
-    "group": "baseline"
-  },
-  "tacrofk__mean": {
-    "group": "baseline"
-  },
-  "urea nitrogen__mean": {
-    "group": "baseline"
-  },
-  "urea nitrogen, urine__mean": {
-    "group": "baseline"
-  },
-  "wbc__mean": {
-    "group": "baseline"
-  },
-  "wbc casts__mean": {
-    "group": "baseline"
-  },
-  "wbc count__mean": {
-    "group": "baseline"
-  },
-  "wbc, ascites__mean": {
-    "group": "baseline"
-  },
-  "wbc, csf__mean": {
-    "group": "baseline"
-  },
-  "wbc, joint fluid__mean": {
-    "group": "baseline"
-  },
-  "wbc, other fluid__mean": {
-    "group": "baseline"
-  },
-  "wbc, pleural__mean": {
-    "group": "baseline"
-  },
-  "white blood cells__mean": {
-    "group": "baseline"
-  },
-  "% hemoglobin a1c__std": {
-    "group": "baseline"
-  },
-  "albumin/creatinine, urine__std": {
-    "group": "baseline"
-  },
-  "bicarbonate__std": {
-    "group": "baseline"
-  },
-  "bicarbonate, urine__std": {
-    "group": "baseline"
-  },
-  "calculated bicarbonate, whole blood__std": {
-    "group": "baseline"
-  },
-  "carboxyhemoglobin__std": {
-    "group": "baseline"
-  },
-  "chloride__std": {
-    "group": "baseline"
-  },
-  "chloride, urine__std": {
-    "group": "baseline"
-  },
-  "chloride, whole blood__std": {
-    "group": "baseline"
-  },
-  "ck-mb index__std": {
-    "group": "baseline"
-  },
-  "creatine kinase (ck)__std": {
-    "group": "baseline"
-  },
-  "creatinine__std": {
-    "group": "baseline"
-  },
-  "creatinine, ascites__std": {
-    "group": "baseline"
-  },
-  "creatinine, body fluid__std": {
-    "group": "baseline"
-  },
-  "creatinine, urine__std": {
-    "group": "baseline"
-  },
-  "glucose__std": {
-    "group": "baseline"
-  },
-  "glucose, ascites__std": {
-    "group": "baseline"
-  },
-  "glucose, body fluid__std": {
-    "group": "baseline"
-  },
-  "glucose, csf__std": {
-    "group": "baseline"
-  },
-  "glucose, pleural__std": {
-    "group": "baseline"
-  },
-  "hematocrit__std": {
-    "group": "baseline"
-  },
-  "hematocrit, calculated__std": {
-    "group": "baseline"
-  },
-  "hematocrit, other fluid__std": {
-    "group": "baseline"
-  },
-  "hematocrit, pleural__std": {
-    "group": "baseline"
-  },
-  "hemoglobin__std": {
-    "group": "baseline"
-  },
-  "lactate__std": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase (ld)__std": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase, ascites__std": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase, csf__std": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase, pleural__std": {
-    "group": "baseline"
-  },
-  "methemoglobin__std": {
-    "group": "baseline"
-  },
-  "platelet count__std": {
-    "group": "baseline"
-  },
-  "potassium__std": {
-    "group": "baseline"
-  },
-  "potassium, urine__std": {
-    "group": "baseline"
-  },
-  "potassium, whole blood__std": {
-    "group": "baseline"
-  },
-  "protein/creatinine ratio__std": {
-    "group": "baseline"
-  },
-  "sodium__std": {
-    "group": "baseline"
-  },
-  "sodium, urine__std": {
-    "group": "baseline"
-  },
-  "sodium, whole blood__std": {
-    "group": "baseline"
-  },
-  "tacrofk__std": {
-    "group": "baseline"
-  },
-  "urea nitrogen__std": {
-    "group": "baseline"
-  },
-  "urea nitrogen, urine__std": {
-    "group": "baseline"
-  },
-  "wbc__std": {
-    "group": "baseline"
-  },
-  "wbc count__std": {
-    "group": "baseline"
-  },
-  "wbc, ascites__std": {
-    "group": "baseline"
-  },
-  "wbc, csf__std": {
-    "group": "baseline"
-  },
-  "wbc, joint fluid__std": {
-    "group": "baseline"
-  },
-  "wbc, other fluid__std": {
-    "group": "baseline"
-  },
-  "wbc, pleural__std": {
-    "group": "baseline"
-  },
-  "white blood cells__std": {
-    "group": "baseline"
-  },
-  "% hemoglobin a1c__min": {
-    "group": "baseline"
-  },
-  "24 hr creatinine__min": {
-    "group": "baseline"
-  },
-  "albumin/creatinine, urine__min": {
-    "group": "baseline"
-  },
-  "bicarbonate__min": {
-    "group": "baseline"
-  },
-  "bicarbonate, urine__min": {
-    "group": "baseline"
-  },
-  "calculated bicarbonate, whole blood__min": {
-    "group": "baseline"
-  },
-  "carboxyhemoglobin__min": {
-    "group": "baseline"
-  },
-  "chloride__min": {
-    "group": "baseline"
-  },
-  "chloride, urine__min": {
-    "group": "baseline"
-  },
-  "chloride, whole blood__min": {
-    "group": "baseline"
-  },
-  "ck-mb index__min": {
-    "group": "baseline"
-  },
-  "creatine kinase (ck)__min": {
-    "group": "baseline"
-  },
-  "creatinine__min": {
-    "group": "baseline"
-  },
-  "creatinine, ascites__min": {
-    "group": "baseline"
-  },
-  "creatinine, body fluid__min": {
-    "group": "baseline"
-  },
-  "creatinine, pleural__min": {
-    "group": "baseline"
-  },
-  "creatinine, urine__min": {
-    "group": "baseline"
-  },
-  "glucose__min": {
-    "group": "baseline"
-  },
-  "glucose, ascites__min": {
-    "group": "baseline"
-  },
-  "glucose, body fluid__min": {
-    "group": "baseline"
-  },
-  "glucose, csf__min": {
-    "group": "baseline"
-  },
-  "glucose, pleural__min": {
-    "group": "baseline"
-  },
-  "glucose, urine__min": {
-    "group": "baseline"
-  },
-  "hematocrit__min": {
-    "group": "baseline"
-  },
-  "hematocrit, ascites__min": {
-    "group": "baseline"
-  },
-  "hematocrit, calculated__min": {
-    "group": "baseline"
-  },
-  "hematocrit, joint fluid__min": {
-    "group": "baseline"
-  },
-  "hematocrit, other fluid__min": {
-    "group": "baseline"
-  },
-  "hematocrit, pleural__min": {
-    "group": "baseline"
-  },
-  "hemoglobin__min": {
-    "group": "baseline"
-  },
-  "hemoglobin c__min": {
-    "group": "baseline"
-  },
-  "lactate__min": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase (ld)__min": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase, ascites__min": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase, csf__min": {
-    "group": "baseline"
-  },
-  "lactate dehydrogenase, pleural__min": {
-    "group": "baseline"
-  },
-  "methemoglobin__min": {
-    "group": "baseline"
-  },
-  "platelet count__min": {
-    "group": "baseline"
-  },
-  "potassium__min": {
-    "group": "baseline"
-  },
-  "potassium, urine__min": {
-    "group": "baseline"
-  },
-  "potassium, whole blood__min": {
-    "group": "baseline"
-  },
-  "protein/creatinine ratio__min": {
-    "group": "baseline"
-  },
-  "sodium__min": {
-    "group": "baseline"
-  },
-  "sodium, urine__min": {
-    "group": "baseline"
-  },
-  "sodium, whole blood__min": {
-    "group": "baseline"
-  },
-  "tacrofk__min": {
-    "group": "baseline"
-  },
-  "urea nitrogen__min": {
-    "group": "baseline"
-  },
-  "urea nitrogen, urine__min": {
-    "group": "baseline"
-  },
-  "wbc__min": {
-    "group": "baseline"
-  },
-  "wbc casts__min": {
-    "group": "baseline"
-  },
-  "wbc count__min": {
-    "group": "baseline"
-  },
-  "wbc, ascites__min": {
-    "group": "baseline"
-  },
-  "wbc, csf__min": {
-    "group": "baseline"
-  },
-  "wbc, joint fluid__min": {
-    "group": "baseline"
-  },
-  "wbc, other fluid__min": {
-    "group": "baseline"
-  },
-  "wbc, pleural__min": {
-    "group": "baseline"
-  },
-  "white blood cells__min": {
-    "group": "baseline"
+  "mawp alarm [low]__measured": {
+    "group": "missingness"
   },
-  "% hemoglobin a1c__max": {
-    "group": "baseline"
+  "mawp alarm [high]__measured": {
+    "group": "missingness"
   },
-  "24 hr creatinine__max": {
-    "group": "baseline"
+  "remote alarm [s]__measured": {
+    "group": "missingness"
   },
-  "albumin/creatinine, urine__max": {
-    "group": "baseline"
+  "arctic sun/alsius temp #1 c__measured": {
+    "group": "missingness"
   },
-  "bicarbonate__max": {
-    "group": "baseline"
+  "ultrafiltrate output__measured": {
+    "group": "missingness"
   },
-  "bicarbonate, urine__max": {
-    "group": "baseline"
+  "calcium   (8.8-10.8)__measured": {
+    "group": "missingness"
   },
-  "calculated bicarbonate, whole blood__max": {
-    "group": "baseline"
+  "permanent pacemaker rate__measured": {
+    "group": "missingness"
   },
-  "carboxyhemoglobin__max": {
-    "group": "baseline"
+  "vancomycin/trough__measured": {
+    "group": "missingness"
   },
-  "chloride__max": {
-    "group": "baseline"
+  "abi brachial bp [right]__measured": {
+    "group": "missingness"
   },
-  "chloride, urine__max": {
-    "group": "baseline"
+  "abi ankle bp [right]__measured": {
+    "group": "missingness"
   },
-  "chloride, whole blood__max": {
-    "group": "baseline"
+  "abi (r)__measured": {
+    "group": "missingness"
   },
-  "ck-mb index__max": {
-    "group": "baseline"
+  "arctic sun/alsius set temp__measured": {
+    "group": "missingness"
   },
-  "creatine kinase (ck)__max": {
-    "group": "baseline"
+  "abi brachial bp [left]__measured": {
+    "group": "missingness"
   },
-  "creatinine__max": {
-    "group": "baseline"
+  "arctic sun/alsius temp #2 c__measured": {
+    "group": "missingness"
   },
-  "creatinine, ascites__max": {
-    "group": "baseline"
+  "abi (l)__measured": {
+    "group": "missingness"
   },
-  "creatinine, body fluid__max": {
-    "group": "baseline"
+  "abi ankle bp [left]__measured": {
+    "group": "missingness"
   },
-  "creatinine, pleural__max": {
-    "group": "baseline"
+  "sgot__measured": {
+    "group": "missingness"
   },
-  "creatinine, urine__max": {
-    "group": "baseline"
+  "sgpt__measured": {
+    "group": "missingness"
   },
-  "glucose__max": {
-    "group": "baseline"
+  "arctic sun water temp__measured": {
+    "group": "missingness"
   },
-  "glucose, ascites__max": {
-    "group": "baseline"
+  "orthostat bp sitting [systolic]__measured": {
+    "group": "missingness"
   },
-  "glucose, body fluid__max": {
-    "group": "baseline"
+  "orthostat bp sitting [diastolic]__measured": {
+    "group": "missingness"
   },
-  "glucose, csf__max": {
-    "group": "baseline"
+  "gentamicin pre (0-2)__measured": {
+    "group": "missingness"
   },
-  "glucose, pleural__max": {
-    "group": "baseline"
+  "bipap epap__measured": {
+    "group": "missingness"
   },
-  "glucose, urine__max": {
-    "group": "baseline"
+  "edvi__measured": {
+    "group": "missingness"
   },
-  "hematocrit__max": {
-    "group": "baseline"
+  "low risk (25-50) interventions__measured": {
+    "group": "missingness"
   },
-  "hematocrit, ascites__max": {
-    "group": "baseline"
+  "orthostat hr sitting__measured": {
+    "group": "missingness"
   },
-  "hematocrit, calculated__max": {
-    "group": "baseline"
+  "art lumen volume__measured": {
+    "group": "missingness"
   },
-  "hematocrit, joint fluid__max": {
-    "group": "baseline"
+  "bipap o2 flow__measured": {
+    "group": "missingness"
   },
-  "hematocrit, other fluid__max": {
-    "group": "baseline"
+  "ven lumen volume__measured": {
+    "group": "missingness"
   },
-  "hematocrit, pleural__max": {
-    "group": "baseline"
+  "ldl measured__measured": {
+    "group": "missingness"
   },
-  "hemoglobin__max": {
-    "group": "baseline"
+  "money given to hospital cashier__measured": {
+    "group": "missingness"
   },
-  "hemoglobin c__max": {
-    "group": "baseline"
+  "ava line zero/calibrate__measured": {
+    "group": "missingness"
   },
-  "lactate__max": {
-    "group": "baseline"
+  "orthostatic bp lying [systolic]__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase (ld)__max": {
-    "group": "baseline"
+  "cam-icu disorganized thinking__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase, ascites__max": {
-    "group": "baseline"
+  "orthostatic bp lying [diastolic]__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase, csf__max": {
-    "group": "baseline"
+  "access pressure__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase, pleural__max": {
-    "group": "baseline"
+  "dialysate rate__measured": {
+    "group": "missingness"
   },
-  "methemoglobin__max": {
-    "group": "baseline"
+  "hourly patient fluid removal__measured": {
+    "group": "missingness"
   },
-  "platelet count__max": {
-    "group": "baseline"
+  "replacement rate__measured": {
+    "group": "missingness"
   },
-  "potassium__max": {
-    "group": "baseline"
+  "blood flow (ml/min)__measured": {
+    "group": "missingness"
   },
-  "potassium, urine__max": {
-    "group": "baseline"
+  "filter pressure__measured": {
+    "group": "missingness"
   },
-  "potassium, whole blood__max": {
-    "group": "baseline"
+  "cco pac line tip cultured__measured": {
+    "group": "missingness"
   },
-  "protein/creatinine ratio__max": {
-    "group": "baseline"
+  "return pressure__measured": {
+    "group": "missingness"
   },
-  "sodium__max": {
-    "group": "baseline"
+  "effluent pressure__measured": {
+    "group": "missingness"
   },
-  "sodium, urine__max": {
-    "group": "baseline"
+  "restraints ordered__measured": {
+    "group": "missingness"
   },
-  "sodium, whole blood__max": {
-    "group": "baseline"
+  "length in inches__measured": {
+    "group": "missingness"
   },
-  "tacrofk__max": {
-    "group": "baseline"
+  "length   calc   (cm)__measured": {
+    "group": "missingness"
   },
-  "urea nitrogen__max": {
-    "group": "baseline"
+  "apnea__measured": {
+    "group": "missingness"
   },
-  "urea nitrogen, urine__max": {
-    "group": "baseline"
+  "tcp02__measured": {
+    "group": "missingness"
   },
-  "wbc__max": {
-    "group": "baseline"
+  "sweating__measured": {
+    "group": "missingness"
   },
-  "wbc casts__max": {
-    "group": "baseline"
+  "total granulocyte count (tgc)__measured": {
+    "group": "missingness"
   },
-  "wbc count__max": {
-    "group": "baseline"
+  "restlessness__measured": {
+    "group": "missingness"
   },
-  "wbc, ascites__max": {
-    "group": "baseline"
+  "nausea and vomiting (cina)__measured": {
+    "group": "missingness"
   },
-  "wbc, csf__max": {
-    "group": "baseline"
+  "pupils__measured": {
+    "group": "missingness"
   },
-  "wbc, joint fluid__max": {
-    "group": "baseline"
+  "lacrimation__measured": {
+    "group": "missingness"
   },
-  "wbc, other fluid__max": {
-    "group": "baseline"
+  "muscle aches__measured": {
+    "group": "missingness"
   },
-  "wbc, pleural__max": {
-    "group": "baseline"
+  "nasal congestion__measured": {
+    "group": "missingness"
   },
-  "white blood cells__max": {
-    "group": "baseline"
+  "changes in temperature__measured": {
+    "group": "missingness"
   },
-  "% hemoglobin a1c__range": {
-    "group": "baseline"
+  "tremor (cina)__measured": {
+    "group": "missingness"
   },
-  "24 hr creatinine__range": {
-    "group": "baseline"
+  "yawning__measured": {
+    "group": "missingness"
   },
-  "albumin/creatinine, urine__range": {
-    "group": "baseline"
+  "replace rate ml/hr__measured": {
+    "group": "missingness"
   },
-  "bicarbonate__range": {
-    "group": "baseline"
+  "bipap ipap__measured": {
+    "group": "missingness"
   },
-  "bicarbonate, urine__range": {
-    "group": "baseline"
+  "goose flesh__measured": {
+    "group": "missingness"
   },
-  "calculated bicarbonate, whole blood__range": {
-    "group": "baseline"
+  "high mv limit__measured": {
+    "group": "missingness"
   },
-  "carboxyhemoglobin__range": {
-    "group": "baseline"
+  "blood flow ml/min__measured": {
+    "group": "missingness"
   },
-  "chloride__range": {
-    "group": "baseline"
+  "abdominal changes: observation__measured": {
+    "group": "missingness"
   },
-  "chloride, urine__range": {
-    "group": "baseline"
+  "access mmhg__measured": {
+    "group": "missingness"
   },
-  "chloride, whole blood__range": {
-    "group": "baseline"
+  "pulsus paradoxus__measured": {
+    "group": "missingness"
   },
-  "ck-mb index__range": {
-    "group": "baseline"
+  "triglyceride (0-250)__measured": {
+    "group": "missingness"
   },
-  "creatine kinase (ck)__range": {
-    "group": "baseline"
+  "filter pressure mmhg__measured": {
+    "group": "missingness"
   },
-  "creatinine__range": {
-    "group": "baseline"
+  "high ve__measured": {
+    "group": "missingness"
   },
-  "creatinine, ascites__range": {
-    "group": "baseline"
+  "return pressure mmhg__measured": {
+    "group": "missingness"
   },
-  "creatinine, body fluid__range": {
-    "group": "baseline"
+  "effluent press mmhg__measured": {
+    "group": "missingness"
   },
-  "creatinine, pleural__range": {
-    "group": "baseline"
+  "tylenol__measured": {
+    "group": "missingness"
   },
-  "creatinine, urine__range": {
-    "group": "baseline"
+  "presep catheter placed in outside facility__measured": {
+    "group": "missingness"
   },
-  "glucose__range": {
-    "group": "baseline"
+  "o2 sat [pre]__measured": {
+    "group": "missingness"
   },
-  "glucose, ascites__range": {
-    "group": "baseline"
+  "impaired skin depth #3__measured": {
+    "group": "missingness"
   },
-  "glucose, body fluid__range": {
-    "group": "baseline"
+  "presep catheter dressing occlusive__measured": {
+    "group": "missingness"
   },
-  "glucose, csf__range": {
-    "group": "baseline"
+  "o2 sat [post]__measured": {
+    "group": "missingness"
   },
-  "glucose, pleural__range": {
-    "group": "baseline"
+  "dialysate flow ml/hr__measured": {
+    "group": "missingness"
   },
-  "glucose, urine__range": {
-    "group": "baseline"
+  "in-line suction catheter changed__measured": {
+    "group": "missingness"
   },
-  "hematocrit__range": {
-    "group": "baseline"
+  "t low (aprv)__measured": {
+    "group": "missingness"
   },
-  "hematocrit, ascites__range": {
+  "cyclosporin__measured_x": {
     "group": "baseline"
   },
-  "hematocrit, calculated__range": {
-    "group": "baseline"
+  "bipap - bpm__measured": {
+    "group": "missingness"
   },
-  "hematocrit, joint fluid__range": {
-    "group": "baseline"
+  "p high (aprv)__measured": {
+    "group": "missingness"
   },
-  "hematocrit, other fluid__range": {
-    "group": "baseline"
+  "impaired skin odor #6__measured": {
+    "group": "missingness"
   },
-  "hematocrit, pleural__range": {
+  "alkaline phosphatase__measured_x": {
     "group": "baseline"
   },
-  "hemoglobin__range": {
-    "group": "baseline"
+  "recruitment duration__measured": {
+    "group": "missingness"
   },
-  "hemoglobin c__range": {
-    "group": "baseline"
+  "t high (aprv)__measured": {
+    "group": "missingness"
   },
-  "lactate__range": {
-    "group": "baseline"
+  "midline dressing occlusive__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase (ld)__range": {
-    "group": "baseline"
+  "p low (aprv)__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase, ascites__range": {
-    "group": "baseline"
+  "presep catheter zero/calibrate__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase, csf__range": {
-    "group": "baseline"
+  "orthostatic bps lying__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase, pleural__range": {
-    "group": "baseline"
+  "orthostatic bps sitting__measured": {
+    "group": "missingness"
   },
-  "methemoglobin__range": {
-    "group": "baseline"
+  "orthostatic bpd sitting__measured": {
+    "group": "missingness"
   },
-  "platelet count__range": {
-    "group": "baseline"
+  "orthostatic hr sitting__measured": {
+    "group": "missingness"
   },
-  "potassium__range": {
-    "group": "baseline"
+  "orthostatic bpd lying__measured": {
+    "group": "missingness"
   },
-  "potassium, urine__range": {
-    "group": "baseline"
+  "hourly pfr__measured": {
+    "group": "missingness"
   },
-  "potassium, whole blood__range": {
-    "group": "baseline"
+  "recruitment press__measured": {
+    "group": "missingness"
   },
-  "protein/creatinine ratio__range": {
-    "group": "baseline"
+  "transpulmonary pressure (insp. hold)__measured": {
+    "group": "missingness"
   },
-  "sodium__range": {
-    "group": "baseline"
+  "transpulmonary pressure (exp. hold)__measured": {
+    "group": "missingness"
   },
-  "sodium, urine__range": {
-    "group": "baseline"
+  "gentamycin/trough__measured": {
+    "group": "missingness"
   },
-  "sodium, whole blood__range": {
-    "group": "baseline"
+  "midline placed in outside facility__measured": {
+    "group": "missingness"
   },
-  "tacrofk__range": {
-    "group": "baseline"
+  "picc line tip cultured__measured": {
+    "group": "missingness"
   },
-  "urea nitrogen__range": {
-    "group": "baseline"
+  "pressure ulcer stage #5__measured": {
+    "group": "missingness"
   },
-  "urea nitrogen, urine__range": {
-    "group": "baseline"
+  "impaired skin length #5__measured": {
+    "group": "missingness"
   },
-  "wbc__range": {
-    "group": "baseline"
+  "pbp (prefilter) replacement rate__measured": {
+    "group": "missingness"
   },
-  "wbc casts__range": {
-    "group": "baseline"
+  "citrate (acd-a)__measured": {
+    "group": "missingness"
   },
-  "wbc count__range": {
-    "group": "baseline"
+  "low exhaled vt__measured": {
+    "group": "missingness"
   },
-  "wbc, ascites__range": {
-    "group": "baseline"
+  "impaired skin width #5__measured": {
+    "group": "missingness"
   },
-  "wbc, csf__range": {
-    "group": "baseline"
+  "pulses paradoxus__measured": {
+    "group": "missingness"
   },
-  "wbc, joint fluid__range": {
-    "group": "baseline"
+  "vital cap__measured": {
+    "group": "missingness"
   },
-  "wbc, other fluid__range": {
-    "group": "baseline"
+  "vital cap (>1.0)l__measured": {
+    "group": "missingness"
   },
-  "wbc, pleural__range": {
-    "group": "baseline"
+  "gentamycin/peak__measured": {
+    "group": "missingness"
   },
-  "white blood cells__range": {
-    "group": "baseline"
+  "protime__measured": {
+    "group": "missingness"
   },
-  "% hemoglobin a1c__last": {
-    "group": "baseline"
+  "orthostatbp standing [diastolic]__measured": {
+    "group": "missingness"
   },
-  "24 hr creatinine__last": {
+  "phenobarbital__measured_x": {
     "group": "baseline"
   },
-  "albumin/creatinine, urine__last": {
-    "group": "baseline"
+  "orthostatbp standing [systolic]__measured": {
+    "group": "missingness"
   },
-  "bicarbonate__last": {
-    "group": "baseline"
+  "small volume neb dose #2__measured": {
+    "group": "missingness"
   },
-  "bicarbonate, urine__last": {
-    "group": "baseline"
+  "orthostathr standing__measured": {
+    "group": "missingness"
   },
-  "calculated bicarbonate, whole blood__last": {
-    "group": "baseline"
+  "post filter replacement rate__measured": {
+    "group": "missingness"
   },
-  "carboxyhemoglobin__last": {
-    "group": "baseline"
+  "abg hct__measured": {
+    "group": "missingness"
   },
-  "chloride__last": {
-    "group": "baseline"
+  "high exhaled min vol__measured": {
+    "group": "missingness"
   },
-  "chloride, urine__last": {
-    "group": "baseline"
+  "heparin dose (per hour)__measured": {
+    "group": "missingness"
   },
-  "chloride, whole blood__last": {
-    "group": "baseline"
+  "orthostatic bps standing__measured": {
+    "group": "missingness"
   },
-  "ck-mb index__last": {
-    "group": "baseline"
+  "orthostatic bpd standing__measured": {
+    "group": "missingness"
   },
-  "creatine kinase (ck)__last": {
-    "group": "baseline"
+  "patient/family informed_v1__measured": {
+    "group": "missingness"
   },
-  "creatinine__last": {
-    "group": "baseline"
+  "low peep__measured": {
+    "group": "missingness"
   },
-  "creatinine, ascites__last": {
-    "group": "baseline"
+  "shivering assessment__measured": {
+    "group": "missingness"
   },
-  "creatinine, body fluid__last": {
-    "group": "baseline"
+  "gentamicin post 5-10__measured": {
+    "group": "missingness"
   },
-  "creatinine, pleural__last": {
-    "group": "baseline"
+  "negative insp. force__measured": {
+    "group": "missingness"
   },
-  "creatinine, urine__last": {
-    "group": "baseline"
+  "orthostatic hr standing__measured": {
+    "group": "missingness"
   },
-  "glucose__last": {
-    "group": "baseline"
+  "cardiac index (ci nicom)__measured": {
+    "group": "missingness"
   },
-  "glucose, ascites__last": {
-    "group": "baseline"
+  "apnea [duration]__measured": {
+    "group": "missingness"
   },
-  "glucose, body fluid__last": {
-    "group": "baseline"
+  "flow rate (l/min)__measured": {
+    "group": "missingness"
   },
-  "glucose, csf__last": {
-    "group": "baseline"
+  "temporary av interval__measured": {
+    "group": "missingness"
   },
-  "glucose, pleural__last": {
-    "group": "baseline"
+  "pacer wires ground__measured": {
+    "group": "missingness"
   },
-  "glucose, urine__last": {
-    "group": "baseline"
+  "stroke volume variation (svv nicom)__measured": {
+    "group": "missingness"
   },
-  "hematocrit__last": {
-    "group": "baseline"
+  "emesis [ph]__measured": {
+    "group": "missingness"
   },
-  "hematocrit, ascites__last": {
-    "group": "baseline"
+  "pericardial drain aspiration__measured": {
+    "group": "missingness"
   },
-  "hematocrit, calculated__last": {
-    "group": "baseline"
+  "high min vol__measured": {
+    "group": "missingness"
   },
-  "hematocrit, joint fluid__last": {
-    "group": "baseline"
+  "medication infusion rate - adjunctive pain management__measured": {
+    "group": "missingness"
   },
-  "hematocrit, other fluid__last": {
-    "group": "baseline"
+  "stroke volume index (svi nicom)__measured": {
+    "group": "missingness"
   },
-  "hematocrit, pleural__last": {
+  "thrombin__measured_x": {
     "group": "baseline"
   },
-  "hemoglobin__last": {
-    "group": "baseline"
+  "cvo2__measured": {
+    "group": "missingness"
   },
-  "hemoglobin c__last": {
-    "group": "baseline"
+  "hi mv__measured": {
+    "group": "missingness"
   },
-  "lactate__last": {
-    "group": "baseline"
+  "passive leg raise performed__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase (ld)__last": {
-    "group": "baseline"
+  "hi/minute/vol__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase, ascites__last": {
-    "group": "baseline"
+  "hi/minute/vol/alarm__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase, csf__last": {
-    "group": "baseline"
+  "pericardial drain flush__measured": {
+    "group": "missingness"
   },
-  "lactate dehydrogenase, pleural__last": {
+  "ethanol__measured_x": {
     "group": "baseline"
   },
-  "methemoglobin__last": {
-    "group": "baseline"
+  "cardiac output (co nicom)__measured": {
+    "group": "missingness"
   },
-  "platelet count__last": {
-    "group": "baseline"
+  "pin care__measured": {
+    "group": "missingness"
   },
-  "potassium__last": {
-    "group": "baseline"
+  "high/min/vent__measured": {
+    "group": "missingness"
   },
-  "potassium, urine__last": {
-    "group": "baseline"
+  "intra aortic ballon pump setting__measured": {
+    "group": "missingness"
   },
-  "potassium, whole blood__last": {
-    "group": "baseline"
+  "iv drip dose #1__measured": {
+    "group": "missingness"
   },
-  "protein/creatinine ratio__last": {
-    "group": "baseline"
+  "impaired skin depth #4__measured": {
+    "group": "missingness"
   },
-  "sodium__last": {
-    "group": "baseline"
+  "scvo2 (presep)__measured": {
+    "group": "missingness"
   },
-  "sodium, urine__last": {
-    "group": "baseline"
+  "impaired skin odor #7__measured": {
+    "group": "missingness"
   },
-  "sodium, whole blood__last": {
-    "group": "baseline"
+  "impaired skin width #6__measured": {
+    "group": "missingness"
   },
-  "tacrofk__last": {
-    "group": "baseline"
+  "mdi #3 puff__measured": {
+    "group": "missingness"
   },
-  "urea nitrogen__last": {
-    "group": "baseline"
+  "impaired skin length #6__measured": {
+    "group": "missingness"
   },
-  "urea nitrogen, urine__last": {
-    "group": "baseline"
+  "pcv set insp. press__measured": {
+    "group": "missingness"
   },
-  "wbc__last": {
-    "group": "baseline"
+  "pressure ulcer stage #6__measured": {
+    "group": "missingness"
   },
-  "wbc casts__last": {
-    "group": "baseline"
+  "stroke volume (sv nicom)__measured": {
+    "group": "missingness"
   },
-  "wbc count__last": {
-    "group": "baseline"
+  "vision - epap__measured": {
+    "group": "missingness"
   },
-  "wbc, ascites__last": {
-    "group": "baseline"
+  "ric dressing occlusive__measured": {
+    "group": "missingness"
   },
-  "wbc, csf__last": {
-    "group": "baseline"
+  "abg potassium__measured": {
+    "group": "missingness"
   },
-  "wbc, joint fluid__last": {
-    "group": "baseline"
+  "ric placed in outside facility__measured": {
+    "group": "missingness"
   },
-  "wbc, other fluid__last": {
-    "group": "baseline"
+  "ci (picco)__measured": {
+    "group": "missingness"
   },
-  "wbc, pleural__last": {
-    "group": "baseline"
+  "vision - ipap__measured": {
+    "group": "missingness"
   },
-  "white blood cells__last": {
-    "group": "baseline"
+  "tunneled (hickman) placed in outside facility__measured": {
+    "group": "missingness"
   },
-  "% hemoglobin a1c__count": {
+  "skeletal traction #1 - pounds__measured": {
     "group": "missingness"
   },
-  "24 hr creatinine__count": {
+  "tunneled (hickman) dressing occlusive__measured": {
     "group": "missingness"
   },
-  "albumin/creatinine, urine__count": {
+  "vision fio2__measured": {
     "group": "missingness"
   },
-  "bicarbonate__count": {
+  "gentamicin (trough)__measured": {
     "group": "missingness"
   },
-  "bicarbonate, urine__count": {
+  "high mv.__measured": {
     "group": "missingness"
   },
-  "calculated bicarbonate, whole blood__count": {
+  "bipap - est. vt__measured": {
     "group": "missingness"
   },
-  "carboxyhemoglobin__count": {
+  "high minute vent.__measured": {
     "group": "missingness"
   },
-  "chloride__count": {
+  "svi (picco)__measured": {
     "group": "missingness"
   },
-  "chloride, urine__count": {
+  "ion calcium__measured": {
     "group": "missingness"
   },
-  "chloride, whole blood__count": {
+  "co (picco)__measured": {
     "group": "missingness"
   },
-  "ck-mb index__count": {
+  "vancomycin/peak__measured": {
     "group": "missingness"
   },
-  "creatine kinase (ck)__count": {
+  "avdo2__measured": {
     "group": "missingness"
   },
-  "creatinine__count": {
+  "driving pressure__measured": {
     "group": "missingness"
   },
-  "creatinine, ascites__count": {
+  "gentamicin (random)__measured": {
     "group": "missingness"
   },
-  "creatinine, body fluid__count": {
+  "svi change__measured": {
     "group": "missingness"
   },
-  "creatinine, pleural__count": {
+  "sheath line tip cultured__measured": {
     "group": "missingness"
   },
-  "creatinine, urine__count": {
+  "protonix__measured": {
     "group": "missingness"
   },
-  "glucose__count": {
+  "peak exp flow rate__measured": {
     "group": "missingness"
   },
-  "glucose, ascites__count": {
+  "rest o2 sat - aerobic activity response__measured": {
     "group": "missingness"
   },
-  "glucose, body fluid__count": {
+  "rest hr -  aerobic activity response__measured": {
     "group": "missingness"
   },
-  "glucose, csf__count": {
+  "rest o2 sat - aerobic capacity__measured": {
     "group": "missingness"
   },
-  "glucose, pleural__count": {
+  "vision rate__measured": {
     "group": "missingness"
   },
-  "glucose, urine__count": {
+  "rest hr - aerobic capacity__measured": {
     "group": "missingness"
   },
-  "hematocrit__count": {
+  "pcv level (avea)__measured": {
     "group": "missingness"
   },
-  "hematocrit, ascites__count": {
+  "high min vent__measured": {
     "group": "missingness"
   },
-  "hematocrit, calculated__count": {
+  "re-admit < 48 hours__measured": {
     "group": "missingness"
   },
-  "hematocrit, joint fluid__count": {
+  "dialysis catheter tip cultured__measured": {
     "group": "missingness"
   },
-  "hematocrit, other fluid__count": {
+  "o2 sat w/seizure__measured": {
     "group": "missingness"
   },
-  "hematocrit, pleural__count": {
+  "doppler bp__measured": {
     "group": "missingness"
   },
-  "hemoglobin__count": {
+  "o2er__measured": {
     "group": "missingness"
   },
-  "hemoglobin c__count": {
+  "activity hr - aerobic activity response__measured": {
     "group": "missingness"
   },
-  "lactate__count": {
+  "albumin  (3.9-4.8)__measured": {
     "group": "missingness"
   },
-  "lactate dehydrogenase (ld)__count": {
+  "solumedrol__measured": {
     "group": "missingness"
   },
-  "lactate dehydrogenase, ascites__count": {
+  "phenytoin (free)__measured": {
     "group": "missingness"
   },
-  "lactate dehydrogenase, csf__count": {
+  "rest rr - aerobic activity response__measured": {
     "group": "missingness"
   },
-  "lactate dehydrogenase, pleural__count": {
+  "rest rr - aerobic capacity__measured": {
     "group": "missingness"
   },
-  "methemoglobin__count": {
+  "impaired skin length #7__measured": {
     "group": "missingness"
   },
-  "platelet count__count": {
+  "impaired skin width #7__measured": {
     "group": "missingness"
   },
-  "potassium__count": {
+  "triple introducer placed in outside facility__measured": {
     "group": "missingness"
   },
-  "potassium, urine__count": {
+  "volume in (pd)__measured": {
     "group": "missingness"
   },
-  "potassium, whole blood__count": {
+  "activity o2 sat - aerobic activity response__measured": {
     "group": "missingness"
   },
-  "protein/creatinine ratio__count": {
+  "trauma line tip cultured__measured": {
     "group": "missingness"
+  },
+  "theophylline__measured_x": {
+    "group": "baseline"
   },
-  "sodium__count": {
+  "co / ci change__measured": {
     "group": "missingness"
   },
-  "sodium, urine__count": {
+  "phenobarbitol(15-40)__measured": {
     "group": "missingness"
   },
-  "sodium, whole blood__count": {
+  "calibrated (picco)__measured": {
     "group": "missingness"
   },
-  "tacrofk__count": {
+  "total peripheral resistance index (tpri) (nicom)__measured": {
     "group": "missingness"
   },
-  "urea nitrogen__count": {
+  "pheresis catheter dressing occlusive__measured": {
     "group": "missingness"
   },
-  "urea nitrogen, urine__count": {
+  "pheresis catheter placed in outside facility__measured": {
     "group": "missingness"
   },
-  "wbc__count": {
+  "activity rr - aerobic activity response__measured": {
     "group": "missingness"
   },
-  "wbc casts__count": {
+  "activity o2 sat - aerobic capacity__measured": {
     "group": "missingness"
   },
-  "wbc count__count": {
+  "gedi (picco)__measured": {
     "group": "missingness"
   },
-  "wbc, ascites__count": {
+  "vo2i__measured": {
     "group": "missingness"
   },
-  "wbc, csf__count": {
+  "activity hr - aerobic capacity__measured": {
     "group": "missingness"
   },
-  "wbc, joint fluid__count": {
+  "recovery o2 sat - aerobic capacity__measured": {
     "group": "missingness"
   },
-  "wbc, other fluid__count": {
+  "recovery o2 sat - aerobic activity response__measured": {
     "group": "missingness"
   },
-  "wbc, pleural__count": {
+  "medication bolus - adjunctive pain management__measured": {
     "group": "missingness"
   },
-  "white blood cells__count": {
+  "recovery hr - aerobic activity response__measured": {
     "group": "missingness"
   },
-  "% hemoglobin a1c__measured": {
+  "elwi (picco)__measured": {
     "group": "missingness"
   },
-  "24 hr creatinine__measured": {
+  "triple introducer dressing occlusive__measured": {
     "group": "missingness"
   },
-  "albumin/creatinine, urine__measured": {
+  "vo2__measured": {
     "group": "missingness"
   },
-  "bicarbonate__measured": {
+  "thrombin (16-21)__measured": {
     "group": "missingness"
   },
-  "bicarbonate, urine__measured": {
+  "svv (picco)__measured": {
     "group": "missingness"
   },
-  "calculated bicarbonate, whole blood__measured": {
+  "abg chloirde__measured": {
     "group": "missingness"
   },
-  "carboxyhemoglobin__measured": {
+  "abg chloride__measured": {
     "group": "missingness"
   },
-  "chloride__measured": {
+  "high mv alarm__measured": {
     "group": "missingness"
   },
-  "chloride, urine__measured": {
+  "high min. vol__measured": {
     "group": "missingness"
   },
-  "chloride, whole blood__measured": {
+  "atc %__measured": {
     "group": "missingness"
   },
-  "ck-mb index__measured": {
+  "svri (picco)__measured": {
     "group": "missingness"
   },
-  "creatine kinase (ck)__measured": {
+  "volume out (pd)__measured": {
     "group": "missingness"
   },
-  "creatinine__measured": {
+  "tcpcv i:e ratio__measured": {
     "group": "missingness"
   },
-  "creatinine, ascites__measured": {
+  "additional gas (lpm)__measured": {
     "group": "missingness"
   },
-  "creatinine, body fluid__measured": {
+  "activity rr - aerobic capacity__measured": {
     "group": "missingness"
   },
-  "creatinine, pleural__measured": {
+  "aprotinin cc/hr__measured": {
     "group": "missingness"
   },
-  "creatinine, urine__measured": {
+  "recovery rr - aerobic capacity__measured": {
     "group": "missingness"
   },
-  "glucose__measured": {
+  "pressure ulcer stage #7__measured": {
     "group": "missingness"
   },
-  "glucose, ascites__measured": {
+  "recovery hr - aerobic capacity__measured": {
     "group": "missingness"
   },
-  "glucose, body fluid__measured": {
+  "enema administration__measured": {
     "group": "missingness"
   },
-  "glucose, csf__measured": {
+  "ostomy care__measured": {
     "group": "missingness"
   },
-  "glucose, pleural__measured": {
+  "impaired skin odor #8__measured": {
     "group": "missingness"
   },
-  "glucose, urine__measured": {
+  "hi ve__measured": {
     "group": "missingness"
   },
-  "hematocrit__measured": {
+  "gentamicin (peak)__measured": {
     "group": "missingness"
   },
-  "hematocrit, ascites__measured": {
+  "ava line tip cultured__measured": {
     "group": "missingness"
   },
-  "hematocrit, calculated__measured": {
+  "abi brachial bp l__measured": {
     "group": "missingness"
   },
-  "hematocrit, joint fluid__measured": {
+  "abi ankle bp r__measured": {
     "group": "missingness"
   },
-  "hematocrit, other fluid__measured": {
+  "impaired skin depth #6__measured": {
     "group": "missingness"
   },
-  "hematocrit, pleural__measured": {
+  "dwell time (peritoneal dialysis)__measured": {
     "group": "missingness"
   },
-  "hemoglobin__measured": {
+  "cfi (picco)__measured": {
     "group": "missingness"
   },
-  "hemoglobin c__measured": {
+  "presep catheter line tip cultured__measured": {
     "group": "missingness"
   },
-  "lactate__measured": {
+  "total peripheral resistance (tpr) (nicom)__measured": {
     "group": "missingness"
   },
-  "lactate dehydrogenase (ld)__measured": {
+  "solumedrol mg/kg/hr__measured": {
     "group": "missingness"
   },
-  "lactate dehydrogenase, ascites__measured": {
+  "seizure [duration, seconds]__measured": {
     "group": "missingness"
   },
-  "lactate dehydrogenase, csf__measured": {
+  "hi min vol__measured": {
     "group": "missingness"
   },
-  "lactate dehydrogenase, pleural__measured": {
+  "icp line tip cultured__measured": {
     "group": "missingness"
   },
-  "methemoglobin__measured": {
+  "pcv insp vt (obser)__measured": {
     "group": "missingness"
   },
-  "platelet count__measured": {
+  "bipap bpm (s/t -back up)__measured": {
     "group": "missingness"
   },
-  "potassium__measured": {
+  "transcut pacer rate__measured": {
     "group": "missingness"
   },
-  "potassium, urine__measured": {
+  "nitric oxide__measured": {
     "group": "missingness"
   },
-  "potassium, whole blood__measured": {
+  "impaired skin depth #5__measured": {
     "group": "missingness"
   },
-  "protein/creatinine ratio__measured": {
+  "pantoprazole__measured": {
     "group": "missingness"
   },
-  "sodium__measured": {
+  "recovery rr - aerobic activity response__measured": {
     "group": "missingness"
   },
-  "sodium, urine__measured": {
+  "high min. vol.__measured": {
     "group": "missingness"
   },
-  "sodium, whole blood__measured": {
+  "tco2 [value]__measured": {
     "group": "missingness"
   },
-  "tacrofk__measured": {
+  "impaired skin width #8__measured": {
     "group": "missingness"
   },
-  "urea nitrogen__measured": {
+  "impaired skin length #8__measured": {
     "group": "missingness"
   },
-  "urea nitrogen, urine__measured": {
+  "nitric oxide tank pressure__measured": {
     "group": "missingness"
   },
-  "wbc__measured": {
+  "impaired skin odor #9__measured": {
     "group": "missingness"
   },
-  "wbc casts__measured": {
+  "replogle irrigation__measured": {
     "group": "missingness"
   },
-  "wbc count__measured": {
+  "patient agrees with the above goals and is willing to participate in the rehabilitation program__measured": {
     "group": "missingness"
   },
-  "wbc, ascites__measured": {
+  "protonix mg/hr__measured": {
     "group": "missingness"
   },
-  "wbc, csf__measured": {
+  "aprotinin__measured": {
     "group": "missingness"
   },
-  "wbc, joint fluid__measured": {
+  "tobramycin (random)__measured": {
     "group": "missingness"
   },
-  "wbc, other fluid__measured": {
+  "apnea time__measured": {
     "group": "missingness"
   },
-  "wbc, pleural__measured": {
+  "triple introducer zero/calibrate__measured": {
     "group": "missingness"
   },
-  "white blood cells__measured": {
+  "zzzgth   calc   (cm)__measured": {
     "group": "missingness"
   },
-  "rx_total_mentions": {
-    "group": "baseline"
+  "zzzzth in centimeter__measured": {
+    "group": "missingness"
   },
-  "rx_unique_drugs": {
-    "group": "baseline"
+  "abg sodium__measured": {
+    "group": "missingness"
   },
-  "0": {
-    "group": "baseline"
+  "abdominal girth__measured": {
+    "group": "missingness"
   },
-  "1": {
-    "group": "baseline"
+  "heparin dose__measured": {
+    "group": "missingness"
   },
-  "2": {
-    "group": "baseline"
+  "xigris__measured": {
+    "group": "missingness"
   },
-  "3": {
-    "group": "baseline"
+  "abi ankle bp l (impella)__measured": {
+    "group": "missingness"
   },
-  "proc_vent_any": {
-    "group": "baseline"
+  "abi brachial bp r (impella)__measured": {
+    "group": "missingness"
   },
-  "proc_rrt_any": {
-    "group": "baseline"
+  "spont. resp. rate__measured": {
+    "group": "missingness"
   },
-  "proc_central_line_any": {
-    "group": "baseline"
+  "vad beat rate [left]__measured": {
+    "group": "missingness"
   },
-  "admit_hour": {
-    "group": "baseline"
+  "vd/vt ratio (40-60%)__measured": {
+    "group": "missingness"
   },
-  "admit_weekend": {
-    "group": "baseline"
+  "zzz stim thresh ma [value]__measured": {
+    "group": "missingness"
   },
-  "admit_month": {
-    "group": "baseline"
+  "micro-neb treatment__measured": {
+    "group": "missingness"
   },
   "__feature_schema_version__": {
     "group": "2025-Block1-missingness-v1"

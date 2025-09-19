@@ -6,19 +6,20 @@ import pandas as pd
 # Feature schema version (increment when adding/removing engineered blocks)
 FEATURE_SCHEMA_VERSION = "2025-Block1-missingness-v1"
 
-# Curated whitelist of common vital / lab labels to avoid exploding the
-# feature space when raw item_label values contain highly granular or
-# free‑text variants. These should be lower‑cased.
-VALID_MEASUREMENT_LABELS: Set[str] = {
-    'heart rate', 'respiratory rate', 'temperature', 'systolic', 'diastolic',
-    'mean arterial', 'spo2', 'wbc', 'hemoglobin', 'platelet', 'sodium',
-    'potassium', 'chloride', 'bicarbonate', 'bun', 'creatinine', 'glucose',
-    'lactate'
-}
+"""Feature engineering module.
+
+This version enforces the original wide feature schema behavior (no curated
+label whitelist). All observed labels (within a generous cap) are retained,
+mirroring the legacy artifact set. Purely numeric labels are removed as they
+indicate unintended dummy / index artifacts.
+"""
+
+# (Retained for potential future auditing, but not used for filtering.)
+VALID_MEASUREMENT_LABELS: Set[str] = set()
 
 # Hard limits to cap long‑tail label proliferation.
-_MAX_LABELS_PER_MODALITY = 120  # safety upper bound
-_MIN_LABEL_COUNT = 10           # drop ultra‑rare labels
+_MAX_LABELS_PER_MODALITY = 5000  # generous upper bound consistent with legacy wide schema
+_MIN_LABEL_COUNT = 0             # not used (no rarity filtering now)
 
 
 def aggregate_events(df: pd.DataFrame, value_col: str, time_col: str, label_col: str) -> pd.DataFrame:
@@ -47,33 +48,13 @@ def aggregate_events(df: pd.DataFrame, value_col: str, time_col: str, label_col:
     # Normalize label text early to consolidate variants (case/whitespace).
     if label_col in d.columns:
         d[label_col] = d[label_col].astype(str).str.strip().str.lower()
-
-        # Strategy: prefer curated whitelist; if insufficient coverage, fall back to
-        # top-N most frequent labels after removing very rare ones. This guards
-        # against accidental explosion (millions of sparse columns) from overly
-        # specific labels.
         counts = d[label_col].value_counts()
-        # Keep whitelist labels that appear in data
-        selected = [lab for lab in VALID_MEASUREMENT_LABELS if lab in counts.index]
-        # If whitelist gives too few (<5), augment with most frequent remaining labels
-        if len(selected) < 5:
-            frequent = counts.index.tolist()
-            for lab in frequent:
-                if lab not in selected:
-                    selected.append(lab)
-                if len(selected) >= _MAX_LABELS_PER_MODALITY:
-                    break
-        else:
-            # Optionally extend with additional frequent labels (not in whitelist) up to cap
-            for lab in counts.index:
-                if lab in selected:
-                    continue
-                if counts[lab] < _MIN_LABEL_COUNT:
-                    break  # remaining will be rarer
-                selected.append(lab)
-                if len(selected) >= _MAX_LABELS_PER_MODALITY:
-                    break
-        d = d[d[label_col].isin(selected)]
+        # Cap to prevent pathological explosion
+        if len(counts) > _MAX_LABELS_PER_MODALITY:
+            keep = counts.head(_MAX_LABELS_PER_MODALITY).index
+            d = d[d[label_col].isin(keep)]
+        # Drop purely numeric labels (bug artifacts)
+        d = d[~d[label_col].str.fullmatch(r'\d+')]
         if d.empty:
             return pd.DataFrame(columns=['subject_id'])
     # Compute base aggregations including std (population) then derive range
@@ -164,22 +145,31 @@ def build_features(first_adm: pd.DataFrame,
             tmp = first_adm[use_cols].merge(demo[demo_cols_available], on='subject_id', how='left')
         if 'ethnicity' not in tmp.columns:
             tmp['ethnicity'] = 'UNKNOWN'
-        # Age computation only if dob present
-        # Age computation with overflow and plausibility safeguards
+    # Age computation only if dob present with overflow and plausibility safeguards
         if 'dob' in tmp.columns:
-            try:
-                admit_dt = pd.to_datetime(tmp['admittime'], errors='coerce')
-                dob_dt = pd.to_datetime(tmp['dob'], errors='coerce')
-                # Raw age in years
-                age_years = (admit_dt - dob_dt).dt.total_seconds() / (365.25 * 24 * 3600)
-                # Invalidate implausible or negative ages
-                invalid = (age_years.isna()) | (age_years < 0) | (age_years > 120)
-                age_years[invalid] = 65  # fallback placeholder
-                tmp['age'] = age_years.clip(lower=0)
-                tmp.loc[tmp['age'] >= 89, 'age'] = 90
-            except Exception as age_err:  # pragma: no cover
-                print('DEBUG(build_features): age computation failed ->', age_err)
-                tmp['age'] = 65
+            # Robust age computation guarding against extreme/shifted dates that can
+            # yield overflow or implausible ages (e.g., >300 yrs in de‑identified data).
+            admit_dt = pd.to_datetime(tmp['admittime'], errors='coerce') if 'admittime' in tmp.columns else pd.Series(pd.NaT, index=tmp.index)
+            dob_dt = pd.to_datetime(tmp['dob'], errors='coerce')
+            # Define plausible window: 0 <= age <= 150 at admission.
+            # Mask implausible DOBs falling outside [admit_dt - 150y, admit_dt].
+            max_age_years = 150
+            # Compute preliminary age only where both timestamps valid.
+            valid_mask = admit_dt.notna() & dob_dt.notna()
+            # Further restrict to plausible chronological ordering and age <=150.
+            plausible_mask = valid_mask & (dob_dt <= admit_dt) & (
+                dob_dt >= (admit_dt - pd.to_timedelta(max_age_years * 365.25, unit='D'))
+            )
+            age_years = pd.Series(65.0, index=tmp.index)  # default fallback
+            if plausible_mask.any():
+                # Compute in days (integer) to avoid potential int64 overflow in seconds
+                delta_days = (admit_dt[plausible_mask] - dob_dt[plausible_mask]).dt.days
+                # Convert to years as float
+                delta_years = (delta_days / 365.25).clip(lower=0, upper=120)
+                age_years.loc[plausible_mask] = delta_years
+            # HIPAA rule: collapse 89+ into single top‑code bucket 90
+            age_years.loc[age_years >= 89] = 90
+            tmp['age'] = age_years.astype(float)
         else:
             tmp['age'] = 65  # no DOB available
         if 'gender' in tmp.columns:
@@ -306,6 +296,11 @@ def build_features(first_adm: pd.DataFrame,
     if leaky_cols:
         features = features.drop(columns=leaky_cols)
         # (Optional) Could log or return removed columns; kept silent for now.
+    # Drop any purely numeric column names (post-pivot safety)
+    if not features.empty:
+        numeric_only_cols = [c for c in features.columns if str(c).isdigit()]
+        if numeric_only_cols:
+            features = features.drop(columns=numeric_only_cols, errors='ignore')
     return features
 
 

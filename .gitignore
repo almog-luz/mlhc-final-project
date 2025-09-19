@@ -85,3 +85,6 @@ service_account.json
 # Misc
 *.orig
 *.retry
+project/__pycache__
+*.duckdb
+data/extracted_cache
