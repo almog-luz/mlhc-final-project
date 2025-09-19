@@ -44,14 +44,7 @@ project/data/**/cache/
 
 # Artifacts / runs (keep promoted canonical artifacts, ignore transient runs)
 project/runs/
-!project/artifacts/feature_columns.json
-!project/artifacts/feature_provenance.json
-!project/artifacts/features_full.parquet
-!project/artifacts/model_readmission.joblib
-!project/artifacts/preprocessor.joblib
-!project/artifacts/metrics.json
-!project/artifacts/threshold.txt
-!project/artifacts/METADATA.json
+!project/artifacts/*.*
 # If large feature parquet should not be versioned, comment it out above
 
 # Model training intermediates
@@ -88,3 +81,4 @@ service_account.json
 project/__pycache__
 *.duckdb
 data/extracted_cache
+project/artifacts
