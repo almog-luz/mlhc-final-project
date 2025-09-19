@@ -45,7 +45,6 @@ project/data/**/cache/
 
 # Artifacts / runs (keep promoted canonical artifacts, ignore transient runs)
 project/runs/
-!project/artifacts/*.*
 # If large feature parquet should not be versioned, comment it out above
 
 # Model training intermediates
