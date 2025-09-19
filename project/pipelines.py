@@ -8,7 +8,7 @@ import pandas as pd
 
 from .features import build_features, build_feature_provenance
 from .labels import build_labels_duckdb
-from .shared_inference import score_features
+from .inference import score_features
 from .extract import (
     get_first_admissions_duckdb,
     get_demographics_duckdb,
@@ -279,7 +279,7 @@ def run_training_side_pipeline(con, cohort_subject_ids: Iterable[int], debug: bo
         const_raw = raw.nunique(dropna=True)
         print("Non-constant columns pre-prune:", (const_raw>1).sum(), "Constant:", (const_raw<=1).sum())
         print("Sample non-constant names:", [c for c in raw.columns[const_raw>1][:10]])
-        from project.pipeline_core import prune_features as _pf_dbg
+        from project.pipelines import prune_features as _pf_dbg
         debug_pruned = _pf_dbg(raw.copy(), min_support=1, target_max=None)
         print("Debug pruned (min_support=1, no cap) shape:", debug_pruned.shape)
         print("Non-constant after relaxed pruning:", (debug_pruned.nunique(dropna=True)>1).sum())

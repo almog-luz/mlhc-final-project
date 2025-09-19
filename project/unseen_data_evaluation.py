@@ -1,16 +1,11 @@
 from typing import List, Any
 import pandas as pd
 from pathlib import Path
-from .pipeline_core import run_inference_pipeline
+from .pipelines import run_inference_pipeline
 
 
 def run_pipeline_on_unseen_data(subject_ids: List[int], client: Any) -> pd.DataFrame:
-    """Unified unseen inference entrypoint (delegates to pipeline_core).
-
-    Public signature preserved for external callers. Internally we reuse the
-    shared DuckDB extraction + feature build logic to guarantee parity with
-    training-side feature generation.
-    """
+    """Unified unseen inference entrypoint (delegates to pipeline_core)."""
     if client is None:
         raise ValueError("client (duckdb.Connection) is required")
     if not subject_ids:
