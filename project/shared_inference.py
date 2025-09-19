@@ -5,8 +5,6 @@ import pandas as pd
 from pathlib import Path
 from typing import Optional, Tuple, Dict, Any, Callable, Union
 
-# Global store for last aligned feature matrix (for parity/debug assertions)
-_LAST_ALIGNED_FEATURES: Optional[pd.DataFrame] = None
 
 # Default guard thresholds (env override capable)
 _MIN_VARIABLE_FRAC = float(os.getenv("MLHC_MIN_SCORING_VARIABLE_FRAC", "0.10"))
@@ -147,19 +145,15 @@ def score_features(features: pd.DataFrame,
     feature_cols = meta['feature_cols']
     missing_cols = [c for c in feature_cols if c not in features.columns]
     if missing_cols:
-        # Tolerant mode: instead of aborting, create the missing columns filled with 0.0.
-        # This supports lightweight tester notebooks or partial extraction scenarios
-        # while preserving strict feature ordering for the model.
+        # Vectorized addition to avoid fragmentation warnings from repeated assignment.
         print(
-            f"WARNING: {len(missing_cols)} missing feature columns; filling with zeros. "
+            f"WARNING: {len(missing_cols)} missing feature columns; filling with zeros (added in batch). "
             f"First few: {missing_cols[:10]}"
         )
-        for mc in missing_cols:
-            features[mc] = 0.0
+        add_df = pd.DataFrame({c: 0.0 for c in missing_cols}, index=features.index)
+        # Concatenate then reassign to original variable (preserve original reference semantics for caller)
+        features = pd.concat([features, add_df], axis=1)
     X = features.reindex(columns=feature_cols, fill_value=0)
-    # Store a copy (lightweight; mostly numeric) for downstream parity checks
-    global _LAST_ALIGNED_FEATURES
-    _LAST_ALIGNED_FEATURES = X.copy()
     if enforce_variance_guard:
         _assert_aligned_matrix_health(
             X,
@@ -181,11 +175,21 @@ def score_features(features: pd.DataFrame,
         cal = calibrators.get(key)
         if cal is None:
             return arr
+        # Try common APIs
         try:
-            return cal.predict(arr)
+            if hasattr(cal, 'predict'):
+                return cal.predict(arr)
         except Exception as e:  # pragma: no cover
-            print(f"WARNING: calibration failed for {key} -> {e}; using raw probabilities")
+            print(f"WARNING: calibrator 'predict' failed for {key} -> {e}; falling back to raw probabilities")
             return arr
+        try:
+            if hasattr(cal, 'transform'):
+                return cal.transform(arr)
+        except Exception as e:  # pragma: no cover
+            print(f"WARNING: calibrator 'transform' failed for {key} -> {e}; falling back to raw probabilities")
+            return arr
+        print(f"WARNING: calibrator for {key} has no usable interface; returning raw probabilities")
+        return arr
 
     mort = _maybe_calibrate(mort_raw, 'mortality')
     los = _maybe_calibrate(los_raw, 'prolonged_los')
@@ -203,14 +207,6 @@ def score_raw_features_df(features: pd.DataFrame, models_dir: Optional[str] = No
     """Alias for score_features for external clarity."""
     return score_features(features, models_dir=models_dir)
 
-
-def get_last_aligned_features() -> Optional[pd.DataFrame]:
-    """Return the last feature matrix (aligned) used in a scoring call.
-
-    Useful for strict parity checks between different scoring entry points.
-    Returns None if no scoring has been performed in the current process.
-    """
-    return _LAST_ALIGNED_FEATURES.copy() if _LAST_ALIGNED_FEATURES is not None else None
 
 
 def get_model_and_calibrator(target: str, models_dir: Optional[Union[str, Path]] = None) -> Tuple[Any, Optional[Any]]:

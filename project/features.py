@@ -6,13 +6,6 @@ import pandas as pd
 # Feature schema version (increment when adding/removing engineered blocks)
 FEATURE_SCHEMA_VERSION = "2025-Block1-missingness-v1"
 
-"""Feature engineering module.
-
-This version enforces the original wide feature schema behavior (no curated
-label whitelist). All observed labels (within a generous cap) are retained,
-mirroring the legacy artifact set. Purely numeric labels are removed as they
-indicate unintended dummy / index artifacts.
-"""
 
 # (Retained for potential future auditing, but not used for filtering.)
 VALID_MEASUREMENT_LABELS: Set[str] = set()
@@ -117,11 +110,6 @@ def build_features(first_adm: pd.DataFrame,
             first_adm.columns = [c.lower() for c in first_adm.columns]
         except Exception:
             pass
-        # Debug: print available columns for troubleshooting
-        try:
-            print('DEBUG(build_features): first_adm columns ->', list(first_adm.columns))
-        except Exception:
-            pass
         adm_cols_needed = ['subject_id','admittime']
         has_eth = 'ethnicity' in first_adm.columns
         # Only select ethnicity if present to avoid KeyError
@@ -129,10 +117,6 @@ def build_features(first_adm: pd.DataFrame,
         if has_eth:
             use_cols.append('ethnicity')
         # Demographics may sometimes arrive missing gender or dob (partial patients table). Handle gracefully.
-        try:
-            print('DEBUG(build_features): demo columns ->', list(demo.columns))
-        except Exception:
-            pass
         # Normalize demo column names
         try:
             demo.columns = [c.lower() for c in demo.columns]

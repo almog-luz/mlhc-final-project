@@ -269,13 +269,17 @@ def run_training_side_pipeline(con, cohort_subject_ids: Iterable[int], debug: bo
     labels_df, first_adm_filtered = extract_labels_and_filter(con, first_adm)
     modalities = extract_modalities_duckdb(con, first_adm_filtered)
 
-    print("first_adm_filtered shape:", first_adm_filtered.shape)
-    print("Distinct admittime:", first_adm_filtered['admittime'].nunique())
-    print("Demographics columns:", modalities['demo'].columns.tolist(), "rows:", len(modalities['demo']))
-    print("Vitals rows / subjects:", len(modalities['vitals']), modalities['vitals']['subject_id'].nunique() if not modalities['vitals'].empty else 0)
-    print("Labs rows / subjects:", len(modalities['labs']), modalities['labs']['subject_id'].nunique() if not modalities['labs'].empty else 0)
-    print("Prescriptions rows / subjects:", len(modalities['rx']), modalities['rx']['subject_id'].nunique() if not modalities['rx'].empty else 0)
-    print("Procedures rows / subjects:", len(modalities['proc']), modalities['proc']['subject_id'].nunique() if not modalities['proc'].empty else 0)
+    if debug:
+        print("first_adm_filtered shape:", first_adm_filtered.shape)
+        try:
+            print("Distinct admittime:", first_adm_filtered['admittime'].nunique())
+        except Exception:
+            pass
+        print("Demographics columns:", modalities['demo'].columns.tolist(), "rows:", len(modalities['demo']))
+        print("Vitals rows / subjects:", len(modalities['vitals']), modalities['vitals']['subject_id'].nunique() if not modalities['vitals'].empty else 0)
+        print("Labs rows / subjects:", len(modalities['labs']), modalities['labs']['subject_id'].nunique() if not modalities['labs'].empty else 0)
+        print("Prescriptions rows / subjects:", len(modalities['rx']), modalities['rx']['subject_id'].nunique() if not modalities['rx'].empty else 0)
+        print("Procedures rows / subjects:", len(modalities['proc']), modalities['proc']['subject_id'].nunique() if not modalities['proc'].empty else 0)
 
     features = build_feature_matrix(first_adm_filtered, modalities)
     # Alignment assertion: ensure subjects match labels 1-1 and ordering preserved after a stable sort
@@ -293,19 +297,18 @@ def run_training_side_pipeline(con, cohort_subject_ids: Iterable[int], debug: bo
 
     raw = build_features(first_adm_filtered, modalities['demo'], modalities['vitals'],
                         modalities['labs'], modalities['rx'], modalities['proc'])
-    support = raw.notna().sum()
-    print("Raw feature shape:", raw.shape)
-    print("Support quantiles:", support.describe())
-    print("Columns with support>=1:", (support>=1).sum(), ">=5:", (support>=5).sum(), ">=10:", (support>=10).sum())
-    const_raw = raw.nunique(dropna=True)
-    print("Non-constant columns pre-prune:", (const_raw>1).sum(), "Constant:", (const_raw<=1).sum())
-    print("Sample non-constant names:", [c for c in raw.columns[const_raw>1][:10]])
-
-
-    from project.pipeline_core import prune_features
-    debug_pruned = prune_features(raw.copy(), min_support=1, target_max=None)
-    print("Debug pruned (min_support=1, no cap) shape:", debug_pruned.shape)
-    print("Non-constant after relaxed pruning:", (debug_pruned.nunique(dropna=True)>1).sum())
+    if debug:
+        support = raw.notna().sum()
+        print("Raw feature shape:", raw.shape)
+        print("Support quantiles:", support.describe())
+        print("Columns with support>=1:", (support>=1).sum(), ">=5:", (support>=5).sum(), ">=10:", (support>=10).sum())
+        const_raw = raw.nunique(dropna=True)
+        print("Non-constant columns pre-prune:", (const_raw>1).sum(), "Constant:", (const_raw<=1).sum())
+        print("Sample non-constant names:", [c for c in raw.columns[const_raw>1][:10]])
+        from project.pipeline_core import prune_features as _pf_dbg
+        debug_pruned = _pf_dbg(raw.copy(), min_support=1, target_max=None)
+        print("Debug pruned (min_support=1, no cap) shape:", debug_pruned.shape)
+        print("Non-constant after relaxed pruning:", (debug_pruned.nunique(dropna=True)>1).sum())
 
     # (No persistence: caller responsible for saving features/labels if desired.)
     if debug:
